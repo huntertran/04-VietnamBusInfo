@@ -136,6 +136,7 @@
       <DependentUpon>SearchPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\StaticMethod.cs" />
     <Compile Include="Utilities\UTMConverter.cs" />
     <Compile Include="ViewModel\StaticData.cs" />
   </ItemGroup>

@@ -8,7 +8,9 @@
       mc:Ignorable="d">
 
     <Page.BottomAppBar>
-        <CommandBar x:Name="BottomCommandBar" Opened="BottomCommandBar_Opened" Closed="BottomCommandBar_Closed">
+        <CommandBar x:Name="BottomCommandBar"
+                    Closed="BottomCommandBar_Closed"
+                    Opened="BottomCommandBar_Opened">
             <CommandBar.Background>
                 <SolidColorBrush Opacity="0.7" Color="{StaticResource AccentColor}" />
             </CommandBar.Background>
@@ -45,9 +47,11 @@
                         <MenuFlyout>
                             <MenuFlyoutItem x:Name="DrawingMapStyleMenuFlyoutItem"
                                             Tag="1"
+                                            Tapped="MapStyleMenuFlyoutItem_OnTapped"
                                             Text="Drawing" />
                             <MenuFlyoutItem x:Name="HybridMapStyleMenuFlyoutItem"
                                             Tag="2"
+                                            Tapped="MapStyleMenuFlyoutItem_OnTapped"
                                             Text="Hybrid" />
                         </MenuFlyout>
                     </AppBarButton.Flyout>
@@ -58,7 +62,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Maps:Map Credentials="AvUjni5gFO1N-NlBwwO_JfX-8aXNFqeQdYoXT5ZU5TMeoOA6auKmaGBY4swM1FPz"
+        <Maps:Map x:Name="map"
+                  Credentials="AvUjni5gFO1N-NlBwwO_JfX-8aXNFqeQdYoXT5ZU5TMeoOA6auKmaGBY4swM1FPz"
                   ShowNavigationBar="False"
                   ShowScaleBar="False" />
 

@@ -14,7 +14,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using Bing.Maps;
 using VietnamBusInfo.Model;
+using VietnamBusInfo.Utilities;
 using VietnamBusInfo.ViewModel;
 
 namespace VietnamBusInfo.PageGroups
@@ -27,55 +29,138 @@ namespace VietnamBusInfo.PageGroups
         public MainPage()
         {
             this.InitializeComponent();
+            LoadMapStyle();
         }
 
-        private void MapSourcesMenuFlyout_OnTap(object sender, TappedRoutedEventArgs e)
+        private void LoadMapStyle()
         {
-            MenuFlyoutItem selectedItem = sender as MenuFlyoutItem;
-            int selectedIndex = Convert.ToInt32(selectedItem.Tag);
+            if (StaticMethod.GetSettings("mapIndex") == "not set")
+            {
+                StaticMethod.SetSettings("mapIndex", "0");
+            }
+            if (StaticMethod.GetSettings("mapStyleKey") == "not set")
+            {
+                StaticMethod.SetSettings("mapStyleKey", "m");
+            }
+
+            int selectedIndex = Convert.ToInt32(StaticMethod.GetSettings("mapIndex"));
 
             switch (selectedIndex)
             {
                 case 0:
                     //Bing Map
                     EnableMapStyleComboBox(false);
+                    map.TileLayers.Clear();
+                    map.MapType = MapType.Road;
                     break;
                 case 1:
                     //Google Map
                     EnableMapStyleComboBox(true);
-                    AddGoogleMapStyle();
+                    map.MapType = MapType.Empty;
+                    MapTileLayer googleTileLayer = new MapTileLayer();
+                    googleTileLayer.GetTileUri += GoogleTileLayerOnGetTileUri;
+                    map.TileLayers.Add(googleTileLayer);
+                    //AddGoogleMapStyle();
                     break;
                 case 2:
                     //Vietbando Map
                     EnableMapStyleComboBox(false);
+                    map.MapType = MapType.Empty;
+                    MapTileLayer vietBanDoMapTileLayer = new MapTileLayer();
+                    vietBanDoMapTileLayer.GetTileUri += VietBanDoMapTileLayerOnGetTileUri;
+                    map.TileLayers.Add(vietBanDoMapTileLayer);
                     break;
                 default:
                     break;
             }
         }
 
-        private void AddGoogleMapStyle()
+        private void MapSourcesMenuFlyout_OnTap(object sender, TappedRoutedEventArgs e)
         {
-            ObservableCollection<MapStyle> mapStyleCollection = new ObservableCollection<MapStyle>();
+            MenuFlyoutItem selectedItem = sender as MenuFlyoutItem;
 
-            MapStyle drawingMap = new MapStyle()
+            if (StaticMethod.GetSettings("mapIndex") == "not set")
             {
-                id = 1,
-                name = "Map",
-                key = "m",
-            };
-            mapStyleCollection.Add(drawingMap);
-
-            MapStyle hybridMap = new MapStyle()
+                StaticMethod.SetSettings("mapIndex", "0");
+            }
+            if (StaticMethod.GetSettings("mapStyleKey") == "not set")
             {
-                id = 2,
-                name = "Hybrid",
-                key = "y",
-            };
-            mapStyleCollection.Add(hybridMap);
+                StaticMethod.SetSettings("mapStyleKey", "m");
+            }
 
-            //mapStyleComboBox.ItemsSource = mapStyleCollection;
-            //mapStyleComboBox.SelectedIndex = 0;
+            int selectedIndex = Convert.ToInt32(selectedItem.Tag);
+            StaticMethod.SetSettings("mapIndex", selectedIndex.ToString());
+
+            switch (selectedIndex)
+            {
+                case 0:
+                    //Bing Map
+                    EnableMapStyleComboBox(false);
+                    map.TileLayers.Clear();
+                    map.MapType = MapType.Road;
+                    break;
+                case 1:
+                    //Google Map
+                    EnableMapStyleComboBox(true);
+                    map.MapType = MapType.Empty;
+                    MapTileLayer googleTileLayer = new MapTileLayer();
+                    googleTileLayer.GetTileUri += GoogleTileLayerOnGetTileUri;
+                    map.TileLayers.Add(googleTileLayer);
+                    //AddGoogleMapStyle();
+                    break;
+                case 2:
+                    //Vietbando Map
+                    EnableMapStyleComboBox(false);
+                    map.MapType = MapType.Empty;
+                    MapTileLayer vietBanDoMapTileLayer = new MapTileLayer();
+                    vietBanDoMapTileLayer.GetTileUri += VietBanDoMapTileLayerOnGetTileUri;
+                    map.TileLayers.Add(vietBanDoMapTileLayer);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void MapStyleMenuFlyoutItem_OnTapped(object sender, TappedRoutedEventArgs e)
+        {
+            MenuFlyoutItem selectedItem = sender as MenuFlyoutItem;
+            int selectedIndex = Convert.ToInt32(selectedItem.Tag);
+
+            string key = "";
+
+            switch (selectedIndex)
+            {
+                case 1:
+                    //Drawing Map style
+                    key = "m";
+                    break;
+                case 2:
+                    //Hybrid Map style
+                    key = "y";
+                    break;
+                default:
+                    key = "m";
+                    break;
+            }
+
+            StaticMethod.SetSettings("mapStyleKey", key);
+        }
+
+        private void GoogleTileLayerOnGetTileUri(object sender, GetTileUriEventArgs getTileUriEventArgs)
+        {
+            getTileUriEventArgs.Uri =
+                new Uri(string.Format(@"http://mts{0}.google.com/vt/lyrs={1}&z={2}&x={3}&y={4}", 1,
+                    StaticMethod.GetSettings("mapStyleKey"), getTileUriEventArgs.LevelOfDetail, getTileUriEventArgs.X,
+                    getTileUriEventArgs.Y));
+        }
+
+        private void VietBanDoMapTileLayerOnGetTileUri(object sender, GetTileUriEventArgs getTileUriEventArgs)
+        {
+            getTileUriEventArgs.Uri =
+                new Uri(
+                    string.Format(
+                        @"http://www.vietbando.com/Maps/Handler/ImageLoader.ashx?TYPE=BACKGROUD&Level={0}&X={1}&Y={2}",
+                        getTileUriEventArgs.LevelOfDetail, getTileUriEventArgs.X, getTileUriEventArgs.Y));
         }
 
         private void EnableMapStyleComboBox(bool value)
@@ -97,5 +182,6 @@ namespace VietnamBusInfo.PageGroups
         {
             BottomGrid.Visibility = Visibility.Visible;
         }
+
     }
 }
