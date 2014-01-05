@@ -1,0 +1,22 @@
+﻿// track a page view
+GoogleAnalytics.EasyTracker.GetTracker().SendView("main");
+
+// track a custom event
+GoogleAnalytics.EasyTracker.GetTracker().SendEvent("test", "userclick", null, 0);
+
+// manually track an exception
+GoogleAnalytics.EasyTracker.GetTracker().SendException("oops, something went wrong", false);
+
+// track a transaction (in app purchase)
+double cost = 1.99;
+long costInMicrons = (long)(cost * 1000000);
+var transaction = new GoogleAnalytics.Transaction("01234", costInMicrons);
+var item = new GoogleAnalytics.TransactionItem("myproduct", "My Product", costInMicrons, 1);
+transaction.Items.Add(item);
+GoogleAnalytics.EasyTracker.GetTracker().SendTransaction(transaction);
+
+// track a social networking interaction
+GoogleAnalytics.EasyTracker.GetTracker().SendSocial("facebook", "share", "http://googleanalyticssdk.codeplex.com");
+
+// track a timing (how long it takes your app to run a specific task)
+GoogleAnalytics.EasyTracker.GetTracker().SendTiming(DateTime.Now.Subtract(startTime), "Startup", "MainPage", "Label");
