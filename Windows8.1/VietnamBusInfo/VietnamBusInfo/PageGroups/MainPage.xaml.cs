@@ -144,6 +144,7 @@ namespace VietnamBusInfo.PageGroups
             }
 
             StaticMethod.SetSettings("mapStyleKey", key);
+            LoadMapStyle();
         }
 
         private void GoogleTileLayerOnGetTileUri(object sender, GetTileUriEventArgs getTileUriEventArgs)
