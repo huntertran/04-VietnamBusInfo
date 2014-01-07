@@ -4,6 +4,9 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading;
+using System.Threading.Tasks;
+using Windows.Devices.Geolocation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -15,6 +18,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 using Bing.Maps;
+using VietnamBusInfo.CustomControl;
 using VietnamBusInfo.Model;
 using VietnamBusInfo.Utilities;
 using VietnamBusInfo.ViewModel;
@@ -26,10 +30,100 @@ namespace VietnamBusInfo.PageGroups
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        private Geolocator _geolocator = null;
+        private CancellationTokenSource _cts = null;
+        private LocationIcon10m _locationIcon10m;
+        private LocationIcon100m _locationIcon100m;
+
         public MainPage()
         {
             this.InitializeComponent();
             LoadMapStyle();
+            Loaded += OnLoaded;
+        }
+
+        private async void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
+        {
+            await Relocation();
+        }
+
+        private async Task Relocation()
+        {
+            _geolocator = new Geolocator();
+            _locationIcon10m = new LocationIcon10m();
+            _locationIcon100m = new LocationIcon100m();
+
+            // Remove any previous location icon.
+            if (map.Children.Count > 0)
+            {
+                map.Children.RemoveAt(0);
+            }
+
+            try
+            {
+                // Get the cancellation token.
+                _cts = new CancellationTokenSource();
+                CancellationToken token = _cts.Token;
+
+                //MessageTextbox.Text = "Waiting for update...";
+
+                // Get the location.
+                Geoposition pos = await _geolocator.GetGeopositionAsync().AsTask(token);
+
+                //MessageTextbox.Text = "";
+
+                Location location = new Location(pos.Coordinate.Latitude, pos.Coordinate.Longitude);
+
+                // Now set the zoom level of the map based on the accuracy of our location data.
+                // Default to IP level accuracy. We only show the region at this level - No icon is displayed.
+                double zoomLevel = 13.0f;
+
+                // if we have GPS level accuracy
+                if (pos.Coordinate.Accuracy <= 10)
+                {
+                    // Add the 10m icon and zoom closer.
+                    map.Children.Add(_locationIcon10m);
+                    MapLayer.SetPosition(_locationIcon10m, location);
+                    zoomLevel = 15.0f;
+                }
+                // Else if we have Wi-Fi level accuracy.
+                else if (pos.Coordinate.Accuracy <= 100)
+                {
+                    // Add the 100m icon and zoom a little closer.
+                    map.Children.Add(_locationIcon100m);
+                    MapLayer.SetPosition(_locationIcon100m, location);
+                    zoomLevel = 14.0f;
+                }
+
+                // Set the map to the given location and zoom level.
+                map.SetView(location, zoomLevel);
+
+                // Display the location information in the textboxes.
+                //LatitudeTextbox.Text = pos.Coordinate.Latitude.ToString();
+                //LongitudeTextbox.Text = pos.Coordinate.Longitude.ToString();
+                //AccuracyTextbox.Text = pos.Coordinate.Accuracy.ToString();
+            }
+            catch (System.UnauthorizedAccessException)
+            {
+                //MessageTextbox.Text = "Location disabled.";
+
+                //LatitudeTextbox.Text = "No data";
+                //LongitudeTextbox.Text = "No data";
+                //AccuracyTextbox.Text = "No data";
+            }
+            catch (TaskCanceledException)
+            {
+                //MessageTextbox.Text = "Operation canceled.";
+            }
+            finally
+            {
+                _cts = null;
+            }
+
+            // Reset the buttons.
+            //MapLocationButton.IsEnabled = true;
+            //CancelGetLocationButton.IsEnabled = false;
         }
 
         private void LoadMapStyle()
@@ -184,5 +278,9 @@ namespace VietnamBusInfo.PageGroups
             BottomGrid.Visibility = Visibility.Visible;
         }
 
+        private async void RelocationAppBarButton_OnTapped(object sender, TappedRoutedEventArgs e)
+        {
+            await Relocation();
+        }
     }
 }
