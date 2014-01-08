@@ -50,6 +50,9 @@ namespace VietnamBusInfo.PageGroups
 
         private async Task Relocation()
         {
+
+            LocationGrid.Visibility = Visibility.Visible;
+
             _geolocator = new Geolocator();
             _locationIcon10m = new LocationIcon10m();
             _locationIcon100m = new LocationIcon100m();
@@ -124,6 +127,8 @@ namespace VietnamBusInfo.PageGroups
             // Reset the buttons.
             //MapLocationButton.IsEnabled = true;
             //CancelGetLocationButton.IsEnabled = false;
+
+            LocationGrid.Visibility = Visibility.Collapsed;
         }
 
         private void LoadMapStyle()
@@ -281,6 +286,31 @@ namespace VietnamBusInfo.PageGroups
         private async void RelocationAppBarButton_OnTapped(object sender, TappedRoutedEventArgs e)
         {
             await Relocation();
+        }
+
+        private void StopLocateButton_OnTapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (_cts != null)
+            {
+                _cts.Cancel();
+                _cts = null;
+            }
+
+            LocationGrid.Visibility = Visibility.Collapsed;
+
+            //MapLocationButton.IsEnabled = true;
+            //CancelGetLocationButton.IsEnabled = false;
+        }
+
+        protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
+        {
+            if (_cts != null)
+            {
+                _cts.Cancel();
+                _cts = null;
+            }
+
+            base.OnNavigatingFrom(e);
         }
     }
 }

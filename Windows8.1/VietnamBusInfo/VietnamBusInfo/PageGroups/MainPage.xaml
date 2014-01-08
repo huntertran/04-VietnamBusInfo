@@ -414,7 +414,8 @@
                   ShowNavigationBar="False"
                   ShowScaleBar="False" />
 
-        <Grid x:Name="LocationGrid">
+        <Grid x:Name="LocationGrid" Visibility="Collapsed">
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="10" />
                 <RowDefinition Height="Auto" />
@@ -424,10 +425,7 @@
                 <Grid.Background>
                     <SolidColorBrush Color="{StaticResource AccentColor}" />
                 </Grid.Background>
-                <!--<ProgressBar x:Name="progressBar"
-                             Foreground="{ThemeResource AppBarItemForegroundThemeBrush}"
-                             IsIndeterminate="True"
-                             Style="{StaticResource ProgressBarStyle}" />-->
+                
                 <ProgressBar x:Name="progressBar"
                              Foreground="{ThemeResource AppBarItemForegroundThemeBrush}"
                              IsIndeterminate="True"
@@ -440,6 +438,8 @@
                 </Grid.Background>
                 <Button Margin="0,0,20,0"
                         HorizontalAlignment="Right"
+                        x:Name="stopLocateButton"
+                        Tapped="StopLocateButton_OnTapped"
                         Content="Stop Locate" />
             </Grid>
 

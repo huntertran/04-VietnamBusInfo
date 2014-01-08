@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="VietnamBusInfo.CustomControl.BusStationPushPin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="using:VietnamBusInfo.CustomControl"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel Margin="-12,-12,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Orientation="Horizontal">
+
+            <Grid>
+                <Grid.Background>
+                    <SolidColorBrush Opacity="0.2" Color="{StaticResource AccentColor}" />
+                </Grid.Background>
+                <TextBlock Margin="45,5,0,5" Text="This is very long Text" />
+            </Grid>
+            <Path Height="24"
+                  Data="F1 M 356,172.5C 415.646,172.5 464,220.853 464,280.5C 464,340.147 415.646,388.5 356,388.5L 356,172.5 Z "
+                  Fill="{StaticResource AccentBrush}"
+                  Opacity="0.2"
+                  Stretch="Uniform" />
+        </StackPanel>
+        <Canvas>
+            <Ellipse Width="55"
+                     Height="55"
+                     Margin="-27.5,-27.5,0,0"
+                     Fill="White"
+                     Opacity=".35" />
+            <Ellipse Width="50"
+                     Height="50"
+                     Margin="-25,-25,0,0"
+                     Fill="{StaticResource AccentBrush}"
+                     Opacity=".65" />
+            <Ellipse Width="25"
+                     Height="25"
+                     Margin="-12.5,-12.5,0,0"
+                     Fill="#FFF0F0F0" />
+        </Canvas>
+    </Grid>
+</UserControl>
