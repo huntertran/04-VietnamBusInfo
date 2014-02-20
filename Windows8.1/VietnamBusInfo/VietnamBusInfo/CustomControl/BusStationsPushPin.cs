@@ -19,5 +19,16 @@ namespace VietnamBusInfo.CustomControl
         {
             this.DefaultStyleKey = typeof(BusStationsPushPin);
         }
+
+        public string TextContent
+        {
+            get { return (string)GetValue(TextContentProperty); }
+            set { SetValue(TextContentProperty, value); }
+        }
+
+        public static readonly DependencyProperty TextContentProperty =
+            DependencyProperty.Register("TextContent", typeof(string), typeof(BusStationsPushPin), new PropertyMetadata(null));
     }
+
+
 }

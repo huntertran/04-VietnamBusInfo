@@ -33,7 +33,10 @@ namespace VietnamBusInfo
             if (rootFrame != null) rootFrame.Navigate(typeof (PageGroups.MainPage));
         }
 
-        //Load All Stations to RAM
+        /// <summary>
+        /// Load all station
+        /// StaticData._stationTotal
+        /// </summary>
         private void LoadAllStations()
         {
             if (StaticData._stationTotal.Count == 0)
@@ -99,7 +102,10 @@ namespace VietnamBusInfo
             //        "placeHolderData.dat", CreationCollisionOption.ReplaceExisting);
         }
 
-        //FullBusRoute.xml - All Bus Route Available
+        /// <summary>
+        /// FullBusRoute.xml - All Bus Route Available
+        /// StaticData._busRoute
+        /// </summary>
         private void LoadDataFile()
         {
             if (StaticData._busRoute == null)
@@ -158,13 +164,16 @@ namespace VietnamBusInfo
             //busRouteStatusTextBlock.Text = "Bus Routes Data Ready";
         }
 
-        //StationInfo.xml - All Station Information - Each bus have 1 record in this Collection
+        /// <summary>
+        /// StationInfo.xml - All Station Information - Each bus have 1 record in this Collection
+        /// StaticData._busStationCollection
+        /// </summary>
         private void LoadStationInfo()
         {
             UTMConverter utmConverter;
             StaticData._busStationCollection = new ObservableCollection<BusStationCollection>();
 
-            if (StaticData._busStationCollection.Count() == 0)
+            if (!StaticData._busStationCollection.Any())
             {
                 StaticData._busStationCollection = new ObservableCollection<BusStationCollection>();
 
@@ -244,7 +253,10 @@ namespace VietnamBusInfo
             }
         }
 
-        //StationDetails - Bus Details to be exact
+        /// <summary>
+        /// StationDetails - Bus Details to be exact
+        /// StaticData._busContent
+        /// </summary>
         private void LoadAllBus()
         {
             //await Task.Run(() =>

@@ -5,6 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="using:VietnamBusInfo.PageGroups"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:customControl="using:VietnamBusInfo.CustomControl"
       mc:Ignorable="d">
     <Page.Resources>
         <Style x:Key="ProgressBarStyle" TargetType="ProgressBar">
@@ -354,12 +355,16 @@
                     BorderBrush="{x:Null}"
                     Closed="BottomCommandBar_Closed"
                     Opened="BottomCommandBar_Opened">
+            
             <CommandBar.Background>
                 <SolidColorBrush Opacity="0.7" Color="{StaticResource AccentColor}" />
             </CommandBar.Background>
+            
             <AppBarToggleButton Icon="Shuffle" Label="Shuffle" />
             <AppBarToggleButton Icon="RepeatAll" Label="Repeat" />
+            
             <AppBarSeparator />
+            
             <AppBarButton Icon="Back" Label="Back" />
             <AppBarButton Icon="Stop" Label="Stop" />
             <AppBarButton Icon="Play" Label="Play" />
@@ -412,10 +417,12 @@
         <Maps:Map x:Name="map"
                   Credentials="AvUjni5gFO1N-NlBwwO_JfX-8aXNFqeQdYoXT5ZU5TMeoOA6auKmaGBY4swM1FPz"
                   ShowNavigationBar="False"
-                  ShowScaleBar="False" />
+                  ShowScaleBar="False">
+            <Maps:MapLayer x:Name="NearStationLayer"/>
+        </Maps:Map>
 
         <Grid x:Name="LocationGrid" Visibility="Collapsed">
-            
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="10" />
                 <RowDefinition Height="Auto" />
@@ -425,7 +432,7 @@
                 <Grid.Background>
                     <SolidColorBrush Color="{StaticResource AccentColor}" />
                 </Grid.Background>
-                
+
                 <ProgressBar x:Name="progressBar"
                              Foreground="{ThemeResource AppBarItemForegroundThemeBrush}"
                              IsIndeterminate="True"
@@ -436,11 +443,11 @@
                 <Grid.Background>
                     <SolidColorBrush Opacity="0.7" Color="{StaticResource AccentColor}" />
                 </Grid.Background>
-                <Button Margin="0,0,20,0"
+                <Button x:Name="stopLocateButton"
+                        Margin="0,0,20,0"
                         HorizontalAlignment="Right"
-                        x:Name="stopLocateButton"
-                        Tapped="StopLocateButton_OnTapped"
-                        Content="Stop Locate" />
+                        Content="Stop Locate"
+                        Tapped="StopLocateButton_OnTapped" />
             </Grid>
 
         </Grid>

@@ -3,7 +3,7 @@
                     xmlns:customControl="using:VietnamBusInfo.CustomControl"
                     xmlns:local="using:VietnamBusInfo">
 
-    <Style TargetType="customControl:BusStationPushPin">
+    <!--<Style TargetType="customControl:BusStationPushPin">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="customControl:BusStationPushPin">
@@ -30,7 +30,7 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
+    </Style>-->
 
     <Style TargetType="customControl:BusStationsPushPin">
         <Setter Property="Template">
@@ -46,7 +46,7 @@
                                 <Grid.Background>
                                     <SolidColorBrush Opacity="0.2" Color="{StaticResource AccentColor}" />
                                 </Grid.Background>
-                                <TextBlock Margin="45,5,0,5" Text="{TemplateBinding BusStationsText}" />
+                                <TextBlock Margin="45,5,0,5" Text="{TemplateBinding TextContent}" />
                             </Grid>
                             <Path Height="24"
                                   Data="F1 M 356,172.5C 415.646,172.5 464,220.853 464,280.5C 464,340.147 415.646,388.5 356,388.5L 356,172.5 Z "

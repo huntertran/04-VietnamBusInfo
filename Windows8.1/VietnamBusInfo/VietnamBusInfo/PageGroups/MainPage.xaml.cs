@@ -4,11 +4,14 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.ServiceModel.Channels;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Windows.Devices.Geolocation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -36,6 +39,8 @@ namespace VietnamBusInfo.PageGroups
         private LocationIcon10m _locationIcon10m;
         private LocationIcon100m _locationIcon100m;
 
+        private MapLayer pushPin;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -46,6 +51,10 @@ namespace VietnamBusInfo.PageGroups
         private async void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
         {
             await Relocation();
+
+            //TODO: something went wrong here. No pushpin added
+            await AddToCollection();
+            AddPushPin();
         }
 
         private async Task Relocation()
@@ -91,7 +100,8 @@ namespace VietnamBusInfo.PageGroups
                     zoomLevel = 15.0f;
                 }
                 // Else if we have Wi-Fi level accuracy.
-                else if (pos.Coordinate.Accuracy <= 100)
+                else 
+                    //if (pos.Coordinate.Accuracy <= 100)
                 {
                     // Add the 100m icon and zoom a little closer.
                     map.Children.Add(_locationIcon100m);
@@ -129,6 +139,83 @@ namespace VietnamBusInfo.PageGroups
             //CancelGetLocationButton.IsEnabled = false;
 
             LocationGrid.Visibility = Visibility.Collapsed;
+        }
+
+        private async Task AddToCollection()
+        {
+            StaticData._stationCollection = new ObservableCollection<StationTotal>();
+            UTMConverter utmConverter = new UTMConverter();
+            MessageDialog msg = new MessageDialog("Location Service is not available!", "Error");
+
+            try
+            {
+                var pos = await _geolocator.GetGeopositionAsync();
+                if (pos != null)
+                {
+                    Location location = new Location(pos.Coordinate.Latitude, pos.Coordinate.Longitude);
+                    LocationPointWithId a = new LocationPointWithId();
+                    a.latitude = pos.Coordinate.Latitude;
+                    a.longitude = pos.Coordinate.Longitude;
+                    LocationPointWithId temp = new LocationPointWithId();
+
+                    foreach (StationTotal b in StaticData._stationTotal)
+                    {
+                        utmConverter.ToLatLon(b.latitude, b.longitude, 48, 0);
+                        temp.latitude = utmConverter.Latitude;
+                        temp.longitude = utmConverter.Longitude;
+
+                        if (StaticMethod.Distance(a, temp) < 1)
+                        {
+                            StaticData._stationCollection.Add(b);
+                        }
+                    }
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageDialog messageDialog = new MessageDialog("Error: " + exception.Message);
+                messageDialog.ShowAsync();
+                //return;
+            }
+
+        }
+
+        private void AddPushPin()
+        {
+            pushPin = new MapLayer();
+            UTMConverter utmConverter = new UTMConverter();
+
+            foreach (StationTotal temp in StaticData._stationCollection)
+            {
+                BusStationsPushPin pin = new BusStationsPushPin();
+                Pushpin pin2 = new Pushpin();
+                utmConverter.ToLatLon(temp.latitude, temp.longitude, 48, 0);
+
+                Location location = new Location(utmConverter.Latitude, utmConverter.Longitude);
+
+                string pushPinContent = "";
+                string busNumTemp = "";
+
+                foreach (Bus busTemp in temp.busList)
+                {
+                    if (busNumTemp != busTemp.busNumber)
+                    {
+                        pushPinContent = pushPinContent + " - " + busTemp.busNumber;
+                        busNumTemp = busTemp.busNumber;
+                    }
+                }
+
+                pin.TextContent = pushPinContent;
+                pin.Width = double.NaN;
+                pin.Tag = temp;
+                //pin.Tapped += pin_Tapped;
+
+                pushPin.Children.Add(pin);
+
+                MapLayer.SetPosition(pin, location);
+            }
+
+            map.Children.Add(pushPin);
         }
 
         private void LoadMapStyle()
