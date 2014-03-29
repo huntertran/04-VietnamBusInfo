@@ -417,7 +417,7 @@
         <Maps:Map x:Name="map"
                   Credentials="AvUjni5gFO1N-NlBwwO_JfX-8aXNFqeQdYoXT5ZU5TMeoOA6auKmaGBY4swM1FPz"
                   ShowNavigationBar="False"
-                  ShowScaleBar="False">
+                  ShowScaleBar="False" Tapped="Map_OnTapped">
             <Maps:MapLayer x:Name="NearStationLayer"/>
         </Maps:Map>
 

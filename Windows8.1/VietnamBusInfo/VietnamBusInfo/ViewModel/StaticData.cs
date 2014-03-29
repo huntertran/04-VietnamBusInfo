@@ -14,7 +14,12 @@ namespace VietnamBusInfo.ViewModel
         /// <summary>
         /// This hold StationTotal around the location
         /// </summary>
-        public static ObservableCollection<StationTotal> _stationCollection = new ObservableCollection<StationTotal>(); 
+        public static ObservableCollection<StationTotal> _stationCollection = new ObservableCollection<StationTotal>();
+
+        /// <summary>
+        /// This hold the selected pushpin
+        /// </summary>
+        public static StationTotal SelectedStationTotal;
 
         public static BusStationCollection tempBusStationCollection;
 

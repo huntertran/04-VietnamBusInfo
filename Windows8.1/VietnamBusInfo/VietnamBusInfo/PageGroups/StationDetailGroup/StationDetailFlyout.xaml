@@ -1,0 +1,88 @@
+﻿<SettingsFlyout x:Class="VietnamBusInfo.PageGroups.StationDetailGroup.StationDetailFlyout"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                xmlns:local="using:VietnamBusInfo.PageGroups.StationDetailGroup"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:conv="using:VietnamBusInfo.Utilities.Converter"
+                Title="Station Details"
+                IconSource="Assets/SmallLogo.png"
+                d:DesignWidth="346"
+                mc:Ignorable="d">
+    <SettingsFlyout.Resources>
+        <conv:BitToDirectionConverter x:Key="BitToDirectionConv"/>
+        <DataTemplate x:Key="BusDirectionListViewDataTemplate">
+            <StackPanel>
+                <TextBlock Text="{Binding direction, Converter={StaticResource BitToDirectionConv}}" />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="BusListViewDataTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0"
+                      Width="30"
+                      Height="30"
+                      Background="YellowGreen">
+                    <TextBlock HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="{Binding busNumber}" />
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <ListView ItemTemplate="{StaticResource BusDirectionListViewDataTemplate}"
+                              ItemsSource="{Binding busDirection}"
+                              SelectionMode="None" />
+
+                </Grid>
+
+            </Grid>
+        </DataTemplate>
+    </SettingsFlyout.Resources>
+
+    <SettingsFlyout.Background>
+        <SolidColorBrush Opacity="0.9" Color="White" />
+    </SettingsFlyout.Background>
+
+    <!--  This StackPanel acts as a root panel for vertical layout of the content sections  -->
+    <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+        <!--  The StackPanel(s) below define individual content sections  -->
+
+        <!--  Content Section 1  -->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!--  Section 1 header  -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Address" />
+
+            <!--  Section 1 body  -->
+            <TextBlock x:Name="AddressTextBlock"
+                       Margin="0,0,0,25"
+                       Style="{StaticResource BodyTextBlockStyle}"
+                       TextWrapping="Wrap" />
+        </StackPanel>
+
+        <!--  Content Section 2  -->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!--  Section 2 header  -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Bus" />
+
+            <!--  Section 2 body  -->
+            <ListView x:Name="BusListView"
+                      ItemTemplate="{StaticResource BusListViewDataTemplate}"
+                      SelectionMode="None" />
+        </StackPanel>
+
+        <!--  Define more Content Sections below as necessary  -->
+
+    </StackPanel>
+</SettingsFlyout>

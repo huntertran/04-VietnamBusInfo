@@ -7,7 +7,7 @@
              mc:Ignorable="d">
 
     <Grid>
-        <StackPanel Margin="-12,-12,0,0"
+        <StackPanel Margin="-12,-17,0,0"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
                     Orientation="Horizontal">
@@ -16,7 +16,7 @@
                 <Grid.Background>
                     <SolidColorBrush Opacity="0.2" Color="{StaticResource AccentColor}" />
                 </Grid.Background>
-                <TextBlock Margin="45,5,0,5" Text="This is very long Text" />
+                <TextBlock Margin="45,5,0,5" Text="This is very long Text" FontSize="20" />
             </Grid>
             <Path Height="24"
                   Data="F1 M 356,172.5C 415.646,172.5 464,220.853 464,280.5C 464,340.147 415.646,388.5 356,388.5L 356,172.5 Z "

@@ -23,6 +23,7 @@ using Windows.UI.Xaml.Navigation;
 using Bing.Maps;
 using VietnamBusInfo.CustomControl;
 using VietnamBusInfo.Model;
+using VietnamBusInfo.PageGroups.StationDetailGroup;
 using VietnamBusInfo.Utilities;
 using VietnamBusInfo.ViewModel;
 
@@ -51,8 +52,6 @@ namespace VietnamBusInfo.PageGroups
         private async void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
         {
             await Relocation();
-
-            //TODO: something went wrong here. No pushpin added
             await AddToCollection();
             AddPushPin();
         }
@@ -164,7 +163,7 @@ namespace VietnamBusInfo.PageGroups
                         temp.latitude = utmConverter.Latitude;
                         temp.longitude = utmConverter.Longitude;
 
-                        if (StaticMethod.Distance(a, temp) < 1)
+                        if (StaticMethod.Distance(a, temp) < StaticData.defaultDistance)
                         {
                             StaticData._stationCollection.Add(b);
                         }
@@ -180,6 +179,30 @@ namespace VietnamBusInfo.PageGroups
 
         }
 
+        private async Task AddToCollectionWithCustomLocation(Location location)
+        {
+            StaticData._stationCollection = new ObservableCollection<StationTotal>();
+            UTMConverter utmConverter = new UTMConverter();
+
+            LocationPointWithId a = new LocationPointWithId();
+            a.latitude = location.Latitude;
+            a.longitude = location.Longitude;
+
+            LocationPointWithId temp = new LocationPointWithId();
+
+            foreach (StationTotal b in StaticData._stationTotal)
+            {
+                utmConverter.ToLatLon(b.latitude, b.longitude, 48, 0);
+                temp.latitude = utmConverter.Latitude;
+                temp.longitude = utmConverter.Longitude;
+
+                if (StaticMethod.Distance(a, temp) < StaticData.defaultDistance)
+                {
+                    StaticData._stationCollection.Add(b);
+                }
+            }
+        }
+
         private void AddPushPin()
         {
             pushPin = new MapLayer();
@@ -188,7 +211,6 @@ namespace VietnamBusInfo.PageGroups
             foreach (StationTotal temp in StaticData._stationCollection)
             {
                 BusStationsPushPin pin = new BusStationsPushPin();
-                Pushpin pin2 = new Pushpin();
                 utmConverter.ToLatLon(temp.latitude, temp.longitude, 48, 0);
 
                 Location location = new Location(utmConverter.Latitude, utmConverter.Longitude);
@@ -208,7 +230,7 @@ namespace VietnamBusInfo.PageGroups
                 pin.TextContent = pushPinContent;
                 pin.Width = double.NaN;
                 pin.Tag = temp;
-                //pin.Tapped += pin_Tapped;
+                pin.Tapped += pin_Tapped;
 
                 pushPin.Children.Add(pin);
 
@@ -216,6 +238,15 @@ namespace VietnamBusInfo.PageGroups
             }
 
             map.Children.Add(pushPin);
+        }
+
+        private void pin_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            BusStationsPushPin selected = sender as BusStationsPushPin;
+            StaticData.SelectedStationTotal = selected.Tag as StationTotal;
+
+            StationDetailFlyout stationDetailFlyout = new StationDetailFlyout();
+            stationDetailFlyout.ShowIndependent();
         }
 
         private void LoadMapStyle()
@@ -398,6 +429,30 @@ namespace VietnamBusInfo.PageGroups
             }
 
             base.OnNavigatingFrom(e);
+        }
+
+        private async void Map_OnTapped(object sender, TappedRoutedEventArgs e)
+        {
+            var pos = e.GetPosition(map);
+            Location location;
+            map.TryPixelToLocation(pos, out location);
+
+            map.Children.Remove(pushPin);
+            await AddToCollectionWithCustomLocation(location);
+            AddPushPin();
+
+            try
+            {
+                map.Children.Remove(_locationIcon100m);
+                map.Children.Remove(_locationIcon10m);
+            }
+            catch (Exception)
+            {}
+
+            map.Children.Add(_locationIcon10m);
+            MapLayer.SetPosition(_locationIcon10m, location);
+
+            map.SetView(location, 17);
         }
     }
 }
