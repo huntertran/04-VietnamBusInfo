@@ -2,13 +2,13 @@
   <BusDetail>
     <id>01</id>
     <name>Bến Thành - Bến xe Chợ Lớn</name>
-    <go>Lượt đi :  Bến công trường Mê Linh - Thi Sách - Công trường Mê Linh - Tôn Đức Thắng - Nguyễn Huệ - Lê Lợi – vòng xoay - trạm Bến Thành (mặt sau) - Trần Hưng Đạo - Nguyễn Tri Phương - Trần Phú - Trần Hưng Đạo - Châu Văn Liêm - Hải Thượng Lãn Ông - Trang Tử - Ga Chợ Lớn A.</go>
-    <back>Lượt về :  Ga Chợ Lớn A - Lê Quang Sung – Nguyễn Hữu Thận - Tháp Mười - Hải Thượng Lãn Ông – Châu Văn Liêm – Nguyễn Trãi – Nguyễn Tri Phương – Trần Phú – Trần Hưng Đạo - trạm Bến Thành (57 Phạm Ngũ Lão) - Lê Lợi - Nguyễn Huệ - Tôn Đức Thắng - Hai Bà Trưng - Đông Du - Thi Sách - Bến Công trường Mê Linh.</back>
+    <go>Lượt đi :  Bến công trường Mê Linh - Thi Sách - Công trường Mê Linh - Tôn Đức Thắng - Nguyễn Huệ - Lê Lợi – vòng xoay - trạm Bến Thành - Trần Hưng Đạo - Nguyễn Tri Phương - Trần Phú - Trần Hưng Đạo - Châu Văn Liêm – Hải Thượng Lãn Ông – Trang Tử - Ga Chợ Lớn A.</go>
+    <back>Lượt về :  Ga Chợ Lớn A - Lê Quang Sung – Nguyễn Hữu Thận - Tháp Mười - Hải Thượng Lãn Ông – Châu Văn Liêm – Nguyễn Trãi – Nguyễn Tri Phương – Trần Phú – Trần Hưng Đạo - trạm Bến Thành - Lê Lợi - Nguyễn Huệ - Tôn Đức Thắng - Hai Bà Trưng - Đông Du - Thi Sách - Bến Công trường Mê Linh.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 8,95 km
-    Số chuyến: 322 chuyến/ngày
+    Số chuyến: 280 chuyến/ngày
     Thời gian chuyến: 30 - 35 phút
-    Giãn cách: 6 - 15 phút/chuyến
+    Giãn cách: 5 - 15 phút/chuyến
     Thời gian hoạt động: 05h00 - 20h30
     Loại xe: 80 chỗ 
 
@@ -33,12 +33,12 @@ Bãi đỗ xe buýt tại Bến xe Miền Tây - Kinh Dương Vương - Hậu Gi
   </BusDetail>
   <BusDetail>
     <id>03</id>
-    <name>Công viên 23/9 – Thạnh Lộc</name>
-    <go>Lượt đi :  Bến CV 23/9 - Lê Lai - vong xoay Bến Thành - Phó Đức Chính - Lê Thị Hồng Gấm - Calmette - Trạm Bến Thành -Lê Lợi-Hai Bà Trưng-Phan Đình Phùng-Nguyễn Kiệm-Nguyễn Thái Sơn-Phạm Ngũ Lão-Nguyễn Oanh-Hà Huy Giáp-Thạnh Lộc 30- Bến Thạnh Lộc 29.</go>
+    <name>Bến Thành – Thạnh Lộc</name>
+    <go>Lượt đi :  Bến CV 23/9 - Lê Lai – vòng xoay BT - Phó Đức Chính - Lê Thị Hồng Gấm – Calmette - trạm Bến Thành - Lê Lợi - Hai Bà Trưng – Võ Thị Sáu – Nam Kỳ Khởi Nghĩa – cầu Công Lý – Nguyễn Văn Trỗi – Huỳnh Văn Bánh - Phan Đình Phùng - Nguyễn Kiệm - Nguyễn Thái Sơn - Phạm Ngũ Lão - Nguyễn Oanh - Hà Huy Giáp - Thạnh Lộc 30 – Bến Thạnh Lộc 29.</go>
     <back>Lượt về :  
-Bến Thạnh Lôc 29 - Thạnh Lộc 30-Hà Huy Giáp-Nguyễn Oanh-Nguyễn Kiệm-Hoàng Minh Giám-Đào Duy Anh-Hồ Văn Huê-Hoàng Văn Thụ-Trần Huy Liệu-Nguyễn Văn Trỗi-Nam Kỳ Khởi Nghĩa - Lý Chính Thắng-Hai Bà Trưng-Lê Lợi-Trạm Bến Thành - Trần Hưng Đạo - Phạm Ngũ Lão - Bến CV 23/9.</back>
+Bến Thạnh Lộc 29 - Thạnh Lộc 30 - Hà Huy Giáp-Nguyễn Oanh-Nguyễn Kiệm-Hoàng Minh Giám-Đào Duy Anh-Hồ Văn Huê-Hoàng Văn Thụ-Trần Huy Liệu-Nguyễn Văn Trỗi-Nam Kỳ Khởi Nghĩa - Lý Chính Thắng-Hai Bà Trưng-Lê Lợi- trạm Bến Thành – Trần Hưng Đạo – Phạm Ngũ Lão – Bến CV 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 17,55 km
+    Cự ly: 18,05 km
     Số chuyến: 312 chuyến/ngày
     Thời gian chuyến: 55-65 phút
     Giãn cách: 5 - 12 phút/chuyến
@@ -49,7 +49,7 @@ Bến Thạnh Lôc 29 - Thạnh Lộc 30-Hà Huy Giáp-Nguyễn Oanh-Nguyễn Ki
   </BusDetail>
   <BusDetail>
     <id>04</id>
-    <name>Công viên 23/9 - Cộng Hòa - Bến xe An Sương</name>
+    <name>Bến Thành - Cộng Hòa - Bến xe An Sương</name>
     <go>Lượt đi :  Bến Công viên 23/9 - Lê Lai - Vòng xoay Bến Thành - Phó Đức Chính - Lê Thị Hồng Gấm - Calmette - Trạm Bến Thành  - Hàm Nghi - Pasteur - Võ Thị Sáu - Nam Kỳ Khởi Nghĩa - Nguyễn Văn Trỗi – Phan Đình Giót - Phan Thúc Duyện - Trần Quốc Hoàn - Cộng Hòa - Trường Chinh - ngã 4 An Sương - Quốc Lộ 22 - Quay đầu tại ngã 3 Công ty Việt Hưng – Quốc lộ 22 - BX An Sương;</go>
     <back>Lượt về :  Bến xe An Sương - Quốc lộ 22 - Ngã 4 An Sương - Trường Chinh - Cộng Hòa - Hoàng Văn Thụ - Nguyễn Văn Trỗi - Nam Kỳ Khởi Nghĩa - Hàm Nghi - Trạm Bến Thành - Trần Hưng Đạo - Phạm Ngũ lão - Bến Công viên 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
@@ -77,9 +77,9 @@ Bến Thạnh Lôc 29 - Thạnh Lộc 30-Hà Huy Giáp-Nguyễn Oanh-Nguyễn Ki
     <back>Lượt về :  Bến Trường Đại học Nông Lâm - Quốc lộ 1A - Xa lộ Hà Nội - Võ Văn Ngân - Đặng Văn Bi - Nguyễn Văn Bá - Xa lộ Hà Nội - Điện Biên Phủ - Xô Viết Nghệ Tĩnh - Nguyễn Thị Minh Khai - Phùng Khắc Khoan - Trần Cao Vân - Võ Văn Tần - Bà Huyện Thanh Quan - Nguyễn Thị Minh Khai - Nguyễn Văn Cừ - An Dương Vương - Nguyễn Tri Phương - Hùng Vương - Hồng Bàng - Phú Hữu - Ga Chợ Lớn A.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 26,5km
-    Số chuyến: Thứ 2-thứ 6: 200 chuyến/ngàyThứ 7: 184 chuyến/ngàyChủ nhật: 172 chuyến/ngày
+    Số chuyến: Thứ 2-thứ 6: 160 chuyến/ngàyThứ 7 và chủ nhật: 172 chuyến/ngày
     Thời gian chuyến: 70 phút
-    Giãn cách: 7 - 20 phút/chuyến
+    Giãn cách: 10 - 20 phút/chuyến
     Thời gian hoạt động:  + Chuyến đầu tiên xuất bến: 04h55  + Chuyến cuối cùng xuất bến: 20h45
     Loại xe: 80 -120 chỗ 
 
@@ -88,13 +88,13 @@ Bến Thạnh Lôc 29 - Thạnh Lộc 30-Hà Huy Giáp-Nguyễn Oanh-Nguyễn Ki
   <BusDetail>
     <id>07</id>
     <name>Bến xe Chợ Lớn – Gò Vấp</name>
-    <go>Lượt đi :           Ga Chợ Lớn A-Lê Quang Sung-Nguyễn Hữu Thận-Tháp Mười-Hải Thượng Lãn Ông-Châu Văn Liêm-Hồng Bàng-An Dương Vương-Nguyễn Tri Phương-3 Tháng 2-Lý Chính Thắng-Nam Kỳ Khởi Nghĩa-cầu Công Lý-Nguyễn Văn Trỗi-Phan Đình Giót-Phổ Quang-Hoàng Minh Giám-Nguyễn Thái Sơn-Phan Văn Trị-Bãi hậu cần số 1.</go>
-    <back>Lượt về :  Bãi hậu cần số 1-Phan Văn Trị-Nguyễn Thái Sơn-Phạm Ngũ Lão-Nguyễn Kiệm-Hoàng Minh Giám-Đào Duy Anh-Hồ Văn Huê-Hoàng Văn Thụ-Trần Huy Liệu-Nguyễn Văn Trỗi-cầu Công Lý-Nam Kỳ Khởi Nghĩa-Võ Thị Sáu-Trương Định-Kỳ Đồng-Nguyễn Thông-(Ga Hòa Hưng)-Nguyễn Phúc Nguyên-3 Tháng 2-Nguyễn Tri Phương-Ngô Gia Tự-Hồng Bàng-Châu Văn Liêm-Hải Thượng Lãn Ông-Trang Tử-Ga Chợ Lớn A.</back>
+    <go>Lượt đi :         Ga Chợ Lớn A-Lê Quang Sung-Nguyễn Hữu Thận-Tháp Mười-Hải Thượng Lãn Ông-Châu Văn Liêm-Hồng Bàng-An Dương Vương-Nguyễn Tri Phương-3 Tháng 2-Lý Chính Thắng-Nguyễn Thông-Kỳ Đồng-Trần Quốc Thảo-Lê Văn Sỹ-Trần Quang Diệu-Nguyễn Văn Trỗi-Phan Đình Giót-Phổ Quang-Hoàng Minh Giám-Nguyễn Thái Sơn-Phan Văn Trị-Bãi hậu cần số 1.</go>
+    <back>Lượt về :  Bãi hậu cần số 1-Phan Văn Trị-Nguyễn Thái Sơn-Phạm Ngũ Lão-Nguyễn Kiệm-Hoàng Minh Giám-Đào Duy Anh-Hồ Văn Huê-Hoàng Văn Thụ-Trần Huy Liệu-Trần Quang Diệu-Lê Văn Sỹ-Trần Quốc Thảo-Kỳ Đồng-Nguyễn Thông-(Ga Hòa Hưng)-Nguyễn Phúc Nguyên-3 Tháng 2-Nguyễn Tri Phương-Ngô Gia Tự-Hồng Bàng-Châu Văn Liêm-Hải Thượng Lãn Ông-Trang Tử-Ga Chợ Lớn A.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 17 km
-    Số chuyến: 190 chuyến/ngày
+    Cự ly: 15,10 km
+    Số chuyến: 160 chuyến/ngày
     Thời gian chuyến: 58-65 phút
-    Giãn cách: 8 - 16 phút/chuyến
+    Giãn cách: 8 - 20 phút/chuyến
     Thời gian hoạt động: 05h00 - 19h30
     Loại xe: 80 chỗ 
 
@@ -108,8 +108,9 @@ Bến Thạnh Lôc 29 - Thạnh Lộc 30-Hà Huy Giáp-Nguyễn Oanh-Nguyễn Ki
 Bến xe buýt A Khu ĐH Quốc Gia TP.HCM (rẽ phải) - (Ngã ba đường vào Trường ĐH Khoa học Tự nhiên) - (Ngã ba đường vào Trường ĐH Quốc tế) - (Ngã ba đường vào khu ký túc xá) - Đường 621 - Quốc lộ 1A - Quốc lộ 52 - Võ Văn Ngân –Kha Vạn Cân - Quốc lộ 13 - Đinh Bộ Lĩnh - Bạch Đằng - Phan Đăng Lưu - Hoàng Văn Thụ - Xuân Diệu - Xuân Hồng - Trường Chinh - Lý Thường Kiệt - Hồng Bàng - Châu Văn Liêm - cầu Chà Và - Cao Xuân Dục - Tùng Thiện Vương - cầu Nhị Thiên Đường - Quốc lộ 50 - Bến xe Quận 8.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 32,55 km
-    Số chuyến: Thứ 2 - thứ 7: 360 chuyến/ngày Thứ 7: 348 chuyến/ngàyChủ nhật: 320 chuyến/ngàyThời gian chuyến: 80 phút
-    Giãn cách: 2 - 15 phút/chuyến
+    Số chuyến: Thứ 2 - thứ 6: 336 chuyến/ngày Thứ 7 và chủ nhật: 300 chuyến/ngày
+    Thời gian chuyến: 80 phút
+    Giãn cách: 5 - 10 phút/chuyến
     Thời gian hoạt động: 04h40 - 20h20
     Loại xe: 80 chỗ 
 
@@ -122,9 +123,9 @@ Bến xe buýt A Khu ĐH Quốc Gia TP.HCM (rẽ phải) - (Ngã ba đường v�
     <back>Lượt về :  Bến Hưng Long - Hương lộ 11 - Đinh Đức Thiện(Tỉnh lộ 18 cũ) - Quốc lộ 1A - Kinh Dương Vương - Hồng Bàng - Phú Hữu - Lê Quang Sung - Ga Chợ Lớn A.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 25 km
-    Số chuyến: 228 chuyến/ngày
+    Số chuyến: 200 chuyến/ngày
     Thời gian chuyến: 70 phút
-    Giãn cách: 7 - 9 phút/chuyến
+    Giãn cách: 8 - 10 phút/chuyến
     Thời gian hoạt động:    BX Chợ Lớn: 05h25 - 19h10    Hưng Long:   04h00 - 17h45
     Loại xe: 55 chỗ 
 
@@ -133,8 +134,8 @@ Bến xe buýt A Khu ĐH Quốc Gia TP.HCM (rẽ phải) - (Ngã ba đường v�
   <BusDetail>
     <id>10</id>
     <name>Đại học Quốc gia - Bến xe  Miền Tây</name>
-    <go>Lượt đi :   Bến xe buýt A Khu đô thị ĐH Quốc Gia TP.HCM (rẽ trái)-(ngã ba đường vào Trường ĐH Khoa Học Tự Nhiên)-(ngã ba đường vào Trường ĐH Quốc Tế)-(Ngã ba đường vào khu ký túc xá)-Đường 621-Quốc lộ 1A-Xa lộ Hà Nội-Điện Biên Phủ-Đinh Tiên Hoàng-Võ Thị Sáu-3 Tháng 2-Nguyễn Tri Phương-Ngô Gia Tự-Hồng Bàng-Châu Văn Liêm-Hải Thượng Lãn Ông-Lê Quang Sung-Nguyễn Thị Nhỏ-Hồng Bàng-Nguyễn Văn Luông-Hậu Giang-Kinh Dương Vương-Bến xe Miền Tây (trả khách)-Kinh Dương Vương-Chỗ đậu xe buýt tại Bến xe Miền Tây.</go>
-    <back>Lượt về :  Chỗ đậu xe buýt tại Bến xe Miền Tây-Kinh Dương Vương-Hậu Giang-Nguyễn Văn Luông-Hồng Bàng-Nguyễn Thị Nhỏ-Lê Quang Sung-Phạm Đình Hổ-Tháp Mười-Hải Thượng Lãn Ông-Châu Văn Liêm-Hồng Bàng-An Dương Vương-Nguyễn Tri Phương-Đường 3/2-Lý Thái Tổ-Điện Biên Phủ-Xa lộ Hà Nội-Quốc lộ 1A- Đường 621-(Ngã ba đường vào khu ký túc xá)-(Ngã ba đường vào Trường ĐH Quốc Tế)-(Ngã ba đường vào Trường ĐH Khoa Học Tự Nhiên)-Bến xe buýt A Khu đô thị ĐH Quốc Gia TP.HCM.</back>
+    <go>Lượt đi :   Bến xe buýt A Khu đô thị ĐH Quốc Gia TP.HCM - Đường 621-Quốc lộ 1A-Xa lộ Hà Nội-Điện Biên Phủ-Đinh Tiên Hoàng-Võ Thị Sáu-3 Tháng 2-Nguyễn Tri Phương-Ngô Gia Tự-Hồng Bàng-Châu Văn Liêm-Hải Thượng Lãn Ông-Lê Quang Sung-Nguyễn Thị Nhỏ-Hồng Bàng-Nguyễn Văn Luông-Hậu Giang-Kinh Dương Vương-Bến xe Miền Tây (trả khách)-Kinh Dương Vương-Chỗ đậu xe buýt tại Bến xe Miền Tây.</go>
+    <back>Lượt về :  Chỗ đậu xe buýt tại Bến xe Miền Tây-Kinh Dương Vương-Hậu Giang-Nguyễn Văn Luông-Hồng Bàng-Nguyễn Thị Nhỏ-Lê Quang Sung-Phạm Đình Hổ-Tháp Mười-Hải Thượng Lãn Ông-Châu Văn Liêm-Hồng Bàng-An Dương Vương-Nguyễn Tri Phương-Đường 3/2-Lý Thái Tổ-Điện Biên Phủ-Xa lộ Hà Nội-Quốc lộ 1A- Đường 621-Bến xe buýt A Khu đô thị ĐH Quốc Gia TP.HCM.</back>
     <detail>Loại hình hoạt động: Buýt nhanh có trợ giá
     Cự ly: 31,9km
     Số chuyến: 120 chuyến/ngày
@@ -163,13 +164,13 @@ Bến xe buýt A Khu ĐH Quốc Gia TP.HCM (rẽ phải) - (Ngã ba đường v�
   <BusDetail>
     <id>101</id>
     <name>Bến xe Chợ Lớn - Bến Phú Định</name>
-    <go>Lượt đi :  Ga Chợ Lớn B - Lê Quang Sung - Phạm Đình Hổ - Bãi Sậy – Bình Tiên – Văn Thân - Bà Lài - Phạm Văn Chí - cầu Phạm Văn Chí - Lý Chiêu Hoàng - Nguyễn Văn Luông - Đường số 26 - An Dương Vương – Võ Văn Kiệt – Hồ Học Lãm - Phú Định - Bến Phú Định.</go>
-    <back>Lượt về :  Bến Phú Định - Phú Định – Hồ Học Lãm – Võ Văn Kiệt - An Dương Vương - Đường số 26 - Nguyễn Văn Luông - Lý Chiêu Hoàng - cầu Phạm Văn Chí - Phạm Văn Chí - Bà Lài – Văn Thân – Bình Tiên - Bãi Sậy - Phạm Đình Hổ - Hồng Bàng - Nguyễn Trãi - Xóm Vôi - Ga Chợ Lớn B.</back>
+    <go>Lượt đi :  Ga Chợ Lớn B - Lê Quang Sung - Phạm Đình Hổ - Bãi Sậy – Bình Tiên – Văn Thân - Bà Lài - Phạm Văn Chí - cầu Phạm Văn Chí - Lý Chiêu Hoàng - Nguyễn Văn Luông - Đường số 26 - An Dương Vương – Phú Định - Bến Phú Định.</go>
+    <back>Lượt về :  Bến Phú Định - Phú Định - An Dương Vương - Đường số 26 - Nguyễn Văn Luông - Lý Chiêu Hoàng - cầu Phạm Văn Chí - Phạm Văn Chí - Bà Lài – Văn Thân – Bình Tiên - Bãi Sậy - Phạm Đình Hổ - Hồng Bàng - Nguyễn Trãi - Xóm Vôi - Ga Chợ Lớn B.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 12,3 km
-    Số chuyến: 120 chuyến/ngày
+    Cự ly: 11,5 km
+    Số chuyến: 114 chuyến/ngày
     Thời gian chuyến: 40 phút
-    Giãn cách: 10 - 15 phút/chuyến
+    Giãn cách: 10 - 16 phút/chuyến
     Thời gian hoạt động: 05h45 - 18h00
     Loại xe: 12 chỗ
     Đơn vị đảm nhận:- HTX Vận tải Số 28, ĐT: 38.758.875-34.291.791</detail>
@@ -231,28 +232,6 @@ Chuyến cuối cùng xuất bến 19 giờ 45
 Đơn vị đảm nhận:- , ĐT:</detail>
   </BusDetail>
   <BusDetail>
-    <id>109</id>
-    <name>Ký túc xá A - Ký túc xá B (ĐH quốc gia)</name>
-    <go>Lượt đi :  Ký túc xá khu A - Đường trục chính số 1 - số 5 - số 7- Ký túc xá khu B (Đại học Quốc gia).</go>
-    <back>Lượt về :  Ngược lại.</back>
-    <detail>56 chuyến/ngày.
-
-
-
-
-
-
-
-
-
-
-Loại xe: Transinco B55 (có máy lạnh).
-
-
-
-Đơn vị đảm nhận: Liên hiệp Hợp tác xã vận tải TP.HCM. ĐT</detail>
-  </BusDetail>
-  <BusDetail>
     <id>11</id>
     <name>Bến Thành – Đầm Sen</name>
     <go>Lượt đi :  
@@ -261,9 +240,9 @@ Bãi xe buýt công viên 23/9-Lê Lai-Nguyễn Thị Nghĩa-Nguyễn Trãi-Nguy
 Bãi xe buýt Đầm Sen-Hòa Bình-Ông Ích Khiêm-Lãnh Binh Thăng-Tôn Thất Hiệp-Đường 3/2-Phó Cơ Điều-Nguyễn Chí Thanh-Lý Thường Kiệt-Hồng Bàng-An Dương Vương-Nguyễn Văn Cừ-Nguyễn Trãi-Lê Lai-Nguyễn Thị Nghĩa-Phạm Ngũ Lão-Bãi xe buýt công viên 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 8,8km
-    Số chuyến: 160
+    Số chuyến: 140
     Thời gian chuyến: 35 phút
-    Giãn cách: 9 - 12 phút/chuyến
+    Giãn cách: 10 - 20 phút/chuyến
     Thời gian hoạt động: 05h30 - 18h30
     Loại xe: 55 chỗ 
 
@@ -276,29 +255,13 @@ Bãi xe buýt Đầm Sen-Hòa Bình-Ông Ích Khiêm-Lãnh Binh Thăng-Tôn Th�
     <back>Lượt về :  Bến đò Hiệp Phước - Nguyễn Văn Tạo - Nguyễn Bình - Huỳnh Tấn Phát - cầu Phú Xuân - Phạm Hữu Lầu – Bến Phú Xuân.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 14,4 km
-    Số chuyến: 166 chuyến/ngày
+    Số chuyến: 130 chuyến/ngày
     Thời gian chuyến: 45 phút
-    Giãn cách: 8 - 12 phút/chuyến
+    Giãn cách: 12 - 15 phút/chuyến
     Thời gian hoạt động: 05h00 - 19h00
     Loại xe: 12 chỗ 
 
 Đơn vị đảm nhận:- HTX Vận tải Số 26, ĐT: 38.738.194</detail>
-  </BusDetail>
-  <BusDetail>
-    <id>111</id>
-    <name>Bến xe Quận 8 - Bến xe An Sương</name>
-    <go>Lượt đi :    
-Bến xe Quận 8-Quốc lộ 50-Tùng Thiện Vương-Vạn Kiếp-Hải Thượng Lãn Ông-(Quay đầu tại giao lộ Triệu Quang Phục)-Hải Thượng Lãn Ông-Châu Văn Liêm-Hồng Bàng-Lý Thường Kiệt-Nguyễn Chí Thanh-Lê Đại Hành-Âu Cơ-Trường Chinh-Quốc lộ 22-(Quay đầu tại Ngã ba Công ty Việt Hưng)-Quốc lộ 22-Bến xe An Sương.</go>
-    <back>Lượt về :  Bến xe An Sương-Quốc lộ 22-Trường Chinh-Âu Cơ-Lê Đại Hành-Phó Cơ Điều-Nguyễn Chí Thanh-Lý Thường Kiệt-Hồng Bàng-Châu Văn Liêm-Hải Thượng Lãn Ông-Vạn Kiếp-Cao Xuân Dục-Tùng Thiện Vương-Quốc lộ 50-Bến xe Quận 8.</back>
-    <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 16,05 km
-    Số chuyến: 114 chuyến/ngày
-    Thời gian chuyến: 60-65 phút
-    Giãn cách: 12 - 17 phút/chuyến
-    Thời gian hoạt động: 05h30 - 18h30
-    Loại xe: 80 chỗ 
-
-Đơn vị đảm nhận:- Công ty TNHH một thành viên Xe khách Sài Gòn, ĐT: 39.505.505</detail>
   </BusDetail>
   <BusDetail>
     <id>12</id>
@@ -364,25 +327,13 @@ Nguyễn Lương Bằng - Đường số 20 - Tiểu Nam - Đường số 17 - N
 Đơn vị đảm nhận:</detail>
   </BusDetail>
   <BusDetail>
-    <id>125</id>
-    <name>Lý Nhơn - An Ngĩa</name>
-    <go>Lượt đi :  Bến Lý Nhơn (trước Công an xã Lý Nhơn) - Dương Văn Hạnh - đê Soài Rạp - Lý Nhơn - Rừng Sát - Bến An Nghĩa (ngã ba đường Rừng Sát - Tam Thôn Hiệp).</go>
-    <back>Lượt về :  Bến An Nghĩa (ngã ba đường Rừng Sát - Tam Thôn Hiệp - Rừng Sát - Lý Nhơn - đê Soài Rạp - Dương Văn Hạnh - Bến Lý Nhơn (trước Công an xã Lý Nhơn).</back>
-    <detail>• Cự ly: 21,5 km • Số chuyến: 44 chuyến/ngày
-
-
-
-
-• Thời gian giãn cách: 30-45 phút/chuyến  • Loại xe: 25 chỗ  • Giá vé:</detail>
-  </BusDetail>
-  <BusDetail>
     <id>126</id>
     <name>Bến xe Củ Chi - Bình Mỹ</name>
     <go>Lượt đi :  BX Củ Chi - Quốc lộ 22 - Tỉnh lộ 8 - Bến đò Bình Mỹ</go>
     <back>Lượt về :  Ngược lại.</back>
-    <detail>Số chuyến: 194 chuyến/ngày
+    <detail>Số chuyến: 176 chuyến/ngày
     Thời gian chuyến: 40 phút
-    Giãn cách: 8 - 12 phút/chuyến
+    Giãn cách: 9 - 12 phút/chuyến
     Thời gian hoạt động: 05h00 - 18h50
     Loại xe: 47 - 55 chỗ 
 
@@ -395,9 +346,9 @@ Nguyễn Lương Bằng - Đường số 20 - Tiểu Nam - Đường số 17 - N
     <back>Lượt về :  Bến xe Củ Chi - Quốc lộ 22 - Trường Chinh - Cách Mạng Tháng Tám - Nguyễn Thị Nghĩa - Phạm Ngũ Lão - Bến CV 23/9.</back>
     <detail>Loại hình hoạt động: Buýt nhanh có trợ giá
     Cự ly: 35,65km
-    Số chuyến: 150 chuyến/ngày
+    Số chuyến: 140 chuyến/ngày
     Thời gian chuyến: 75 phút
-    Giãn cách: 10 - 20 phút/chuyến
+    Giãn cách: 12 - 20 phút/chuyến
     Thời gian hoạt động:    Bến Thành: 04h30 - 20h30    BX Củ Chi: 03h30 - 19h30
     Loại xe: 80 chỗ 
 
@@ -407,13 +358,13 @@ Nguyễn Lương Bằng - Đường số 20 - Tiểu Nam - Đường số 17 - N
     <id>139</id>
     <name>Bến xe Miền Tây - Phú Xuân</name>
     <go>Lượt đi :  Bến xe Miền Tây – Kinh Dương Vương – Hồng Bàng – Hùng Vương – An Dương Vương – Nguyễn Văn Cừ - Trần Hưng Đạo – Nguyễn Thái Học – cầu Ông Lãnh – Hoàng Diệu  – Khánh Hội – cầu Kênh Tẻ - Nguyễn Hữu Thọ - Đường số 15 – Lê Văn Lương – Nguyễn Thị Thập – Tân Mỹ - Nguyễn Lương Bằng - Hoàng Quốc Việt - Huỳnh Tân Phát - Phạm Hữu Lầu - Bến Phú Xuân (đường 15B).</go>
-    <back>Lượt về :  Bến Phú Xuân (Đường 15B) - Phạm Hữu Lầu - Huỳnh Tấn Phát - Hoàng Quốc Việt - Nguyễn Lương Bằng – Tân Mỹ - Nguyễn Thị Thập – Lâm Văn Bền – Đường số 53 – Mai Văn Vĩnh – Nguyễn Thị Thập - Lê Văn Lương - Đường số 15 - Nguyễn Hữu Thọ - cầu Kênh Tẻ - Khánh Hội – Hoàng Diệu – cầu Ông Lãnh – Nguyễn Thái Học – Phạm Ngũ Lão – Đề Thám – Trần Hưng Đạo – Nguyễn Văn Cừ - An Dương Vương – Nguyễn Tri Phương - Hùng Vương - Hồng Bàng – Kinh Dương Vương – Bến xe Miền Tây (trả khách) – Kinh Dương Vương – Bến xe Miền Tây.</back>
+    <back>Lượt về :  Bến Phú Xuân (Đường 15B) - Phạm Hữu Lầu - Huỳnh Tấn Phát - Hoàng Quốc Việt - Nguyễn Lương Bằng – Tân Mỹ - Nguyễn Thị Thập – Lê Văn Lương - Đường số 15 - Nguyễn Hữu Thọ - cầu Kênh Tẻ - Khánh Hội – Hoàng Diệu – cầu Ông Lãnh – Nguyễn Thái Học – Lê Thị Hồng Gấm – Yersin – Trần Hưng Đạo - Nguyễn Văn Cừ - An Dương Vương – Nguyễn Tri Phương - Hùng Vương - Hồng Bàng – Kinh Dương Vương – Bến xe Miền Tây (trả khách) – Kinh Dương Vương – Bến xe Miền Tây.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 22,05 km
+    Cự ly: 21,85 km
     Số chuyến: 112 chuyến/ngày
     Thời gian chuyến: 60-70 phút
     Giãn cách: 12 - 18 phút/chuyến
-    Thời gian hoạt động: 05h20 - 18h40
+    Thời gian hoạt động: 05h00 - 19h00
     Loại xe: 30 chỗ 
 
 Đơn vị đảm nhận:- Công ty TNHH một thành viên Xe khách Sài Gòn, ĐT: 39.505.505</detail>
@@ -421,13 +372,13 @@ Nguyễn Lương Bằng - Đường số 20 - Tiểu Nam - Đường số 17 - N
   <BusDetail>
     <id>14</id>
     <name>Bến xe  Miền Đông - 3/2 - Bến xe  Miền Tây</name>
-    <go>Lượt đi :  Bến xe Miền Đông - Đinh Bộ Lĩnh - Nguyễn Xí - Ung Văn Khiêm - Đường D2 - Điện Biên Phủ - Vòng xoay Hàng Xanh – Xô Viết Nghệ Tĩnh – Nguyễn Thị Minh Khai - Phùng Khắc Khoan - Trần Cao Vân - Võ Văn Tần - Bà Huyện Thanh Quan - Nguyễn Thị Minh Khai - Lý Thái Tổ - 3 Tháng 2 – Hồng Bàng - Kinh Dương Vương – Bến xe  Miền Tây (trả khách) – Kinh Dương Vương – Bến xe Miền Tây.</go>
+    <go>Lượt đi :  Bến xe Miền Đông - Đinh Bộ Lĩnh - Nguyễn Xí - Ung Văn Khiêm - Đường D2 - Điện Biên Phủ - Vòng xoay Hàng Xanh – Xô Viết Nghệ Tĩnh – Nguyễn Thị Minh Khai - Phùng Khắc Khoan - Trần Cao Vân - Võ Văn Tần - Bà Huyện Thanh Quan - Nguyễn Thị Minh Khai - Lý Thái Tổ - 3 Tháng 2 - Hồng Bàng - Kinh Dương Vương – Bến xe  Miền Tây (trả khách) – Kinh Dương Vương – Bến xe Miền Tây.</go>
     <back>Lượt về :  Bến xe Miền Tây - Kinh Dương Vương - Hồng Bàng – 3 Tháng 2 - Lý Thái Tổ - Nguyễn Thị Minh Khai - Xô Viết Nghệ Tĩnh – Quốc lộ 13 -  Đinh Bộ Lĩnh – Bến xe Miền Đông.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 16,6 km
-    Số chuyến: 270 chuyến/ngày
+    Số chuyến: 250 chuyến/ngày
     Thời gian chuyến: 60 phút
-    Giãn cách: 6 - 12 phút/chuyến
+    Giãn cách: 7 - 10 phút/chuyến
     Thời gian hoạt động: 04h00 - 20h30
     Loại xe: 80 chỗ 
 
@@ -440,9 +391,9 @@ Nguyễn Lương Bằng - Đường số 20 - Tiểu Nam - Đường số 17 - N
     <back>Lượt về :  Bến Ba Tơ (khu chung cư Him Lam) - Phạm Thế Hiển - Trần Xuân Soạn - Lê Văn Lương - Nguyễn Thị Thập - Nguyễn Hữu Thọ - Khánh Hội - Hoàng Diệu - Nguyễn Thái Học - Lê Thị Hồng Gấm – Yersin -Phạm Ngũ Lão - Ga hành khách xe buýt Sài Gòn (công viên 23/9).</back>
     <detail>Loại hình hoạt động: buýt có trợ giá
     Cự ly: 17,7 km
-    Số chuyến: 120 chuyến/ngày
+    Số chuyến: 110 chuyến/ngày
     Thời gian chuyến: 55 phút
-    Giãn cách: 13 - 18 phút/chuyến
+    Giãn cách: 13 - 20 phút/chuyến
     Thời gian hoạt động: - Bến Thành: 05h15 - 19h00 - Phú Định:   05h00 - 18h15
     Loại xe: 25 chỗ 
 
@@ -455,28 +406,13 @@ Nguyễn Lương Bằng - Đường số 20 - Tiểu Nam - Đường số 17 - N
     <back>Lượt về :  Cổng sau Khu chế xuất Linh Trung II (giáp ranh Bình Dương) - Tỉnh lộ 43 - cầu vượt Gò Dưa - Gò Dưa - Tô Ngọc Vân - Võ Văn Ngân - Lê Văn Việt (ĐH GTVT) - Làng Tăng Phú - Lã Xuân Oai - Nguyễn Duy Trinh - Tam Đa - Khu du lịch The BCR.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 21,4 km
-    Số chuyến: 246 chuyến/ngày
+    Số chuyến: 220 chuyến/ngày
     Thời gian chuyến: 65 phút
-    Giãn cách: 6 - 8 phút/chuyến
+    Giãn cách: 7 - 8 phút/chuyến
     Thời gian hoạt động: 05h00 - 19h15
     Loại xe: 47 - 50 chỗ 
 
  Đơn vị đảm nhận:- HTX Vận tải Hành khách Hàng hóa và Du lịch Số 15, ĐT:- , ĐT: 8.991.865</detail>
-  </BusDetail>
-  <BusDetail>
-    <id>143</id>
-    <name>Bến xe Chợ Lớn - Bình Hưng Hòa</name>
-    <go>Lượt đi :  Ga Chợ Lớn B - Lê Quang Sung - Phạm Đình Hổ - Hậu Giang - Minh Phụng - (cầu vượt cây Gõ) - Hồng Bàng - Tân Hóa - Lũy Bán Bích - Thạch Lam - Lê Khôi - Lê Niệm - Phạm Văn Xảo - Lê Thúc Hoạch - Văn Cao - Tân Hương - Bình Long - Tân Kỳ Tân Qúy - Chợ Bình Hưng Hòa.</go>
-    <back>Lượt về :  Chợ Bình Hưng Hoà - Tân Kỳ Tân Quý - Bình Long - Tân Hương - Văn Cao - Lê Thúc Hoạch - Phạm Văn Xảo - Lê Niệm - Lê Khôi - Thạch Lam - Lũy Bán Bích - Tân Hóa - Hồng Bàng - (quay đầu tại vòng xoay Phú Lâm) - Hồng Bàng - (cầu vươt cây Gõ) - Minh Phụng - Hậu Giang - Phạm Đình Hổ - Hồng Bàng - Nguyễn Trãi - Xóm Vôi - Ga Chợ Lớn B.</back>
-    <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 12,25 km
-    Số chuyến: 113 chuyến/ngày
-    Thời gian chuyến: 45 phút
-    Giãn cách: 12 - 15 phút/chuyến
-    Thời gian hoạt động: BX Chợ Lớn:     05h30 - 18h45Bình Hưng Hòa: 05h30 - 18h30
-    Loại xe: 12 chỗ 
-
-Đơn vị đảm nhận:- HTX Vận tải Số 28, ĐT: 38.758.875 - 54.291.791</detail>
   </BusDetail>
   <BusDetail>
     <id>144</id>
@@ -486,7 +422,7 @@ Nguyễn Lương Bằng - Đường số 20 - Tiểu Nam - Đường số 17 - N
 Cư xá Nhiêu Lộc - Lê Thúc Hoạch - Bình Long - ngã 4 Bốn Xã - Hòa Bình (Đần Sen) - Lạc Long Quân - Hàn Hải Nguyên - Nguyễn Thị Nhỏ - Trần Qúy - Tạ Uyên – Nguyễn Chí Thanh – Thuận Kiều – Hồng Bàng - Phú Hữu - Ngô Nhân Tịnh - Lê Quang Sung - Phạm Đình Hổ - Phạm Văn Chí – cầu Phạm Văn Chí - Lý Chiêu Hoàng (chợ Bình Phú) - An Dương Vương - Kinh Dương Vương - Bến xe Miền Tây (trả khách) – Kinh Dương Vương – Bến xe Miền Tây.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 14,5 km
-    Số chuyến: 120 chuyến/ngày
+    Số chuyến: 114 chuyến/ngày
     Thời gian chuyến: 55 phút
     Giãn cách: 12 - 15 phút/chuyến
     Thời gian hoạt động: 05h30 - 18h30
@@ -501,9 +437,9 @@ Cư xá Nhiêu Lộc - Lê Thúc Hoạch - Bình Long - ngã 4 Bốn Xã - Hòa 
     <back>Lượt về :  Bến xe buýt Chợ Hiệp Thành  - HT17 - Nguyễn Ảnh Thủ - Ngã 4 Trung Chánh - Quốc lộ 22 - Trường Chinh - Cộng Hòa - Hoàng Văn Thụ - Xuân Diệu - Xuân Hồng - Trường Chinh - Lý Thường Kiệt - Lạc Long Quân - Hàn Hải Nguyên - Minh Phụng - Hùng Vương - Nguyễn Trãi - Xóm Vôi - Ga Chợ Lớn B.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá 
     Cự ly: 22,8 km
-    Số chuyến: 180 chuyến/ngày
+    Số chuyến: 170 chuyến/ngày
     Thời gian chuyến: 70 phút
-    Giãn cách: 10 - 15 phút/chuyến
+    Giãn cách: 9 - 15 phút/chuyến
     Thời gian hoạt động: 05h00 - 19h15
     Loại xe: 80 chỗ 
 
@@ -533,9 +469,9 @@ Bến xe Miền Tây - Kinh Dương Vương – Hồng Bàng - Minh Phụng - B�
 Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ Lão - Nguyễn Kiệm - Hoàng Minh Giám - Phổ Quang - Phan Đình Giót - Trần Quốc Hoàn - Hoàng Văn Thụ - Xuân Diệu - Xuân Hồng - Trường Chinh - Lý Thường Kiệt - Lạc Long Quân - Bình Thới - Minh Phụng – Hồng Bàng – Kinh Dương Vương - Bến xe Miền Tây (trả khách) - Kinh Dương Vương - Chỗ đậu xe buýt tại bến xe Miền Tây.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 17,1 km
-    Số chuyến: 146 chuyến/ngày
+    Số chuyến: 126 chuyến/ngày
     Thời gian chuyến: 57 - 62 phút
-    Giãn cách: 10 - 15 phút/chuyến
+    Giãn cách: 12 - 16 phút/chuyến
     Thời gian hoạt động: Bến xe Miền Tây: 05h00 - 18h45Gò Vấp: 05h20 - 18h45 
     Loại xe: 55 chỗ 
 
@@ -558,16 +494,16 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
   </BusDetail>
   <BusDetail>
     <id>15</id>
-    <name>Bến Phú Định - Đầm Sen</name>
-    <go>Lượt đi :  Bến Phú Định (ngã ba trường mẫu giáo Bông Sen) - Hồ Học Lãm -  Quốc lộ 1A - Hương lộ 2 - Hòa Bình - Bãi xe buýt Đầm Sen.</go>
-    <back>Lượt về :  Bãi xe buýt Đầm Sen - Hòa Bình - Vòng xoay Hòa Bình (quay đầu) - Hòa Bình - Hương lộ 2 - Quốc lộ 1A - Hồ Ngọc Lãm - Bến Phú Định (ngã ba trường mẫu giáo Bông Sen).</back>
+    <name>Chợ Phú Định - Đầm Sen</name>
+    <go>Lượt đi :  Chợ Phú Định (đậu xe trên đường 44 cạnh trường THPT chuyên NK TDTT Nguyễn Thị Định) - Đường 44 - Trương Đình Hội - Bến Phú Định - Hồ Học Lãm -  Quốc lộ 1A - Hương lộ 2 - Hòa Bình - Bãi xe buýt Đầm Sen.</go>
+    <back>Lượt về :  Bãi xe buýt Đầm Sen - Hòa Bình - Vòng xoay Hòa Bình (quay đầu) - Hòa Bình - Hương lộ 2 - Quốc lộ 1A - Hồ Học Lãm - Bến Phú Định - Trương Đình Hội - Đường 44 - Chợ Phú Định (đậu xe trên đường 44 cạnh trường THPT chuyên NK TDTT Nguyễn Thị Định).</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 16,7 km
-    Số chuyến: 134 chuyến/ngày
+    Cự ly: 16,2 km
+    Số chuyến: 120 chuyến/ngày
     Thời gian chuyến: 55 phút
-    Giãn cách: 10 - 14 phút/chuyến
+    Giãn cách: 13 - 14 phút/chuyến
     Thời gian hoạt động: 05h30 - 18h30
-    Loại xe: 12 chỗ 
+    Loại xe: 40 chỗ 
 
 Đơn vị đảm nhận: 
 Đơn vị đảm nhận:- HTX Vận tải Số 28, ĐT: 38.758.875 - 54.291.791</detail>
@@ -579,9 +515,9 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
     <back>Lượt về :  Ngã ba Tân Vạn-Quốc lộ 52-Xa lộ Hà Nội-Điện Biên Phủ-Nguyễn Bỉnh Khiêm-Nguyễn Đình Chiểu-Lý Thái Tổ-Ngô Gia Tự-Hồng Bàng-Phú Hữu-Ga Chợ Lớn (Bến A).</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 28,75 km
-    Số chuyến: 370 chuyến/ngày
+    Số chuyến: 358 chuyến/ngày
     Thời gian chuyến: 80 phút
-    Giãn cách: 4 - 12 phút/chuyến
+    Giãn cách: 5 - 15 phút/chuyến
     Thời gian hoạt động: BX Chợ Lớn: 04h30 - 20h45Ngã 3 Tân Vạn: 04h30 - 20h30 
     Loại xe: 80 chỗ 
 
@@ -594,7 +530,7 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
     <back>Lượt về :  Bến xe An Sương - Quốc lộ 22 - Ngã 4 An Sương - Hồ Ngọc Lãm - Kinh Dương Vương - Bến xe Miền Tây (trả khách) – Kinh Dương Vương – Chỗ đậu xe tại Bến xe Miền Tây.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 17,4 km
-    Số chuyến:    Thứ 2 - thứ 7:  270 chuyến/ngày    Ngày chủ nhật:  326 chuyến/ngày
+    Số chuyến:    Thứ 2 - thứ 7:  255 chuyến/ngày    Ngày chủ nhật:  311 chuyến/ngày
     Thời gian chuyến: 45 phút
     Giãn cách: 5 - 15 phút/chuyến
     Thời gian hoạt động: Tại Bến xe Miền Tây: 04h00 - 20h30Tại Bến xe An Sương: 05h00 - 20h30  
@@ -619,32 +555,32 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
   </BusDetail>
   <BusDetail>
     <id>16</id>
-    <name>Bến xe Chợ Lớn -  Bình Trị Đông</name>
-    <go>Lượt đi :  Ga Chợ Lớn B - Lê Quang Sung - Nguyễn Thị Nhỏ - Hồng Bàng - Vòng xoay Phú Lâm -  Tân Hòa Đông - Trương Phước Phan - Ấp Chiến Lược - Đất Mới - Hương lộ 2 -Đầu bến Bình Trị Đông  ( Công ty may Nhậ Tân).</go>
-    <back>Lượt về :  Đầu bến Bình Trị Đông (Công ty may Nhật Tân) - Hương lộ 2 - Đất Mới - Ấp Chiến Lược - Trương Phước Phan - Tân Hòa Đông - Vòng xoay Phú Lâm - Hồng Bàng - Nguyễn Trãi - Xóm Vôi - Ga Chợ Lớn B.</back>
+    <name>Bến xe Chợ Lớn – ĐH Công nghiệp thực phẩm</name>
+    <go>Lượt đi :  Ga Chợ Lớn B - Lê Quang Sung - Nguyễn Thị Nhỏ - Hồng Bàng - Vòng xoay Phú Lâm -  Tân Hòa Đông - Trương Phước Phan - Ấp Chiến Lược - Đất Mới - Hương lộ 2 - Mã Lò - Tân Kỳ Tân Quý - hẻm 414 Tân Kỳ Tân Quý - Bờ bao Tân Thắng - Lê Trọng Tấn - Nguyễn Hữu Tiến - Chế Lan Viên - Trung tâm dịch vụ đậu xe Tiên Tiến.</go>
+    <back>Lượt về :  Trung tâm dịch vụ đậu xe Tiên Tiến - Chế Lan Viên - Nguyễn Hữu Tiến - Lê Trọng Tấn - Bờ bao Tân Thắng - hẻm 414 Tân Kỳ Tân Quý - Tân Kỳ Tân Quý - Mã Lò - Hương lộ 2 - Đất Mới - Ấp Chiến Lược - Trương Phước Phan - Tân Hòa Đông - Vòng xoay Phú Lâm - Hồng Bàng - Nguyễn Trãi - Xóm Vôi - Ga Chợ Lớn B.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 8 km
-    Số chuyến: 140 chuyến/ngày
-    Thời gian chuyến: 40 phút
+    Cự ly: 15.7 km
+    Số chuyến: 130 chuyến/ngày
+    Thời gian chuyến: 50 phút
     Giãn cách: 11 - 15 phút/chuyến
     Thời gian hoạt động: 05h30 - 19h00
-    Loại xe: 12 chỗ 
+    Loại xe: 40 chỗ 
 
 Đơn vị đảm nhận: 
 Đơn vị đảm nhận:- HTX Vận tải Số 28, ĐT: 38.758.875 - 54.291.791</detail>
   </BusDetail>
   <BusDetail>
     <id>17</id>
-    <name>Bến xe Chợ Lớn - Cư xá Ngân Hàng</name>
-    <go>Lượt đi :  Ga Chợ Lớn (Bến B) - Lê Quang Sung – Phạm Đình Hổ - Tháp Mười - Ngô Nhân Tịnh - Phú Hữu - Hùng Vương - Nguyễn Tri Phương - Trần Phú - Trần Hưng Đạo - cầu Nguyễn Tri Phương - cầu Chánh Hưng - Phạm Hùng - Nguyễn Văn Linh - Đường vòng dạ cầu Ông Lớn - Đường số 9A - cầu Kênh Xáng - Dương Bá Trạc - quay đầu – Dương Bá Trạc – Đường số 9 - Âu Dương Lân - Đặng Chất - Nguyễn Thị Tần - Dạ Nam - Phạm Thế Hiển – Trần Xuân Soạn – Cư xá Ngân Hàng.</go>
-    <back>Lượt về :  Cư xá Ngân Hàng – Trần Xuân Soạn - Phạm Thế Hiển - Dạ Nam - Nguyễn Thị Tần - Đặng Chất - Âu Dương Lân – Đường số 9 - cầu Kênh Xáng - Đường số 9A - Nguyễn Văn Linh - Phạm Hùng - cầu Chánh Hưng – cầu Nguyễn Tri Phương - Nguyễn Tri Phương - Hùng Vương - Xóm Vôi - Ga Chợ Lớn (Bến B).</back>
+    <name>Bến xe Chợ Lớn - Đại học Sài Gòn - Khu chế xuất Tân Thuận</name>
+    <go>Lượt đi :  Ga Chợ Lớn (Bến A) - Lê Quang Sung - Nguyễn Thị Nhỏ - Hồng Bàng - An Dương Vương - Nguyễn Tri Phương - Trần Phú - Trần Hưng Đạo - Nguyễn Tri Phương - cầu Nguyễn Tri Phương - cầu Chánh Hưng - Phạm Hùng - Đường số 5 - Đường 204 Cao Lỗ - Cao Lỗ - Tạ Quang Bửu - Âu Dương Lân - Phạm Thế Hiển - Trần Xuân Soạn - Lâm Văn Bền - Nguyễn Thị Thập - Nguyễn Văn Linh (quay đầu Huỳnh Tấn Phát) - Bến xe buýt Khu chế xuất Tân Thuận.</go>
+    <back>Lượt về :  Bến xe buýt Khu chế xuất Tân Thuận - Nguyễn Văn Linh - Nguyễn Thị Thập - Lâm Văn Bền - Trần Xuân Soạn - Phạm Thế Hiển - Âu Dương Lân - Tạ Quang Bửu - Cao Lỗ - Đường số 204 Cao Lỗ - Đường số 5 - Phạm Hùng - Nguyễn Tri Phương - Hùng Vương - Hồng Bàng - Phú Hữu - Ga Chợ Lớn (Bến A).</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 13,5 km
-    Số chuyến: 140 chuyến/ngày
-    Thời gian chuyến: 50 phút
+    Cự ly: 15,9 km
+    Số chuyến: 130 chuyến/ngày
+    Thời gian chuyến: 55 phút
     Giãn cách: 10 - 15 phút/chuyến
-    Thời gian hoạt động: 05h15 - 19h00
-    Loại xe: 12 chỗ 
+    Thời gian hoạt động: Chuyến đầu tiên xuất bến: 05h15Chuyến cuối cùng xuất bến: 19h00
+    Loại xe: 40 chỗ 
 
 Đơn vị đảm nhận:HTX Vận tải và Dịch vụ Đông Nam, ĐT:</detail>
   </BusDetail>
@@ -655,9 +591,9 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
     <back>Lượt về :  Chợ Hiệp Thành - HT13 - Nguyễn Ảnh Thủ - Tô Ký - Quang Trung - Nguyễn Văn Nghi - Lê Quang Định - Nơ Trang Long - Phan Đăng Lưu – Bạch Đằng – Đinh Bộ Lĩnh – Điện Biên Phủ (cầu Điện Biên Phủ) - Đinh Tiên Hoàng - Võ Thị Sáu - Hai Bà Trưng - Lê Duẩn - Nam Kỳ Khởi Nghĩa - Hàm Nghi - trạm Bến Thành - Trần Hưng Đạo - Phạm Ngũ Lão - Bến CV 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 25,95 km
-    Số chuyến: 200 chuyến/ngày
+    Số chuyến: 184 chuyến/ngày
     Thời gian chuyến: 78 phút
-    Giãn cách: 7 - 15 phút/chuyến
+    Giãn cách: 8 - 15 phút/chuyến
     Thời gian hoạt động:    Chợ Bến Thành: 05h00 - 20h00   Chợ Hiệp Thành: 04h30 - 19h20
     Loại xe: 80 chỗ 
 
@@ -666,13 +602,13 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
   <BusDetail>
     <id>19</id>
     <name>Bến Thành - KCX Linh Trung - Đại học Quốc gia</name>
-    <go>Lượt đi :  Bến Công viên 23/9 - Lê Lai - vòng xoay Bến Thành - Phó Đức Chính - Lê Thị Hồng Gấm - Calmette - trạm Bến Thành - Hàm Nghi - Hồ Tùng Mậu - đường nhánh S2 - Tôn Đức Thắng - Hai Bà Trưng - Lê Duẩn-Đinh Tiên Hoàng-Nguyễn Thị Minh Khai - Xô Viết Nghệ Tĩnh - Quốc lộ 13-Quốc lộ 1A - (Trạm 2) - Quốc lộ 1A - Đường 621 - (ngã 3 đường vào khu ký túc xá)-(Ngã ba đường vào Trường ĐH Quốc tế) - (ngã 3 đường vào Trường ĐH Khoa Học Tự Nhiên) - Bến xe buýt A Khu đô thị ĐH Quốc gia TP.HCM;</go>
+    <go>Lượt đi :  Bến Công viên 23/9 - Lê Lai - vòng xoay Bến Thành - Trần Hưng Đạo - Phạm Ngũ Lão - Yersin - Trần Hưng Đạo - Phạm Ngũ Lão - trạm Bến Thành - Hàm Nghi - Hồ Tùng Mậu - đường nhánh S2 - Tôn Đức Thắng - Hai Bà Trưng - Lê Duẩn-Đinh Tiên Hoàng-Nguyễn Thị Minh Khai - Xô Viết Nghệ Tĩnh - Quốc lộ 13-Quốc lộ 1A - (Trạm 2) - Quốc lộ 1A - Đường 621 - (ngã 3 đường vào khu ký túc xá)-(Ngã ba đường vào Trường ĐH Quốc tế) - (ngã 3 đường vào Trường ĐH Khoa Học Tự Nhiên) - Bến xe buýt A Khu đô thị ĐH Quốc gia TP.HCM;</go>
     <back>Lượt về :  Bến xe buýt A Khu đô thị ĐH Quốc Gia TP.HCM (rẽ phải)-(Ngã 3 đường vào Trường ĐH Khoa Học Tự Nhiên)-(Ngã 3 đường vào Trường ĐH Quốc Tế)-(Ngã 3 đường vào khu ký túc xá)-Đường 621-Quốc lộ 1A-(Trạm 2)-Quốc lộ 1A-Quốc lộ 13-Đinh Bộ Lĩnh-Nguyễn Xí-Ung Văn Khiêm-D2-Điện Biên Phủ-Xô Viết Nghệ Tĩnh-Nguyễn Thị Minh Khai-Đinh Tiên Hoàng-Lê Duẩn-Hai Bà Trưng-Tôn Đức Thắng-Hàm Nghi-trạm Bến Thành - Trần Hưng Đạo - Phạm Ngũ lão - Bến Công viên 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 27,5 km
-    Số chuyến: 248 chuyến/ngày
+    Số chuyến: 230 chuyến/ngày
     Thời gian chuyến: 80 phút 
-    Giãn cách: 6 - 15 phút/chuyến
+    Giãn cách: 7 - 15 phút/chuyến
     Thời gian hoạt động:    Chuyến đầu tiên xuất bến:    05h00    Chuyến cuối cùng xuất bến:  20h00
     Loại xe: 80 chỗ 
 
@@ -685,9 +621,9 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
     <back>Lượt về :  Bến Mũi Nhà Bè - Huỳnh Tấn Phát - cầu Tân Thuận 1 - Nguyễn Tất Thành - Cầu Khánh Hội - Tôn Đức Thắng - Nguyễn Huệ - Hải Triều - Hàm Nghi - Trạm Bến Thành (mặt sau) - Trần Hưng Đạo - Phạm Ngũ Lão - Bãi xe buýt công viên 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 17,45 km
-    Số chuyến: 328 chuyến/ngày
+    Số chuyến: 310 chuyến/ngày
     Thời gian chuyến: 50 phút
-    Giãn cách: 4 - 20 phút/chuyến
+    Giãn cách: 5 - 20 phút/chuyến
     Thời gian hoạt động:    Bến Thành: 04h20 - 20h40    Nhà Bè:     04h20 - 20h00
     Loại xe: 80 chỗ 
 
@@ -700,7 +636,7 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
     <back>Lượt về :  Khu Công nghiệp Lê minh Xuân - Láng Le Bàu Cò - Khu di tích Láng Le Bàu Cò - Thế Lữ - Cầu Chợ Đệm - Nguyễn Hữu Trí - Quốc lộ 1A - Nguyễn Văn Linh - Đường vào Chợ đầu mối Bình Điền - Chợ đầu mối Bình Điền - quay đầu - Nguyễn Văn Linh - Quốc lộ 50 - Bến xe Quận 8.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 22,2 km
-    Số chuyến: 152 chuyến/ngày
+    Số chuyến: 134 chuyến/ngày
     Thời gian chuyến: 55 phút
     Giãn cách: 10 - 15 phút/chuyến
     Thời gian hoạt động: 5 giờ 00 - 19 giờ 00
@@ -730,9 +666,9 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
     <back>Lượt về :  Bến 19/5-Hương lộ 60B-(Quay đầu)-Quốc lộ 22-Lý Thường Kiệt-Tô Ký-Nguyễn Ảnh Thủ-Quốc lộ 22-Quốc lộ 1A- Quang Trung-Nguyễn Văn Nghi-Lê Quang Định-Bạch Đằng-Xô Viết Nghệ Tĩnh-Quốc Lộ 13-Đinh Bộ Lĩnh-Bến xe Miền Đông.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 26,1 km
-    Số chuyến: 370 chuyến/ngày
+    Số chuyến: 354 chuyến/ngày
     Thời gian chuyến: 75 phút
-    Giãn cách: 4 - 12 phút/chuyến
+    Giãn cách: 5 - 12 phút/chuyến
     Thời gian hoạt động:    BX Miền Đông: 04h00 - 20h30    Hóc Môn:          04h00 - 19h45
     Loại xe: 80 chỗ 
 
@@ -749,30 +685,15 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
 Đơn vị đảm nhận: - , ĐT: 3</detail>
   </BusDetail>
   <BusDetail>
-    <id>26</id>
-    <name>BX Miền Đông - Bến xe An Sương</name>
-    <go>Lượt đi :  Bến xe Miền Đông - Đinh Bộ Lĩnh - Nguyễn Xí - Quốc lộ 13 - Quốc lộ 1 A - Lê Văn Khương - Nguyễn Ảnh Thủ - Tân Chánh Hiệp 21 - Tân Chánh Hiệp 10 - Nguyễn Ảnh Thủ - Quốc lộ 22 - Bến xe An Sương.</go>
-    <back>Lượt về :  Bến xe An sương - Quốc lộ 22 - (Quay đầu ngã 4 An Sương) - Quốc lộ 22 - Nguyễn Ảnh Thủ - Tân Chánh Hiệp 10 - Tân Chánh Hiệp 21 - Lê Văn Khương - Quốc lộ 1A - Quốc lộ 13 - Đinh Bộ Lĩnh - Bến xe Miền Đông.</back>
-    <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 26,4 km
-    Số chuyến: 102 chuyến/ngày
-    Thời gian chuyến: 65-70 phút
-    Giãn cách: 12 - 20 phút/chuyến
-    Thời gian hoạt động:     Chuyến đầu tiên xuất bến: 05h30   Chuyến cuối cùng xuất bến: 18h30
-    Loại xe: 55 chỗ 
-
-Đơn vị đảm nhận: - Công ty TNHH một thành viên Xe khách Sài Gòn, ĐT: 39.505.505</detail>
-  </BusDetail>
-  <BusDetail>
     <id>27</id>
     <name>Công viên 23/9 - Âu Cơ - Bến xe  An Sương</name>
     <go>Lượt đi :  Bến Công viên 23/9-Nguyễn Trãi-Cống Quỳnh-Nguyễn Thị Minh Khai-Lý Thái Tổ-3 Tháng 2-Lê Đại Hành-Âu Cơ-Trường Chinh-Quốc Lộ 22-(quay đầu tại Ngã 3 Công ty Việt Hưng)-Quốc Lộ 22-Bến xe An Sương.</go>
     <back>Lượt về :  Bến xe An Sương-Quốc lộ 22-Trường Chinh-Âu Cơ-Lê Đại Hành-3 Tháng 2-Lý Thái Tổ-Phạm Viết Chánh-Cống Quỳnh-Nguyễn Trãi-Lê Lai-Tôn Thất Tùng - Phạm Ngũ lão - Bến Công viên 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 15,7 km
-    Số chuyến: 220 chuyến/ngày
+    Số chuyến: 200 chuyến/ngày
     Thời gian chuyến: 60 phút
-    Giãn cách: 7 - 12 phút/chuyến
+    Giãn cách: 8 - 20 phút/chuyến
     Thời gian hoạt động: 05h00 - 19h45
     Loại xe: 80 chỗ 
 
@@ -780,17 +701,17 @@ Bãi hậu cần số 1 - Phan Văn Trị - Nguyễn Thái Sơn - Phạm Ngũ L�
   </BusDetail>
   <BusDetail>
     <id>28</id>
-    <name>Bến Thành - Chợ Xuân Thới Thượng</name>
+    <name>Công viên 23/9 - Chợ Xuân Thới Thượng</name>
     <go>Lượt đi :  
-Bãi xe buýt Công viên 23/9-Lê Lai-Nguyễn Thị Nghĩa-Cách Mạng Tháng 8-Nguyễn Thị Minh Khai-Lê Quý Đôn-Điện Biên Phủ-Nam Kỳ Khởi Nghĩa-cầu Công Lý-Nguyễn Văn Trỗi-Trần Huy Liệu-Lê Văn Sỹ-Lăng Cha Cả-Cộng Hòa-Trường Chinh-Tây Thạnh-CN2-CN1-Lê Trọng Tấn – ngã 4 Vĩnh Lộc – Nguyễn Thị Tú - Vĩnh Lộc - Quách Điêu-Dương Công Khi-Phan Văn Hớn-Đường Tuyến 1-Chợ Xuân Thới Thượng (vị trí đậu xe trên Đường tuyến 1).</go>
+Bãi xe buýt Công viên 23/9-Lê Lai-Nguyễn Thị Nghĩa-Cách Mạng Tháng 8-Nguyễn Thị Minh Khai-Lê Quý Đôn-Võ Thị Sáu-Trần Quốc Thảo-Lê Văn Sỹ-Lăng Cha Cả-Cộng Hòa-Trường Chinh-Tây Thạnh-CN2-CN1-Lê Trọng Tấn – ngã 4 Vĩnh Lộc – Nguyễn Thị Tú - Vĩnh Lộc - Quách Điêu-Dương Công Khi-Phan Văn Hớn-Đường Tuyến 1-Chợ Xuân Thới Thượng (vị trí đậu xe trên Đường tuyến 1).</go>
     <back>Lượt về :  
-Chợ Xuân Thới Thượng (vị trí đậu xe trên Đường tuyến 1)-Đường tuyến 1-Phan Văn Hớn-Dương Công Khi-Quách Điêu-Vĩnh Lộc-Nguyễn Thị Tú-ngã 4 Vĩnh Lộc-Lê Trọng Tấn-CN1-CN2-Tây Thạnh-Trường Chinh-Cộng Hoà-Lăng Cha Cả-Lê Văn Sỹ-Trần Huy Liệu-Nguyễn Văn Trỗi-cầu Công Lý-Nam Kỳ Khởi Nghĩa-Võ Thị Sáu-Trần Quốc Thảo-Nguyễn Đình Chiểu-Cách Mạng Tháng 8-Nguyễn Thị Nghĩa-Phạm Ngũ Lão-Bãi đậu xe buýt Công viên 23/9.</back>
+Chợ Xuân Thới Thượng (vị trí đậu xe trên Đường tuyến 1)-Đường tuyến 1-Phan Văn Hớn-Dương Công Khi-Quách Điêu-Vĩnh Lộc-Nguyễn Thị Tú-ngã 4 Vĩnh Lộc-Lê Trọng Tấn-CN1-CN2-Tây Thạnh-Trường Chinh-Cộng Hoà-Lăng Cha Cả-Lê Văn Sỹ-Trần Quốc Thảo-Nguyễn Đình Chiểu-Cách Mạng Tháng 8-Nguyễn Thị Nghĩa-Phạm Ngũ Lão-Bãi đậu xe buýt Công viên 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 27,2 km
-    Số chuyến: - Thứ 2 - thứ 7: 130 chuyến/ngày- Chủ nhật: 124 chuyến/ngày 
+    Cự ly: 25,90 km
+    Số chuyến: 110 chuyến/ngày 
     Thời gian chuyến: 80-90 phút
-    Giãn cách: 7 - 20 phút/chuyến
-    Thời gian hoạt động: Bến Thành:             5h30 - 19h00Xuân Thới Thượng: 04h45- 18h30 
+    Giãn cách: 10 - 25 phút/chuyến
+    Thời gian hoạt động: Bến Thành:             5h30 - 18h15Xuân Thới Thượng: 05h00- 18h15 
     Loại xe: 55 chỗ 
 
 Đơn vị đảm nhận: - Công ty TNHH một thành viên Xe khách Sài Gòn, ĐT: 39.505.505</detail>
@@ -802,9 +723,9 @@ Chợ Xuân Thới Thượng (vị trí đậu xe trên Đường tuyến 1)-Đ�
     <back>Lượt về :  Chợ nông sản Thủ Đức - Quốc lộ 1A - (quay đầu ngã tư Bình Phước) - Quốc lộ 1A - đường vòng chân cầu vượt Gò Dưa - Gò Dưa - Tô Ngọc Vân - Phú Châu - Tam Hà - Tô Ngọc Vân - Võ Văn Ngân - Đặng Văn Bi - Nguyễn Văn Bá  (ngã tư Bình Thái) - Đỗ Xuân Hợp - Nguyễn Duy Trinh (chung cư Bình Trưng) - Lê Văn Thịnh - Đường số 22 - Nguyễn Thị Định - (cầu Mỹ Thủy 2) - Nguyễn Thị Định - Bến phà Cát Lái - (quay đầu) - Nguyễn Thị Định - Bãi đậu xe trên đường A1.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 19,05 km
-    Số chuyến: 230 chuyến/ngày
+    Số chuyến: 200 chuyến/ngày
     Thời gian chuyến: 60 phút
-    Giãn cách: 6 - 10 phút/chuyến
+    Giãn cách: 7 - 10 phút/chuyến
     Thời gian hoạt động: 05h00 - 19h00
     Loại xe: 47 chỗ 
 
@@ -817,9 +738,9 @@ Chợ Xuân Thới Thượng (vị trí đậu xe trên Đường tuyến 1)-Đ�
     <back>Lượt về :  Trường ĐH Quốc tế-Đường 621- Quốc lộ 1A-(Trạm 2)-Quốc lộ 52-Xa lộ Hà Nội-(Cầu Sài gòn)-(đường vòng dưới chân cầu Sài Gòn)-Nguyễn Hữu Cảnh-Tôn Đức Thắng-Nguyễn Du-Phạm Ngọc Thạch-Võ Thị Sáu-Cách Mạng Tháng Tám-(Ngã tư Bảy Hiền)-Hoàng Văn Thụ-Xuân Diệu-Xuân Hồng-Trường Chinh-Trương Công Định-Ba Vân-Lũy Bán Bích-Độc Lập-Tân Hương-Bình Long-Lê Thúc Hoạch-Bến xe buýt Cư xá Nhiêu Lộc.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 32,9 km
-    Số chuyến: 120 chuyến/ngày
+    Số chuyến: 110 chuyến/ngày
     Thời gian chuyến: 85-95 phút
-    Giãn cách: 8 - 20 phút/chuyến
+    Giãn cách: 10 - 22 phút/chuyến
     Thời gian hoạt động:    Chợ Tân Hương: 05h00 - 18h30   ĐH Quốc tế:            05h15 - 18h30             
     Loại xe: 80 chỗ 
 
@@ -829,12 +750,12 @@ Chợ Xuân Thới Thượng (vị trí đậu xe trên Đường tuyến 1)-Đ�
     <id>31</id>
     <name>KDC Tân Quy - KDC Bình Lợi</name>
     <go>Lượt đi :  Khu dân cư Tân Quy - đường số 65 - Nguyễn Thị Thập - Nguyễn Văn Linh - Huỳnh Tấn Phát - cầu Tân Thuận 1 - Nguyễn Tất Thành - Hoàng Diệu - Nguyễn Thái Học - Trần Hưng Đạo - trạm Bến Thành - Lê Lợi - Pasteur - Nguyễn Thị Minh Khai - Hai Bà Trưng - Trần Quang Khải – cầu Hoàng Hoa Thám – Đường số 1 – Phan Xích Long – Phan Đăng Lưu - Nơ Trang Long – Bến KDC Bình Lợi.</go>
-    <back>Lượt về :  Bến KDC Bình Lợi - Nơ Trang Long - Phan Đăng Lưu – Phan Xích Long – Đường số 1 – cầu Hoàng Hoa Thám - Trần Quang Khải – Đinh Tiên Hoàng – Võ Thị Sáu - Hai Bà Trưng - Nguyễn Đình Chiểu - Nam Kỳ Khởi Nghĩa - Hàm Nghi - trạm Bến Thành - Trần Hưng Đạo - Phạm Ngũ Lão - Nguyễn Thị Nghĩa - Nguyễn Thái Học - Hoàng Diệu - Nguyễn Tất Thành - (cầu Tân Thuận 2) - Nguyễn Văn Linh - Nguyễn Thị Thập – Lâm Văn Bền – Đường số 53 – Mai Văn Vĩnh – Nguyễn Thị Thập - đường số 65 - Khu dân cư Tân Quy.</back>
+    <back>Lượt về :  Bến KDC Bình Lợi - Nơ Trang Long - Phan Đăng Lưu – Phan Xích Long – Đường số 1 – cầu Hoàng Hoa Thám - Trần Quang Khải – Đinh Tiên Hoàng – Võ Thị Sáu - Hai Bà Trưng - Nguyễn Đình Chiểu - Nam Kỳ Khởi Nghĩa - Hàm Nghi - trạm Bến Thành - Trần Hưng Đạo - Phạm Ngũ Lão - Nguyễn Thị Nghĩa - Nguyễn Thái Học - Hoàng Diệu - Nguyễn Tất Thành - (cầu Tân Thuận 2) - Nguyễn Văn Linh - Nguyễn Thị Thập – đường số 65 – Bến KDC Tân Quy.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 20,90 km
-    Số chuyến: Thứ 2- thứ 7: 120 chuyến/ngàyChủ nhật: 100 chuyến/ngày  
+    Cự ly: 20,70 km
+    Số chuyến: Thứ 2- thứ 7: 110 chuyến/ngàyChủ nhật: 100 chuyến/ngày  
     Thời gian chuyến: 65 - 75 phút
-    Giãn cách: 10 - 21 phút/chuyến
+    Giãn cách: 12 - 21 phút/chuyến
     Thời gian hoạt động: 05h15 - 18h30Loại xe: 55 chỗ 
 
 Đơn vị đảm nhận: - Công ty TNHH một thành viên Xe khách Sài Gòn, ĐT: 39.505.505</detail>
@@ -846,9 +767,9 @@ Chợ Xuân Thới Thượng (vị trí đậu xe trên Đường tuyến 1)-Đ�
     <back>Lượt về :  Bến xe Ngã 4 Ga - Quốc lộ 1A - quay đầu - Quốc lộ 1A - Đường nội bộ KDC Nam Long - Hà Huy Giáp - Nguyễn Oanh - Lê Đức Thọ - Thống Nhất - Phạm văn Chiêu - Phan Huy Ích - Trường Chinh - Tây Thạnh – Đường D9 - Chế Lan Viên - Dương Đức Hiền - Lê Trọng Tấn - Tân Kỳ Tân Qúy - Tân Qúy - Tân Hương - Văn Cao - Nguyễn Sơn - Lê Khôi - Nguyễn Lý - Tô Hiệu - Hòa Bình -Lũy Bán Bích - Tân Hóa - Kinh Dương Vương - Bến xe Miền Tây (trả khách) - Kinh Dương Vương - Bến xe Miền Tây.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 25,7 km
-    Số chuyến: 280 chuyến/ngày
+    Số chuyến: 248 chuyến/ngày
     Thời gian chuyến: 80 phút
-    Giãn cách: 5 - 8 phút/chuyến
+    Giãn cách: 6 - 8 phút/chuyến
     Thời gian hoạt động: 04h30 - 19h00
     Loại xe: 40 chỗ 
 
@@ -863,7 +784,7 @@ Bến xe An Sương-Quốc lộ 22-Ngã tư An Sương-Quốc lộ 1A-Khu du l�
 Ký túc xá B (Đại học Quốc Gia)-Đường trục chính số 7-số 5-số1-Đường 621-Quốc lộ 1A-Khu du lịch Suối Tiên-Quốc lộ 1A-Ngã tư An Sương-Quốc lộ 22-Bến xe An Sương (Quay đầu tại Ngã 3 Công ty Việt Hưng).</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 28,9 km
-    Số chuyến:Ngày thường: 336 chuyến/ngày Ngày chủ nhật: 456 chuyến/ngày
+    Số chuyến:Ngày thường: 324 chuyến/ngày Ngày chủ nhật: 416 chuyến/ngày
     Thời gian chuyến: 55 phút
     Giãn cách: 3 - 15 phút/chuyến
     Thời gian hoạt động: 04h30 - 20h30
@@ -876,13 +797,13 @@ Ký túc xá B (Đại học Quốc Gia)-Đường trục chính số 7-số 5-s
     <name>Bến Thành - Đại học Công nghệ Sài Gòn</name>
     <go>Lượt đi :    
 
-Bến CV 23/9 - Lê Lai – Vòng xoay Bến Thành – Phó Đức Chính – Lê Thị Hồng Gấm – Calmette – cầu Calmette - Hoàng Diệu - Nguyễn Tất Thành - cầu Tân Thuận 2 - Đường vòng chân cầu - Trần Xuân Soạn - Lê Văn Lương - Đường Số 15 - Đường số 10 - Đường số 17 - Mai Văn Vĩnh - Nguyễn Thị Thập - Tân Mỹ - Nguyễn Lương Bằng - Nguyễn Văn Linh - Phạm Hùng - Đường Số 5 - đường 204 Cao Lỗ - Trường đại học Công nghệ Sài Gòn (Công viên Đồng Diều).</go>
-    <back>Lượt về :  Trường đại học Công nghệ Sài Gòn (Công viên Đồng Diều)-đường 204 Cao Lỗ-đường số 5-Phạm Hùng-Nguyễn Văn Linh-Nguyễn Lương Bằng-Tân Mỹ-Nguyễn Thị Thập-Lâm Văn Bền – Đường số 51 - Mai Văn Vĩnh-Đường số 17-Đường số 10-Đường số 15-Lê Văn Lương-Trần Xuân Soạn-(cầu Tân Thuận 1)-Nguyễn Tất Thành-Hoàng Diệu-cầu Calmette – Calmete – Phạm Ngũ Lão – trạm Bến Thành – vòng xoay Bến thành – Trần Hưng Đạo – Phạm Ngũ Lão – Bến CV 23/9.</back>
+Bến CV 23/9 - Lê Lai – vòng xoay Bến Thành – Phó Đức Chính – Lê Thị Hồng Gấm – Calmette – cầu Calmette - Hoàng Diệu - Nguyễn Tất Thành - cầu Tân Thuận 2 - Đường vòng chân cầu - Trần Xuân Soạn - Lê Văn Lương - Đường Số 15 - Đường số 10 - Đường số 17 - Mai Văn Vĩnh - Nguyễn Thị Thập - Tân Mỹ - Nguyễn Lương Bằng - Nguyễn Văn Linh - Phạm Hùng - Đường Số 5 - đường 204 Cao Lỗ - Trường đại học Công nghệ Sài Gòn (Công viên Đồng Diều).</go>
+    <back>Lượt về :  Trường đại học Công nghệ Sài Gòn (Công viên Đồng Diều)-đường 204 Cao Lỗ-đường số 5-Phạm Hùng-Nguyễn Văn Linh-Nguyễn Lương Bằng-Tân Mỹ-Nguyễn Thị Thập - Mai Văn Vĩnh - Đường số 17 - Đường số 10-Đường số 15-Lê Văn Lương-Trần Xuân Soạn-(cầu Tân Thuận 1)-Nguyễn Tất Thành-Hoàng Diệu-cầu Calmette – Calmete – Phạm Ngũ Lão – trạm Bến Thành – vòng xoay Bến thành – Trần Hưng Đạo – Phạm Ngũ Lão – Bến CV 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 17,90 km
-    Số chuyến: 138 chuyến/ngày
+    Số chuyến: 120 chuyến/ngày
     Thời gian chuyến: 55 phút
-    Giãn cách: 10 - 15 phút/chuyến
+    Giãn cách: 12 - 20 phút/chuyến
     Thời gian hoạt động: 05 giờ 00 
     Loại xe: 25 chỗ 
 
@@ -909,14 +830,14 @@ Tại CV Bến xe buýt Hoàng Sa:
   <BusDetail>
     <id>36</id>
     <name>Bến Thành - Thới An</name>
-    <go>Lượt đi :  Bãi xe buýt Công viên 23/9 - Lê Lai – Trần Hưng Đạo – Phạm Ngũ Lão – Yersin – Trần Hưng Đạo - trạm Bến Thành - Lê Lợi – Pasteur - Lê Duẩn - Phạm Ngọc Thạch - Điện Biên Phủ - Hai Bà Trưng – Trần Quang Khải - cầu Hoàng Hoa Thám – Đường số 1 – Phan Xích Long – Phan Đăng Lưu - Nơ Trang Long - Phan Văn Trị - Thống Nhất – Phạm Văn Chiêu - Lê Đức Thọ - Lê Văn Khương - Bến Thới An.</go>
+    <go>Lượt đi :  Bãi xe buýt Công viên 23/9 - Lê Lai – vòng xoay Bến Thành - Phó Đức Chính - Lê Thị Hồng Gấm - Calmette - Phạm Ngũ Lão - trạm Bến Thành - Lê Lợi – Pasteur - Lê Duẩn - Phạm Ngọc Thạch - Điện Biên Phủ - Hai Bà Trưng – Trần Quang Khải - cầu Hoàng Hoa Thám – Đường số 1 – Phan Xích Long – Phan Đăng Lưu - Nơ Trang Long - Phan Văn Trị - Thống Nhất – Phạm Văn Chiêu - Lê Đức Thọ - Lê Văn Khương - Bến Thới An.</go>
     <back>Lượt về :  Bến Thới An - Lê Văn Khương - Lê Đức Thọ - Phạm Văn Chiêu - Thống Nhất - Phan Văn Trị - Nơ Trang Long - Phan Đăng Lưu – Phan Xích Long – Đường số 1 – cầu Hoàng Hoa Thám - Trần Quang Khải - Đinh Tiên Hoàng – Võ Thị Sáu – Phạm Ngọc Thạch - Nguyễn Du - Nam Kỳ Khởi Nghĩa - Lê Lợi – vòng xoay - trạm Bến Thành (mặt sau) - Trần Hưng Đạo - Phạm Ngũ Lão - Bãi xe buýt Công viên 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 20.6 km
-    Số chuyến: Thứ 2 - thứ 7: 190 chuyến/ngàyChủ nhật: 160 chuyến/ngày 
+    Số chuyến: 160 chuyến/ngày
     Thời gian chuyến: 60-70 phút
-    Giãn cách: 8 - 15 phút/chuyến
-    Thời gian hoạt động: - Thứ 2 - Thứ 6:      CV 23/9: 05h00 - 19h45    Thới An:  05h00 - 19h30- Chủ nhật:      CV 23/9: 05h15 - 19h45    Thới An:  05h00 - 19h30  
+    Giãn cách: 8 - 20 phút/chuyến
+    Thời gian hoạt động: - CV 23/9: 05h15 - 19h45 - Thới An:  05h00 - 19h30  
     Loại xe: 45 chỗ 
 
 Đơn vị đảm nhận:- Công ty TNHH một thành viên Xe khách Sài Gòn, ĐT: 39.505.505</detail>
@@ -928,9 +849,9 @@ Tại CV Bến xe buýt Hoàng Sa:
     <back>Lượt về :  Bến xã Nhơn Đức (đối diện trường tiểu học Lê Văn Lương, Hẻm số 7) – Lê Văn Lương – cầu Long Kiển (01 tấn) - Lê Văn Lương - Nguyễn Văn Linh - Nguyễn Hữu Thọ - Lê Văn Lương - Trần Xuân Soạn – đường vòng chân cầu Tân Thuận 2 – Nguyễn Văn Linh - Huỳnh Tấn Phát – cầu Tân Thuận 1 – đường vòng chân cầu Tân Thuận 1 – Tôn Thất Thuyết - Bến Cảng Quận 4.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá 
     Cự ly: 18,3 km
-    Số chuyến: 156 chuyến/ngày
+    Số chuyến: 130 chuyến/ngày
     Thời gian chuyến: 60 phút
-    Giãn cách: 10 - 13 phút/chuyến
+    Giãn cách: 12 - 15 phút/chuyến
     Thời gian hoạt động: 05h00 - 19h00
     Loại xe: 12 chỗ 
 
@@ -938,12 +859,12 @@ Tại CV Bến xe buýt Hoàng Sa:
   </BusDetail>
   <BusDetail>
     <id>38</id>
-    <name>KDC Tân Quy - Đầm Sen</name>
+    <name>KDC Tân Quy - Bến Thành - Đầm Sen</name>
     <go>Lượt đi :  
-Khu dân cư Tân Quy (Q.7)-Nguyễn Thị Thập-Lê Văn Lương-Đường số 15-Nguyễn Hữu Thọ-(cầu Kênh Tẻ)-Khánh Hội-Hoàng Diệu-(cầu Ông Lãnh)-Nguyễn Thái Học-Nguyễn Thị Nghĩa-Cách Mạng Tháng Tám-Nguyễn Thị Minh Khai-Nguyễn Văn Cừ-An Dương Vương-Sư Vạn Hạnh-Tô Hiến Thành-Lữ Gia-Nguyễn Thị Nhỏ-Âu Cơ-Lạc Long Quân-Hòa Bình-Bãi xe buýt Đầm Sen.</go>
-    <back>Lượt về :  Bãi xe buýt Đầm Sen-Hòa Bình-Lạc Long Quân-Âu Cơ-Nguyễn Thị Nhỏ-Lữ Gia-Tô Hiến Thành-Thành Thái-3 Tháng 2-Lý Thái Tổ-Sư Vạn Hạnh-An Dương Vương-Nguyễn Văn Cừ-Nguyễn Thị Minh Khai-Cách Mạng Tháng Tám-Nguyễn Thị Nghĩa-Nguyễn Thái Học-(Cầu  Ông Lãnh)-Hoàng Diệu-Khánh Hội-(Cầu Kênh Tẻ)-Nguyễn Hữu Thọ-Đường số 15-Lê Văn Lương-Nguyễn Thị Thập-Khu dân cư Tân Quy (Quận 7).</back>
+ Khu dân cư Tân Quy (Q.7)-Nguyễn Thị Thập-Lê Văn Lương-Đường số 15-Nguyễn Hữu Thọ-cầu Kênh Tẻ-Khánh Hội-Hoàng Diệu-cầu Calmette – Calmette – Phạm Ngũ Lão – trạm Bến Thành – vòng xoay Bến Thành – Lê Lai – Phạm Hồng Thái - Cách Mạng Tháng Tám-Nguyễn Thị Minh Khai-Nguyễn Văn Cừ-An Dương Vương-Sư Vạn Hạnh-Tô Hiến Thành-Lữ Gia-Nguyễn Thị Nhỏ-Âu Cơ-Lạc Long Quân-Hòa Bình-Bến Đầm Sen.</go>
+    <back>Lượt về :  Bến Đầm Sen-Hòa Bình-Lạc Long Quân-Âu Cơ-Nguyễn Thị Nhỏ-Lữ Gia-Tô Hiến Thành-Thành Thái-đường 3/2-Lý Thái Tổ-Sư Vạn Hạnh-An Dương Vương-Nguyễn Văn Cừ-Nguyễn Thị Minh Khai-Cách Mạng Tháng Tám- Phạm Hồng Thái – Lê Lai – vòng xoay Bến Thành – trạm Bến Thành – Trần Hưng Đạo – Ký Con – Nguyễn Thái Bình – Calmette – cầu Calmette -Hoàng Diệu - Khánh Hội- cầu Kênh Tẻ -Nguyễn Hữu Thọ-Đường số 15-Lê Văn Lương-Nguyễn Thị Thập-Khu dân cư Tân Quy (Quận 7).</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 15,25 km
+    Cự ly: 16,35 km
     Số chuyến: 104 chuyến/ngày
     Thời gian chuyến: 60-65 phút
     Giãn cách: 12 - 20 phút/chuyến
@@ -962,7 +883,7 @@ Bến xe Miền Tây - Kinh Dương Vương - Hồ Học Lãm - Võ Văn Kiệt 
     <detail>5giờ30 – 19giờ30
 5giờ00 – 19giờ00
 
-• Thời gian giãn cách: 10-15 phút/chuyến • Loại xe: SaiGonBus B80s</detail>
+• Thời gian giãn cách: 12-17 phút/chuyến • Loại xe: SaiGonBus B80s</detail>
   </BusDetail>
   <BusDetail>
     <id>40</id>
@@ -971,9 +892,9 @@ Bến xe Miền Tây - Kinh Dương Vương - Hồ Học Lãm - Võ Văn Kiệt 
     <back>Lượt về :  Bến xe Ngã 4 Ga - Quốc lộ 1A - quay đầu - Quốc lộ 1A -  Đường nội bộ khu dân cư Nam Long - Hà Huy Giáp - Nguyễn Oanh - Lê Đức Thọ - Nguyễn Huy Điển - Phan Văn Trị - Nơ Trang Long - Nguyễn Xí - Quốc lộ 13 - Đinh Bộ Lĩnh - Bến xe Miền Đông.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 11,3 km
-    Số chuyến: 120 chuyến/ngày
+    Số chuyến: 110 chuyến/ngày
     Thời gian chuyến: 35-45 phút
-    Giãn cách: 12 - 15 phút/chuyến
+    Giãn cách: 12 - 20 phút/chuyến
     Thời gian hoạt động: 05h00 - 19h00
     Loại xe: 12 chỗ 
 
@@ -1032,9 +953,9 @@ Bến xe Miền Tây - Kinh Dương Vương - Hồ Học Lãm - Võ Văn Kiệt 
     <back>Lượt về :  Bến đò Bình Quới - Bình Quới - Xô Viết Nghệ Tĩnh - Ung Văn Khiêm - D1 - Điện Biện Phủ - Xô Viết Nghệ Tĩnh - Nguyễn Văn Lạc - Ngô Tất Tố - Nguyễn Hữu Cảnh - Lê Thánh Tôn - Lê Anh Xuân - Lê Lai - (vòng xoay) - Trạm Bến Thành (mặt sau) - Trần Hưng Đạo - Phạm Ngũ Lão -Yersin - Ký Con - Lê Thị Hồng Gấm - Calmette - cầu Calmette - Đoàn Văn Bơ - Hoàng Diệu - Nguyễn Hữu Hào - Đường số 41 - Tân Vĩnh – Vĩnh Hội - Tôn Đản - Tôn Thất Thuyết - Cảng Quận 4.</back>
     <detail>Loại hình hoạt động:  Buýt có trợ giá
     Cự ly: 16,05km
-    Số chuyến: 170 chuyến/ngày
+    Số chuyến: 140 chuyến/ngày
     Thời gian chuyến: 60 phút
-    Giãn cách: 8 - 15 phút/chuyến
+    Giãn cách: 10 - 15 phút/chuyến
     Thời gian hoạt động: 05h15 - 19h30
     Loại xe: 40 chỗ 
 
@@ -1063,13 +984,14 @@ Bến xe Miền Tây - Kinh Dương Vương - Hồ Học Lãm - Võ Văn Kiệt 
 
 
 
-Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết -Nguyễn Khoái - Bến Vân Đồn - Khánh Hội - cầu Ông Lãnh - Nguyễn Thái Học - Nguyễn Thị Nghĩa -vòng xoay Phù Đổng - Nguyễn Trãi-Nguyễn Biểu-cầu Chữ Y-Hưng Phú-Xóm Củi-Vòng Chân cầu Chà Và-Cao Xuân Dục - Tùng Thiện Vương-Tuy Lý Vương-Nguyễn Chế Nghĩa-Bến Bình Đông-Lương Văn Can - Lưu Hữu Phước - Nguyễn Sĩ Cố - đường vòng chân cầu số 3 - Bến Mễ Cốc - (quay đầu tại chân cầu số 3) - cầu số 3 - Mễ Cốc - (quay đầu tại chân cầu số 3) - đường vòng chân cầu số 3 - Lưu Hữu Phước -Chợ Rạch Cát;</go>
-    <back>Lượt về :  Chợ Rạch Cát - Lưu Hữu Phước-Đường vòng chân cầu số 3 - Mễ Cốc- (quay đầu tại chân cầu số 3) - cầu số 3 - Bến Mễ Cốc - (quay đầu tại chân cầu số 3)- Bến Mễ Cốc-Đường vòng chân cầu số 3-Nguyễn Sĩ Cố - Lưu Hữu Phước - Lương Văn Can - Bến Bình Đông - Nguyễn Chế Nghĩa - Tuy Lý Vương - Tùng Thiện Vương-Xóm Củi - Hưng Phú - cầu Chữ Y - Dạ Nam - Phạm Thế Hiển - Dạ Nam-cầu Chữ Y-Nguyễn Biểu-Nguyễn Trãi-Lê Lai - Nguyễn Thị Nghĩa -Nguyễn Thái Học - cầu Ông Lãnh - Khánh Hội - Bến Vân Đồn - Nguyễn Khoái-Tôn Thất Thuyết - Bến Cảng Quận 4 (dưới chân cầu kênh Tẻ).</back>
+
+Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết -Nguyễn Khoái - Bến Vân Đồn - Khánh Hội - Hoàng Diệu - cầu Ông Lãnh - Nguyễn Thái Học - Lê Thị Hồng Gấm - Yersin - Phạm Ngũ Lão - Nguyễn Thị Nghĩa - vòng xoay Phù Đổng - Nguyễn Trãi - Nguyễn Biểu - cầu Chữ Y - Hưng Phú - Xóm Củi - Vòng Chân cầu Chà Và - Cao Xuân Dục - Tùng Thiện Vương-Tuy Lý Vương-Nguyễn Chế Nghĩa - Bến Bình Đông-Lương Văn Can - Lưu Hữu Phước - Nguyễn Sĩ Cố - đường vòng chân cầu số 3 - Bến Mễ Cốc - (quay đầu tại chân cầu số 3) - cầu số 3 - Mễ Cốc - (quay đầu tại chân cầu số 3) - đường vòng chân cầu số 3 - Lưu Hữu Phước -Chợ Rạch Cát;</go>
+    <back>Lượt về :  Chợ Rạch Cát - Lưu Hữu Phước-Đường vòng chân cầu số 3 - Mễ Cốc- (quay đầu tại chân cầu số 3) - cầu số 3 - Bến Mễ Cốc - (quay đầu tại chân cầu số 3)- Bến Mễ Cốc-Đường vòng chân cầu số 3-Nguyễn Sĩ Cố - Lưu Hữu Phước - Lương Văn Can - Bến Bình Đông - Nguyễn Chế Nghĩa - Tuy Lý Vương - Tùng Thiện Vương-Xóm Củi - Hưng Phú - cầu Chữ Y - Dạ Nam - Phạm Thế Hiển - Dạ Nam - cầu Chữ Y - Nguyễn Biểu - Nguyễn Trãi - Lê Lai - (vòng xoay Chợ Bến Thành) - Trần Hưng Đạo – Phạm Ngũ Lão - Nguyễn Thị Nghĩa - Nguyễn Thái Học - cầu Ông Lãnh - Khánh Hội - Bến Vân Đồn - Nguyễn Khoái-Tôn Thất Thuyết - Bến Cảng Quận 4 (dưới chân cầu Kênh Tẻ).</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 18,45 km
-    Số chuyến: 120 chuyến/ngày
+    Số chuyến: 112 chuyến/ngày
     Thời gian chuyến: 65 phút
-    Giãn cách: 14 - 16 phút/chuyến
+    Giãn cách: 15 - 20 phút/chuyến
     Thời gian hoạt động: 05h00 - 19h00
     Loại xe: 12 chỗ   
 
@@ -1082,7 +1004,7 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     <back>Lượt về :  Bến Hưng Long - Hương lộ 11 - Quốc lộ 50 - Tùng Thiện Vương -Cầu Chà Và - Hải Thượng Lãn Ông - quay đầu - Hải Thượng Lãn Ông - Lương Nhữ Học - Trần Hưng Đạo - Châu Văn Liêm - Hải Thượng Lãn Ông - Lê Quang Sung - Nguyễn Thị Nhỏ - Hồng Bàng - Nguyễn Trãi - Phú Hữu - Bến xe Chợ Lớn A.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 17,8 km
-    Số chuyến: 184 chuyến/ngày
+    Số chuyến: 170 chuyến/ngày
     Thời gian chuyến: 50 phút
     Giãn cách: 8-10 phút/chuyến
     Thời gian hoạt động:
@@ -1115,9 +1037,9 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 29,95 km
     Hoạt động từ thứ 2 đến thứ 7 hàng tuần 
-    Số chuyến: 78 chuyến/ngày
-    Thời gian chuyến: 75 - 80 phút
-    Thời gian hoạt động: Từ thứ 2 đến thứ 7   ĐH Bách khoa:  05h15 - 17h00   ĐH Quốc gia:    06h00 - 17h50
+    Số chuyến: 44 chuyến/ngày
+    Thời gian chuyến: 75 - 85 phút
+    Thời gian hoạt động: Từ thứ 2 đến thứ 7   ĐH Bách khoa:  05h40 - 16h30   ĐH Quốc gia:    06h00 - 16h52
     Loại xe: 80 chỗ</detail>
   </BusDetail>
   <BusDetail>
@@ -1127,9 +1049,9 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     <back>Lượt về :  Đầu bến chợ Bình Hưng Hòa - Tân Kỳ Tân Qúy - Trường Chinh - Âu Cơ - Trương Công Định - Bàu Cát 4 - (chợ Bàu Cát) - Nguyễn Hồng Đào - Bàu Cát - Đồng Đen - Trường Chinh - Hoàng Văn Thụ - Phan Đăng Lưu - Bạch Đằng - Xô Viết Nghệ Tĩnh - Quốc lộ 13 – Đinh Bộ Lĩnh - Bến xe Miền Đông.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 18,4 km
-    Số chuyến: 128 chuyến/ngày
+    Số chuyến: 120 chuyến/ngày
     Thời gian chuyến: 65 phút
-    Giãn cách: 10 - 15 phút/chuyến
+    Giãn cách: 12 - 15 phút/chuyến
     Thời gian hoạt động: 04h45 - 18h15
     Loại xe: 12 chỗ 
 
@@ -1144,10 +1066,9 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     <detail>Loại hình hoạt động: Buýt có trợ giá 
     Cự ly: 22,35 km
     Hoạt động từ thứ 2 đến thứ 7 hàng tuần. 
-    Số chuyến: Thứ 2 - thứ 6: 98 chuyến/ngàyThứ 7: 86 chuyến/ngày 
+    Số chuyến: 50 chuyến/ngày
     Thời gian chuyến: 60 -70 phút/chuyến
-    Thời gian hoạt động: Thứ 2 - thứ 6+ Bến Thành:   05h30 - 16h25+ ĐH Quốc tế: 06h35 - 17h40Thứ 7+ Bến Thành:   05h40 - 16h25+ ĐH Quốc tế: 06h45 - 17h00 
-    Chủ nhật: không hoạt động
+    Thời gian hoạt động: + Bến Thành:   05h30 - 16h25+ ĐH Quốc tế: 06h40 - 17h45
     Loại xe: 80 chỗ 
 
 Đơn vị đảm nhận: Công ty TNHH một thành viên Xe khách Sài Gòn, ĐT: 39.505.505</detail>
@@ -1155,13 +1076,13 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
   <BusDetail>
     <id>53</id>
     <name>Lê Hồng Phong - Đại học Quốc gia</name>
-    <go>Lượt đi :  Lê Hồng Phong - Trần Phú - Phạm Viết Chánh - Cống Quỳnh -Phạm Ngũ Lão - Nguyễn Cư Trinh - Trần Hưng Đạo - Hàm Nghi - Hồ Tùng Mậu – đường nhánh S2 - Tôn Đức Thắng - Nguyễn Hữu Cảnh - Xa lộ Hà Nội – ngã tư Bình Thái – Nguyễn Văn Bá - Lê Văn Chí - Hoàng Diệu 2 - Kha Vạn Cân - Quốc lộ 1A - (Trạm 2) - Quốc lộ 1A - Đường 621 - ngã ba đường vào khu ký túc xá - ngã ba đường vào Trường ĐH Quốc Tế - ngã ba đường vào Trường ĐH Khoa Học Tự Nhiên - Bến xe buýt A (khu đô thị ĐH Quốc Gia TP.HCM).</go>
-    <back>Lượt về :  Bến xe buýt A (khu đô thị ĐH Quốc Gia TP.HCM) - rẽ phải - ngã ba đường vào Trường ĐH Khoa Học Tự Nhiên - ngã ba đường vào Trường ĐH Quốc Tế - ngã ba đường vào khu ký túc xá - Đường 621 - Quốc lộ 1A (Trạm 2) - Quốc lộ 1A - Kha Vạn Cân - Hoàng Diệu 2 – Lê Văn Chí – Nguyễn Văn Bá – ngã tư Bình Thái - Xa lộ Hà Nội - Nguyễn Hữu Cảnh - Tôn Đức Thắng - Hàm Nghi - Trần Hưng Đạo - Nguyễn Thái Học - Phạm Ngũ Lão - Cống Quỳnh - Nguyễn Thị Minh Khai - Hùng Vương - Lê Hồng Phong - Bến Lê Hồng Phong.</back>
+    <go>Lượt đi :  Bến Lê Hồng Phong - Trần Phú - Phạm Viết Chánh - Cống Quỳnh -Phạm Ngũ Lão - Nguyễn Cư Trinh - Trần Hưng Đạo - Hàm Nghi - Hồ Tùng Mậu – đường nhánh S2 - Tôn Đức Thắng - Nguyễn Hữu Cảnh - Xa lộ Hà Nội – ngã tư Bình Thái – Xa lộ Hà Nội – ngã 4 Thủ Đức – Võ Văn Ngân - Lê Văn Chí - Hoàng Diệu 2 - Kha Vạn Cân - Quốc lộ 1A - (Trạm 2) - Quốc lộ 1A - Đường 621 – (rẽ trái) - Bến xe buýt A (khu đô thị ĐH Quốc Gia TP.HCM) – (ngã ba đường vào Trường ĐH Khoa Học Tự Nhiên) -.(ngã ba đường vào Trường ĐH Quốc Tế) - Đường trục chính số 1- số 5 - số7 - Ký túc xá B (Đại học Quốc Gia).</go>
+    <back>Lượt về :  Ký túc xá B (Đại học Quốc Gia) - Đường trục chính số 7 - số 5 - số 1 - (rẽ phải) - (ngã 3 đường vào Đại học Quốc tế) - (ngã 3 đường vào trường Đại học Khoa học Tự nhiên) – (bến xe buýt A Đại học Quốc gia) - Đường 621 - Quốc lộ 1A (Trạm 2) - Quốc lộ 1A - Kha Vạn Cân - Hoàng Diệu 2 – Lê Văn Chí – Võ Văn Ngân – ngã 4 Thủ Đức – Xa lộ Hà Nội - ngã 4 Bình Thái - Xa lộ Hà Nội - Nguyễn Hữu Cảnh - Tôn Đức Thắng - Hàm Nghi - Trần Hưng Đạo - Nguyễn Thái Học - Phạm Ngũ Lão - Cống Quỳnh - Nguyễn Thị Minh Khai - Hùng Vương - Lê Hồng Phong - Bến Lê Hồng Phong.</back>
     <detail>Loại hình hoạt động: Buýt nhanh có trợ giá
     Cự ly: 29,35 km 
-    Số chuyến: 156 chuyến/ngày
-    Thời gian chuyến: 70 phút
-    Giãn cách: 8 - 15 phút/chuyến
+    Số chuyến: 116 chuyến/ngày
+    Thời gian chuyến: 75 phút
+    Giãn cách: 10 - 15 phút/chuyến
     Thời gian hoạt động: 05h00 - 18h00
     Loại xe: 55 chỗ 
 
@@ -1174,9 +1095,9 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     <back>Lượt về :  Ga Chợ Lớn A – Lê Quang Sung – Phạm Đình Hổ - Tháp Mười – Phú Hữu – Nguyễn Trãi – Trần Phú – Lê Hồng Phong – Điện Biên Phủ - Hai Bà Trưng - Trần Quang Khải – cầu Hoàng Hoa Thám – Đường số 1 – Phan Xích Long – Phan Đăng Lưu - Nơ Trang Long – Nguyễn Huy Lượng - Lê Quang Định - Bạch Đằng - Xô Viết Nghệ Tĩnh  – Quốc lộ 13  - Đinh Bộ Lĩnh – Bến xe Miền Đông.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 16,85 km
-    Số chuyến: 200 chuyến/ngày
+    Số chuyến: 180 chuyến/ngày
     Thời gian chuyến: 50-55 phút
-    Giãn cách: 8 - 15 phút/chuyến
+    Giãn cách: 10 - 12 phút/chuyến
     Thời gian hoạt động: 04h00 - 20h00
     Loại xe: 80 chỗ 
 
@@ -1189,9 +1110,9 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     <back>Lượt về :  Khu Công nghệ cao (Q.9) - Lê Văn Việt - Quốc lộ 52 - Xa lộ Hà Nội-Điện Biên Phủ-Xô Viết Nghệ Tĩnh - Bạch Đằng - Phan Đăng Lưu - Nguyễn Kiệm - Nguyễn Thái Sơn - Phạm Ngũ Lão - Quang Trung - Tô Ký – CVPM Quang Trung.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 29,8
-    Số chuyến:  Thứ 2 - thứ 6: 236 chuyến/ngày Thừ 7: 190 chuyến/ngày Chủ nhật: 146 chuyến/ngày   
+    Số chuyến:  Thứ 2 - thứ 7: 190 chuyến/ngày Chủ nhật: 146 chuyến/ngày   
     Thời gian chuyến: 70 - 80 phút
-    Giãn cách: 4 - 15 phút/chuyến
+    Giãn cách: 8 - 15 phút/chuyến
     Thời gian hoạt động:  + Chuyến đầu tiên xuất bến: 05h00 + Chuyến cuối cùng xuất bến 19h00 
      Loại xe: 80 chỗ 
 
@@ -1204,9 +1125,9 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     <back>Lượt về :  Trường Đại học Giao thông vận tải (Quận 9) - Lê Văn Việt – ngã tư Thủ Đức – Xa lộ Hà Nội – ngã tư Bình Thái - Xa lộ Hà Nội - cầu Sài Gòn - Cầu vượt Nguyễn Hữu Cảnh - Tôn Đức Thắng - Hàm Nghi - Trạm Sài Gòn - Phạm Ngũ Lão - Trần Hưng Đạo - Nguyễn Cư Trinh - Nguyễn Trãi - Nguyễn Văn Cừ - An Dương Vương - Nguyễn Tri Phương - Hùng Vương - Hồng Bàng - Châu Văn Liêm - Hải Thượng Lãn Ông - Lê Quang Sung - Ga Chợ Lớn A.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 23,35 km
-    Số chuyến: 180 chuyến/ngày
+    Số chuyến: 144 chuyến/ngày
     Thời gian chuyến: 70 phút
-    Giãn cách: 7 - 20 phút/chuyến
+    Giãn cách: 10 - 15 phút/chuyến
     Thời gian hoạt động: 05h00 - 21h00
     Loại xe: 80 chỗ 
 
@@ -1219,9 +1140,9 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     <back>Lượt về :  Trường THPT Hiệp Bình - Hiệp Bình - Kha Vạn Cân - Võ Văn Ngân - Lê Văn Việt - Đình Phong Phú - Dương Đình Hội - Đỗ Xuân Hợp - Đường số 8 - Đường số 18B - Đường số 6D - Đường số 9 - Đường số 20 - Đại lộ 3 - Bến chợ Phước Bình (Trường trung cấp nghề TP.HCM cơ sở III).</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 12,9 km
-    Số chuyến: 146 chuyến/ngày
+    Số chuyến: 136 chuyến/ngày
     Thời gian chuyến: 45 phút
-    Giãn cách: 8 - 15 phút/chuyến
+    Giãn cách: 10 - 15 phút/chuyến
     Thời gian hoạt động: 05h00 - 18h30
     Loại xe: 40 chỗ 
 
@@ -1234,12 +1155,12 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     <back>Lượt về :  Ngược lại.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 19,6 km
-    Số chuyến: 188 chuyến/ngày
+    Số chuyến: 126 chuyến/ngày
     Thời gian chuyến: 50 phút
-    Giãn cách: 8 - 10 phút/chuyến
+    Giãn cách: 12 - 15 phút/chuyến
     Thời gian hoạt động:
-    Ngã 4 Ga: 05h00 - 18h04
-    Bình Mỹ: 05h00 - 19h10
+    Ngã 4 Ga: 05h00 - 18h15
+    Bình Mỹ: 05h00 - 19h12
     Loại xe: 12 chỗ 
 
 Đơn vị đảm nhận: - HTX Vận tải Liên tỉnh và Du lịch Việt Thắng, ĐT: 38.535.935</detail>
@@ -1251,7 +1172,7 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     <back>Lượt về :  Bến xe Ngã tư Ga - Quốc lộ 1A - quay đầu - Quốc lộ 1A - Đường nội bộ khu dân cư Nam Long - Hà Huy Giáp - Nguyễn Oanh - Nguyễn Kiệm - Hoàng Minh Giám - Phổ Quang - Phan Đình Giót - Trần Quốc Hoàn - Hoàng Văn Thụ - Xuân Diệu - Xuân Hồng - Trường Chinh - Lý Thường Kiệt - Tô Hiến Thành - Nguyễn Tri Phương – Trần Phú – Trần Hưng Đạo - cầu Nguyễn Tri Phương - cầu Chánh Hưng - Phạm Hùng - Tạ Quang Bửu - Đường số 1011 - Phạm Thế Hiển - Quốc lộ 50 - Bến xe Quận 8.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 23,7 km
-    Số chuyến: Thứ 2- thứ 6: 208 chuyến/ngày Thứ 7 + chủ nhật: 168 chuyến/ngày
+    Số chuyến: Thứ 2- thứ 6: 176 chuyến/ngày Thứ 7 + chủ nhật: 168 chuyến/ngày
     Thời gian chuyến: 80-87 phút
     Giãn cách: 7 - 15 phút/chuyến
     Thời gian hoạt động:Thứ 2-thứ 6: BX Quận 8: 05h00 - 18h30.BX Ngã 4 Ga: 04h55 - 18h40Thứ 7 và chủ nhật: BX Quận 8: 04h50 - 18h30.BX Ngã 4 Ga: 05h00 - 18h40  
@@ -1317,7 +1238,10 @@ Bến xe Miền Tây - Kinh Dương Vương - Quốc lộ 1A - Đường vào si
     <name>Bến xe Miền Đông - Bến xe Hố Nai</name>
     <go>Lượt đi :  Bến xe Miền Đông – Đinh Bộ Lĩnh – Bạch Đằng – Xô Viết Nghệ Tĩnh – Ngã 4 Hàng Xanh - Điện Biên Phủ - Xa lộ Hà Nội – Quốc lộ 1A – Bến xe Hố Nai.</go>
     <back>Lượt về :  Bến xe Hố Nai – Quốc lộ 1A - Công viên 30/4 - Quốc lộ 1A - Xa lô Hà Nội - Điện Biên Phủ - Ngã 4 Hàng Xanh – Xô Viết Nghệ Tĩnh – Quốc lộ 13 – Đinh Bộ Lĩnh - Bến xe Miền Đông.</back>
-    <detail>- Giá vé: 3.000đ, 6.000đ, 8.000đ, 10.000đ/HK/lượt.</detail>
+    <detail>- Giá vé:   + Hành khách lên xuống: 6.000đ/lượt.
+  + Hành khách đi lại dưới 1/3 cự ly: 10.000đ/lượt.
+  + Hành khách đi lại từ 1/3 đến 2/3 cự ly: 15.000đ/lượt.
+  + Hành khách đi lại trên 2/3 cự ly đến suốt tuyến: 20.000đ/lượt.</detail>
   </BusDetail>
   <BusDetail>
     <id>61</id>
@@ -1328,7 +1252,7 @@ Ga Chợ Lớn B-Lê Quang Sung-Phạm Đình Hổ-Hậu Giang-Minh Phụng-Hồ
 Khu công nghiệp Lê Minh Xuân-Trần Đại Nghĩa-Quốc lộ 1A-Kinh Dương Vương-An Dương Vương-Đường số 59-Đường số 44-Đường Vành Đai-Đường số 74-Trần Văn Kiểu-Đường số 26-Nguyễn Văn Luông-Hồng Bàng-Minh Phụng-Hậu Giang-Tháp Mười-Nguyễn Hữu Thận-Lê Quang Sung-Nguyễn Thị Nhỏ-Nguyễn Trãi-Xóm Vôi-Bến xe Chợ Lớn (Bến B).</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 19 km 
-    Số chuyến: 204 chuyến/ngàyThời gian chuyến: 50 phút
+    Số chuyến: 180 chuyến/ngàyThời gian chuyến: 50 phút
     Giãn cách: 8 - 15 phút/chuyến
     Thời gian hoạt động: Đầu bến: Bến xe Chợ Lớn:       04h50 - 19h00 Đầu bến KCN Lê Minh Xuân: 05h00 - 19h00
     Loại xe: 40 chỗ 
@@ -1351,7 +1275,7 @@ Bến xe An Sương – Quốc lộ 22 – Quốc lộ 1A – Ngã 4 Bình Phư�
 Ngược lại.</back>
     <detail>5 giờ 30        - Chuyến cuối cùng xuất bến: 18 giờ 00
 
-• Thời gian giãn cách: 13-40 phút/chuyến       • Loại xe: 55 chỗ       • Giá vé:          - Hành khách đi lại dưới 1/2 cự ly tuyến:             Giá vé 6.000đồng/ Hành khách /lượt          - Hành khách đi lại từ 1/2 cự ly đến suốt tuyến:             Giá vé 12.000đồng/ Hành khách /lượt.</detail>
+• Thời gian giãn cách: 13-40 phút/chuyến       • Loại xe: 55 chỗ       • Giá vé:          - Hành khách đi lại dưới 10km:             Giá vé 6.000đồng/ Hành khách /lượt         - Hành khách đi lại từ 10km đến 22 km:             Giá vé 10.000đồng/ Hành khách /lượt          - Hành khách đi lại trên 22km đến suốt tuyến:             Giá vé 13.000đồng/ Hành khách /lượt.</detail>
   </BusDetail>
   <BusDetail>
     <id>61-4</id>
@@ -1397,17 +1321,18 @@ Bình Mỹ - Bình Dương: 6.000đồng/ Hành khách /lượt Bình Dương - 
     <back>Lượt về :  Khu Du lịch Đại Nam - Đại lộ Bình Dương - Quốc lộ 13 - Quốc lộ 1A - đường vòng lên cầu vượt Quang Trung - Tô Ký - Nguyễn Văn Quá - Trường Chinh - (quay đầu) - Trường Chinh - Tây Thạnh  - Lê Trong Tấn - Ngã 4 Gò Mây - Quốc lộ 1A - Hương Lộ 2 - Mã Lò - Tỉnh lộ 10 -  Đường số 40 - Đường số 7 - Tên Lửa  - Kinh Dương Vương - (quay đầu) - Kinh Dương Vương - Bến xe Miền Tây.</back>
     <detail>• Loại hình hoạt động: Buýt nhanh không trợ giá      • Cự ly: 55.6 km      • Số chuyến:         Thứ 2 - thứ 7: 44 chuyến/ngày        Chủ nhật: 48 chuyến/ngày      • Thời gian hoạt động:       - Bến xe Miền Tây: 4h00-17h30 
        - Khu DL Đại Nam: 6h00-17h30 (Chủ nhật 5h50-17h30)       • Thời gian chuyến: 120 phút/chuyến
-      • Thời gian giãn cách: 30-45 phút/chuyến      • Loại xe: 55 - 80 chỗ       • Giá vé:          - Hành khách đi lại dưới 1/3 cự ly tuyến:             Giá vé 8.000đồng/ Hành khách /lượt          - Hành khách đi lại từ 1/3 đến dưới 2/3 cự ly tuyến:             Giá vé 15.000đồng/ Hành khách /lượt.           - Hành khách đi lại từ 2/3 cự ly đến suốt tuyến (59 km):             Giá vé 20.000đồng/ Hành khách /lượt.  
+      • Thời gian giãn cách: 30-45 phút/chuyến      • Loại xe: 55 - 80 chỗ       • Giá vé:          - Hành khách đi lại dưới 7km:             Giá vé 5.000đồng/ Hành khách /lượt          - Hành khách đi lại từ 7km đến 18km:             Giá vé 10.000đồng/ Hành khách /lượt.
+         - Hành khách đi lại trên 18km đến 35km:             Giá vé 15.000đồng/ Hành khách /lượt.         - Hành khách đi lại trên 35km đến suốt tuyến            Giá vé 25.000đồng/ Hành khách /lượt.  
  
 Đơn vị đảm nhận: - HTX Vận tải Du lịch Số 22, ĐT: 37.160.266</detail>
   </BusDetail>
   <BusDetail>
     <id>62</id>
     <name>Bến xe  Quận 8 -Thới An</name>
-    <go>Lượt đi :  Ga hành khách Quận 8-Quốc lộ 50-(Cầu Nhị Thiên Đường)-Tùng Thiện Vương-(Cầu Chà Và)-Hải Thượng Lãn Ông-(Quay đầu tại giao lộ Triệu Quang Phục)-Hải Thượng Lãn Ông-Châu Văn Liêm-Thuận Kiều-Lê Đại Hành-Lãnh Binh Thăng-Ông Ích Khiêm-Hòa Bình-Lũy Bán Bích-Âu Cơ-Trường Chinh-Nguyễn Văn Quá-Tô Ký-Quốc lộ 1A-Lê Văn Khương-Bến xe buýt Thới An.</go>
-    <back>Lượt về :  Bến xe buýt Thới An-Lê Văn Khương-Quốc lộ 1A-Đường vòng cầu vượt Quang Trung-Tô Ký-Nguyễn Văn Quá-(quay đầu ngã ba Phan Văn Hớn)-Trường Chinh-Âu Cơ-Lũy Bán Bích-Hòa Bình-Ông Ích Khiêm-Lãnh Binh Thăng-Tôn Thất Hiệp-đường 3/2-Phó Cơ Điều-Nguyễn Chí Thanh-Thuận Kiều-Châu Văn Liêm-Vạn Kiếp-(Cầu Chà Và)-Xóm Củi-Cao Xuân Dục-Tùng Thiện Vương-(Cầu Nhị Thiên Đường)-Quốc lộ 50-Ga hành khách Quận 8.</back>
+    <go>Lượt đi :  Ga hành khách Quận 8-Quốc lộ 50-(Cầu Nhị Thiên Đường)-Tùng Thiện Vương-(Cầu Chà Và)-Hải Thượng Lãn Ông-(Quay đầu tại giao lộ Triệu Quang Phục)-Hải Thượng Lãn Ông-Châu Văn Liêm-Hồng Bàng - Lý Thường Kiệt - Nguyễn Chí Thanh - Thuận Kiều-Lê Đại Hành-Lãnh Binh Thăng-Ông Ích Khiêm-Hòa Bình-Lũy Bán Bích-Âu Cơ-Trường Chinh-Nguyễn Văn Quá-Tô Ký-Quốc lộ 1A-Lê Văn Khương-Bến xe buýt Thới An.</go>
+    <back>Lượt về :  Bến xe buýt Thới An-Lê Văn Khương-Quốc lộ 1A-Đường vòng cầu vượt Quang Trung-Tô Ký-Nguyễn Văn Quá-(quay đầu ngã ba Phan Văn Hớn)-Trường Chinh-Âu Cơ-Lũy Bán Bích-Hòa Bình-Ông Ích Khiêm-Lãnh Binh Thăng-Tôn Thất Hiệp-đường 3/2-Phó Cơ Điều-Nguyễn Chí Thanh-Lý Thường Kiệt - Hồng Bàng - Châu Văn Liêm -Vạn Kiếp-(Cầu Chà Và)-Xóm Củi-Cao Xuân Dục-Tùng Thiện Vương-(Cầu Nhị Thiên Đường)-Quốc lộ 50-Ga hành khách Quận 8.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-    Cự ly: 22,4 km
+    Cự ly: 23,2 km
     Số chuyến: 104 chuyến/ngày
     Thời gian chuyến: 75-80 phút
     Giãn cách: 14 - 20 phút/chuyến
@@ -1545,14 +1470,6 @@ Xe khách liên tỉnh Miền Tây, ĐT: 3.8.750.193
 Xe khách liên tỉnh Miền Tây, ĐT: 3.8.750.193</detail>
   </BusDetail>
   <BusDetail>
-    <id>63</id>
-    <name>An Thới Đông - Tam Thôn Hiệp</name>
-    <go>Lượt đi :  Chợ Tam Hiệp (Khu dân cư An Phước) - Tam Thôn Hiệp - Rừng Sát - An Thới Đông - Bến đò An Thới Đông (UBND Xã An Thới Đông).</go>
-    <back>Lượt về :  Bến đò An Thới Đông (UBND Xã An Thới Đông) - An Thới Đông - Rừng Sát - Tam Thôn Hiệp - Chợ Tam Hiệp (Khu dân cư An Phước).</back>
-    <detail>
-    </detail>
-  </BusDetail>
-  <BusDetail>
     <id>64</id>
     <name>Bến xe  Miền Đông - Đầm Sen</name>
     <go>Lượt đi :    
@@ -1593,7 +1510,7 @@ Bãi xe buýt Đầm Sen-Hòa Bình-quay đầu (vòng xoay Hòa Bình-Lạc Lon
     <back>Lượt về :  Bến xe An Sương-Quốc lộ 22-Trường Chinh-Lý Thường Kiệt-Nguyễn Chí Thanh-Tạ Uyên-Hồng Bàng-Xóm Vôi-Ga Chợ Lớn B.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 15,35 km
-    Số chuyến: 220 chuyến/ngày
+    Số chuyến: 200 chuyến/ngày
     Thời gian chuyến: 55 phút
     Giãn cách: 8 - 15 phút/chuyến
     Thời gian hoạt động:
@@ -1610,7 +1527,7 @@ Bãi xe buýt Đầm Sen-Hòa Bình-quay đầu (vòng xoay Hòa Bình-Lạc Lon
     <back>Lượt về :  Bến khu chế xuất Tân Thuận - Nguyễn Văn Linh - (quay đầu) - Nguyễn Văn Linh - Huỳnh Tấn Phát - Nguyễn Thị Thập - cầu Đa Khoa - Nguyễn Văn Linh – Nguyễn Lương Bằng – Trần Văn Trà – Nguyễn Đức Cảnh – Nguyễn Văn Linh - Nguyễn Hữu Thọ - Trường đại học Tôn Đức Thắng - Nguyễn Hữu Thọ -  Đường số 15 - Lê Văn Lương - Trần Xuân Soạn - Phạm Thế Hiển - Dạ Nam - cầu Chữ Y - Nguyễn Biểu - Nguyễn Trãi - Nguyễn Tri Phương - Hồng Bàng - Phú Hữu - Trang Tử - Ga Chợ Lớn B.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 19,00 km
-    Số chuyến: 130 chuyến/ngày
+    Số chuyến: 120 chuyến/ngày
     Thời gian chuyến: 60-65 phút
     Giãn cách: 10 - 15 phút/chuyến
     Thời gian hoạt động: BX Chợ Lớn: 05h00 - 18h25KCX Tân Thuận: 05h20 - 18h35
@@ -1653,7 +1570,7 @@ Bãi xe buýt Đầm Sen-Hòa Bình-quay đầu (vòng xoay Hòa Bình-Lạc Lon
     <name>Bến xe Củ Chi - Bến xe Gò Dầu</name>
     <go>Lượt đi :  Bên xe Củ Chi - Quốc lộ 22 - Bến xe Trảng Bàng - Quốc lộ 22 - Bến xe Gò Dầu.</go>
     <back>Lượt về :  Ngược lại.</back>
-    <detail>• Loại hình hoạt động: Buýt không trợ giá • Cự ly: 27,7 km • Số chuyến: 150 chuyến/ngày • Thời gian hoạt động:   - Bến xe Củ Chi:      5h00 – 19h00   - Bến xe Gò Dầu:     3h50 – 17h50  • Thời gian chuyến: 50 phút  • Thời gian giãn cách: 10 phút/chuyến   • Loại xe: 80 chỗ   • Giá vé:    - Hành khách đi lại dưới 1/2 cự ly tuyến trở xuống:      Giá vé 5.000đồng/ Hành khách /lượt    - Hành khách đi lại từ 1/2 cự ly đến suốt tuyến:      Giá vé 10.000đồng/ Hành khách /lượt.                    Đơn vị đảm nhận: - HTX Vận tải Xe buýt Quyết Tiến, ĐT:  38.100.647</detail>
+    <detail>• Loại hình hoạt động: Buýt không trợ giá • Cự ly: 27,7 km • Số chuyến: 150 chuyến/ngày • Thời gian hoạt động:   - Bến xe Củ Chi:      5h00 – 19h00   - Bến xe Gò Dầu:     3h50 – 17h50  • Thời gian chuyến: 50 phút  • Thời gian giãn cách: 10 phút/chuyến   • Loại xe: 80 chỗ   • Giá vé:    - Hành khách đi lại từ 1/2 cự ly tuyến trở xuống:      Giá vé 8.000đồng/ Hành khách /lượt    - Hành khách đi lại trên 1/2 cự ly đến suốt tuyến:      Giá vé 12.000đồng/ Hành khách /lượt.                    Đơn vị đảm nhận: - HTX Vận tải Xe buýt Quyết Tiến, ĐT:  38.100.647</detail>
   </BusDetail>
   <BusDetail>
     <id>70-2</id>
@@ -1672,7 +1589,7 @@ Bãi xe buýt Đầm Sen-Hòa Bình-quay đầu (vòng xoay Hòa Bình-Lạc Lon
     <name>Bến Thành – Mộc Bài</name>
     <go>Lượt đi :  Khách sạn New World - Lê Lai – Trạm điều hành Sài Gòn (Chợ Bến Thành) –  Phạm Ngũ Lão – Cống Quỳnh - Nguyễn Thị Minh Khai - Hùng Vương - Hồng Bàng - Thuận Kiều - Nguyễn Chí Thanh - Lý Thường Kiệt - Ngã tư Bảy Hiền - Hoàng Văn Thụ - Lăng Cha Cả - Cộng Hòa - Bà Quẹo - Trường Chinh -  Quốc lộ 22 - Gò Dầu -Quốc lộ 22 - Mộc Bài.</go>
     <back>Lượt về :  Mộc Bài - Quốc lộ 22 - Gò Dầu - Quốc lộ 22 - Trường Chinh - Bà Quẹo - Cộng Hòa - Nguyễn Thái Bình -  Xuân Diệu - Xuân Hồng - Trường Chinh - Ngã tư Bảy Hiền - Lý Thường Kiệt - Hồng Bàng - Trần Phú -  Nguyễn Thị Minh Khai - Phạm Viết Chánh - Cống Quỳnh - Nguyễn Trãi - Lê Lai - Trạm điều hành Sài Gòn (chợ Bến Thành) - Phạm Ngũ Lão –  Nguyễn Trãi - Lê Lai - Khách Sạn New World.</back>
-    <detail>8h35-19h30 
+    <detail>8h15-19h15 
     
     
     Giá vé 10.000đồng/ Hành khách /lượt</detail>
@@ -1722,7 +1639,7 @@ Bãi xe buýt Đầm Sen-Hòa Bình-quay đầu (vòng xoay Hòa Bình-Lạc Lon
     <back>Lượt về :  Khu công nghiệp Lê Minh Xuân-Láng Le Bàu Cò-Tỉnh lộ 10-QL1A-Đường số 7-Lộ Tẻ-Tỉnh lộ 10-Nguyễn Cửu Phú-Cầu Chợ Đệm-Nguyễn Hữu Trí-Chợ Đệm-Nguyễn Hữu Trí-Bùi Thanh Thiết-QL1A-Đinh Đức Thiện-Trịnh Như Khuê-Đường 18B-Chợ Bình Chánh.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 19,0 km
-    Số chuyến: 120 chuyến/ngày
+    Số chuyến: 115 chuyến/ngày
     Thời gian chuyến: 55 phút
     Giãn cách: 12 - 15 phút/chuyến
     Thời gian hoạt động:    Chợ Bình Chánh:       05h00 - 18h20   KCN Lê Minh Xuân: 05h15 - 18h25 
@@ -1738,10 +1655,10 @@ Bãi xe buýt Đầm Sen-Hòa Bình-quay đầu (vòng xoay Hòa Bình-Lạc Lon
     <back>Lượt về :  Bến xe Củ Chi - Quốc lộ 22 - Bến xe An Sương.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 21,85 km
-    Số chuyến:  310 chuyến/ngày                                             
+    Số chuyến:  280 chuyến/ngày                                             
     Thời gian chuyến:  45 phút/chuyến
     Thời gian hoạt động:- Bến xe An Sương: 4 giờ 40 -20 giờ 30- Bến xe Củ Chi:       3 giờ 40 - 19 giờ 20 
-    Thời gian giãn cách:  4 - 15 phút/chuyến    
+    Thời gian giãn cách:  5 - 15 phút/chuyến    
     Loại xe:  80 chỗ 
 
 Đơn vị đảm nhận: - HTX Vận tải Liên tỉnh và Du lịch Việt Thắng, ĐT: 38.535.935</detail>
@@ -1793,15 +1710,15 @@ Công viên Đền Vua Hùng-Đường số 11-Hoàng Hữu Nam-Đường số 4
   <BusDetail>
     <id>78</id>
     <name>Thới An – Hóc Môn</name>
-    <go>Lượt đi :  Bến Thới An - Lê Văn Khương - Đặng Thúc Vịnh (Tỉnh lộ 9 cũ) - Tô Ký - Lê Lợi - Hương lộ 60 B - Bến xe HTX 19/5.</go>
-    <back>Lượt về :  Ngược lại.</back>
-    <detail>Loại hình hoạt động: Buýt không trợ giá
+    <go>Lượt đi :  Bến Thới An - Lê Văn Khương - Đặng Thúc Vịnh (Tỉnh lộ 9 cũ) - Quang Trung - Lê Lợi - Hương lộ 60 B - Bến xe Hợp tác xã vận tải 19/5.</go>
+    <back>Lượt về :  Bến xe Hợp tác xã vận tải 19/5 - Hương lộ 60B - Lê Lợi - Quang Trung - Đặng Thúc Vịnh - Lê Văn Khương - Bến Thới An.</back>
+    <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 10.4 km
-    Số chuyến: Từ ngày 01 đến ngày 12 trong tháng: 132 chuyến/ngàyTừ ngày 13 đến ngày cuối cùng trong tháng: 120 chuyến/ngày 
+    Số chuyến: 120 chuyến/ngày
     Thời gian chuyến: 40 phút
-    Giãn cách: 10 - 15 phút/chuyến
+    Giãn cách: 10 - 15 phút/chuyến
     Thời gian hoạt động: 05h30 - 19h00
-    Loại xe:  12 - 40 chỗ 
+    Loại xe:  40 chỗ (không máy lạnh)
 
 Đơn vị đảm nhận: - , ĐT:</detail>
   </BusDetail>
@@ -1840,9 +1757,9 @@ Công viên Đền Vua Hùng-Đường số 11-Hoàng Hữu Nam-Đường số 4
     <back>Lượt về :  Bến Lê Minh Xuân (cuối đường Vườn Thơm) - Vườn Thơm - Cầu Xáng - Tỉnh lộ 10 - Bà Hom -  Hồng Bàng -  Phú Hữu - Bến xe Chợ Lớn A.</back>
     <detail>Loai hình hoạt động: Buýt có trợ giá
     Cự ly: 22,4 km
-    Số chuyến: 250 chuyến/ngày
+    Số chuyến: 220 chuyến/ngày
     Thời gian chuyến: 70 phút
-    Giãn cách: 7 - 15 phút/chuyến
+    Giãn cách: 8 - 15 phút/chuyến
     Thời gian hoạt động:    BX Chợ Lớn:   04h45 - 19h50    Lê Minh Xuân: 04h30 - 19h30
     Loại xe: 80 chỗ 
 
@@ -1867,10 +1784,10 @@ Công viên Đền Vua Hùng-Đường số 11-Hoàng Hữu Nam-Đường số 4
     <name>Bến xe  Củ Chi - Cầu Thầy Cai</name>
     <go>Lượt đi :  Bến xe Củ Chi - Quốc lộ 22 - Tỉnh lộ 8 - Cầu Thầy Cai ( ranh giới giữa địa phận Thành phố Hồ Chí Minh và địa phận Tỉnh Long An).</go>
     <back>Lượt về :  Ngược lại.</back>
-    <detail>Số chuyến: 120 chuyến/ngày
+    <detail>Số chuyến: 110 chuyến/ngày
     Thời gian chuyến: 15 phút
-    Giãn cách: 10 - 15 phút/chuyến
-    Thời gian hoạt động:    BX Củ Chi: 05h00 - 19h00    Cầu Thầy Cai: 04h55 - 18h55
+    Giãn cách: 10 - 20 phút/chuyến
+    Thời gian hoạt động:    BX Củ Chi: 05h15 - 19h00    Cầu Thầy Cai: 05h00 - 18h45
     Loại xe: 40 chỗ 
 
 Đơn vị đảm nhận: - , ĐT: 3</detail>
@@ -1882,7 +1799,7 @@ Công viên Đền Vua Hùng-Đường số 11-Hoàng Hữu Nam-Đường số 4
     <back>Lượt về :  Thị trấn Tân Túc (Cống Ông Cốm) - Nguyễn Hữu Trí - Chợ Đệm - Nguyễn Hữu Trí - Quốc lộ 1A - Kinh Dương Vương - Hồng Bàng - Nguyễn Trãi - Xóm Vôi - Ga Chợ Lớn B.</back>
     <detail>Loại hình: Buýt có trợ giá
     Cự ly: 16 km
-    Số chuyến: 120 chuyến/ngày
+    Số chuyến: 115 chuyến/ngày
     Thời gian chuyến: 45 phút
     Giãn cách: 12 - 15 phút/chuyến
     Thời gian hoạt động:    BX Chợ Lớn: 05h45 - 19h45    Chợ Đệm:      04h40 - 18h40
@@ -1908,21 +1825,22 @@ Công viên Đền Vua Hùng-Đường số 11-Hoàng Hữu Nam-Đường số 4
   <BusDetail>
     <id>86</id>
     <name>Bến Thành - Đại học Tôn Đức Thắng</name>
-    <go>Lượt đi :  Bãi đậu xe Công viên 23/9 – Lê Lai – Trạm Bến Thành – Trần Hưng Đạo – Phạm Ngũ Lão – Nguyễn Thái Học – Hoàng Diệu – Khánh Hội – Nguyễn Hữu Thọ - Cổng 2 Đại học Tôn Đức Thắng – Đường nội bộ Đại học Tôn Đức Thắng – Bến đậu xe Cổng 1, Trường Đại học Tôn Đức Thắng.</go>
-    <back>Lượt về :  Bến đậu xe Cổng 1, Trường Đại học Tôn Đức Thắng – Cổng 3 Đại học Tôn Đức Thắng - Nguyễn Hữu Thọ - Lê Văn Lương - Nguyễn Văn Linh - Nguyễn Hữu Thọ - Cầu Kênh Tẻ  -  Khánh Hội – Hoàng Diệu – Nguyễn Thái Học – Trần Hưng Đạo – Phạm Ngũ Lão – Trạm Bến Thành – Phạm Ngũ Lão – Bãi đậu xe Công viên 23/9.</back>
+    <go>Lượt đi :  
+Bãi đậu xe Công viên 23/9 – Lê Lai – trạm Bến Thành – Trần Hưng Đạo – Phạm Ngũ Lão – Nguyễn Thái Học – cầu Ông Lãnh - Hoàng Diệu – Khánh Hội – cầu Kênh Tẻ - Nguyễn Hữu Thọ - đường D6 – quay đầu (cổng khu KTX ĐH Tôn Đức Thắng) – đường D6 – Nguyễn Hữu Thọ - cổng số 2 Trường ĐH Tôn Đức Thắng – Đường nội bộ Trường ĐH Tôn Đức Thắng – Bến đậu xe tại cổng số 1 Trường ĐH Tôn Đức Thắng.</go>
+    <back>Lượt về :  Bến đậu xe tại cổng số 1 Trường ĐH Tôn Đức Thắng – cổng số 3 Trường ĐH Tôn Đức Thắng - Nguyễn Hữu Thọ - Lê Văn Lương - Nguyễn Văn Linh - Nguyễn Hữu Thọ - cầu Kênh Tẻ - Khánh Hội – Hoàng Diệu – cầu Ông Lãnh - Nguyễn Thái Học – Trần Hưng Đạo – Phạm Ngũ Lão – trạm Bến Thành – vòng xoay Bến Thành – Trần Hưng Đạo - Phạm Ngũ Lão – Bãi xe buýt Công viên 23/9.</back>
     <detail>• Loại hình hoạt động: Buýt nhanh có trợ giá
 
 
 
 Chuyến đầu tiên xuất bến: 05 giờ 40 phút
-Chuyến cuối cùng xuất bến 18 giờ 00 phút
+Chuyến cuối cùng xuất bến 18 giờ 10 phút
 
 
 
 - Ngày hoạt động trong tuần: Từ thứ 2 đến thứ 7
 
 
-- Thời gian giãn cách: 8 - 12 phút/chuyến</detail>
+- Thời gian giãn cách: 5 - 12 phút/chuyến</detail>
   </BusDetail>
   <BusDetail>
     <id>87</id>
@@ -1942,13 +1860,13 @@ Chuyến cuối cùng xuất bến 18 giờ 00 phút
   <BusDetail>
     <id>88</id>
     <name>Bến Thành - Chợ Long Phước</name>
-    <go>Lượt đi :  Bãi đậu xe buýt Công viên 23/9 - Lê Lai - (vòng xoay) - Trần Hưng Đạo - Phạm Ngũ Lão - Yersin - Trần Hưng Đạo - Trạm Bến Thành (cây xăng) - Hàm Nghi - Hồ Tùng Mậu - đường nhánh S2 - Tôn Đức Thắng - Nguyễn Hữu Cảnh - (cầu Thủ Thiêm) - Lương Định Của - Nguyễn Thị Định - Nguyễn Duy Trinh - Long Thuận - Long Phước - Chợ Long Phước.</go>
+    <go>Lượt đi :  Bãi đậu xe buýt Công viên 23/9 - Lê Lai - vòng xoay Bến Thành - Phó Đức Chính - Lê Thị Hồng Gấm - Calmette - Phạm Ngũ Lão - trạm Bến Thành - Hàm Nghi - Hồ Tùng Mậu - đường nhánh S2 - Tôn Đức Thắng - Nguyễn Hữu Cảnh - (cầu Thủ Thiêm) - Lương Định Của - Nguyễn Thị Định - Nguyễn Duy Trinh - Long Thuận - Long Phước - Chợ Long Phước.</go>
     <back>Lượt về :  Chợ Long Phước - Long Phước - Long Thuận - Nguyễn Duy Trinh - Nguyễn Thị Định – (ngã 3 An Phú) - Nguyễn Thị Định - Lương Định Của - (cầu Thủ Thiêm) - Nguyễn Hữu Cảnh - Tôn Đức Thắng - Hàm Nghi - Trạm Bến Thành (mặt sau) - Trần Hưng Đạo - Phạm Ngũ Lão - Bãi đậu xe buýt Công viên 23/9.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 22,45
-    Số chuyến: 240 chuyến/ngày
+    Số chuyến: 210 chuyến/ngày
     Thời gian chuyến: 65 phút
-    Giãn cách: 6 - 10 phút/chuyến
+    Giãn cách: 7 - 10 phút/chuyến
     Thời gian hoạt động: Bến Thành 05h00 - 19h00 Bến Thành 04h45 - 19h00
     Loại xe: 40 chỗ 
 
@@ -1976,7 +1894,7 @@ Chuyến cuối cùng xuất bến 18 giờ 00 phút
     <back>Lượt về :  Ngược lại.</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 45,6 km
-    Số chuyến: 148 chuyến/ngày
+    Số chuyến: 138 chuyến/ngày
     Thời gian chuyến: 80 phút
     Giãn cách: 6 - 15 phút/chuyến
     Thời gian hoạt động:    Bình Khánh: 05h00 - 19h00   Cần Thạnh:  04h45 - 19h00 
@@ -2029,7 +1947,7 @@ Chợ nông sản Thủ Đức - Quốc lộ 1A - Quốc lộ 13 - Đinh Bộ L�
     <go>Lượt đi :  Bến Xe Chợ Lớn (Bến A) - Lê Quang Sung - Nguyễn Thị Nhỏ - Hồng Bàng - Tạ Uyên - Nguyễn Chí Thanh - Lý Thường Kiệt - Hoàng Văn Thụ - Xuân Diệu - Xuân Hồng - Trường Chinh - Quốc lộ 22 - Bến xe Củ Chi.</go>
     <back>Lượt về :  Bến xe Củ Chi - Quốc lộ 22 - Trường Chinh - Lý Thường Kiệt - Nguyễn Chí Thanh - Tạ Uyên - Phú Hữu - Bến xe Chợ Lớn (Bến A).</back>
     <detail>Loại hình hoạt động: Buýt nhanh có trợ giá
-    Số chuyến: 207 chuyến/ngày (trong đó có 15 chuyến phục vụ người khuyết tật).
+    Số chuyến: 197 chuyến/ngày (trong đó có 15 chuyến phục vụ người khuyết tật).
     Thời gian chuyến: 75 phút
     Giãn cách: 8 - 15 phút/chuyến
     Thời gian hoạt động:    BX Chợ Lớn: 04h45 - 20h30    BX Củ Chi: 04h00 - 19h00
@@ -2081,20 +1999,20 @@ Bến Trung tâm thương mại Bình Điền (đối diện lồng F) - Nguyễ
   </BusDetail>
   <BusDetail>
     <id>99</id>
-    <name>Chợ Bình Khánh - Đại học Quốc gia,</name>
+    <name>Chợ Thạnh Mỹ Lợi - Đại học Quốc gia,</name>
     <go>Lượt đi :  
-Bến chợ Bình Khánh (Quận 2) - Đường nội bộ khu tái định cư 17,3 ha - Lương Định Của - Nguyễn Thị Định - Xa lộ Hà Nội - Tây Hòa - Đỗ Xuân Hợp - Tăng Nhơn Phú - Đình Phong Phú - Lê Văn Việt - Hoàng Hữu Nam - Cầu Xây - Nam Cao - Quốc lộ 1A - Đường 621 - (rẽ phải) - Đường trục chính số 1 - số 5 - số 7 - Ký túc xá B (Đại học Quốc Gia).</go>
+Bến Khu dân cư Thạnh Mỹ Lợi (trước khu vui chơi thiếu nhi cách ngã 3 Trương Gia Mô - Đồng Văn Cống 100m) - Trương Gia Mô - Phạm Thận Duật - Nguyễn Khoa Đăng - Đường nội bộ khu dự án CN Sài Gòn - Lâm Văn Ky - Trương Văn Bang - (UBND Quận 2) - Phan Văn Đáng - Đồng Văn Cống - Mai Chí Thọ - Nguyễn Thị Định - Xa lộ Hà Nội - Tây Hòa - Đỗ Xuân Hợp - Tăng Nhơn Phú - Đình Phong Phú - Lê Văn Việt - Hoàng Hữu Nam - Cầu Xây - Nam Cao - Quốc lộ 1A - Đường 621 - (rẽ phải) - Đường trục chính số 1 - số 5 - số 7 - Ký túc xá B (Đại học Quốc Gia).</go>
     <back>Lượt về :  
-Ký túc xá B (Đại học Quốc Gia) - Đường trục chính số 7 - số 5 - số 1 - (rẽ trái) - Đường 621 - Quốc lộ 1A - Đường vòng chân cầu vượt Trạm 2 - Cầu vượt Trạm 2 - (quay đầu) - Nam Cao - Cầu Xây - Hoàng Hữu Nam - Lê Văn Việt - Đình Phong Phú - Tăng Nhơn Phú - Đỗ Xuân Hợp - Tây Hòa - Xa lộ Hà Nội - Nguyễn Thị Định - Lương Định Của - Đường nội bộ khu tái định cư 17,3 ha - Bến chợ Bình Khánh (Quận 2).</back>
+Ký túc xá B (Đại học Quốc Gia) - Đường trục chính số 7 - số 5 - số 1 - (rẽ trái) - Đường 621 - Quốc lộ 1A - Đường vòng chân cầu vượt Trạm 2 - Cầu vượt Trạm 2 - (quay đầu) - Nam Cao - Cầu Xây - Hoàng Hữu Nam - Lê Văn Việt - Đình Phong Phú - Tăng Nhơn Phú - Đỗ Xuân Hợp - Tây Hòa - Xa lộ Hà Nội - Nguyễn Thị Định - Mai Chí Thọ - Đồng Văn Cống - Phan Văn Đáng - Trương Văn Bang - (UBND Quận 2) - Trương Văn Bang – Lâm Văn Ky - Đường nội bộ khu dự án CN Sài Gòn - Nguyễn Khoa Đăng - Phạm Thận Duật - Trương Gia Mô - Bến Khu dân cư Thạnh Mỹ Lợi (trước khu vui chơi thiếu nhi cách ngã 3 Trương Gia Mô - Đồng Văn Cống 100m).</back>
     <detail>Loại hình hoạt động: Buýt có trợ giá
-Cự ly: 21,3 km
-- Số chuyến: 190 chuyến/ngày
+Cự ly: 24,1 km
+- Số chuyến: 150 chuyến/ngày
 - Thời gian hoạt động trong ngày
      Chuyến đầu tiên xuất bến: 5 giờ 00
 
     Chuyến cuối cùng xuất bến:  19 giờ 30
 
-- Thời gian hành trình: 60 phút/chuyến
+- Thời gian hành trình: 65 phút/chuyến
 - Thời gian giãn cách: 6- 15 phút/chuyến
 - Loại xe: Ba-Hai 26 ghế (40 chỗ)
  

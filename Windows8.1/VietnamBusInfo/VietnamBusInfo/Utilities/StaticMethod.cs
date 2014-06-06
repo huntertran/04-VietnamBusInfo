@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.ObjectModel;
 using System.IO;
 using System.Net.Http;
 using System.Text;
@@ -7,7 +6,6 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using VietnamBusInfo.Model;
 using Windows.Storage;
-using VietnamBusInfo.ViewModel;
 
 namespace VietnamBusInfo.Utilities
 {

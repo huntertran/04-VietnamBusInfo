@@ -18,11 +18,11 @@
         <number>Công trường Mê Linh</number>
         <address>Thi Sách</address>
         <district>1</district>
-        <longitude>6865274</longitude>
-        <latitude>1191818.41393256</latitude>
+        <longitude>686528.433942526</longitude>
+        <latitude>1191796.88103408</latitude>
         <stationId>4300</stationId>
       </ID>
-      <ID id="1">
+      <ID id="3">
         <number>21</number>
         <address>Tôn Đức Thắng</address>
         <district>1</district>
@@ -30,7 +30,7 @@
         <latitude>1191424.26546278</latitude>
         <stationId>1</stationId>
       </ID>
-      <ID id="2">
+      <ID id="4">
         <number>2-4</number>
         <address>Nguyễn Huệ</address>
         <district>1</district>
@@ -38,7 +38,7 @@
         <latitude>1191282.52333155</latitude>
         <stationId>6460</stationId>
       </ID>
-      <ID id="3">
+      <ID id="5">
         <number>70C</number>
         <address>Nguyễn Huệ</address>
         <district>1</district>
@@ -46,7 +46,7 @@
         <latitude>1191565.81229748</latitude>
         <stationId>3</stationId>
       </ID>
-      <ID id="4">
+      <ID id="6">
         <number>2-4</number>
         <address>Lê Lợi</address>
         <district>1</district>
@@ -54,7 +54,7 @@
         <latitude>1191646.77053278</latitude>
         <stationId>6454</stationId>
       </ID>
-      <ID id="5">
+      <ID id="7">
         <number>46</number>
         <address>Lê Lợi</address>
         <district>1</district>
@@ -62,7 +62,7 @@
         <latitude>1191493.12307262</latitude>
         <stationId>6455</stationId>
       </ID>
-      <ID id="6">
+      <ID id="8">
         <number>108</number>
         <address>Lê Lợi</address>
         <district>1</district>
@@ -70,7 +70,7 @@
         <latitude>1191340.50097411</latitude>
         <stationId>6456</stationId>
       </ID>
-      <ID id="7">
+      <ID id="9">
         <number>Ga HKXB Sài Gòn (Mặt sau)</number>
         <address>Phạm Ngũ Lão</address>
         <district>1</district>
@@ -78,7 +78,7 @@
         <latitude>1191156.45076362</latitude>
         <stationId>6</stationId>
       </ID>
-      <ID id="10">
+      <ID id="12">
         <number>8</number>
         <address>Trần Hưng Đạo</address>
         <district>1</district>
@@ -86,7 +86,7 @@
         <latitude>1190925.59219581</latitude>
         <stationId>6529</stationId>
       </ID>
-      <ID id="11">
+      <ID id="13">
         <number>10</number>
         <address>Trần Hưng Đạo</address>
         <district>1</district>
@@ -94,7 +94,7 @@
         <latitude>1190768.84420297</latitude>
         <stationId>6530</stationId>
       </ID>
-      <ID id="12">
+      <ID id="14">
         <number>112</number>
         <address>Trần Hưng Đạo</address>
         <district>1</district>
@@ -102,7 +102,7 @@
         <latitude>1190598.77472642</latitude>
         <stationId>6531</stationId>
       </ID>
-      <ID id="13">
+      <ID id="15">
         <number>150</number>
         <address>Trần Hưng Đạo</address>
         <district>1</district>
@@ -110,7 +110,7 @@
         <latitude>1190386.08138936</latitude>
         <stationId>6532</stationId>
       </ID>
-      <ID id="15">
+      <ID id="17">
         <number>210 - 212</number>
         <address>Trần Hưng Đạo</address>
         <district>1</district>
@@ -118,7 +118,7 @@
         <latitude>1190197.37990016</latitude>
         <stationId>6533</stationId>
       </ID>
-      <ID id="16">
+      <ID id="18">
         <number>262</number>
         <address>Trần Hưng Đạo</address>
         <district>1</district>
@@ -126,7 +126,7 @@
         <latitude>1189882.34499677</latitude>
         <stationId>6534</stationId>
       </ID>
-      <ID id="17">
+      <ID id="19">
         <number>290</number>
         <address>Trần Hưng Đạo</address>
         <district>1</district>
@@ -134,7 +134,7 @@
         <latitude>1189669.14875741</latitude>
         <stationId>6535</stationId>
       </ID>
-      <ID id="18">
+      <ID id="20">
         <number>454</number>
         <address>Trần Hưng Đạo</address>
         <district>5</district>
@@ -142,7 +142,7 @@
         <latitude>1189487.14636663</latitude>
         <stationId>8761</stationId>
       </ID>
-      <ID id="19">
+      <ID id="21">
         <number>520</number>
         <address>Trần Hưng Đạo</address>
         <district>5</district>
@@ -150,7 +150,7 @@
         <latitude>1189456.07822075</latitude>
         <stationId>8762</stationId>
       </ID>
-      <ID id="20">
+      <ID id="22">
         <number>564</number>
         <address>Trần Hưng Đạo</address>
         <district>5</district>
@@ -158,7 +158,7 @@
         <latitude>1189392.63689247</latitude>
         <stationId>8763</stationId>
       </ID>
-      <ID id="21">
+      <ID id="23">
         <number>696</number>
         <address>Trần Hưng Đạo</address>
         <district>5</district>
@@ -166,7 +166,7 @@
         <latitude>1189334.19635193</latitude>
         <stationId>8764</stationId>
       </ID>
-      <ID id="22">
+      <ID id="24">
         <number>780</number>
         <address>Trần Hưng Đạo</address>
         <district>5</district>
@@ -174,7 +174,7 @@
         <latitude>1189276.69405935</latitude>
         <stationId>8765</stationId>
       </ID>
-      <ID id="23">
+      <ID id="25">
         <number>882</number>
         <address>Trần Hưng Đạo</address>
         <district>5</district>
@@ -182,7 +182,7 @@
         <latitude>1189224.09024021</latitude>
         <stationId>8766</stationId>
       </ID>
-      <ID id="24">
+      <ID id="26">
         <number>18</number>
         <address>Trần Hưng Đạo B</address>
         <district>5</district>
@@ -190,7 +190,7 @@
         <latitude>1189155.44427378</latitude>
         <stationId>8767</stationId>
       </ID>
-      <ID id="25">
+      <ID id="27">
         <number>388</number>
         <address>Trần Phú</address>
         <district>5</district>
@@ -198,7 +198,7 @@
         <latitude>1189155.84197163</latitude>
         <stationId>8777</stationId>
       </ID>
-      <ID id="26">
+      <ID id="28">
         <number>212</number>
         <address>Trần Hưng Đạo B</address>
         <district>5</district>
@@ -206,7 +206,7 @@
         <latitude>1189102.65220309</latitude>
         <stationId>8768</stationId>
       </ID>
-      <ID id="27">
+      <ID id="29">
         <number>274</number>
         <address>Trần Hưng Đạo B</address>
         <district>5</district>
@@ -214,7 +214,7 @@
         <latitude>1189080.43434976</latitude>
         <stationId>8769</stationId>
       </ID>
-      <ID id="28">
+      <ID id="30">
         <number>346</number>
         <address>Trần Hưng Đạo B</address>
         <district>5</district>
@@ -222,7 +222,7 @@
         <latitude>1189062.6661434</latitude>
         <stationId>8770</stationId>
       </ID>
-      <ID id="29">
+      <ID id="31">
         <number>13-15</number>
         <address>Châu Văn Liêm</address>
         <district>5</district>
@@ -230,7 +230,7 @@
         <latitude>1188979.62983047</latitude>
         <stationId>8690</stationId>
       </ID>
-      <ID id="30">
+      <ID id="32">
         <number>210-212</number>
         <address>Hải Thượng Lãn Ông</address>
         <district>5</district>
@@ -238,7 +238,7 @@
         <latitude>1188926.63979511</latitude>
         <stationId>8691</stationId>
       </ID>
-      <ID id="31">
+      <ID id="33">
         <number>5</number>
         <address>Trang Tử</address>
         <district>5</district>
@@ -246,7 +246,7 @@
         <latitude>1188944.09282302</latitude>
         <stationId>8692</stationId>
       </ID>
-      <ID id="32">
+      <ID id="34">
         <number>GA HKXB CHO LON</number>
         <address>Trang Tử</address>
         <district>5</district>
@@ -540,8 +540,8 @@
         <number>Công trường Mê Linh</number>
         <address>Thi Sách</address>
         <district>1</district>
-        <longitude>6865274</longitude>
-        <latitude>1191818.41393256</latitude>
+        <longitude>686528.433942526</longitude>
+        <latitude>1191796.88103408</latitude>
         <stationId>4300</stationId>
       </ID>
     </Direction>
@@ -1186,8 +1186,8 @@
         <number>Công trường Mê Linh</number>
         <address>Thi Sách</address>
         <district>1</district>
-        <longitude>6865274</longitude>
-        <latitude>1191818.41393256</latitude>
+        <longitude>686528.433942526</longitude>
+        <latitude>1191796.88103408</latitude>
         <stationId>4300</stationId>
       </ID>
       <ID id="68">
@@ -1315,30 +1315,54 @@
         <stationId>6469</stationId>
       </ID>
       <ID id="15">
-        <number>298</number>
-        <address>Hai Bà Trưng</address>
-        <district>1</district>
-        <longitude>684820.766870246</longitude>
-        <latitude>1193183.50731095</latitude>
-        <stationId>6470</stationId>
+        <number>158A - 156B</number>
+        <address>Võ Thị Sáu</address>
+        <district>3</district>
+        <longitude>684879.319281985</longitude>
+        <latitude>1192929.46815678</latitude>
+        <stationId>6674</stationId>
       </ID>
       <ID id="16">
-        <number>372-374</number>
-        <address>Hai Bà Trưng</address>
-        <district>1</district>
-        <longitude>684649.652125027</longitude>
-        <latitude>1193319.76404147</latitude>
-        <stationId>6471</stationId>
+        <number>Đối diện 153 A-B</number>
+        <address>Võ Thị Sáu</address>
+        <district>3</district>
+        <longitude>684737.348005549</longitude>
+        <latitude>1192781.35252937</latitude>
+        <stationId>6675</stationId>
       </ID>
       <ID id="17">
-        <number>28-30</number>
-        <address>Phan Đình Phùng</address>
-        <district>Phú Nhuận</district>
-        <longitude>684055.712891213</longitude>
-        <latitude>1193786.30850317</latitude>
-        <stationId>8000</stationId>
+        <number>252 (Đối diện 173)</number>
+        <address>Nam Kỳ Khởi Nghĩa</address>
+        <district>3</district>
+        <longitude>684645.99169109</longitude>
+        <latitude>1192763.0666897</latitude>
+        <stationId>6622</stationId>
       </ID>
       <ID id="18">
+        <number>260</number>
+        <address>Nam Kỳ Khởi Nghĩa</address>
+        <district>3</district>
+        <longitude>684425.795544871</longitude>
+        <latitude>1192969.00491756</latitude>
+        <stationId>6623</stationId>
+      </ID>
+      <ID id="19">
+        <number>288 B7</number>
+        <address>Nam Kỳ Khởi Nghĩa</address>
+        <district>3</district>
+        <longitude>684213.448256337</longitude>
+        <latitude>1193161.79798718</latitude>
+        <stationId>6624</stationId>
+      </ID>
+      <ID id="22">
+        <number>382E</number>
+        <address>Nam Kỳ Khởi Nghĩa</address>
+        <district>3</district>
+        <longitude>683992.013975396</longitude>
+        <latitude>1193367.14619464</latitude>
+        <stationId>6625</stationId>
+      </ID>
+      <ID id="24">
         <number>158-160</number>
         <address>Phan Đình Phùng</address>
         <district>Phú Nhuận</district>
@@ -1346,7 +1370,7 @@
         <latitude>1193957.25982369</latitude>
         <stationId>8001</stationId>
       </ID>
-      <ID id="19">
+      <ID id="25">
         <number>312-314</number>
         <address>Phan Đình Phùng</address>
         <district>Phú Nhuận</district>
@@ -1354,7 +1378,7 @@
         <latitude>1194145.93657034</latitude>
         <stationId>8002</stationId>
       </ID>
-      <ID id="20">
+      <ID id="26">
         <number>392</number>
         <address>Nguyễn Kiệm</address>
         <district>Phú Nhuận</district>
@@ -1362,7 +1386,7 @@
         <latitude>1194338.49102563</latitude>
         <stationId>7989</stationId>
       </ID>
-      <ID id="21">
+      <ID id="27">
         <number>466</number>
         <address>Nguyễn Kiệm</address>
         <district>Phú Nhuận</district>
@@ -1370,7 +1394,7 @@
         <latitude>1194616.56382676</latitude>
         <stationId>7990</stationId>
       </ID>
-      <ID id="22">
+      <ID id="28">
         <number>582</number>
         <address>Nguyễn Kiệm</address>
         <district>Phú Nhuận</district>
@@ -1378,7 +1402,7 @@
         <latitude>1194950.23608929</latitude>
         <stationId>7991</stationId>
       </ID>
-      <ID id="23">
+      <ID id="29">
         <number>668-670</number>
         <address>Nguyễn Kiệm</address>
         <district>Phú Nhuận</district>
@@ -1386,7 +1410,7 @@
         <latitude>1195226.09153295</latitude>
         <stationId>7992</stationId>
       </ID>
-      <ID id="24">
+      <ID id="30">
         <number>716</number>
         <address>Nguyễn Kiệm</address>
         <district>Phú Nhuận</district>
@@ -1394,7 +1418,7 @@
         <latitude>1195481.99336194</latitude>
         <stationId>7993</stationId>
       </ID>
-      <ID id="25">
+      <ID id="31">
         <number>780A</number>
         <address>Nguyễn Kiệm</address>
         <district>Gò Vấp</district>
@@ -1402,7 +1426,7 @@
         <latitude>1195749.31030488</latitude>
         <stationId>9593</stationId>
       </ID>
-      <ID id="26">
+      <ID id="32">
         <number>62</number>
         <address>Nguyễn Thái Sơn</address>
         <district>Gò Vấp</district>
@@ -1410,7 +1434,7 @@
         <latitude>1196048.83947795</latitude>
         <stationId>8249</stationId>
       </ID>
-      <ID id="27">
+      <ID id="33">
         <number>90</number>
         <address>Nguyễn Thái Sơn</address>
         <district>Gò Vấp</district>
@@ -1418,7 +1442,7 @@
         <latitude>1196222.40128668</latitude>
         <stationId>8250</stationId>
       </ID>
-      <ID id="28">
+      <ID id="34">
         <number>148B</number>
         <address>Nguyễn Thái Sơn</address>
         <district>Gò Vấp</district>
@@ -1426,7 +1450,7 @@
         <latitude>1196596.06743594</latitude>
         <stationId>8251</stationId>
       </ID>
-      <ID id="29">
+      <ID id="35">
         <number>175</number>
         <address>Phạm Ngũ Lão</address>
         <district>Gò Vấp</district>
@@ -1434,7 +1458,7 @@
         <latitude>1196817.63296333</latitude>
         <stationId>9660</stationId>
       </ID>
-      <ID id="30">
+      <ID id="36">
         <number>45</number>
         <address>Phạm Ngũ Lão</address>
         <district>Gò Vấp</district>
@@ -1442,7 +1466,7 @@
         <latitude>1197229.61132953</latitude>
         <stationId>9661</stationId>
       </ID>
-      <ID id="31">
+      <ID id="37">
         <number>38-40</number>
         <address>Nguyễn Oanh</address>
         <district>Gò Vấp</district>
@@ -1450,7 +1474,7 @@
         <latitude>1197412.67654347</latitude>
         <stationId>9572</stationId>
       </ID>
-      <ID id="32">
+      <ID id="38">
         <number>2-2B</number>
         <address>Nguyễn Oanh</address>
         <district>Gò Vấp</district>
@@ -1458,7 +1482,7 @@
         <latitude>1197685.17548961</latitude>
         <stationId>9573</stationId>
       </ID>
-      <ID id="33">
+      <ID id="39">
         <number>Đối diện 207</number>
         <address>Nguyễn Oanh</address>
         <district>Gò Vấp</district>
@@ -1466,7 +1490,7 @@
         <latitude>1197959.61367144</latitude>
         <stationId>9574</stationId>
       </ID>
-      <ID id="34">
+      <ID id="40">
         <number>C1 cư xá Lam Sơn</number>
         <address>Nguyễn Oanh</address>
         <district>Gò Vấp</district>
@@ -1474,7 +1498,7 @@
         <latitude>1198363.99725189</latitude>
         <stationId>9575</stationId>
       </ID>
-      <ID id="35">
+      <ID id="41">
         <number>27A</number>
         <address>Nguyễn Oanh</address>
         <district>Gò Vấp</district>
@@ -1482,7 +1506,7 @@
         <latitude>1198712.64151708</latitude>
         <stationId>9576</stationId>
       </ID>
-      <ID id="36">
+      <ID id="42">
         <number>64A</number>
         <address>Nguyễn Oanh</address>
         <district>Gò Vấp</district>
@@ -1490,7 +1514,7 @@
         <latitude>1199039.89500676</latitude>
         <stationId>9577</stationId>
       </ID>
-      <ID id="37">
+      <ID id="43">
         <number>60/674</number>
         <address>Nguyễn Oanh</address>
         <district>Gò Vấp</district>
@@ -1498,7 +1522,7 @@
         <latitude>1199555.24833324</latitude>
         <stationId>9578</stationId>
       </ID>
-      <ID id="38">
+      <ID id="44">
         <number>B7</number>
         <address>Nguyễn Oanh</address>
         <district>Gò Vấp</district>
@@ -1506,7 +1530,7 @@
         <latitude>1199790.08299352</latitude>
         <stationId>9579</stationId>
       </ID>
-      <ID id="39">
+      <ID id="45">
         <number>42</number>
         <address>Hà Huy Giáp</address>
         <district>Quận 12</district>
@@ -1514,7 +1538,7 @@
         <latitude>1200096.05015983</latitude>
         <stationId>8369</stationId>
       </ID>
-      <ID id="40">
+      <ID id="46">
         <number>332</number>
         <address>Hà Huy Giáp</address>
         <district>Quận 12</district>
@@ -1522,7 +1546,7 @@
         <latitude>1201477.52491333</latitude>
         <stationId>8371</stationId>
       </ID>
-      <ID id="41">
+      <ID id="47">
         <number>412</number>
         <address>Hà Huy Giáp</address>
         <district>Quận 12</district>
@@ -1530,7 +1554,7 @@
         <latitude>1201809.77039085</latitude>
         <stationId>8372</stationId>
       </ID>
-      <ID id="42">
+      <ID id="48">
         <number>448</number>
         <address>Hà Huy Giáp</address>
         <district>Quận 12</district>
@@ -1538,7 +1562,7 @@
         <latitude>1202035.98746501</latitude>
         <stationId>8373</stationId>
       </ID>
-      <ID id="43">
+      <ID id="49">
         <number>27A</number>
         <address>Hà Huy Giáp</address>
         <district>Quận 12</district>
@@ -1546,7 +1570,7 @@
         <latitude>1202454.31601214</latitude>
         <stationId>8374</stationId>
       </ID>
-      <ID id="44">
+      <ID id="50">
         <number>Nhà văn hóa phường Thạnh Lộc</number>
         <address>Hà Huy Giáp</address>
         <district>Quận 12</district>
@@ -1554,7 +1578,7 @@
         <latitude>1202848.85365177</latitude>
         <stationId>8375</stationId>
       </ID>
-      <ID id="45">
+      <ID id="51">
         <number>554 (Trường Điện Lực 2)</number>
         <address>Hà Huy Giáp</address>
         <district>Quận 12</district>
@@ -1562,7 +1586,7 @@
         <latitude>1203191.12824521</latitude>
         <stationId>8376</stationId>
       </ID>
-      <ID id="48">
+      <ID id="54">
         <number>4/38 Tổ 11 KP 1 Phường Thạnh Lộc Quận 12</number>
         <address>Thạnh Lộc 30</address>
         <district>12</district>
@@ -6784,8 +6808,8 @@
         <number>BÃI XE BUÝT ĐẦM SEN</number>
         <address>ĐẦM SEN Hòa Bình </address>
         <district>11</district>
-        <longitude>679396.04998139</longitude>
-        <latitude>1190655.38774738</latitude>
+        <longitude>679433.396358457</longitude>
+        <latitude>1190720.94914214</latitude>
         <stationId>10777</stationId>
       </ID>
     </Direction>
@@ -6794,16 +6818,16 @@
         <number>BÃI XE BUÝT ĐẦM SEN</number>
         <address>ĐẦM SEN Hòa Bình </address>
         <district>11</district>
-        <longitude>679396.04998139</longitude>
-        <latitude>1190655.38774738</latitude>
+        <longitude>679433.396358457</longitude>
+        <latitude>1190720.94914214</latitude>
         <stationId>10777</stationId>
       </ID>
       <ID id="1">
         <number>3 (79)</number>
         <address>Hòa Bình</address>
         <district>Quận 11</district>
-        <longitude>679493.982951281</longitude>
-        <latitude>1190694.96887069</latitude>
+        <longitude>679529.235534027</longitude>
+        <latitude>1190685.83051868</latitude>
         <stationId>8518</stationId>
       </ID>
       <ID id="2">
@@ -8207,38 +8231,14 @@
   <Stations BusNum="15">
     <Direction go="1">
       <ID id="0">
-        <number>ĐẦU BẾN PHÚ ĐỊNH</number>
-        <address>Bến Phú Định</address>
+        <number>Trường năng khiếu TDTT Nguyễn Thị Định</number>
+        <address>Đường 44</address>
         <district>8</district>
-        <longitude>678305.304816622</longitude>
-        <latitude>1186416.04435469</latitude>
-        <stationId>10661</stationId>
+        <longitude>677438.949670574</longitude>
+        <latitude>1185905.41430245</latitude>
+        <stationId>10931</stationId>
       </ID>
-      <ID id="1">
-        <number>36/1B</number>
-        <address>Bến Phú Định</address>
-        <district>8</district>
-        <longitude>678390.740345267</longitude>
-        <latitude>1186313.01329781</latitude>
-        <stationId>6772</stationId>
-      </ID>
-      <ID id="3">
-        <number>235</number>
-        <address>Bến Phú Định</address>
-        <district>8</district>
-        <longitude>678297.293488543</longitude>
-        <latitude>1186118.95903201</latitude>
-        <stationId>6773</stationId>
-      </ID>
-      <ID id="4">
-        <number>325 (50G)</number>
-        <address>Bến Phú Định</address>
-        <district>8</district>
-        <longitude>678124.908689214</longitude>
-        <latitude>1185760.65909042</latitude>
-        <stationId>6774</stationId>
-      </ID>
-      <ID id="5">
+      <ID id="6">
         <number>68Bis</number>
         <address>Bến Phú Định</address>
         <district>8</district>
@@ -8246,7 +8246,7 @@
         <latitude>1185063.64339315</latitude>
         <stationId>6775</stationId>
       </ID>
-      <ID id="7">
+      <ID id="8">
         <number>450</number>
         <address>Bến Phú Định</address>
         <district>8</district>
@@ -8254,7 +8254,7 @@
         <latitude>1184624.06616553</latitude>
         <stationId>6776</stationId>
       </ID>
-      <ID id="8">
+      <ID id="9">
         <number>31-33</number>
         <address>Bến Phú Định</address>
         <district>8</district>
@@ -8262,7 +8262,7 @@
         <latitude>1184476.35073472</latitude>
         <stationId>6777</stationId>
       </ID>
-      <ID id="9">
+      <ID id="10">
         <number>Đối diện Chùa Giác Viên</number>
         <address>Hồ Học Lãm</address>
         <district>8</district>
@@ -8270,7 +8270,7 @@
         <latitude>1184790.39368449</latitude>
         <stationId>10532</stationId>
       </ID>
-      <ID id="10">
+      <ID id="11">
         <number>Đối diện 201</number>
         <address>Hồ Học Lãm</address>
         <district>Bình Tân</district>
@@ -8278,7 +8278,7 @@
         <latitude>1185280.00397649</latitude>
         <stationId>7050</stationId>
       </ID>
-      <ID id="11">
+      <ID id="12">
         <number>109-258</number>
         <address>Hồ Học Lãm</address>
         <district>Bình Tân</district>
@@ -8286,7 +8286,7 @@
         <latitude>1185551.95746207</latitude>
         <stationId>7051</stationId>
       </ID>
-      <ID id="12">
+      <ID id="13">
         <number>324</number>
         <address>Hồ Học Lãm</address>
         <district>Bình Tân</district>
@@ -8294,7 +8294,7 @@
         <latitude>1185804.19181214</latitude>
         <stationId>7052</stationId>
       </ID>
-      <ID id="13">
+      <ID id="14">
         <number>35</number>
         <address>Hồ Học Lãm</address>
         <district>Bình Tân</district>
@@ -8302,7 +8302,7 @@
         <latitude>1186128.39622384</latitude>
         <stationId>7053</stationId>
       </ID>
-      <ID id="14">
+      <ID id="15">
         <number>488</number>
         <address>Hồ Học Lãm</address>
         <district>Bình Tân</district>
@@ -8310,7 +8310,7 @@
         <latitude>1186475.31618946</latitude>
         <stationId>7054</stationId>
       </ID>
-      <ID id="15">
+      <ID id="16">
         <number>588</number>
         <address>Hồ Học Lãm</address>
         <district>Bình Tân</district>
@@ -8318,7 +8318,7 @@
         <latitude>1186719.97871687</latitude>
         <stationId>7055</stationId>
       </ID>
-      <ID id="16">
+      <ID id="17">
         <number>E4/39</number>
         <address>Hồ Học Lãm</address>
         <district>Bình Tân</district>
@@ -8326,7 +8326,7 @@
         <latitude>1187110.58605068</latitude>
         <stationId>7056</stationId>
       </ID>
-      <ID id="17">
+      <ID id="18">
         <number>1229C</number>
         <address>Quốc lộ 1A</address>
         <district>Bình Tân</district>
@@ -8334,7 +8334,7 @@
         <latitude>1187427.70246802</latitude>
         <stationId>7065</stationId>
       </ID>
-      <ID id="18">
+      <ID id="19">
         <number>E4/48</number>
         <address>Quốc lộ 1A</address>
         <district>Bình Tân</district>
@@ -8342,7 +8342,7 @@
         <latitude>1187945.05484189</latitude>
         <stationId>7066</stationId>
       </ID>
-      <ID id="19">
+      <ID id="20">
         <number>Công ty Pouyuen</number>
         <address>Quốc lộ 1A</address>
         <district>Bình Tân</district>
@@ -8350,7 +8350,7 @@
         <latitude>1188539.2734204</latitude>
         <stationId>7067</stationId>
       </ID>
-      <ID id="20">
+      <ID id="21">
         <number>56</number>
         <address>Quốc lộ 1A</address>
         <district>Bình Tân</district>
@@ -8358,7 +8358,7 @@
         <latitude>1189111.66296768</latitude>
         <stationId>7068</stationId>
       </ID>
-      <ID id="21">
+      <ID id="22">
         <number>1167-1169</number>
         <address>Quốc lộ 1A</address>
         <district>Bình Tân</district>
@@ -8366,7 +8366,7 @@
         <latitude>1189360.95632872</latitude>
         <stationId>7069</stationId>
       </ID>
-      <ID id="22">
+      <ID id="23">
         <number>1137 (D11/89A)</number>
         <address>Quốc lộ 1A</address>
         <district>Bình Tân</district>
@@ -8374,7 +8374,7 @@
         <latitude>1189661.45681786</latitude>
         <stationId>7070</stationId>
       </ID>
-      <ID id="23">
+      <ID id="24">
         <number>Đối diện 952</number>
         <address>Quốc lộ 1A</address>
         <district>Bình Tân</district>
@@ -8382,7 +8382,7 @@
         <latitude>1190233.83534041</latitude>
         <stationId>7071</stationId>
       </ID>
-      <ID id="24">
+      <ID id="25">
         <number>1087</number>
         <address>Quốc lộ 1A</address>
         <district>Bình Tân</district>
@@ -8390,7 +8390,7 @@
         <latitude>1190831.44371283</latitude>
         <stationId>7072</stationId>
       </ID>
-      <ID id="25">
+      <ID id="26">
         <number>1013</number>
         <address>Hương lộ 2</address>
         <district>Bình Tân</district>
@@ -8398,7 +8398,7 @@
         <latitude>1190902.34020812</latitude>
         <stationId>7135</stationId>
       </ID>
-      <ID id="26">
+      <ID id="27">
         <number>927</number>
         <address>Hương lộ 2</address>
         <district>Bình Tân</district>
@@ -8406,7 +8406,7 @@
         <latitude>1190790.3205763</latitude>
         <stationId>7133</stationId>
       </ID>
-      <ID id="27">
+      <ID id="28">
         <number>863</number>
         <address>Hương lộ 2</address>
         <district>Bình Tân</district>
@@ -8414,7 +8414,7 @@
         <latitude>1190672.92821014</latitude>
         <stationId>7136</stationId>
       </ID>
-      <ID id="28">
+      <ID id="29">
         <number>737</number>
         <address>Hương lộ 2</address>
         <district>Bình Tân</district>
@@ -8422,7 +8422,7 @@
         <latitude>1190560.61799324</latitude>
         <stationId>7132</stationId>
       </ID>
-      <ID id="29">
+      <ID id="30">
         <number>637</number>
         <address>Hương lộ 2</address>
         <district>Bình Tân</district>
@@ -8430,7 +8430,7 @@
         <latitude>1190786.93623934</latitude>
         <stationId>7137</stationId>
       </ID>
-      <ID id="30">
+      <ID id="31">
         <number>589</number>
         <address>Hương lộ 2</address>
         <district>Bình Tân</district>
@@ -8438,7 +8438,7 @@
         <latitude>1191026.2502705</latitude>
         <stationId>10788</stationId>
       </ID>
-      <ID id="31">
+      <ID id="32">
         <number>497</number>
         <address>Hương lộ 2</address>
         <district>Bình Tân</district>
@@ -8446,7 +8446,7 @@
         <latitude>1191160.83058845</latitude>
         <stationId>10789</stationId>
       </ID>
-      <ID id="32">
+      <ID id="33">
         <number>Đ/d 418-145</number>
         <address>Hương Lộ 2</address>
         <district>Bình Tân</district>
@@ -8454,7 +8454,7 @@
         <latitude>1191346.7999564</latitude>
         <stationId>10790</stationId>
       </ID>
-      <ID id="34">
+      <ID id="35">
         <number>257</number>
         <address>Hòa Bình</address>
         <district>Tân Phú</district>
@@ -8462,7 +8462,7 @@
         <latitude>1191345.72264604</latitude>
         <stationId>9438</stationId>
       </ID>
-      <ID id="35">
+      <ID id="36">
         <number>245</number>
         <address>Hòa Bình</address>
         <district>Tân Phú</district>
@@ -8470,7 +8470,7 @@
         <latitude>1191259.41769839</latitude>
         <stationId>9437</stationId>
       </ID>
-      <ID id="36">
+      <ID id="37">
         <number>165</number>
         <address>Hòa Bình</address>
         <district>Tân Phú</district>
@@ -8478,7 +8478,7 @@
         <latitude>1191160.07013285</latitude>
         <stationId>9436</stationId>
       </ID>
-      <ID id="37">
+      <ID id="38">
         <number>đd 90 (nhà hàng Thủy Tạ Đầm Sen)</number>
         <address>Hòa Bình</address>
         <district>Quận 11</district>
@@ -8486,7 +8486,7 @@
         <latitude>1190885.18957041</latitude>
         <stationId>8516</stationId>
       </ID>
-      <ID id="38">
+      <ID id="39">
         <number>7B (Bến xe buýt Đầm Sen)</number>
         <address>Hòa Bình</address>
         <district>Quận 11</district>
@@ -8494,12 +8494,12 @@
         <latitude>1190797.2308977</latitude>
         <stationId>8517</stationId>
       </ID>
-      <ID id="41">
+      <ID id="42">
         <number>BÃI XE BUÝT ĐẦM SEN</number>
         <address>ĐẦM SEN Hòa Bình </address>
         <district>11</district>
-        <longitude>679396.04998139</longitude>
-        <latitude>1190655.38774738</latitude>
+        <longitude>679433.396358457</longitude>
+        <latitude>1190720.94914214</latitude>
         <stationId>10777</stationId>
       </ID>
     </Direction>
@@ -8508,16 +8508,16 @@
         <number>BÃI XE BUÝT ĐẦM SEN</number>
         <address>ĐẦM SEN Hòa Bình </address>
         <district>11</district>
-        <longitude>679396.04998139</longitude>
-        <latitude>1190655.38774738</latitude>
+        <longitude>679433.396358457</longitude>
+        <latitude>1190720.94914214</latitude>
         <stationId>10777</stationId>
       </ID>
       <ID id="1">
         <number>3 (79)</number>
         <address>Hòa Bình</address>
         <district>Quận 11</district>
-        <longitude>679493.982951281</longitude>
-        <latitude>1190694.96887069</latitude>
+        <longitude>679529.235534027</longitude>
+        <latitude>1190685.83051868</latitude>
         <stationId>8518</stationId>
       </ID>
       <ID id="2">
@@ -8793,36 +8793,12 @@
         <stationId>6768</stationId>
       </ID>
       <ID id="40">
-        <number>Đối diện 50A</number>
-        <address>Bến Phú Định</address>
+        <number>Trường năng khiếu TDTT Nguyễn Thị Định</number>
+        <address>Đường 44</address>
         <district>8</district>
-        <longitude>678090.259238534</longitude>
-        <latitude>1185654.94980477</latitude>
-        <stationId>6769</stationId>
-      </ID>
-      <ID id="41">
-        <number>222 (Đối diện 44)</number>
-        <address>Bến Phú Định</address>
-        <district>8</district>
-        <longitude>678259.945881268</longitude>
-        <latitude>1186024.31348051</latitude>
-        <stationId>6770</stationId>
-      </ID>
-      <ID id="42">
-        <number>Đối diện 34</number>
-        <address>Bến Phú Định</address>
-        <district>8</district>
-        <longitude>678389.457260496</longitude>
-        <latitude>1186278.31751821</latitude>
-        <stationId>6771</stationId>
-      </ID>
-      <ID id="43">
-        <number>ĐẦU BẾN PHÚ ĐỊNH</number>
-        <address>Bến Phú Định</address>
-        <district>8</district>
-        <longitude>678305.304816622</longitude>
-        <latitude>1186416.04435469</latitude>
-        <stationId>10661</stationId>
+        <longitude>677438.949670574</longitude>
+        <latitude>1185905.41430245</latitude>
+        <stationId>10931</stationId>
       </ID>
     </Direction>
   </Stations>
@@ -14134,8 +14110,8 @@
         <number>3 (79)</number>
         <address>Hòa Bình</address>
         <district>Quận 11</district>
-        <longitude>679493.982951281</longitude>
-        <latitude>1190694.96887069</latitude>
+        <longitude>679529.235534027</longitude>
+        <latitude>1190685.83051868</latitude>
         <stationId>8518</stationId>
       </ID>
       <ID id="47">
@@ -26358,8 +26334,8 @@
         <number>BÃI XE BUÝT ĐẦM SEN</number>
         <address>ĐẦM SEN Hòa Bình </address>
         <district>11</district>
-        <longitude>679396.04998139</longitude>
-        <latitude>1190655.38774738</latitude>
+        <longitude>679433.396358457</longitude>
+        <latitude>1190720.94914214</latitude>
         <stationId>10777</stationId>
       </ID>
     </Direction>
@@ -26368,16 +26344,16 @@
         <number>BÃI XE BUÝT ĐẦM SEN</number>
         <address>ĐẦM SEN Hòa Bình </address>
         <district>11</district>
-        <longitude>679396.04998139</longitude>
-        <latitude>1190655.38774738</latitude>
+        <longitude>679433.396358457</longitude>
+        <latitude>1190720.94914214</latitude>
         <stationId>10777</stationId>
       </ID>
       <ID id="3">
         <number>3 (79)</number>
         <address>Hòa Bình</address>
         <district>Quận 11</district>
-        <longitude>679493.982951281</longitude>
-        <latitude>1190694.96887069</latitude>
+        <longitude>679529.235534027</longitude>
+        <latitude>1190685.83051868</latitude>
         <stationId>8518</stationId>
       </ID>
       <ID id="4">
@@ -42100,8 +42076,8 @@
         <number>3 (79)</number>
         <address>Hòa Bình</address>
         <district>Quận 11</district>
-        <longitude>679493.982951281</longitude>
-        <latitude>1190694.96887069</latitude>
+        <longitude>679529.235534027</longitude>
+        <latitude>1190685.83051868</latitude>
         <stationId>8518</stationId>
       </ID>
       <ID id="47">
@@ -42600,8 +42576,8 @@
         <number>BÃI XE BUÝT ĐẦM SEN</number>
         <address>ĐẦM SEN Hòa Bình </address>
         <district>11</district>
-        <longitude>679396.04998139</longitude>
-        <latitude>1190655.38774738</latitude>
+        <longitude>679433.396358457</longitude>
+        <latitude>1190720.94914214</latitude>
         <stationId>10777</stationId>
       </ID>
     </Direction>
@@ -42610,8 +42586,8 @@
         <number>BÃI XE BUÝT ĐẦM SEN</number>
         <address>ĐẦM SEN Hòa Bình </address>
         <district>11</district>
-        <longitude>679396.04998139</longitude>
-        <latitude>1190655.38774738</latitude>
+        <longitude>679433.396358457</longitude>
+        <latitude>1190720.94914214</latitude>
         <stationId>10777</stationId>
       </ID>
       <ID id="3">
@@ -45946,8 +45922,8 @@
         <number>3 (79)</number>
         <address>Hòa Bình</address>
         <district>Quận 11</district>
-        <longitude>679493.982951281</longitude>
-        <latitude>1190694.96887069</latitude>
+        <longitude>679529.235534027</longitude>
+        <latitude>1190685.83051868</latitude>
         <stationId>8518</stationId>
       </ID>
       <ID id="40">
@@ -66706,6 +66682,14 @@
         <latitude>1189598.78246054</latitude>
         <stationId>6838</stationId>
       </ID>
+      <ID id="35">
+        <number>44/9</number>
+        <address>Nguyễn Hữu Thọ</address>
+        <district>7</district>
+        <longitude>686132.624122618</longitude>
+        <latitude>1188683.77267481</latitude>
+        <stationId>8110</stationId>
+      </ID>
       <ID id="36">
         <number>222</number>
         <address>Lê Văn Lương</address>
@@ -66715,14 +66699,6 @@
         <stationId>8161</stationId>
       </ID>
       <ID id="37">
-        <number>44/9</number>
-        <address>Nguyễn Hữu Thọ</address>
-        <district>7</district>
-        <longitude>686132.624122618</longitude>
-        <latitude>1188683.77267481</latitude>
-        <stationId>8110</stationId>
-      </ID>
-      <ID id="38">
         <number>589-591</number>
         <address>Nguyễn Thị Thập</address>
         <district>7</district>
@@ -66730,7 +66706,7 @@
         <latitude>1187712.26478535</latitude>
         <stationId>8152</stationId>
       </ID>
-      <ID id="39">
+      <ID id="40">
         <number>507</number>
         <address>Nguyễn Thị Thập</address>
         <district>7</district>
@@ -66738,7 +66714,7 @@
         <latitude>1187655.30353182</latitude>
         <stationId>8153</stationId>
       </ID>
-      <ID id="40">
+      <ID id="41">
         <number>463-465</number>
         <address>Nguyễn Thị Thập</address>
         <district>7</district>
@@ -66746,7 +66722,7 @@
         <latitude>1187595.86517491</latitude>
         <stationId>8154</stationId>
       </ID>
-      <ID id="41">
+      <ID id="42">
         <number>351</number>
         <address>Nguyễn Thị Thập</address>
         <district>7</district>
@@ -66754,7 +66730,7 @@
         <latitude>1187567.2927087</latitude>
         <stationId>8155</stationId>
       </ID>
-      <ID id="42">
+      <ID id="43">
         <number>269-271</number>
         <address>Nguyễn Thị Thập</address>
         <district>7</district>
@@ -66762,7 +66738,7 @@
         <latitude>1187553.70927981</latitude>
         <stationId>8156</stationId>
       </ID>
-      <ID id="43">
+      <ID id="44">
         <number>30/3C</number>
         <address>Tân Mỹ</address>
         <district>7</district>
@@ -66770,7 +66746,7 @@
         <latitude>1187500.76563392</latitude>
         <stationId>10732</stationId>
       </ID>
-      <ID id="44">
+      <ID id="45">
         <number>Bệnh viện tim Tâm Đức</number>
         <address>Tân Mỹ</address>
         <district>7</district>
@@ -66778,7 +66754,7 @@
         <latitude>1187038.27726327</latitude>
         <stationId>8191</stationId>
       </ID>
-      <ID id="45">
+      <ID id="46">
         <number>Đ/d Parkson Paragon</number>
         <address>Nguyễn Lương Bằng</address>
         <district>7</district>
@@ -66786,7 +66762,7 @@
         <latitude>1186546.32860629</latitude>
         <stationId>8194</stationId>
       </ID>
-      <ID id="46">
+      <ID id="47">
         <number>Trường Nam Sài Gòn</number>
         <address>Nguyễn Lương Bằng</address>
         <district>7</district>
@@ -66794,7 +66770,7 @@
         <latitude>1186122.19740673</latitude>
         <stationId>8195</stationId>
       </ID>
-      <ID id="47">
+      <ID id="48">
         <number>176 (Riverside Block E)</number>
         <address>Nguyễn Lương Bằng</address>
         <district>7</district>
@@ -66802,7 +66778,7 @@
         <latitude>1185749.15970672</latitude>
         <stationId>8196</stationId>
       </ID>
-      <ID id="48">
+      <ID id="49">
         <number>Đối diện trường tiểu học Việt Pháp</number>
         <address>Nguyễn Lương Bằng</address>
         <district>7</district>
@@ -66810,7 +66786,7 @@
         <latitude>1185372.07045909</latitude>
         <stationId>8197</stationId>
       </ID>
-      <ID id="49">
+      <ID id="50">
         <number>SC 9-1 Nam Khang</number>
         <address>Nguyễn Lương Bằng</address>
         <district>7</district>
@@ -66818,7 +66794,7 @@
         <latitude>1185073.75411228</latitude>
         <stationId>8198</stationId>
       </ID>
-      <ID id="50">
+      <ID id="51">
         <number>Đối diện ngân hàng Agribank</number>
         <address>Hoàng Quốc Việt</address>
         <district>7</district>
@@ -66826,7 +66802,7 @@
         <latitude>1184808.82033557</latitude>
         <stationId>8202</stationId>
       </ID>
-      <ID id="51">
+      <ID id="52">
         <number>43N (D/d_UBND_P.Phú Mỹ)</number>
         <address>Hoàng Quốc Việt</address>
         <district>7</district>
@@ -66834,7 +66810,7 @@
         <latitude>1184866.68173206</latitude>
         <stationId>8199</stationId>
       </ID>
-      <ID id="52">
+      <ID id="53">
         <number>1360</number>
         <address>Huỳnh Tấn Phát</address>
         <district>7</district>
@@ -66842,7 +66818,7 @@
         <latitude>1184774.98007139</latitude>
         <stationId>8063</stationId>
       </ID>
-      <ID id="53">
+      <ID id="54">
         <number>83/3 (1400)</number>
         <address>Huỳnh Tấn Phát</address>
         <district>7</district>
@@ -66850,7 +66826,7 @@
         <latitude>1184605.65384473</latitude>
         <stationId>8064</stationId>
       </ID>
-      <ID id="54">
+      <ID id="55">
         <number>1452</number>
         <address>Huỳnh Tấn Phát</address>
         <district>7</district>
@@ -66858,7 +66834,7 @@
         <latitude>1184334.31018136</latitude>
         <stationId>8065</stationId>
       </ID>
-      <ID id="55">
+      <ID id="56">
         <number>1520-1522</number>
         <address>Huỳnh Tấn Phát</address>
         <district>7</district>
@@ -66866,7 +66842,7 @@
         <latitude>1183965.98723804</latitude>
         <stationId>8066</stationId>
       </ID>
-      <ID id="56">
+      <ID id="57">
         <number>Trường Tiểu học Phú Mỹ</number>
         <address>Phạm Hữu Lầu</address>
         <district>7</district>
@@ -66874,7 +66850,7 @@
         <latitude>1183887.47217639</latitude>
         <stationId>8208</stationId>
       </ID>
-      <ID id="57">
+      <ID id="58">
         <number>Bến Phú Xuân</number>
         <address>15B (Quận 7)</address>
         <district>7</district>
@@ -68779,522 +68755,8 @@
     </Direction>
   </Stations>
   <Stations BusNum="143">
-    <Direction go="1">
-      <ID id="0">
-        <number>GA HKXB CHO LON</number>
-        <address>Trang Tử</address>
-        <district>5</district>
-        <longitude>680705.376632056</longitude>
-        <latitude>1188961.82298208</latitude>
-        <stationId>4301</stationId>
-      </ID>
-      <ID id="1">
-        <number>30A</number>
-        <address>Hậu Giang</address>
-        <district>6</district>
-        <longitude>680234.199199837</longitude>
-        <latitude>1188783.76054436</latitude>
-        <stationId>8804</stationId>
-      </ID>
-      <ID id="2">
-        <number>148</number>
-        <address>Hậu Giang</address>
-        <district>6</district>
-        <longitude>679678.462152745</longitude>
-        <latitude>1188797.46978024</latitude>
-        <stationId>8805</stationId>
-      </ID>
-      <ID id="3">
-        <number>122</number>
-        <address>Minh Phụng</address>
-        <district>6</district>
-        <longitude>679617.731602813</longitude>
-        <latitude>1188916.19059165</latitude>
-        <stationId>8874</stationId>
-      </ID>
-      <ID id="4">
-        <number>242</number>
-        <address>Minh Phụng</address>
-        <district>6</district>
-        <longitude>679669.30622423</longitude>
-        <latitude>1189201.53581783</latitude>
-        <stationId>8875</stationId>
-      </ID>
-      <ID id="5">
-        <number>690 (138)</number>
-        <address>Hồng Bàng</address>
-        <district>quận 11</district>
-        <longitude>679479.641255613</longitude>
-        <latitude>1189317.96962003</latitude>
-        <stationId>10468</stationId>
-      </ID>
-      <ID id="13">
-        <number>786</number>
-        <address>Hồng Bàng</address>
-        <district>quân 11</district>
-        <longitude>679156.764731703</longitude>
-        <latitude>1189348.59888983</latitude>
-        <stationId>10470</stationId>
-      </ID>
-      <ID id="14">
-        <number>12</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678605.262932413</longitude>
-        <latitude>1189891.81266555</latitude>
-        <stationId>9508</stationId>
-      </ID>
-      <ID id="15">
-        <number>40</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678494.858708643</longitude>
-        <latitude>1190171.98583102</latitude>
-        <stationId>9509</stationId>
-      </ID>
-      <ID id="16">
-        <number>98</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678445.085426962</longitude>
-        <latitude>1190608.19606693</latitude>
-        <stationId>9510</stationId>
-      </ID>
-      <ID id="17">
-        <number>126A</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678428.036498942</longitude>
-        <latitude>1190931.48650533</latitude>
-        <stationId>9511</stationId>
-      </ID>
-      <ID id="18">
-        <number>264</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678435.724835335</longitude>
-        <latitude>1191099.1193311</latitude>
-        <stationId>9512</stationId>
-      </ID>
-      <ID id="19">
-        <number>332</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678496.151472721</longitude>
-        <latitude>1191430.54154391</latitude>
-        <stationId>9513</stationId>
-      </ID>
-      <ID id="20">
-        <number>20</number>
-        <address>Thạch Lam</address>
-        <district>Tân Phú</district>
-        <longitude>678539.748854607</longitude>
-        <latitude>1191726.89633542</latitude>
-        <stationId>9406</stationId>
-      </ID>
-      <ID id="21">
-        <number>120</number>
-        <address>Thạch Lam</address>
-        <district>Tân Phú</district>
-        <longitude>678256.492897498</longitude>
-        <latitude>1191813.99065402</latitude>
-        <stationId>9407</stationId>
-      </ID>
-      <ID id="22">
-        <number>14-16</number>
-        <address>Lê Khôi</address>
-        <district>Tân Phú</district>
-        <longitude>677973.673872326</longitude>
-        <latitude>1191984.80931238</latitude>
-        <stationId>9473</stationId>
-      </ID>
-      <ID id="24">
-        <number>42</number>
-        <address>Lê Niệm</address>
-        <district>Tân Phú</district>
-        <longitude>677830.121807535</longitude>
-        <latitude>1192114.83683617</latitude>
-        <stationId>9475</stationId>
-      </ID>
-      <ID id="25">
-        <number>170-172</number>
-        <address>Lê Niệm</address>
-        <district>Tân Phú</district>
-        <longitude>677497.491812088</longitude>
-        <latitude>1192220.32650198</latitude>
-        <stationId>9476</stationId>
-      </ID>
-      <ID id="26">
-        <number>226</number>
-        <address>Phạm Văn Xảo</address>
-        <district>Tân Phú</district>
-        <longitude>677334.006184983</longitude>
-        <latitude>1192292.90613503</latitude>
-        <stationId>9468</stationId>
-      </ID>
-      <ID id="27">
-        <number>38F1</number>
-        <address>Phạm Văn Xảo</address>
-        <district>Tân Phú</district>
-        <longitude>677482.357309002</longitude>
-        <latitude>1192806.35131364</latitude>
-        <stationId>9467</stationId>
-      </ID>
-      <ID id="28">
-        <number>56</number>
-        <address>Lê Thúc Hoạch</address>
-        <district>Tân Phú</district>
-        <longitude>677457.205345535</longitude>
-        <latitude>1192958.06174265</latitude>
-        <stationId>9397</stationId>
-      </ID>
-      <ID id="29">
-        <number>248</number>
-        <address>Tân Hương</address>
-        <district>Tân Phú</district>
-        <longitude>677267.078742499</longitude>
-        <latitude>1193242.74174442</latitude>
-        <stationId>9393</stationId>
-      </ID>
-      <ID id="30">
-        <number>234</number>
-        <address>Tân Hương</address>
-        <district>Tân Phú</district>
-        <longitude>677011.58087936</longitude>
-        <latitude>1193215.08610352</latitude>
-        <stationId>9394</stationId>
-      </ID>
-      <ID id="31">
-        <number>131</number>
-        <address>Bình Long</address>
-        <district>Tân Phú</district>
-        <longitude>676750.775612358</longitude>
-        <latitude>1193248.09744739</latitude>
-        <stationId>9487</stationId>
-      </ID>
-      <ID id="32">
-        <number>83</number>
-        <address>Bình Long</address>
-        <district>Tân Phú</district>
-        <longitude>676656.180882012</longitude>
-        <latitude>1193496.77973069</latitude>
-        <stationId>9488</stationId>
-      </ID>
-      <ID id="33">
-        <number>17</number>
-        <address>Bình Long</address>
-        <district>Tân Phú</district>
-        <longitude>676476.409926444</longitude>
-        <latitude>1193877.61457164</latitude>
-        <stationId>9489</stationId>
-      </ID>
-      <ID id="34">
-        <number>Đối diện Thành Minh Trương Tế</number>
-        <address>Tân Kỳ Tân Quý</address>
-        <district>Bình Tân</district>
-        <longitude>676267.245774667</longitude>
-        <latitude>1193881.17429778</latitude>
-        <stationId>7149</stationId>
-      </ID>
-      <ID id="35">
-        <number>Đối diện Ủy ban nhân dân phường Bình Hưng Hòa</number>
-        <address>Tân Kỳ Tân Quý</address>
-        <district>Bình Tân</district>
-        <longitude>676050.027924747</longitude>
-        <latitude>1193743.05454602</latitude>
-        <stationId>7150</stationId>
-      </ID>
-      <ID id="36">
-        <number>722</number>
-        <address>Tân Kỳ Tân Quý</address>
-        <district>Bình Tân</district>
-        <longitude>675657.943477655</longitude>
-        <latitude>1193500.55668019</latitude>
-        <stationId>7151</stationId>
-      </ID>
-      <ID id="37">
-        <number>928</number>
-        <address>Tân Kỳ Tân Quý</address>
-        <district>Bình Tân</district>
-        <longitude>675011.160065755</longitude>
-        <latitude>1193104.88859038</latitude>
-        <stationId>7152</stationId>
-      </ID>
-      <ID id="38">
-        <number>Chợ Bình Hưng Hòa</number>
-        <address>Tân Kỳ Tân Quý</address>
-        <district>Bình Tân</district>
-        <longitude>674534.319352926</longitude>
-        <latitude>1193172.86390323</latitude>
-        <stationId>6341</stationId>
-      </ID>
-    </Direction>
-    <Direction go="0">
-      <ID id="0">
-        <number>Chợ Bình Hưng Hòa</number>
-        <address>Tân Kỳ Tân Quý</address>
-        <district>Bình Tân</district>
-        <longitude>674534.319352926</longitude>
-        <latitude>1193172.86390323</latitude>
-        <stationId>6341</stationId>
-      </ID>
-      <ID id="1">
-        <number>973</number>
-        <address>Tân Kỳ Tân Quý</address>
-        <district>Bình Tân</district>
-        <longitude>674886.145662703</longitude>
-        <latitude>1193002.81326603</latitude>
-        <stationId>7156</stationId>
-      </ID>
-      <ID id="2">
-        <number>753-755</number>
-        <address>Tân Kỳ Tân Quý</address>
-        <district>Bình Tân</district>
-        <longitude>675588.76035038</longitude>
-        <latitude>1193436.36830015</latitude>
-        <stationId>7155</stationId>
-      </ID>
-      <ID id="3">
-        <number>Ủy ban phường Bình Hưng Hòa</number>
-        <address>Tân Kỳ Tân Quý</address>
-        <district>Bình Tân</district>
-        <longitude>676036.110994314</longitude>
-        <latitude>1193712.08907239</latitude>
-        <stationId>7154</stationId>
-      </ID>
-      <ID id="4">
-        <number>Đối diện văn phòng nghĩa trang</number>
-        <address>Tân Kỳ Tân Quý</address>
-        <district>Bình Tân</district>
-        <longitude>676302.169679887</longitude>
-        <latitude>1193877.86120418</latitude>
-        <stationId>7153</stationId>
-      </ID>
-      <ID id="5">
-        <number>Đối diện 664</number>
-        <address>Bình Long</address>
-        <district>Bình Tân</district>
-        <longitude>676505.477690566</longitude>
-        <latitude>1193732.92363319</latitude>
-        <stationId>7238</stationId>
-      </ID>
-      <ID id="6">
-        <number>Đối diện 79</number>
-        <address>Bình Long</address>
-        <district>Bình Tân</district>
-        <longitude>676596.423187768</longitude>
-        <latitude>1193508.41304437</latitude>
-        <stationId>7239</stationId>
-      </ID>
-      <ID id="7">
-        <number>Đối diện 486</number>
-        <address>Bình Long</address>
-        <district>Bình Tân</district>
-        <longitude>676692.905888595</longitude>
-        <latitude>1193249.54011766</latitude>
-        <stationId>7240</stationId>
-      </ID>
-      <ID id="8">
-        <number>395</number>
-        <address>Tân Hương</address>
-        <district>Tân Phú</district>
-        <longitude>676928.315513491</longitude>
-        <latitude>1193193.15171125</latitude>
-        <stationId>9385</stationId>
-      </ID>
-      <ID id="9">
-        <number>217-219</number>
-        <address>Tân Hương</address>
-        <district>Tân Phú</district>
-        <longitude>677302.98198558</longitude>
-        <latitude>1193234.69861809</latitude>
-        <stationId>9386</stationId>
-      </ID>
-      <ID id="10">
-        <number>79</number>
-        <address>Lê Thúc Hoạch</address>
-        <district>Tân Phú</district>
-        <longitude>677443.347919658</longitude>
-        <latitude>1192916.02004943</latitude>
-        <stationId>9398</stationId>
-      </ID>
-      <ID id="11">
-        <number>53</number>
-        <address>Phạm Văn Xảo</address>
-        <district>Tân Phú</district>
-        <longitude>677479.859161273</longitude>
-        <latitude>1192834.89986159</latitude>
-        <stationId>9470</stationId>
-      </ID>
-      <ID id="12">
-        <number>25</number>
-        <address>Phạm Văn Xảo</address>
-        <district>Tân Phú</district>
-        <longitude>677303.252026941</longitude>
-        <latitude>1192339.37541054</latitude>
-        <stationId>9469</stationId>
-      </ID>
-      <ID id="13">
-        <number>201</number>
-        <address>Lê Niệm</address>
-        <district>Tân Phú</district>
-        <longitude>677463.594206154</longitude>
-        <latitude>1192195.6651037</latitude>
-        <stationId>9477</stationId>
-      </ID>
-      <ID id="14">
-        <number>91A</number>
-        <address>Lê Niệm</address>
-        <district>Tân Phú</district>
-        <longitude>677796.187137343</longitude>
-        <latitude>1192097.16955892</latitude>
-        <stationId>9478</stationId>
-      </ID>
-      <ID id="15">
-        <number>Kế 19</number>
-        <address>Lê Khôi</address>
-        <district>Tân Phú</district>
-        <longitude>677970.960458856</longitude>
-        <latitude>1191984.79475875</latitude>
-        <stationId>9471</stationId>
-      </ID>
-      <ID id="16">
-        <number>171</number>
-        <address>Thạch Lam</address>
-        <district>Tân Phú</district>
-        <longitude>678214.31961363</longitude>
-        <latitude>1191800.94213819</latitude>
-        <stationId>9404</stationId>
-      </ID>
-      <ID id="17">
-        <number>9</number>
-        <address>Thạch Lam</address>
-        <district>Tân Phú</district>
-        <longitude>678519.93808326</longitude>
-        <latitude>1191701.14245699</latitude>
-        <stationId>9405</stationId>
-      </ID>
-      <ID id="18">
-        <number>425</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678484.364781423</longitude>
-        <latitude>1191440.388398</latitude>
-        <stationId>9501</stationId>
-      </ID>
-      <ID id="19">
-        <number>295-297</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678422.165548485</longitude>
-        <latitude>1191111.28858401</latitude>
-        <stationId>9503</stationId>
-      </ID>
-      <ID id="20">
-        <number>201</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678418.58873528</longitude>
-        <latitude>1190942.80332407</latitude>
-        <stationId>9504</stationId>
-      </ID>
-      <ID id="21">
-        <number>151A</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678439.727096191</longitude>
-        <latitude>1190622.81363945</latitude>
-        <stationId>9505</stationId>
-      </ID>
-      <ID id="22">
-        <number>115</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678491.125418639</longitude>
-        <latitude>1190184.42634709</latitude>
-        <stationId>9506</stationId>
-      </ID>
-      <ID id="23">
-        <number>19-21A</number>
-        <address>Lũy Bán Bích</address>
-        <district>Tân Phú</district>
-        <longitude>678599.479108752</longitude>
-        <latitude>1189876.11516715</latitude>
-        <stationId>9507</stationId>
-      </ID>
-      <ID id="24">
-        <number>832-834</number>
-        <address>Hồng Bàng</address>
-        <district>6</district>
-        <longitude>678847.606420309</longitude>
-        <latitude>1189335.11553162</latitude>
-        <stationId>8821</stationId>
-      </ID>
-      <ID id="25">
-        <number>963</number>
-        <address>Hồng Bàng</address>
-        <district>6</district>
-        <longitude>679130.849202254</longitude>
-        <latitude>1189318.52921452</latitude>
-        <stationId>8830</stationId>
-      </ID>
-      <ID id="26">
-        <number>871</number>
-        <address>Hồng Bàng</address>
-        <district>6</district>
-        <longitude>679469.350109632</longitude>
-        <latitude>1189287.54580924</latitude>
-        <stationId>8831</stationId>
-      </ID>
-      <ID id="27">
-        <number>201</number>
-        <address>Minh Phụng</address>
-        <district>6</district>
-        <longitude>679650.652303511</longitude>
-        <latitude>1189178.70073058</latitude>
-        <stationId>8876</stationId>
-      </ID>
-      <ID id="28">
-        <number>101</number>
-        <address>Minh Phụng</address>
-        <district>6</district>
-        <longitude>679611.482425647</longitude>
-        <latitude>1188964.93288193</latitude>
-        <stationId>8877</stationId>
-      </ID>
-      <ID id="33">
-        <number>Đối diện 186</number>
-        <address>Hậu Giang</address>
-        <district>6</district>
-        <longitude>679642.000865202</longitude>
-        <latitude>1188785.39658422</latitude>
-        <stationId>8817</stationId>
-      </ID>
-      <ID id="34">
-        <number>131B</number>
-        <address>Hậu Giang</address>
-        <district>6</district>
-        <longitude>680218.213677492</longitude>
-        <latitude>1188769.39210264</latitude>
-        <stationId>8818</stationId>
-      </ID>
-      <ID id="36">
-        <number>13C-13D</number>
-        <address>Tháp Mười</address>
-        <district>6</district>
-        <longitude>680759.267577251</longitude>
-        <latitude>1188854.06157734</latitude>
-        <stationId>8820</stationId>
-      </ID>
-      <ID id="64">
-        <number>GA HKXB CHO LON</number>
-        <address>Trang Tử</address>
-        <district>5</district>
-        <longitude>680705.376632056</longitude>
-        <latitude>1188961.82298208</latitude>
-        <stationId>4301</stationId>
-      </ID>
-    </Direction>
+    <Direction go="1" />
+    <Direction go="0" />
   </Stations>
   <Stations BusNum="144">
     <Direction go="1">
@@ -69744,8 +69206,8 @@
         <number>3 (79)</number>
         <address>Hòa Bình</address>
         <district>Quận 11</district>
-        <longitude>679493.982951281</longitude>
-        <latitude>1190694.96887069</latitude>
+        <longitude>679529.235534027</longitude>
+        <latitude>1190685.83051868</latitude>
         <stationId>8518</stationId>
       </ID>
       <ID id="14">
