@@ -17,7 +17,7 @@
             </StackPanel>
         </DataTemplate>
         <DataTemplate x:Key="BusListViewDataTemplate">
-            <Grid>
+            <Grid Tag="{Binding}" Tapped="BusItem_OnTapped">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
@@ -46,6 +46,10 @@
 
             </Grid>
         </DataTemplate>
+        <Style x:Key="ListViewItemStyle" TargetType="ListViewItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+        </Style>
     </SettingsFlyout.Resources>
 
     <SettingsFlyout.Background>
@@ -79,7 +83,24 @@
             <!--  Section 2 body  -->
             <ListView x:Name="BusListView"
                       ItemTemplate="{StaticResource BusListViewDataTemplate}"
-                      SelectionMode="None" />
+                      SelectionMode="None" ItemContainerStyle="{StaticResource ListViewItemStyle}" />
+        </StackPanel>
+
+        <!--  Content Section 3  -->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!--  Section 3 header  -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Bus Details" />
+
+            <!--  Section 3 body  -->
+            <TextBlock x:Name="GoDetailTextBlock"
+                       Margin="0,0,0,25"
+                       Style="{StaticResource BodyTextBlockStyle}"
+                       TextWrapping="Wrap" />
+            <TextBlock x:Name="BackDetailTextBlock"
+                       Margin="0,0,0,25"
+                       Style="{StaticResource BodyTextBlockStyle}"
+                       TextWrapping="Wrap" />
         </StackPanel>
 
         <!--  Define more Content Sections below as necessary  -->
