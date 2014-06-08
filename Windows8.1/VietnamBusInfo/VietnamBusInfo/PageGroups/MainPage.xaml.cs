@@ -1,31 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using Bing.Maps;
+using System;
 using System.Collections.ObjectModel;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.ServiceModel.Channels;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Xml.Linq;
-using Windows.Devices.Geolocation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Popups;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
-using Bing.Maps;
 using VietnamBusInfo.CustomControl;
 using VietnamBusInfo.Model;
 using VietnamBusInfo.PageGroups.StationDetailGroup;
 using VietnamBusInfo.Utilities;
 using VietnamBusInfo.ViewModel;
+using Windows.Devices.Geolocation;
+using Windows.UI.Popups;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Navigation;
 
 namespace VietnamBusInfo.PageGroups
 {
