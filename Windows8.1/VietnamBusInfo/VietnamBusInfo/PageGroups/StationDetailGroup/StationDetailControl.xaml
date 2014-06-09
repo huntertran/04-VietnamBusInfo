@@ -1,16 +1,16 @@
-﻿<SettingsFlyout x:Class="VietnamBusInfo.PageGroups.StationDetailGroup.StationDetailFlyout"
-                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                xmlns:conv="using:VietnamBusInfo.Utilities.Converter"
-                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                xmlns:local="using:VietnamBusInfo.PageGroups.StationDetailGroup"
-                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                Title="Station Details"
-                IconSource="Assets/SmallLogo.png"
-                d:DesignWidth="346"
-                mc:Ignorable="d">
-    <SettingsFlyout.Resources>
-        <conv:BitToDirectionConverter x:Key="BitToDirectionConv" />
+﻿<UserControl x:Class="VietnamBusInfo.PageGroups.StationDetailGroup.StationDetailControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converter="using:VietnamBusInfo.Utilities.Converter"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="using:VietnamBusInfo.PageGroups.StationDetailGroup"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="300"
+             d:DesignWidth="400"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <converter:BitToDirectionConverter x:Key="BitToDirectionConv" />
         <DataTemplate x:Key="BusDirectionListViewDataTemplate">
             <StackPanel>
                 <TextBlock Text="{Binding direction, Converter={StaticResource BitToDirectionConv}}" />
@@ -272,75 +272,83 @@
                 </Setter.Value>
             </Setter>
         </Style>
-    </SettingsFlyout.Resources>
+    </UserControl.Resources>
 
-    <SettingsFlyout.Background>
-        <SolidColorBrush Opacity="0.9" Color="White" />
-    </SettingsFlyout.Background>
+    <Grid>
+        <ScrollViewer>
+            <ScrollViewer.Background>
+                <SolidColorBrush Opacity="0.6" Color="Black" />
+            </ScrollViewer.Background>
+            <StackPanel Margin="12"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch">
+                
+                <Grid>
+                    <TextBlock Text="Station Details" Style="{StaticResource TitleTextBlockStyle}" FontSize="36"/>
+                </Grid>
 
-    <!--  This StackPanel acts as a root panel for vertical layout of the content sections  -->
-    <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <!--  The StackPanel(s) below define individual content sections  -->
 
-        <!--  The StackPanel(s) below define individual content sections  -->
+                <!--  Content Section 1  -->
+                <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
 
-        <!--  Content Section 1  -->
-        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+                    <!--  Section 1 header  -->
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Address" />
 
-            <!--  Section 1 header  -->
-            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Address" />
+                    <!--  Section 1 body  -->
+                    <TextBlock x:Name="AddressTextBlock"
+                               Margin="0,0,0,25"
+                               Style="{StaticResource BodyTextBlockStyle}"
+                               TextWrapping="Wrap" />
+                </StackPanel>
 
-            <!--  Section 1 body  -->
-            <TextBlock x:Name="AddressTextBlock"
-                       Margin="0,0,0,25"
-                       Style="{StaticResource BodyTextBlockStyle}"
-                       TextWrapping="Wrap" />
-        </StackPanel>
+                <!--  Content Section 2  -->
+                <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
 
-        <!--  Content Section 2  -->
-        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+                    <!--  Section 2 header  -->
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Bus" />
 
-            <!--  Section 2 header  -->
-            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Bus" />
+                    <!--  Section 2 body  -->
+                    <ListView x:Name="BusListView"
+                              ItemContainerStyle="{StaticResource ListViewItemStyle}"
+                              ItemTemplate="{StaticResource BusListViewDataTemplate}"
+                              SelectionMode="None" />
+                </StackPanel>
 
-            <!--  Section 2 body  -->
-            <ListView x:Name="BusListView"
-                      ItemContainerStyle="{StaticResource ListViewItemStyle}"
-                      ItemTemplate="{StaticResource BusListViewDataTemplate}"
-                      SelectionMode="None" />
-        </StackPanel>
+                <!--  Content Section 3  -->
+                <StackPanel Width="266" Style="{StaticResource SettingsFlyoutSectionStyle}">
 
-        <!--  Content Section 3  -->
-        <StackPanel Width="266" Style="{StaticResource SettingsFlyoutSectionStyle}">
+                    <!--  Section 3 header  -->
 
-            <!--  Section 3 header  -->
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Style="{StaticResource TitleTextBlockStyle}"
+                                   Text="Bus Details" />
 
-            <Grid>
-                <TextBlock HorizontalAlignment="Left"
-                           Style="{StaticResource TitleTextBlockStyle}"
-                           Text="Bus Details" />
+                        <ToggleSwitch HorizontalAlignment="Center"
+                                      OffContent=""
+                                      OnContent=""
+                                      Style="{StaticResource ToggleSwitchStyle}" />
 
-                <ToggleSwitch HorizontalAlignment="Center"
-                              OffContent=""
-                              OnContent=""
-                              Style="{StaticResource ToggleSwitchStyle}" />
+                        <TextBlock HorizontalAlignment="Right"
+                                   Style="{StaticResource TitleTextBlockStyle}"
+                                   Text="Route" />
+                    </Grid>
 
-                <TextBlock HorizontalAlignment="Right"
-                           Style="{StaticResource TitleTextBlockStyle}"
-                           Text="Route" />
-            </Grid>
+                    <!--  Section 3 body  -->
+                    <TextBlock x:Name="GoDetailTextBlock"
+                               Margin="0,0,0,25"
+                               Style="{StaticResource BodyTextBlockStyle}"
+                               TextWrapping="Wrap" />
+                    <TextBlock x:Name="BackDetailTextBlock"
+                               Margin="0,0,0,25"
+                               Style="{StaticResource BodyTextBlockStyle}"
+                               TextWrapping="Wrap" />
+                </StackPanel>
 
-            <!--  Section 3 body  -->
-            <TextBlock x:Name="GoDetailTextBlock"
-                       Margin="0,0,0,25"
-                       Style="{StaticResource BodyTextBlockStyle}"
-                       TextWrapping="Wrap" />
-            <TextBlock x:Name="BackDetailTextBlock"
-                       Margin="0,0,0,25"
-                       Style="{StaticResource BodyTextBlockStyle}"
-                       TextWrapping="Wrap" />
-        </StackPanel>
+                <!--  Define more Content Sections below as necessary  -->
 
-        <!--  Define more Content Sections below as necessary  -->
-
-    </StackPanel>
-</SettingsFlyout>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

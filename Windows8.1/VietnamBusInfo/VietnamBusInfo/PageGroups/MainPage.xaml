@@ -476,6 +476,10 @@
                       Stretch="Uniform" />
             </StackPanel>
         </Grid>
+        
+        <Grid x:Name="CustomControlGrid" HorizontalAlignment="Right">
+            
+        </Grid>
 
     </Grid>
 </Page>

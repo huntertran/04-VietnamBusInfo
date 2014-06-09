@@ -11,6 +11,10 @@ namespace VietnamBusInfo.ViewModel
         /// Station Details. More exactly: Bus Details
         /// </summary>
         public static ObservableCollection<BusContent> _busContent;
+
+        /// <summary>
+        /// This hold the full route of a bus
+        /// </summary>
         public static ObservableCollection<BusRoute> _busRoute;
 
         //All station in both direction of a bus line. ObservableCollection means many bus line included

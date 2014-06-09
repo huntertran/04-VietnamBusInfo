@@ -149,8 +149,8 @@
     <Compile Include="PageGroups\SearchPage.xaml.cs">
       <DependentUpon>SearchPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageGroups\StationDetailGroup\StationDetailFlyout.xaml.cs">
-      <DependentUpon>StationDetailFlyout.xaml</DependentUpon>
+    <Compile Include="PageGroups\StationDetailGroup\StationDetailControl.xaml.cs">
+      <DependentUpon>StationDetailControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Converter\BitToDirectionConverter.cs" />
@@ -234,7 +234,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageGroups\StationDetailGroup\StationDetailFlyout.xaml">
+    <Page Include="PageGroups\StationDetailGroup\StationDetailControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

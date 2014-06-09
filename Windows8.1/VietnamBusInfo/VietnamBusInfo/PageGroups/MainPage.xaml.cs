@@ -234,8 +234,12 @@ namespace VietnamBusInfo.PageGroups
             BusStationsPushPin selected = sender as BusStationsPushPin;
             StaticData.SelectedStationTotal = selected.Tag as StationTotal;
 
-            StationDetailFlyout stationDetailFlyout = new StationDetailFlyout();
-            stationDetailFlyout.ShowIndependent();
+            //StationDetailFlyout stationDetailFlyout = new StationDetailFlyout();
+            //stationDetailFlyout.Show();
+
+            StationDetailControl stationDetailControl = new StationDetailControl(map);
+            CustomControlGrid.Children.Clear();
+            CustomControlGrid.Children.Add(stationDetailControl);
         }
 
         private void LoadMapStyle()

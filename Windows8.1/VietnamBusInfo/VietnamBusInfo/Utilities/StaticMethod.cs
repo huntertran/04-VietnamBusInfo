@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,6 +73,19 @@ namespace VietnamBusInfo.Utilities
             }
 
             return xmlDoc;
+        }
+    }
+
+    public static class Extensions
+    {
+        public static ObservableCollection<T> ToObservableCollection<T>(this IEnumerable<T> col)
+        {
+            return new ObservableCollection<T>(col);
+        }
+
+        public static ObservableCollection<LocationPointWithId> Convert(IEnumerable original)
+        {
+            return new ObservableCollection<LocationPointWithId>(original.Cast<LocationPointWithId>());
         }
     }
 }
