@@ -275,80 +275,102 @@
     </UserControl.Resources>
 
     <Grid>
-        <ScrollViewer>
-            <ScrollViewer.Background>
-                <SolidColorBrush Opacity="0.6" Color="Black" />
-            </ScrollViewer.Background>
-            <StackPanel Margin="12"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch">
-                
-                <Grid>
-                    <TextBlock Text="Station Details" Style="{StaticResource TitleTextBlockStyle}" FontSize="36"/>
+        <Grid.Background>
+            <SolidColorBrush Opacity="0.6" Color="Black" />
+        </Grid.Background>
+        <Grid Margin="12">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" MaxHeight="150" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <TextBlock FontSize="36"
+                           Style="{StaticResource TitleTextBlockStyle}"
+                           Text="Station Details"
+                           TextWrapping="WrapWholeWords" />
+            </Grid>
+
+            <!--  The StackPanel(s) below define individual content sections  -->
+
+            <!--  Content Section 1  -->
+            <StackPanel Grid.Row="1">
+
+                <!--  Section 1 header  -->
+                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Address" />
+
+                <!--  Section 1 body  -->
+                <TextBlock x:Name="AddressTextBlock"
+                           Margin="0,0,0,25"
+                           Style="{StaticResource BodyTextBlockStyle}"
+                           TextWrapping="Wrap" />
+            </StackPanel>
+
+            <!--  Content Section 2  -->
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!--  Section 2 header  -->
+                <TextBlock Grid.Row="0"
+                           Style="{StaticResource TitleTextBlockStyle}"
+                           Text="Bus" />
+
+                <!--  Section 2 body  -->
+                <ListView x:Name="BusListView"
+                          Grid.Row="1"
+                          ItemContainerStyle="{StaticResource ListViewItemStyle}"
+                          ItemTemplate="{StaticResource BusListViewDataTemplate}"
+                          SelectionMode="None" />
+            </Grid>
+
+            <!--  Content Section 3  -->
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!--  Section 3 header  -->
+
+                <Grid Grid.Row="0">
+                    <TextBlock HorizontalAlignment="Left"
+                               Style="{StaticResource TitleTextBlockStyle}"
+                               Text="Bus Details" />
+
+                    <ToggleSwitch HorizontalAlignment="Center"
+                                  OffContent=""
+                                  OnContent=""
+                                  Style="{StaticResource ToggleSwitchStyle}" />
+
+                    <TextBlock HorizontalAlignment="Right"
+                               Style="{StaticResource TitleTextBlockStyle}"
+                               Text="Route" />
                 </Grid>
 
-                <!--  The StackPanel(s) below define individual content sections  -->
+                <!--  Section 3 body  -->
+                <ScrollViewer Grid.Row="1">
+                    <StackPanel Height="200"
+                                Width="376">
+                        <TextBlock x:Name="GoDetailTextBlock"
+                                   Margin="0,0,0,25"
+                                   Style="{StaticResource BodyTextBlockStyle}"
+                                   TextWrapping="Wrap" />
+                        <TextBlock x:Name="BackDetailTextBlock"
+                                   Margin="0,0,0,25"
+                                   Style="{StaticResource BodyTextBlockStyle}"
+                                   TextWrapping="Wrap" />
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
 
-                <!--  Content Section 1  -->
-                <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+            <!--  Define more Content Sections below as necessary  -->
 
-                    <!--  Section 1 header  -->
-                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Address" />
-
-                    <!--  Section 1 body  -->
-                    <TextBlock x:Name="AddressTextBlock"
-                               Margin="0,0,0,25"
-                               Style="{StaticResource BodyTextBlockStyle}"
-                               TextWrapping="Wrap" />
-                </StackPanel>
-
-                <!--  Content Section 2  -->
-                <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
-
-                    <!--  Section 2 header  -->
-                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Bus" />
-
-                    <!--  Section 2 body  -->
-                    <ListView x:Name="BusListView"
-                              ItemContainerStyle="{StaticResource ListViewItemStyle}"
-                              ItemTemplate="{StaticResource BusListViewDataTemplate}"
-                              SelectionMode="None" />
-                </StackPanel>
-
-                <!--  Content Section 3  -->
-                <StackPanel Width="266" Style="{StaticResource SettingsFlyoutSectionStyle}">
-
-                    <!--  Section 3 header  -->
-
-                    <Grid>
-                        <TextBlock HorizontalAlignment="Left"
-                                   Style="{StaticResource TitleTextBlockStyle}"
-                                   Text="Bus Details" />
-
-                        <ToggleSwitch HorizontalAlignment="Center"
-                                      OffContent=""
-                                      OnContent=""
-                                      Style="{StaticResource ToggleSwitchStyle}" />
-
-                        <TextBlock HorizontalAlignment="Right"
-                                   Style="{StaticResource TitleTextBlockStyle}"
-                                   Text="Route" />
-                    </Grid>
-
-                    <!--  Section 3 body  -->
-                    <TextBlock x:Name="GoDetailTextBlock"
-                               Margin="0,0,0,25"
-                               Style="{StaticResource BodyTextBlockStyle}"
-                               TextWrapping="Wrap" />
-                    <TextBlock x:Name="BackDetailTextBlock"
-                               Margin="0,0,0,25"
-                               Style="{StaticResource BodyTextBlockStyle}"
-                               TextWrapping="Wrap" />
-                </StackPanel>
-
-                <!--  Define more Content Sections below as necessary  -->
-
-            </StackPanel>
-        </ScrollViewer>
+        </Grid>
     </Grid>
 </UserControl>
