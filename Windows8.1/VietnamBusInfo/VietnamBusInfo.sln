@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30626.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VietnamBusInfo", "VietnamBusInfo\VietnamBusInfo.csproj", "{7D34AFD0-0ED0-4EF1-BB1B-289F9A372BCB}"
 EndProject
@@ -10,10 +10,10 @@ Global
 		SccNumberOfProjects = 2
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://cuoilennaocacban.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = VietnamBusInfo\\VietnamBusInfo.csproj
-		SccProjectName1 = VietnamBusInfo
-		SccLocalPath1 = VietnamBusInfo
+		SccProjectUniqueName0 = VietnamBusInfo\\VietnamBusInfo.csproj
+		SccProjectName0 = VietnamBusInfo
+		SccLocalPath0 = VietnamBusInfo
+		SccLocalPath1 = .
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
