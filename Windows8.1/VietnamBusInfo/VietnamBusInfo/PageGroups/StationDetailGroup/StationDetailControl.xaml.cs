@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Bing.Maps;
+using System;
 using System.Collections.ObjectModel;
 using System.Linq;
-// The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
-using Windows.UI;
-using Bing.Maps;
 using VietnamBusInfo.Model;
-using VietnamBusInfo.Utilities;
 using VietnamBusInfo.ViewModel;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
@@ -45,6 +42,7 @@ namespace VietnamBusInfo.PageGroups.StationDetailGroup
 
         private void BusItem_OnTapped(object sender, TappedRoutedEventArgs e)
         {
+            RouteAndDetailSwitch.IsOn = false;
             goBusRouteCollection = new ObservableCollection<LocationPointWithId>();
             backBusRouteCollection = new ObservableCollection<LocationPointWithId>();
             Bus selectedBus = ((Grid) sender).Tag as Bus;
@@ -160,6 +158,16 @@ namespace VietnamBusInfo.PageGroups.StationDetailGroup
 
             mapControl.ShapeLayers.Clear();
             mapControl.ShapeLayers.Add(busRouteShapeLayer);
+        }
+
+        private void RouteAndDetailSwitch_Toggled(object sender, RoutedEventArgs e)
+        {
+            if (RouteAndDetailSwitch.IsOn)
+            {
+                BusDetailInfoScrollViewer.Visibility = Visibility.Visible;
+                BusStopListGrid.Visibility = Visibility.Collapsed;
+                return;
+            }
         }
     }
 }

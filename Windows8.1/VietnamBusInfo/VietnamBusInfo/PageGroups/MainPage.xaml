@@ -477,7 +477,7 @@
             </StackPanel>
         </Grid>
         
-        <Grid x:Name="CustomControlGrid" HorizontalAlignment="Right">
+        <Grid x:Name="CustomControlGrid">
             
         </Grid>
 

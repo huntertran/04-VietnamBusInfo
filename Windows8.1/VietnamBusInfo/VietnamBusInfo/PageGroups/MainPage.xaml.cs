@@ -237,9 +237,16 @@ namespace VietnamBusInfo.PageGroups
             //StationDetailFlyout stationDetailFlyout = new StationDetailFlyout();
             //stationDetailFlyout.Show();
 
-            StationDetailControl stationDetailControl = new StationDetailControl(map);
             CustomControlGrid.Children.Clear();
+
+            StationDetailControl stationDetailControl = new StationDetailControl(map);
+            stationDetailControl.HorizontalAlignment = HorizontalAlignment.Right;
             CustomControlGrid.Children.Add(stationDetailControl);
+
+            CloseControl cc = new CloseControl();
+            cc.VerticalAlignment = VerticalAlignment.Top;
+            cc.HorizontalAlignment = HorizontalAlignment.Right;
+            CustomControlGrid.Children.Add(cc);
         }
 
         private void LoadMapStyle()

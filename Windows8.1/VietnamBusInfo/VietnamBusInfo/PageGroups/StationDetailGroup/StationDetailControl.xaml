@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="using:VietnamBusInfo.PageGroups.StationDetailGroup"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             d:DesignHeight="300"
+             d:DesignHeight="768"
              d:DesignWidth="400"
              mc:Ignorable="d">
 
@@ -283,8 +283,8 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" MaxHeight="150" />
+                <RowDefinition Height="5*" />
+                <RowDefinition Height="5*" />
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
@@ -343,10 +343,10 @@
                                Style="{StaticResource TitleTextBlockStyle}"
                                Text="Bus Details" />
 
-                    <ToggleSwitch HorizontalAlignment="Center"
+                    <ToggleSwitch x:Name="RouteAndDetailSwitch"
                                   OffContent=""
                                   OnContent=""
-                                  Style="{StaticResource ToggleSwitchStyle}" />
+                                  Style="{StaticResource ToggleSwitchStyle}" Toggled="RouteAndDetailSwitch_Toggled" />
 
                     <TextBlock HorizontalAlignment="Right"
                                Style="{StaticResource TitleTextBlockStyle}"
@@ -354,9 +354,10 @@
                 </Grid>
 
                 <!--  Section 3 body  -->
-                <ScrollViewer Grid.Row="1">
-                    <StackPanel Height="200"
-                                Width="376">
+                <ScrollViewer x:Name="BusDetailInfoScrollViewer"
+                              Grid.Row="1"
+                              Visibility="Collapsed">
+                    <StackPanel Width="376">
                         <TextBlock x:Name="GoDetailTextBlock"
                                    Margin="0,0,0,25"
                                    Style="{StaticResource BodyTextBlockStyle}"
@@ -367,6 +368,11 @@
                                    TextWrapping="Wrap" />
                     </StackPanel>
                 </ScrollViewer>
+                <Grid x:Name="BusStopListGrid"
+                      Grid.Row="1"
+                      Visibility="Visible">
+                    <ListView x:Name="BusStopListView" />
+                </Grid>
             </Grid>
 
             <!--  Define more Content Sections below as necessary  -->
