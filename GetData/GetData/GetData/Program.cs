@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using GetData.Model;
+using HtmlAgilityPack;
+using System;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
-using GetData.Model;
-using HtmlAgilityPack;
 
 namespace GetData
 {
@@ -26,6 +23,9 @@ namespace GetData
 
         public static void Main(string[] args)
         {
+
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+
             //Get list of buses
 
             string lobHtml = GetHttpAsString("http://www.buyttphcm.com.vn/TTLT.aspx");
