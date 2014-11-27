@@ -21,19 +21,23 @@ namespace GetData
             return result;
         }
 
+        public static string UTF8Decode(string originalString)
+        {
+            byte[] bytes = Encoding.Default.GetBytes(originalString);
+            return WebUtility.HtmlDecode(Encoding.UTF8.GetString(bytes));
+        }
+
         public static void Main(string[] args)
         {
-
+            //For unicode output
             Console.OutputEncoding = System.Text.Encoding.Unicode;
 
-            //Get list of buses
+            #region Get List of buses
 
             string lobHtml = GetHttpAsString("http://www.buyttphcm.com.vn/TTLT.aspx");
 
             HtmlDocument lobDocument = new HtmlDocument();
             lobDocument.LoadHtml(lobHtml);
-
-            UTF8Encoding utf8 = new UTF8Encoding();
 
             BusNameList newBusNameList = new BusNameList();
             newBusNameList.busNameCollection = new ObservableCollection<BusName>();
@@ -50,14 +54,43 @@ namespace GetData
                     continue;
                 }
 
-                byte[] bytes = Encoding.Default.GetBytes(htmlNode.NextSibling.InnerText);
-                string temp = WebUtility.HtmlDecode(Encoding.UTF8.GetString(bytes));
-
-                newBusName.name = temp;
+                newBusName.name = UTF8Decode(htmlNode.NextSibling.InnerText);
 
                 newBusNameList.busNameCollection.Add(newBusName);
                 Console.WriteLine(newBusName.name);
             }
+
+            #endregion
+
+            #region Get Buses text data
+
+            foreach (BusName busName in newBusNameList.busNameCollection)
+            {
+                lobHtml = GetHttpAsString("http://www.buyttphcm.com.vn/Detail_TTLT.aspx?sl=" + busName.number);
+
+                lobHtml = UTF8Decode(lobHtml);
+                lobDocument.LoadHtml(lobHtml);
+
+                BusTextData newBusTextData = new BusTextData();
+
+                nodes =
+                    lobDocument.DocumentNode.SelectNodes(
+                        "//div[@id='ctl00_ContentPlaceHolder1_UpdatePanel2']/table[2]");
+
+                newBusTextData.go = nodes[0].SelectNodes(".//tr[3]/td[@class='conten']")[0].InnerText.Trim();
+                newBusTextData.back = nodes[0].SelectNodes(".//tr[4]/td[@class='conten']")[0].InnerText.Trim();
+                newBusTextData.timeInfo = nodes[0].SelectNodes(".//tr[5]/td[@class='conten']")[0].InnerText.Trim();
+
+                busName.busTextData = newBusTextData;
+
+                Console.WriteLine(newBusTextData.go);
+                Console.WriteLine(newBusTextData.back);
+                Console.WriteLine(newBusTextData.timeInfo);
+
+                Console.WriteLine(busName.name + " - Bus Text Data added!");
+            }
+
+            #endregion
         }
     }
 }
