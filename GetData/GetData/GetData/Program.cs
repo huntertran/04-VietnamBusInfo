@@ -4,11 +4,16 @@ using System;
 using System.Collections.ObjectModel;
 using System.Net;
 using System.Text;
+using Newtonsoft.Json.Linq;
 
 namespace GetData
 {
     public class Program
     {
+
+        public static BusNameList newBusNameList = new BusNameList();
+        public static BusNameList codedBusNameList = new BusNameList();
+
         public static string GetHttpAsString(string link)
         {
             string result = "";
@@ -34,12 +39,14 @@ namespace GetData
 
             #region Get List of buses
 
+            //Reuse data
             string lobHtml = GetHttpAsString("http://www.buyttphcm.com.vn/TTLT.aspx");
-
             HtmlDocument lobDocument = new HtmlDocument();
-            lobDocument.LoadHtml(lobHtml);
 
-            BusNameList newBusNameList = new BusNameList();
+            goto GetBusesCode;
+
+            lobDocument.LoadHtml(lobHtml);
+            
             newBusNameList.busNameCollection = new ObservableCollection<BusName>();
 
             var nodes =
@@ -88,6 +95,49 @@ namespace GetData
                 Console.WriteLine(newBusTextData.timeInfo);
 
                 Console.WriteLine(busName.name + " - Bus Text Data added!");
+            }
+
+            #endregion
+
+            #region Get Buses name code
+
+            GetBusesCode:
+
+            codedBusNameList.busNameCollection = new ObservableCollection<BusName>();
+
+            lobHtml = GetHttpAsString("http://mapbus.ebms.vn/routeoftrunk.aspx");
+            lobDocument.LoadHtml(lobHtml);
+
+            nodes = lobDocument.DocumentNode.SelectNodes("//select[@id='lstTuyen']/option");
+            foreach (HtmlNode htmlNode in nodes)
+            {
+                BusName newBusName = new BusName();
+                newBusName.number = htmlNode.Attributes["value"].Value;
+
+                if (newBusName.number == "0")
+                {
+                    continue;
+                }
+
+                newBusName.name = UTF8Decode(htmlNode.NextSibling.InnerText);
+
+                codedBusNameList.busNameCollection.Add(newBusName);
+                Console.WriteLine("Coded: " + newBusName.number + " - " + newBusName.name);
+            }
+
+            #endregion
+
+            #region Get List Route Station
+
+            foreach (BusName bus in codedBusNameList.busNameCollection)
+            {
+                //Go Direction
+                lobHtml =
+                    GetHttpAsString("http://mapbus.ebms.vn/ajax.aspx?action=listRouteStations&rid=" + bus.number +
+                                    "&isgo=true");
+                lobHtml = UTF8Decode(lobHtml);
+                JObject jObject = JObject.Parse(lobHtml);
+                RootRouteStation rootRouteStation = jObject.ToObject<RootRouteStation>();
             }
 
             #endregion
