@@ -1,4 +1,5 @@
-﻿using GetData.Model;
+﻿using System.Linq;
+using GetData.Model;
 using HtmlAgilityPack;
 using System;
 using System.Collections.ObjectModel;
@@ -13,6 +14,7 @@ namespace GetData
 
         public static BusNameList newBusNameList = new BusNameList();
         public static CodedBusNameList codedBusNameList = new CodedBusNameList();
+        public static GeneralStationList generalStationList = new GeneralStationList();
 
         public static string GetHttpAsString(string link)
         {
@@ -247,6 +249,26 @@ namespace GetData
                 }
 
                 bus.directionRouteCollection.Add(directionBackRoute);
+            }
+
+            #endregion
+
+            #region Caculate RouteStation
+
+            generalStationList.generalStationCollection = new ObservableCollection<GeneralStation>();
+
+            foreach (BusCodedName bus in codedBusNameList.codedBusNameCollection)
+            {
+                foreach (RouteStation station in bus.directionRouteCollection[0].routeStationCollection)
+                {
+                    GeneralStation generalStation =
+                        generalStationList.generalStationCollection.FirstOrDefault(i => i.stationId == station.stationId);
+                    if (generalStation != null)
+                    {
+                        //Existed in list
+                        //TODO: code here
+                    }
+                }
             }
 
             #endregion
