@@ -268,6 +268,19 @@ namespace GetData
                         //Existed in list
                         //TODO: code here
                     }
+                    else
+                    {
+                        //Not existed
+                        GeneralStation newGeneralStation = new GeneralStation();
+                        newGeneralStation.throughStationBusCollection = new ObservableCollection<ThroughStationBus>();
+
+                        ThroughStationBus thStationBus = new ThroughStationBus();
+                        thStationBus.name = bus.name;
+                        thStationBus.number = bus.number.ToString();
+                        thStationBus.direction = DirectionType.Go;
+
+                        newGeneralStation.throughStationBusCollection.Add(thStationBus);
+                    }
                 }
             }
 
