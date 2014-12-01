@@ -32,6 +32,27 @@ namespace GetData
             return WebUtility.HtmlDecode(Encoding.UTF8.GetString(bytes));
         }
 
+        public static ObservableCollection<GPSPoint> ConvertStringToGPSPoints(string original)
+        {
+            ObservableCollection<GPSPoint> gpsPointCollection = new ObservableCollection<GPSPoint>();
+
+            string[] temp = original.Split(' ');
+            foreach (string s in temp)
+            {
+                if (String.IsNullOrEmpty(s))
+                {
+                    continue;
+                }
+                GPSPoint point = new GPSPoint();
+                point.lat = Convert.ToDouble(s.Split(',')[1]);
+                point.lon = Convert.ToDouble(s.Split(',')[0]);
+
+                gpsPointCollection.Add(point);
+            }
+
+            return gpsPointCollection;
+        }
+
         public static void Main(string[] args)
         {
             //For unicode output
@@ -43,7 +64,7 @@ namespace GetData
             string lobHtml = GetHttpAsString("http://www.buyttphcm.com.vn/TTLT.aspx");
             HtmlDocument lobDocument = new HtmlDocument();
 
-            goto GetBusesCode;
+            //goto GetBusesCode;
 
             lobDocument.LoadHtml(lobHtml);
             
@@ -154,6 +175,7 @@ namespace GetData
                 RootRouteStation rootRouteGoStation = jObject.ToObject<RootRouteStation>();
 
                 directionGoRoute.routeStationCollection = new ObservableCollection<RouteStation>();
+                directionGoRoute.routePoints = new ObservableCollection<GPSPoint>();
 
                 foreach (ROW row in rootRouteGoStation.TABLE[0].ROW)
                 {
@@ -165,6 +187,11 @@ namespace GetData
                         newRouteStation.nextStationId = Convert.ToInt32(row.COL[2].DATA);
                     }
                     newRouteStation.route = row.COL[3].DATA;
+                    ObservableCollection<GPSPoint> gpsPoints = ConvertStringToGPSPoints(row.COL[3].DATA);
+                    foreach (GPSPoint point in gpsPoints)
+                    {
+                        directionGoRoute.routePoints.Add(point);
+                    }
                     newRouteStation.name = row.COL[7].DATA;
                     newRouteStation.lon = row.COL[9].DATA;
                     newRouteStation.lat = row.COL[8].DATA;
@@ -192,6 +219,7 @@ namespace GetData
                 RootRouteStation rootRouteBackStation = jObject.ToObject<RootRouteStation>();
 
                 directionBackRoute.routeStationCollection = new ObservableCollection<RouteStation>();
+                directionBackRoute.routePoints = new ObservableCollection<GPSPoint>();
 
                 foreach (ROW row in rootRouteBackStation.TABLE[0].ROW)
                 {
@@ -203,6 +231,11 @@ namespace GetData
                         newRouteStation.nextStationId = Convert.ToInt32(row.COL[2].DATA);
                     }
                     newRouteStation.route = row.COL[3].DATA;
+                    ObservableCollection<GPSPoint> gpsPoints = ConvertStringToGPSPoints(row.COL[3].DATA);
+                    foreach (GPSPoint point in gpsPoints)
+                    {
+                        directionBackRoute.routePoints.Add(point);
+                    }
                     newRouteStation.name = row.COL[7].DATA;
                     newRouteStation.lon = row.COL[9].DATA;
                     newRouteStation.lat = row.COL[8].DATA;

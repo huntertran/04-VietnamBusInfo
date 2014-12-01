@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 
 namespace GetData.Model
 {
@@ -56,10 +57,19 @@ namespace GetData.Model
         public string address { get; set; }
     }
 
+    public class GPSPoint
+    {
+        public double lat { get; set; }
+        public double lon { get; set; }
+    }
+
     public class DirectionRoute
     {
         public bool isGo { get; set; }
-        public ObservableCollection<RouteStation> routeStationCollection { get; set; } 
+        public ObservableCollection<RouteStation> routeStationCollection { get; set; }
+
+        public ObservableCollection<GPSPoint> routePoints { get; set; } 
+
     }
 
     public class BusCodedName
