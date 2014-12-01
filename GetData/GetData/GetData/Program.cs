@@ -12,7 +12,7 @@ namespace GetData
     {
 
         public static BusNameList newBusNameList = new BusNameList();
-        public static BusNameList codedBusNameList = new BusNameList();
+        public static CodedBusNameList codedBusNameList = new CodedBusNameList();
 
         public static string GetHttpAsString(string link)
         {
@@ -103,7 +103,7 @@ namespace GetData
 
             GetBusesCode:
 
-            codedBusNameList.busNameCollection = new ObservableCollection<BusName>();
+            codedBusNameList.codedBusNameCollection = new ObservableCollection<BusCodedName>();
 
             lobHtml = GetHttpAsString("http://mapbus.ebms.vn/routeoftrunk.aspx");
             lobDocument.LoadHtml(lobHtml);
@@ -111,17 +111,17 @@ namespace GetData
             nodes = lobDocument.DocumentNode.SelectNodes("//select[@id='lstTuyen']/option");
             foreach (HtmlNode htmlNode in nodes)
             {
-                BusName newBusName = new BusName();
-                newBusName.number = htmlNode.Attributes["value"].Value;
+                BusCodedName newBusName = new BusCodedName();
+                newBusName.number = Convert.ToInt32(htmlNode.Attributes["value"].Value);
 
-                if (newBusName.number == "0")
+                if (newBusName.number == 0)
                 {
                     continue;
                 }
 
                 newBusName.name = UTF8Decode(htmlNode.NextSibling.InnerText);
 
-                codedBusNameList.busNameCollection.Add(newBusName);
+                codedBusNameList.codedBusNameCollection.Add(newBusName);
                 Console.WriteLine("Coded: " + newBusName.number + " - " + newBusName.name);
             }
 
@@ -129,15 +129,50 @@ namespace GetData
 
             #region Get List Route Station
 
-            foreach (BusName bus in codedBusNameList.busNameCollection)
+            foreach (BusCodedName bus in codedBusNameList.codedBusNameCollection)
             {
+
+                bus.directionRouteCollection = new ObservableCollection<DirectionRoute>();
+
                 //Go Direction
-                lobHtml =
-                    GetHttpAsString("http://mapbus.ebms.vn/ajax.aspx?action=listRouteStations&rid=" + bus.number +
-                                    "&isgo=true");
-                lobHtml = UTF8Decode(lobHtml);
-                JObject jObject = JObject.Parse(lobHtml);
-                RootRouteStation rootRouteStation = jObject.ToObject<RootRouteStation>();
+                try
+                {
+
+                    DirectionRoute directionRoute = new DirectionRoute();
+                    directionRoute.isGo = true;
+
+                    lobHtml =
+                        GetHttpAsString("http://mapbus.ebms.vn/ajax.aspx?action=listRouteStations&rid=" + bus.number +
+                                        "&isgo=true");
+                    lobHtml = UTF8Decode(lobHtml);
+                    JObject jObject = JObject.Parse(lobHtml);
+
+                    RootRouteStation rootRouteStation = jObject.ToObject<RootRouteStation>();
+
+                    directionRoute.routeStationCollection = new ObservableCollection<RouteStation>();
+
+                    foreach (ROW row in rootRouteStation.TABLE[0].ROW)
+                    {
+                        RouteStation newRouteStation = new RouteStation();
+                        newRouteStation.no = Convert.ToInt32(row.COL[0].DATA);
+                        newRouteStation.stationId = Convert.ToInt32(row.COL[1].DATA);
+                        newRouteStation.nextStationId = Convert.ToInt32(row.COL[2].DATA);
+                        newRouteStation.route = row.COL[3].DATA;
+                        newRouteStation.name = row.COL[7].DATA;
+                        newRouteStation.lon = row.COL[9].DATA;
+                        newRouteStation.lat = row.COL[8].DATA;
+                        newRouteStation.address = row.COL[12].DATA;
+
+                        directionRoute.routeStationCollection.Add(newRouteStation);
+
+                        Console.WriteLine("New station added: " + newRouteStation.stationId);
+                    }
+                }
+                catch (Exception e)
+                {
+                    //Console.WriteLine(e);
+                    Console.WriteLine("Bus: " + bus.name + " don't have route. Skip");
+                }
             }
 
             #endregion

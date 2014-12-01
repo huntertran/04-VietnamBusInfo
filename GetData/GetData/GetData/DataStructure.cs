@@ -46,12 +46,32 @@ namespace GetData.Model
 
     public class RouteStation
     {
-        
+        public int no { get; set; }
+        public int stationId { get; set; }
+        public int nextStationId { get; set; }
+        public string route { get; set; }
+        public string name { get; set; }
+        public string lat { get; set; }
+        public string lon { get; set; }
+        public string address { get; set; }
+    }
+
+    public class DirectionRoute
+    {
+        public bool isGo { get; set; }
+        public ObservableCollection<RouteStation> routeStationCollection { get; set; } 
     }
 
     public class BusCodedName
     {
         public int number { get; set; }
         public string name { get; set; }
+
+        public ObservableCollection<DirectionRoute> directionRouteCollection { get; set; } 
+    }
+
+    public class CodedBusNameList
+    {
+        public ObservableCollection<BusCodedName> codedBusNameCollection { get; set; } 
     }
 }
