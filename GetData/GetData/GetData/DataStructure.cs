@@ -107,6 +107,31 @@ namespace GetData.Model
 
     public class GeneralStation : BasicStation
     {
+        public GeneralStation()
+        {
+            
+        }
+
+        public GeneralStation(BasicStation basic)
+        {
+            no = basic.no;
+            stationId = basic.stationId;
+            name = basic.name;
+            lat = basic.lat;
+            lon = basic.lon;
+            address = basic.address;
+        }
+
+        public GeneralStation(RouteStation basic)
+        {
+            no = basic.no;
+            stationId = basic.stationId;
+            name = basic.name;
+            lat = basic.lat;
+            lon = basic.lon;
+            address = basic.address;
+        }
+
         public ObservableCollection<ThroughStationBus> throughStationBusCollection { get; set; }
     }
 

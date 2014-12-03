@@ -259,6 +259,7 @@ namespace GetData
 
             foreach (BusCodedName bus in codedBusNameList.codedBusNameCollection)
             {
+                //Go Direction
                 foreach (RouteStation station in bus.directionRouteCollection[0].routeStationCollection)
                 {
                     GeneralStation generalStation =
@@ -267,11 +268,17 @@ namespace GetData
                     {
                         //Existed in list
                         //TODO: code here
+                        ThroughStationBus thStationBus = new ThroughStationBus();
+                        thStationBus.name = bus.name;
+                        thStationBus.number = bus.number.ToString();
+                        thStationBus.direction = DirectionType.Go;
+
+                        generalStation.throughStationBusCollection.Add(thStationBus);
                     }
                     else
                     {
                         //Not existed
-                        GeneralStation newGeneralStation = new GeneralStation();
+                        GeneralStation newGeneralStation = new GeneralStation(station);
                         newGeneralStation.throughStationBusCollection = new ObservableCollection<ThroughStationBus>();
 
                         ThroughStationBus thStationBus = new ThroughStationBus();
@@ -280,6 +287,54 @@ namespace GetData
                         thStationBus.direction = DirectionType.Go;
 
                         newGeneralStation.throughStationBusCollection.Add(thStationBus);
+                        Console.WriteLine("New General Station Added: " + newGeneralStation.stationId);
+                    }
+                }
+
+                //Back Direction
+                foreach (RouteStation station in bus.directionRouteCollection[1].routeStationCollection)
+                {
+                    GeneralStation generalStation =
+                        generalStationList.generalStationCollection.FirstOrDefault(i => i.stationId == station.stationId);
+                    if (generalStation != null)
+                    {
+                        //Existed in list
+                        //TODO: code here
+                        ThroughStationBus thStationBus = new ThroughStationBus();
+                        thStationBus.name = bus.name;
+                        thStationBus.number = bus.number.ToString();
+                        thStationBus.direction = DirectionType.Go;
+
+                        bool isBoth = false;
+
+                        foreach (ThroughStationBus directionBus in generalStation.throughStationBusCollection)
+                        {
+                            if (directionBus.number == thStationBus.number)
+                            {
+                                directionBus.direction = DirectionType.Both;
+                                isBoth = true;
+                                break;
+                            }
+                        }
+
+                        if (!isBoth)
+                        {
+                            generalStation.throughStationBusCollection.Add(thStationBus);
+                        }
+                    }
+                    else
+                    {
+                        //Not existed
+                        GeneralStation newGeneralStation = new GeneralStation(station);
+                        newGeneralStation.throughStationBusCollection = new ObservableCollection<ThroughStationBus>();
+
+                        ThroughStationBus thStationBus = new ThroughStationBus();
+                        thStationBus.name = bus.name;
+                        thStationBus.number = bus.number.ToString();
+                        thStationBus.direction = DirectionType.Back;
+
+                        newGeneralStation.throughStationBusCollection.Add(thStationBus);
+                        Console.WriteLine("New General Station Added: " + newGeneralStation.stationId);
                     }
                 }
             }
