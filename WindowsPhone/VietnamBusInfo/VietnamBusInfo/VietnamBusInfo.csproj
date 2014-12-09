@@ -84,6 +84,10 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="analytics.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -100,6 +104,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="analytics.xml" />
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\SmallLogo.scale-240.png" />
     <Content Include="Assets\SplashScreen.scale-240.png" />
@@ -116,6 +121,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GoogleAnalytics">
+      <HintPath>..\packages\GoogleAnalyticsSDK.1.2.12\lib\wpa81\GoogleAnalytics.winmd</HintPath>
+    </Reference>
+    <Reference Include="GoogleAnalytics.Core">
+      <HintPath>..\packages\GoogleAnalyticsSDK.1.2.12\lib\wpa81\GoogleAnalytics.Core.winmd</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
