@@ -34,6 +34,7 @@ namespace VietnamBusInfo
 
         private async void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
         {
+            MovingRect.Begin();
             await StaticMethod.LoadDataTask();
         }
 
