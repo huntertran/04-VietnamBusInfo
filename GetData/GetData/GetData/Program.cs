@@ -1,4 +1,7 @@
-﻿using System.Linq;
+﻿using System.IO;
+using System.Linq;
+using System.Xml;
+using System.Xml.Serialization;
 using GetData.Model;
 using HtmlAgilityPack;
 using System;
@@ -55,10 +58,35 @@ namespace GetData
             return gpsPointCollection;
         }
 
+        public static string Object2Xml<T>(T value, string fileName)
+        {
+            if (value == null)
+            {
+                return string.Empty;
+            }
+            try
+            {
+                var xmlserializer = new XmlSerializer(typeof(T));
+                var stringWriter = new StringWriter();
+                using (var writer = XmlWriter.Create(stringWriter))
+                {
+                    xmlserializer.Serialize(writer, value);
+                    File.WriteAllText(@"E:\Data\Work\04 - Vietnam Bus Info\GetData\Data\" + fileName + ".xml",stringWriter.ToString());
+                    return stringWriter.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred", ex);
+            }
+        }
+
         public static void Main(string[] args)
         {
             //For unicode output
             Console.OutputEncoding = System.Text.Encoding.Unicode;
+
+
 
             #region Get List of buses
 
@@ -66,7 +94,7 @@ namespace GetData
             string lobHtml = GetHttpAsString("http://www.buyttphcm.com.vn/TTLT.aspx");
             HtmlDocument lobDocument = new HtmlDocument();
 
-            //goto GetBusesCode;
+            goto GetBusesCode;
 
             lobDocument.LoadHtml(lobHtml);
             
@@ -89,6 +117,8 @@ namespace GetData
                 newBusNameList.busNameCollection.Add(newBusName);
                 Console.WriteLine(newBusName.name);
             }
+
+            Object2Xml(newBusNameList, "BusNameList.xml");
 
             #endregion
 
@@ -151,6 +181,8 @@ namespace GetData
             #endregion
 
             #region Get List Route Station
+
+            GetListRouteStation:
 
             foreach (BusCodedName bus in codedBusNameList.codedBusNameCollection)
             {
@@ -259,6 +291,10 @@ namespace GetData
 
             foreach (BusCodedName bus in codedBusNameList.codedBusNameCollection)
             {
+                if (bus.directionRouteCollection.Count == 0)
+                {
+                    continue;
+                }
                 //Go Direction
                 foreach (RouteStation station in bus.directionRouteCollection[0].routeStationCollection)
                 {
@@ -274,6 +310,8 @@ namespace GetData
                         thStationBus.direction = DirectionType.Go;
 
                         generalStation.throughStationBusCollection.Add(thStationBus);
+
+                        
                     }
                     else
                     {
@@ -288,6 +326,8 @@ namespace GetData
 
                         newGeneralStation.throughStationBusCollection.Add(thStationBus);
                         Console.WriteLine("New General Station Added: " + newGeneralStation.stationId);
+
+                        generalStationList.generalStationCollection.Add(newGeneralStation);
                     }
                 }
 
@@ -335,11 +375,16 @@ namespace GetData
 
                         newGeneralStation.throughStationBusCollection.Add(thStationBus);
                         Console.WriteLine("New General Station Added: " + newGeneralStation.stationId);
+
+                        generalStationList.generalStationCollection.Add(newGeneralStation);
                     }
                 }
             }
 
             #endregion
+
+            Object2Xml(codedBusNameList, "CodedBusNameList");
+            Object2Xml(generalStationList, "GeneralStationList");
         }
     }
 }
