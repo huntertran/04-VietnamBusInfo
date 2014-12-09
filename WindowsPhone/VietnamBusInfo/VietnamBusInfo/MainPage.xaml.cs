@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
+using VietnamBusInfo.Utilities;
 
 namespace VietnamBusInfo
 {
@@ -27,6 +28,13 @@ namespace VietnamBusInfo
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
+
+            this.Loaded += OnLoaded;
+        }
+
+        private async void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
+        {
+            await StaticMethod.LoadDataTask();
         }
 
         /// <summary>
