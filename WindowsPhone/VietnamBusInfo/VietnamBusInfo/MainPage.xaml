@@ -38,27 +38,30 @@
             <SolidColorBrush Color="{ThemeResource PhoneChromeColor}" />
         </Grid.Background>
         <!--  <maps:MapControl x:Name="MapControl1" MapServiceToken="tybAmFRtMo8gkJ08mfrusg" />  -->
-        <Grid Width="300" Height="300">
+        <Grid Height="300">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="200" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Grid Width="300">
+            <Grid>
 
-                <Grid x:Name="grid"
-                      Width="57"
-                      Height="100"
-                      HorizontalAlignment="Left"
-                      Background="{StaticResource AppBarItemBackgroundThemeBrush}"
-                      Canvas.ZIndex="1" />
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="6*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
 
                 <Rectangle x:Name="rectangle"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
                            Width="50"
                            Height="50"
-                           Margin="0,0,6,0"
+                           Margin="0,0,0,30"
                            HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Canvas.ZIndex="1"
                            Fill="#FFFF8181"
                            RenderTransformOrigin="0.5,0.5">
                     <Rectangle.RenderTransform>
@@ -66,28 +69,38 @@
                     </Rectangle.RenderTransform>
                 </Rectangle>
 
-                <Grid Width="57"
-                      HorizontalAlignment="Right"
-                      Background="{StaticResource AppBarItemBackgroundThemeBrush}" />
+                <Grid Grid.Column="0" Canvas.ZIndex="10">
+                    <Grid.Background>
+                        <SolidColorBrush Color="{ThemeResource PhoneChromeColor}" />
+                    </Grid.Background>
+                </Grid>
+
+                <Grid Grid.Column="2" Canvas.ZIndex="10">
+                    <Grid.Background>
+                        <SolidColorBrush Color="{ThemeResource PhoneChromeColor}" />
+                    </Grid.Background>
+                </Grid>
+
+                <Path Grid.Row="0"
+                      Grid.Column="1"
+                      Canvas.ZIndex="10"
+                      Data="M64.08345,19.341999C66.835533,19.341999 69.066002,21.571311 69.066002,24.323949 69.066002,27.076787 66.835533,29.305999 64.08345,29.305999 61.331367,29.305999 59.100998,27.076787 59.100998,24.323949 59.100998,21.571311 61.331367,19.341999 64.08345,19.341999z M13.01086,19.237998C15.762016,19.237998 17.993,21.467288 17.993,24.219999 17.993,26.972709 15.762016,29.201999 13.01086,29.201999 10.259004,29.201999 8.0279999,26.972709 8.0279999,24.219999 8.0279999,21.467288 10.259004,19.237998 13.01086,19.237998z M1.5919995,16.02L1.5919995,18.718999 3.1500006,18.718999 3.1500006,16.02z M48.578995,2.1839988L48.578995,13.838998 63.718994,13.838998 63.718994,2.1839988z M32.098995,2.1839988L32.098995,13.838998 47.238995,13.838998 47.238995,2.1839988z M15.351,2.1839988L15.351,13.838996 30.490997,13.838996 30.490997,2.1839988z M66.159996,2.0509994L66.159996,13.728999 77.227997,13.728999 74.938141,2.0509994z M2.3539996,2.0499992L2.3539996,13.703998 14.011001,13.703998 14.011001,2.0499992z M0,0L77.509102,0 80,13.009052 80,26.01921 70.449898,26.85 69.890694,26.85 69.918327,26.788894C70.238792,26.031436 70.416,25.198574 70.416,24.324199 70.416,20.8269 67.580635,17.991001 64.083153,17.991001 60.585766,17.991001 57.750999,20.8269 57.750999,24.324199 57.750999,25.198574 57.928173,26.031436 58.248577,26.788894L58.276207,26.85 18.770136,26.85 18.844486,26.685478C19.164848,25.927743 19.342001,25.094692 19.342001,24.2203 19.342001,20.724035 16.507572,17.888 13.01086,17.888 9.5129089,17.888 6.6789999,20.724035 6.6789999,24.2203 6.6789999,25.094692 6.8561192,25.927743 7.1764526,26.685478L7.2507954,26.85 6.9205294,26.85 0,25.18992z"
+                      Fill="#FFFFFFFF"
+                      RenderTransformOrigin="0.5,0.5"
+                      Stretch="Uniform">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <RotateTransform Angle="0" />
+                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+
             </Grid>
 
-            <Path Grid.Row="0"
-                  Grid.RowSpan="2"
-                  Width="150"
-                  Height="150"
-                  Data="M64.08345,19.341999C66.835533,19.341999 69.066002,21.571311 69.066002,24.323949 69.066002,27.076787 66.835533,29.305999 64.08345,29.305999 61.331367,29.305999 59.100998,27.076787 59.100998,24.323949 59.100998,21.571311 61.331367,19.341999 64.08345,19.341999z M13.01086,19.237998C15.762016,19.237998 17.993,21.467288 17.993,24.219999 17.993,26.972709 15.762016,29.201999 13.01086,29.201999 10.259004,29.201999 8.0279999,26.972709 8.0279999,24.219999 8.0279999,21.467288 10.259004,19.237998 13.01086,19.237998z M1.5919995,16.02L1.5919995,18.718999 3.1500006,18.718999 3.1500006,16.02z M48.578995,2.1839988L48.578995,13.838998 63.718994,13.838998 63.718994,2.1839988z M32.098995,2.1839988L32.098995,13.838998 47.238995,13.838998 47.238995,2.1839988z M15.351,2.1839988L15.351,13.838996 30.490997,13.838996 30.490997,2.1839988z M66.159996,2.0509994L66.159996,13.728999 77.227997,13.728999 74.938141,2.0509994z M2.3539996,2.0499992L2.3539996,13.703998 14.011001,13.703998 14.011001,2.0499992z M0,0L77.509102,0 80,13.009052 80,26.01921 70.449898,26.85 69.890694,26.85 69.918327,26.788894C70.238792,26.031436 70.416,25.198574 70.416,24.324199 70.416,20.8269 67.580635,17.991001 64.083153,17.991001 60.585766,17.991001 57.750999,20.8269 57.750999,24.324199 57.750999,25.198574 57.928173,26.031436 58.248577,26.788894L58.276207,26.85 18.770136,26.85 18.844486,26.685478C19.164848,25.927743 19.342001,25.094692 19.342001,24.2203 19.342001,20.724035 16.507572,17.888 13.01086,17.888 9.5129089,17.888 6.6789999,20.724035 6.6789999,24.2203 6.6789999,25.094692 6.8561192,25.927743 7.1764526,26.685478L7.2507954,26.85 6.9205294,26.85 0,25.18992z"
-                  Fill="#FFFFFFFF"
-                  RenderTransformOrigin="0.5,0.5"
-                  Stretch="Uniform">
-                <Path.RenderTransform>
-                    <TransformGroup>
-                        <TransformGroup.Children>
-                            <RotateTransform Angle="0" />
-                            <ScaleTransform ScaleX="1" ScaleY="1" />
-                        </TransformGroup.Children>
-                    </TransformGroup>
-                </Path.RenderTransform>
-            </Path>
+
 
             <TextBlock Grid.Row="1"
                        HorizontalAlignment="Center"
