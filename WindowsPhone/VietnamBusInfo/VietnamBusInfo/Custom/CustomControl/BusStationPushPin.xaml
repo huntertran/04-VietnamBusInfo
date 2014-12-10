@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="VietnamBusInfo.Custom.CustomControl.BusStationPushPin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="using:VietnamBusInfo.Custom.CustomControl"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="300"
+             d:DesignWidth="400"
+             mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <Border Width="20" CornerRadius="2">
+                <Border.Background>
+                    <SolidColorBrush Color="Red" />
+                </Border.Background>
+                <TextBlock x:Name="NameTextBlock"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Text="10" />
+            </Border>
+            <Path Width="20"
+                  Height="20"
+                  Data="M7.63472312559315,0L277.642767845289,0C284.463293968336,2.8858266887255E-08,287.271155296461,4.52099264934259,283.839148460524,9.02494849040704L148.85742848982,188.01910532787C145.424857078688,192.512879741933,139.852621971266,192.730744732167,136.464667259352,188.2267927058L1.43834286798665,8.90920866801935C-1.94906801114848,4.41543806865411,0.85881095995137,2.8858266887255E-08,7.63472312559315,0z"
+                  Fill="Red"
+                  RenderTransformOrigin="0.5,0.5"
+                  Stretch="Uniform" />
+        </StackPanel>
+    </Grid>
+</UserControl>

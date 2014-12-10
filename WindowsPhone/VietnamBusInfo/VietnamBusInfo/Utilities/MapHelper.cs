@@ -9,6 +9,7 @@ using Windows.Foundation;
 using Windows.Services.Maps;
 using Windows.UI;
 using Windows.UI.Xaml.Controls.Maps;
+using VietnamBusInfo.Custom.CustomControl;
 using VietnamBusInfo.Model;
 using VietnamBusInfo.ViewModel;
 
@@ -28,16 +29,12 @@ namespace VietnamBusInfo.Utilities
             line.StrokeThickness = 5;
 
             ObservableCollection<BasicGeoposition> linePath = new ObservableCollection<BasicGeoposition>();
-            //line.
-
-            //MapRouteView viewOfRoute = new MapRouteView();
-
 
             foreach (BusCodedName bus in busStaionList)
             {
                 foreach (RouteStation station in bus.directionRouteCollection[0].routeStationCollection)
                 {
-                    MapIcon mapIcon = new MapIcon();
+                    BusStationPushPin mapIcon = new BusStationPushPin(station.no.ToString());
 
                     BasicGeoposition basic = new BasicGeoposition();
                     basic.Latitude = Convert.ToDouble(station.lon);
@@ -45,7 +42,7 @@ namespace VietnamBusInfo.Utilities
 
                     Geopoint geopoint = new Geopoint(basic);
 
-                    mapIcon.Location = geopoint;
+                    //mapIcon.Location = geopoint;
 
                     foreach (string s in station.route.Split(' '))
                     {
@@ -59,13 +56,14 @@ namespace VietnamBusInfo.Utilities
                         }
                     }
 
-                    mapIcon.NormalizedAnchorPoint = new Point(0.5, 1.0);
-                    mapIcon.Title = station.address;
                     mapControl.Children.Add(mapIcon);
                     MapControl.SetLocation(mapIcon, geopoint);
-                    //mapControl.Children.Add(line);
                 }
             }
+
+            line.Path = new Geopath(linePath.ToArray());
+
+            mapControl.MapElements.Add(line);
         }
     }
 }

@@ -97,6 +97,9 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Custom\CustomControl\BusStationPushPin.xaml.cs">
+      <DependentUpon>BusStationPushPin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\MapHelper.cs" />
     <Compile Include="View\InfoPages\BusInfoPage.xaml.cs">
       <DependentUpon>BusInfoPage.xaml</DependentUpon>
@@ -140,6 +143,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Custom\CustomControl\BusStationPushPin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\InfoPages\BusInfoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
