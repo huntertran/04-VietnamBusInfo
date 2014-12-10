@@ -97,6 +97,9 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="View\InfoPages\BusInfoPage.xaml.cs">
+      <DependentUpon>BusInfoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\StartupPages\ExtendedSplashScreen.xaml.cs">
       <DependentUpon>ExtendedSplashScreen.xaml</DependentUpon>
     </Compile>
@@ -136,6 +139,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\InfoPages\BusInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\StartupPages\ExtendedSplashScreen.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -151,6 +158,15 @@
     </Reference>
     <Reference Include="GoogleAnalytics.Core">
       <HintPath>..\packages\GoogleAnalyticsSDK.1.2.12\lib\wpa81\GoogleAnalytics.Core.winmd</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Interactions">
+      <HintPath>..\packages\UniversalTilt.1.0.0\lib\wpa81\Microsoft.Xaml.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Interactivity">
+      <HintPath>..\packages\UniversalTilt.1.0.0\lib\wpa81\Microsoft.Xaml.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="UniversalTilt">
+      <HintPath>..\packages\UniversalTilt.1.0.0\lib\wpa81\UniversalTilt.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup />

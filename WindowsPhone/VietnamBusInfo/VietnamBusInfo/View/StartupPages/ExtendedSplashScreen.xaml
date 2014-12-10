@@ -38,12 +38,6 @@
             <SolidColorBrush Color="{ThemeResource PhoneChromeColor}" />
         </Grid.Background>
 
-        <ContentPresenter Grid.RowSpan="2"
-                          HorizontalAlignment="Stretch"
-                          VerticalAlignment="Stretch"
-                          ContentTemplate="{StaticResource AppBackgroundTemplate}" />
-
-        <!--  <maps:MapControl x:Name="MapControl1" MapServiceToken="tybAmFRtMo8gkJ08mfrusg" />  -->
         <Grid Height="300">
 
             <Grid.RowDefinitions>

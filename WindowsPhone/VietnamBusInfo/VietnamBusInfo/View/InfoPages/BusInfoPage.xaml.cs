@@ -17,19 +17,18 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
-using VietnamBusInfo.View.InfoPages;
 
-namespace VietnamBusInfo.View.StartupPages
+namespace VietnamBusInfo.View.InfoPages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class FunctionSelectPage : Page
+    public sealed partial class BusInfoPage : Page
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        public FunctionSelectPage()
+        public BusInfoPage()
         {
             this.InitializeComponent();
 
@@ -99,10 +98,6 @@ namespace VietnamBusInfo.View.StartupPages
         /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (e.NavigationMode == NavigationMode.New)
-            {
-                this.Frame.BackStack.RemoveAt(Frame.BackStackDepth - 1);
-            }
             this.navigationHelper.OnNavigatedTo(e);
         }
 
@@ -112,15 +107,5 @@ namespace VietnamBusInfo.View.StartupPages
         }
 
         #endregion
-
-        private void InfoGrid_OnTapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof (BusInfoPage));
-        }
-
-        private void InfoGrid2_OnTapped(object sender, TappedRoutedEventArgs e)
-        {
-
-        }
     }
 }

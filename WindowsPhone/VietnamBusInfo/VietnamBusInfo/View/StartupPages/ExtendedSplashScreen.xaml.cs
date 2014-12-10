@@ -26,7 +26,7 @@ namespace VietnamBusInfo.View.StartupPages
         {
             MovingRect.Begin();
             await StaticMethod.LoadDataTask();
-
+            this.Frame.Navigate(typeof (FunctionSelectPage));
         }
 
         /// <summary>
