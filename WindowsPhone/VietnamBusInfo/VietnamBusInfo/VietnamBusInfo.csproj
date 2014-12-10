@@ -97,6 +97,7 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Utilities\MapHelper.cs" />
     <Compile Include="View\InfoPages\BusInfoPage.xaml.cs">
       <DependentUpon>BusInfoPage.xaml</DependentUpon>
     </Compile>

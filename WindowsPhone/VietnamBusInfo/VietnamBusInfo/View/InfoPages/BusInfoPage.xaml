@@ -18,7 +18,40 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <maps:MapControl x:Name="MapControl1" MapServiceToken="tybAmFRtMo8gkJ08mfrusg" />
+        <maps:MapControl x:Name="MainMapControl"
+                         ColorScheme="Dark"
+                         LandmarksVisible="True"
+                         MapServiceToken="tybAmFRtMo8gkJ08mfrusg"
+                         ZoomLevel="12" />
+
+        <Grid VerticalAlignment="Bottom">
+            <Grid.Background>
+                <SolidColorBrush Opacity="0.6" Color="{StaticResource SystemColorControlAccentColor}" />
+            </Grid.Background>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <TextBlock Margin="6"
+                           VerticalAlignment="Center"
+                           FontSize="25"
+                           Text="More..." />
+
+                <Grid Width="35" HorizontalAlignment="Right">
+                    <Path Margin="6"
+                          Data="M262.726940710098,0L264.302227575332,1.0566973942332 265.852398473769,0 266.410046178848,2.49575951276347 516.996044714004,182.482543494087 516.996044714004,318.995009924751 264.302227575332,137.571746374946 0,318.995009924751 0,182.482543494087 262.169293005019,2.49575951276347z"
+                          Fill="{ThemeResource AppBarItemForegroundThemeBrush}"
+                          RenderTransformOrigin="0.5,0.5"
+                          Stretch="Uniform" />
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="1" />
+
+        </Grid>
 
     </Grid>
 </Page>

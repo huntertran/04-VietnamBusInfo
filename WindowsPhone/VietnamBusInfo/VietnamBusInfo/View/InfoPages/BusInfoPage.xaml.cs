@@ -1,4 +1,7 @@
-﻿using VietnamBusInfo.Common;
+﻿using Windows.Devices.Geolocation;
+using Windows.UI;
+using Windows.UI.Xaml.Controls.Maps;
+using VietnamBusInfo.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,6 +20,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
+using VietnamBusInfo.Utilities;
+using VietnamBusInfo.ViewModel;
 
 namespace VietnamBusInfo.View.InfoPages
 {
@@ -35,6 +40,24 @@ namespace VietnamBusInfo.View.InfoPages
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
+
+            this.Loaded += BusInfoPage_Loaded;
+        }
+
+        void BusInfoPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            MainMapControl.Center = StaticData.CenterGeopoint;
+
+            MapHelper.DisplayBusStation(1, MainMapControl);
+
+            Grid grid = new Grid();
+            grid.Width = 50;
+            grid.Height = 50;
+            grid.Background = new SolidColorBrush(Colors.Blue);
+
+            MainMapControl.Children.Add(grid);
+            MapControl.SetLocation(grid,
+                new Geopoint(new BasicGeoposition() {Latitude = 55.6127809826285, Longitude = 13.0031764693558}));
         }
 
         /// <summary>
