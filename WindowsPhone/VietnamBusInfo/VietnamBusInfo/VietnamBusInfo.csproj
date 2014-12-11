@@ -100,6 +100,9 @@
     <Compile Include="Custom\CustomControl\BusStationPushPin.xaml.cs">
       <DependentUpon>BusStationPushPin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Custom\CustomControl\MoreBlockControl.xaml.cs">
+      <DependentUpon>MoreBlockControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\MapHelper.cs" />
     <Compile Include="View\InfoPages\BusInfoPage.xaml.cs">
       <DependentUpon>BusInfoPage.xaml</DependentUpon>
@@ -144,6 +147,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Custom\CustomControl\BusStationPushPin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Custom\CustomControl\MoreBlockControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
