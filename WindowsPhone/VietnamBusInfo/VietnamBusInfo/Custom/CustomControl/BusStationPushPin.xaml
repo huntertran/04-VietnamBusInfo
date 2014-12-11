@@ -22,7 +22,11 @@
                            VerticalAlignment="Center"
                            FontSize="20"
                            Text="10"
-                           TextWrapping="Wrap" />
+                           TextWrapping="Wrap">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{ThemeResource PhoneBackgroundColor}" />
+                    </TextBlock.Foreground>
+                </TextBlock>
             </Border>
             <Path Width="40"
                   Margin="0,3,0,0"

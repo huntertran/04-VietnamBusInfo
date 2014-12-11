@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><BusNameList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><busNameCollection><BusName><number>01</number><name>01 - Bến Thành - Bến xe Chợ Lớn</name><busTextData><go>Lượt đi :  
+﻿<?xml version="1.0" encoding="utf-8"?><BusNameList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><busNameCollection><BusName><number>01</number><name>01 - Bến Thành - Bến xe Chợ Lớn</name><busTextData><go>Lượt đi :  
 Bến công trường Mê Linh - Thi Sách - Công trường Mê Linh - Tôn Đức Thắng - Hàm Nghi - trạm Bến Thành - Trần Hưng Đạo - Nguyễn Tri Phương - Trần Phú - Trần Hưng Đạo - Châu Văn Liêm - Hải Thượng Lãn Ông - Trang Tử - Ga Chợ Lớn A.</go><back>Lượt về :  
 Ga Chợ Lớn A - Lê Quang Sung - Nguyễn Hữu Thận - Tháp Mười - Hải Thượng Lãn Ông - Châu Văn Liêm - Nguyễn Trãi - Nguyễn Tri Phương - Trần Phú - Trần Hưng Đạo - trạm Bến Thành - Hàm Nghi - Hồ Tùng Mậu - đường nhánh S2 - Tôn Đức Thắng  - Hai Bà Trưng - Đông Du - Thi Sách - Bến Công trường Mê Linh.</back><timeInfo>Loại hình hoạt động: Buýt có trợ giá
     Cự ly: 8,95 km
@@ -624,7 +624,7 @@ Bến xe Cảng Quận 4 (dưới chân cầu Kênh Tẻ) - Tôn Thất Thuyết
     Cự ly: 21,4 km
     Số chuyến: 190 chuyến/ngày
     Thời gian chuyến: 70 phút
-    Giãn cách: 8 - 15 phút/chuyến
+    Giãn cách: 7 - 15 phút/chuyến
     Thời gian hoạt động:    Siêu thị CMC: 04h45 - 19h30   CVPM Quang Trung: 04h30 - 19h15  
     Loại xe: 40 chỗ 
 
@@ -940,8 +940,8 @@ Bến xe Đức Huệ (Long An) - Đường tỉnh 825 - Tỉnh lộ 10 - Bà Ho
 Đơn vị đảm nhận: 
 - HTX Vận tải Liên tỉnh và Du lịch Việt Thắng, ĐT: 38.535.935
 - HTX  xe khách liên tỉnh Miền Tây, ĐT: 3.8.750.193
- HTX xe du lịch và vận tải số 4, ĐT: 39.691.377</timeInfo></busTextData></BusName><BusName><number>62-8</number><name>62-8 - Bến xe Chợ Lớn - Bến xe Tân An</name><busTextData><go>Lượt đi :  BX Chợ Lớn - Lê Quang Sung - Phạm Đình Hổ - Cao Văn Lầu - Đại lộ Võ Văn Kiệt - Quốc lộ 1A - BX Tân An.</go><back>Lượt về :  
-BX Tân An - Quốc lộ 1A - Đại lộ Võ Văn Kiệt - Hải Thượng Lãng Ông - Trang Tử - BX Chợ Lớn.</back><timeInfo>• Loại hình hoạt động: Buýt không trợ giá      • Cự ly: 38 km      • Số chuyến: 
+ HTX xe du lịch và vận tải số 4, ĐT: 39.691.377</timeInfo></busTextData></BusName><BusName><number>62-8</number><name>62-8 - Bến xe Chợ Lớn - Bến xe Tân An</name><busTextData><go>Lượt đi :  Bến xe Chợ Lớn  - Lê Quang Sung --Phạm Đình Hổ - Hồng Bàng - Kinh Dương Vương - Quốc lộ 1A - Nguyễn Trung Trực - Võ Văn Tần - Trà Quý Bình - Bến xe Tân An.</go><back>Lượt về :  
+Bến xe Tân An - Trà Quý Bình - Võ Văn Tần - Nguyễn Trung Trực - Quốc lộ 1A - Kinh Dương Vương - Hồng Bàng - Phú Hữu - BX Chợ Lớn.</back><timeInfo>• Loại hình hoạt động: Buýt không trợ giá      • Cự ly: 42 km      • Số chuyến: 
 Thứ 7 – thứ 2: 144 chuyến/ngày
 Thứ 3 – thứ 6: 120 chuyến/ngày      • Thời gian hoạt động:- Bến xe Chợ Lớn:      5h00 – 19h45
 - Bến xe Tân An:         4h30 – 19h15

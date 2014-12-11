@@ -26,7 +26,7 @@ namespace VietnamBusInfo.Utilities
             //MapRoute route = new MapRoute();
             MapPolyline line = new MapPolyline();
             line.StrokeColor = Colors.Green;
-            line.StrokeThickness = 5;
+            line.StrokeThickness = 10;
 
             ObservableCollection<BasicGeoposition> linePath = new ObservableCollection<BasicGeoposition>();
 
@@ -34,7 +34,9 @@ namespace VietnamBusInfo.Utilities
             {
                 foreach (RouteStation station in bus.directionRouteCollection[0].routeStationCollection)
                 {
-                    BusStationPushPin mapIcon = new BusStationPushPin(station.name);
+                    BusStationPushPin mapIcon = new BusStationPushPin(station.no.ToString());
+
+                    mapIcon.Tag = station;
 
                     BasicGeoposition basic = new BasicGeoposition();
                     basic.Latitude = Convert.ToDouble(station.lon);
@@ -64,6 +66,8 @@ namespace VietnamBusInfo.Utilities
             line.Path = new Geopath(linePath.ToArray());
 
             mapControl.MapElements.Add(line);
+
+            mapControl.TrySetViewAsync(new Geopoint(linePath[0]), 15);
         }
     }
 }

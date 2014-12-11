@@ -50,14 +50,7 @@ namespace VietnamBusInfo.View.InfoPages
 
             MapHelper.DisplayBusStation(1, MainMapControl);
 
-            Grid grid = new Grid();
-            grid.Width = 50;
-            grid.Height = 50;
-            grid.Background = new SolidColorBrush(Colors.Blue);
 
-            MainMapControl.Children.Add(grid);
-            MapControl.SetLocation(grid,
-                new Geopoint(new BasicGeoposition() {Latitude = 55.6127809826285, Longitude = 13.0031764693558}));
         }
 
         /// <summary>
