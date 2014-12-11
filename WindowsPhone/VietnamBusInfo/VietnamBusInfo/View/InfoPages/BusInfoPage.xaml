@@ -19,7 +19,6 @@
         </Grid.ChildrenTransitions>
 
         <maps:MapControl x:Name="MainMapControl"
-                         ColorScheme="Dark"
                          LandmarksVisible="True"
                          MapServiceToken="tybAmFRtMo8gkJ08mfrusg"
                          ZoomLevel="12" />

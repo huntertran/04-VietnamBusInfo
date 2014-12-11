@@ -34,7 +34,7 @@ namespace VietnamBusInfo.Utilities
             {
                 foreach (RouteStation station in bus.directionRouteCollection[0].routeStationCollection)
                 {
-                    BusStationPushPin mapIcon = new BusStationPushPin(station.no.ToString());
+                    BusStationPushPin mapIcon = new BusStationPushPin(station.name);
 
                     BasicGeoposition basic = new BasicGeoposition();
                     basic.Latitude = Convert.ToDouble(station.lon);
