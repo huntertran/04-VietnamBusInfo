@@ -86,15 +86,13 @@ namespace GetData
             //For unicode output
             Console.OutputEncoding = System.Text.Encoding.Unicode;
 
-
-
             #region Get List of buses
 
             //Reuse data
             string lobHtml = GetHttpAsString("http://www.buyttphcm.com.vn/TTLT.aspx");
             HtmlDocument lobDocument = new HtmlDocument();
 
-            goto GetBusesCode;
+            //goto GetBusesCode;
 
             lobDocument.LoadHtml(lobHtml);
             
@@ -117,8 +115,6 @@ namespace GetData
                 newBusNameList.busNameCollection.Add(newBusName);
                 Console.WriteLine(newBusName.name);
             }
-
-            Object2Xml(newBusNameList, "BusNameList.xml");
 
             #endregion
 
@@ -214,7 +210,7 @@ namespace GetData
                 foreach (ROW row in rootRouteGoStation.TABLE[0].ROW)
                 {
                     RouteStation newRouteStation = new RouteStation();
-                    newRouteStation.no = Convert.ToInt32(row.COL[0].DATA);
+                    newRouteStation.no = Convert.ToInt32(row.COL[5].DATA);
                     newRouteStation.stationId = Convert.ToInt32(row.COL[1].DATA);
                     if (row.COL[2].DATA != "")
                     {
@@ -258,7 +254,7 @@ namespace GetData
                 foreach (ROW row in rootRouteBackStation.TABLE[0].ROW)
                 {
                     RouteStation newRouteStation = new RouteStation();
-                    newRouteStation.no = Convert.ToInt32(row.COL[0].DATA);
+                    newRouteStation.no = Convert.ToInt32(row.COL[5].DATA);
                     newRouteStation.stationId = Convert.ToInt32(row.COL[1].DATA);
                     if (row.COL[2].DATA != "")
                     {
@@ -383,6 +379,7 @@ namespace GetData
 
             #endregion
 
+            Object2Xml(newBusNameList, "BusNameList");
             Object2Xml(codedBusNameList, "CodedBusNameList");
             Object2Xml(generalStationList, "GeneralStationList");
         }
