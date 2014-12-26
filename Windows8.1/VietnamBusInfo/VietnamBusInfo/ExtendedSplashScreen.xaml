@@ -33,8 +33,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <ContentPresenter x:Name="background" Grid.RowSpan="2"
-						  ContentTemplate="{StaticResource AppBackgroundTemplate}"/>
+        <ContentPresenter x:Name="background"
+                          Grid.RowSpan="2"
+                          ContentTemplate="{StaticResource AppBackgroundTemplate}" />
 
         <Grid Width="512" Height="512">
 
@@ -46,7 +47,8 @@
             <Grid Width="390">
 
                 <Grid x:Name="grid"
-                      Width="57" Height="100"
+                      Width="57"
+                      Height="100"
                       HorizontalAlignment="Left"
                       Background="#FF1D1D1D"
                       Canvas.ZIndex="1" />
