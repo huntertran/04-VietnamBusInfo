@@ -748,6 +748,14 @@ namespace GetData
                 {
                     Bus newBus = new Bus();
                     newBus.busNumber = throughStationBus.name.Split(']')[0].TrimStart('[');
+                    if (newBus.busNumber.Contains("-"))
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        newBus.busNumber = Convert.ToInt32(newBus.busNumber).ToString();
+                    }
                     newBus.name = throughStationBus.name;
                     newBus.busDirection = new ObservableCollection<Direction>();
                     if (throughStationBus.direction == DirectionType.Go)
