@@ -30,6 +30,12 @@ namespace GetData
 
         public void ToUTM(double Latitude, double Longitude)
         {
+            if(Latitude > 200)
+            {
+                string temp = Latitude.ToString();
+                temp = temp.Insert(3, ".");
+                Latitude = Convert.ToDouble(temp);
+            }
             this.Latitude = Latitude;
             this.Longitude = Longitude;
 

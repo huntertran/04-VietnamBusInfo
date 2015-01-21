@@ -141,8 +141,8 @@ namespace GetData
             codedBusNameList = Xml2Object<CodedBusNameList>("CodedBusNameList.xml");
             generalStationList = Xml2Object<GeneralStationList>("GeneralStationList.xml");
 
-
-            goto UpdateData;
+            //TODO: skip to update data here
+            //goto UpdateData;
 
             #endregion
 
