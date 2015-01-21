@@ -500,7 +500,7 @@ namespace GetData
                     catch (Exception)
                     {
                         //Cannot convert - new bus staton collection
-                        Debug.WriteLine("New strange name bus detected: " + name);
+                        Console.WriteLine("New strange name bus detected: " + name);
                     }
                     if (busNum == Convert.ToInt32(content.id))
                     {
@@ -541,7 +541,7 @@ namespace GetData
                             }
                         }
                         isOldData = true;
-                        Debug.WriteLine("Old bus: " + content.id);
+                        Console.WriteLine("Old bus: " + content.id);
                         break;
                     }
                 }
@@ -590,7 +590,7 @@ namespace GetData
                         }
                     }
 
-                    Debug.WriteLine("Strange bus added to updated data: " + bus.name);
+                    Console.WriteLine("Strange bus added to updated data: " + bus.name);
 
                 }
             }
@@ -613,7 +613,7 @@ namespace GetData
                     catch (Exception)
                     {
                         //Cannot convert - new bus staton collection
-                        Debug.WriteLine("New strange name bus detected: " + name);
+                        Console.WriteLine("New strange name bus detected: " + name);
                     }
                     if (busNum == Convert.ToInt32(content.id))
                     {
@@ -660,7 +660,7 @@ namespace GetData
                             }
                         }
                         isOldData = true;
-                        Debug.WriteLine("Old bus: " + content.id);
+                        Console.WriteLine("Old bus: " + content.id);
                         break;
                     }
                 }
@@ -715,7 +715,7 @@ namespace GetData
                         }
                     }
 
-                    Debug.WriteLine("Strange bus added to updated data: " + bus.name);
+                    Console.WriteLine("Strange bus added to updated data: " + bus.name);
 
                 }
             }
@@ -734,8 +734,10 @@ namespace GetData
                 StationListIndex++;
                 converter = new UtmConverter();
                 converter.ToUTM(Convert.ToDouble(station.lat), Convert.ToDouble(station.lon));
-                newStation.latitude = converter.X;
-                newStation.longitude = converter.Y;
+                //newStation.latitude = converter.X;
+                //newStation.longitude = converter.Y;
+                newStation.latitude = Convert.ToDouble(station.lon);
+                newStation.longitude = Convert.ToDouble(station.lat);
                 newStation.stationId = station.stationId.ToString();
                 newStation.addressNum = station.name;
                 newStation.addressStreet = station.address;
