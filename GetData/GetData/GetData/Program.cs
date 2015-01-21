@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
@@ -450,7 +451,6 @@ namespace GetData
 
             UpdateData:
             //Update old data to new one, using old structure
-            //
 
             //Update StationDetail
             foreach (BusName bus in newBusNameList.busNameCollection)
@@ -460,7 +460,6 @@ namespace GetData
                 {
                     if (bus.number == content.id)
                     {
-                        content.id = bus.number;
                         content.id = bus.number;
                         content.name = bus.name;
                         content.go = bus.busTextData.go;
@@ -474,7 +473,6 @@ namespace GetData
                 if (!isOldData)
                 {
                     BusContent content = new BusContent();
-                    content.id = bus.number;
                     content.id = bus.number;
                     content.name = bus.name;
                     content.go = bus.busTextData.go;
@@ -491,9 +489,296 @@ namespace GetData
             foreach (BusCodedName bus in codedBusNameList.codedBusNameCollection)
             {
                 bool isOldData = false;
-                foreach (BusContent content in _busContent)
+                foreach (BusStationCollection content in _busStationCollection)
                 {
+                    string name = bus.name.Split(']')[0].TrimStart('[');
+                    int busNum = 0;
+                    try
+                    {
+                        busNum = Convert.ToInt32(name);
+                    }
+                    catch (Exception)
+                    {
+                        //Cannot convert - new bus staton collection
+                        Debug.WriteLine("New strange name bus detected: " + name);
+                    }
+                    if (busNum == Convert.ToInt32(content.id))
+                    {
+                        content.id = busNum.ToString();
+                        content.goDirection = new ObservableCollection<BusStation>();
+                        content.backDirection = new ObservableCollection<BusStation>();
+                        if (bus.directionRouteCollection[0].isGo)
+                        {
+                            //Correct go direction
+                            int i = 1;
+                            foreach (RouteStation station in bus.directionRouteCollection[0].routeStationCollection)
+                            {
+                                BusStation newStation = new BusStation(station);
+                                newStation.id = "[" + i + "]";
+                                i++;
+                                content.goDirection.Add(newStation);
+                            }
+                            i = 1;
+                            foreach (RouteStation station in bus.directionRouteCollection[1].routeStationCollection)
+                            {
+                                BusStation newStation = new BusStation(station);
+                                newStation.id = "[" + i + "]";
+                                i++;
+                                content.backDirection.Add(newStation);
+                            }
+                        }
+                        else
+                        {
+                            foreach (RouteStation station in bus.directionRouteCollection[0].routeStationCollection)
+                            {
+                                BusStation newStation = new BusStation(station);
+                                content.backDirection.Add(newStation);
+                            }
+                            foreach (RouteStation station in bus.directionRouteCollection[1].routeStationCollection)
+                            {
+                                BusStation newStation = new BusStation(station);
+                                content.goDirection.Add(newStation);
+                            }
+                        }
+                        isOldData = true;
+                        Debug.WriteLine("Old bus: " + content.id);
+                        break;
+                    }
+                }
+
+                if (!isOldData)
+                {
+                    BusStationCollection newStationCollection = new BusStationCollection();
+                    newStationCollection.id = bus.name.Split(']')[0].TrimStart('[');
+                    newStationCollection.goDirection = new ObservableCollection<BusStation>();
+                    newStationCollection.backDirection = new ObservableCollection<BusStation>();
+                    if (bus.directionRouteCollection.Count == 0)
+                    {
+                        continue;
+                    }
+                    if (bus.directionRouteCollection[0].isGo)
+                    {
+                        //Correct go direction
+                        int i = 1;
+                        foreach (RouteStation station in bus.directionRouteCollection[0].routeStationCollection)
+                        {
+                            BusStation newStation = new BusStation(station);
+                            newStation.id = "[" + i + "]";
+                            i++;
+                            newStationCollection.goDirection.Add(newStation);
+                        }
+                        i = 1;
+                        foreach (RouteStation station in bus.directionRouteCollection[1].routeStationCollection)
+                        {
+                            BusStation newStation = new BusStation(station);
+                            newStation.id = "[" + i + "]";
+                            i++;
+                            newStationCollection.backDirection.Add(newStation);
+                        }
+                    }
+                    else
+                    {
+                        foreach (RouteStation station in bus.directionRouteCollection[0].routeStationCollection)
+                        {
+                            BusStation newStation = new BusStation(station);
+                            newStationCollection.backDirection.Add(newStation);
+                        }
+                        foreach (RouteStation station in bus.directionRouteCollection[1].routeStationCollection)
+                        {
+                            BusStation newStation = new BusStation(station);
+                            newStationCollection.goDirection.Add(newStation);
+                        }
+                    }
+
+                    Debug.WriteLine("Strange bus added to updated data: " + bus.name);
+
+                }
             }
+
+            //Write Data
+            Object2Xml(_busStationCollection, "StationInfo");
+
+            //Update FullBusRoute
+            foreach (BusCodedName bus in codedBusNameList.codedBusNameCollection)
+            {
+                bool isOldData = false;
+                foreach (BusRoute content in _busRoute)
+                {
+                    string name = bus.name.Split(']')[0].TrimStart('[');
+                    int busNum = 0;
+                    try
+                    {
+                        busNum = Convert.ToInt32(name);
+                    }
+                    catch (Exception)
+                    {
+                        //Cannot convert - new bus staton collection
+                        Debug.WriteLine("New strange name bus detected: " + name);
+                    }
+                    if (busNum == Convert.ToInt32(content.id))
+                    {
+                        content.id = busNum.ToString();
+                        content.goDirection = new ObservableCollection<LocationPointWithId>();
+                        content.backDirection = new ObservableCollection<LocationPointWithId>();
+                        if (bus.directionRouteCollection[0].isGo)
+                        {
+                            //Correct go direction
+                            int i = 1;
+                            foreach (GPSPoint station in bus.directionRouteCollection[0].routePoints)
+                            {
+                                LocationPointWithId newStation = new LocationPointWithId(station);
+                                newStation.id = "[" + i + "]";
+                                i++;
+                                content.goDirection.Add(newStation);
+                            }
+                            i = 1;
+                            foreach (GPSPoint station in bus.directionRouteCollection[1].routePoints)
+                            {
+                                LocationPointWithId newStation = new LocationPointWithId(station);
+                                newStation.id = "[" + i + "]";
+                                i++;
+                                content.backDirection.Add(newStation);
+                            }
+                        }
+                        else
+                        {
+                            int i = 1;
+                            foreach (GPSPoint station in bus.directionRouteCollection[0].routePoints)
+                            {
+                                LocationPointWithId newStation = new LocationPointWithId(station);
+                                newStation.id = "[" + i + "]";
+                                i++;
+                                content.backDirection.Add(newStation);
+                            }
+                            i = 1;
+                            foreach (GPSPoint station in bus.directionRouteCollection[1].routePoints)
+                            {
+                                LocationPointWithId newStation = new LocationPointWithId(station);
+                                newStation.id = "[" + i + "]";
+                                i++;
+                                content.goDirection.Add(newStation);
+                            }
+                        }
+                        isOldData = true;
+                        Debug.WriteLine("Old bus: " + content.id);
+                        break;
+                    }
+                }
+
+                if (!isOldData)
+                {
+                    BusRoute newStationCollection = new BusRoute();
+                    newStationCollection.id = bus.name.Split(']')[0].TrimStart('[');
+                    newStationCollection.goDirection = new ObservableCollection<LocationPointWithId>();
+                    newStationCollection.backDirection = new ObservableCollection<LocationPointWithId>();
+                    if (bus.directionRouteCollection.Count == 0)
+                    {
+                        continue;
+                    }
+                    if (bus.directionRouteCollection[0].isGo)
+                    {
+                        //Correct go direction
+                        int i = 1;
+                        foreach (GPSPoint station in bus.directionRouteCollection[0].routePoints)
+                        {
+                            LocationPointWithId newStation = new LocationPointWithId(station);
+                            newStation.id = "[" + i + "]";
+                            i++;
+                            newStationCollection.goDirection.Add(newStation);
+                        }
+                        i = 1;
+                        foreach (GPSPoint station in bus.directionRouteCollection[1].routePoints)
+                        {
+                            LocationPointWithId newStation = new LocationPointWithId(station);
+                            newStation.id = "[" + i + "]";
+                            i++;
+                            newStationCollection.backDirection.Add(newStation);
+                        }
+                    }
+                    else
+                    {
+                        int i = 1;
+                        foreach (GPSPoint station in bus.directionRouteCollection[0].routePoints)
+                        {
+                            LocationPointWithId newStation = new LocationPointWithId(station);
+                            newStation.id = "[" + i + "]";
+                            i++;
+                            newStationCollection.backDirection.Add(newStation);
+                        }
+                        i = 1;
+                        foreach (GPSPoint station in bus.directionRouteCollection[1].routePoints)
+                        {
+                            LocationPointWithId newStation = new LocationPointWithId(station);
+                            newStation.id = "[" + i + "]";
+                            i++;
+                            newStationCollection.goDirection.Add(newStation);
+                        }
+                    }
+
+                    Debug.WriteLine("Strange bus added to updated data: " + bus.name);
+
+                }
+            }
+
+            //Write Data
+            Object2Xml(_busRoute, "FullBusRoute");
+
+            //Update StationList.xml
+            _stationTotal = new ObservableCollection<StationTotal>();
+            int StationListIndex = 0;
+            UtmConverter converter;
+            foreach (GeneralStation station in generalStationList.generalStationCollection)
+            {
+                StationTotal newStation = new StationTotal();
+                newStation.id = StationListIndex.ToString();
+                StationListIndex++;
+                converter = new UtmConverter();
+                converter.ToUTM(Convert.ToDouble(station.lat), Convert.ToDouble(station.lon));
+                newStation.latitude = converter.X;
+                newStation.longitude = converter.Y;
+                newStation.stationId = station.stationId.ToString();
+                newStation.addressNum = station.name;
+                newStation.addressStreet = station.address;
+                newStation.addressDistrict = station.address.Split(',').LastOrDefault().Trim();
+
+                newStation.busList = new ObservableCollection<Bus>();
+                foreach (ThroughStationBus throughStationBus in station.throughStationBusCollection)
+                {
+                    Bus newBus = new Bus();
+                    newBus.busNumber = throughStationBus.number;
+                    newBus.name = throughStationBus.name;
+                    newBus.busDirection = new ObservableCollection<Direction>();
+                    if (throughStationBus.direction == DirectionType.Go)
+                    {
+                        Direction newD = new Direction();
+                        newD.direction = 0.ToString();
+                        newBus.busDirection.Add(newD);
+                    }
+                    if (throughStationBus.direction == DirectionType.Back)
+                    {
+                        Direction newD = new Direction();
+                        newD.direction = 1.ToString();
+                        newBus.busDirection.Add(newD);
+                    }
+                    if (throughStationBus.direction == DirectionType.Both)
+                    {
+                        Direction newD = new Direction();
+                        newD.direction = 0.ToString();
+                        newBus.busDirection.Add(newD);
+
+                        Direction newD2 = new Direction();
+                        newD2.direction = 1.ToString();
+                        newBus.busDirection.Add(newD2);
+                    }
+
+                    newStation.busList.Add(newBus);
+                }
+
+                _stationTotal.Add(newStation);
+            }
+
+            //Write Data
+            Object2Xml(_stationTotal, "StationList");
         }
     }
 }

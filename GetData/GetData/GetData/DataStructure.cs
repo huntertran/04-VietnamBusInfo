@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
 using GetData.Model;
 
 namespace GetData.Model
@@ -154,6 +155,7 @@ namespace GetData.OldModel
     public class Bus
     {
         public string busNumber { get; set; }
+        public string name { get; set; }
         public ObservableCollection<Direction> busDirection { get; set; }
     }
 
@@ -185,6 +187,17 @@ namespace GetData.OldModel
         public string id { get; set; }
         public double longitude { get; set; }
         public double latitude { get; set; }
+
+        public LocationPointWithId()
+        {
+
+        }
+
+        public LocationPointWithId(GPSPoint station)
+        {
+            latitude = station.lat;
+            longitude = station.lon;
+        }
     }
 
     public class BusContent : IComparable
@@ -243,6 +256,22 @@ namespace GetData.OldModel
         public double lat { get; set; }
         public double lon { get; set; }
         public string stationId { get; set; }
+
+        public BusStation()
+        {
+            
+        }
+
+        public BusStation(RouteStation station)
+        {
+            id = "[" + station.no + "]";
+            number = station.name;
+            address = station.address;
+            lat = Convert.ToDouble(station.lon);
+            lon = Convert.ToDouble(station.lat);
+            stationId = station.stationId.ToString();
+            district = station.address.Split(',').LastOrDefault();
+        }
     }
 
     public class OneRoute
