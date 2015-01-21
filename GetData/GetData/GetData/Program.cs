@@ -3,6 +3,7 @@ using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
 using GetData.Model;
+using GetData.OldModel;
 using HtmlAgilityPack;
 using System;
 using System.Collections.ObjectModel;
@@ -18,6 +19,17 @@ namespace GetData
         public static BusNameList newBusNameList = new BusNameList();
         public static CodedBusNameList codedBusNameList = new CodedBusNameList();
         public static GeneralStationList generalStationList = new GeneralStationList();
+
+        #region old data
+
+        public static ObservableCollection<BusContent> _busContent;
+        public static ObservableCollection<BusRoute> _busRoute;
+        public static ObservableCollection<BusStationCollection> _busStationCollection;
+        public static ObservableCollection<StationTotal> _stationTotal = new ObservableCollection<StationTotal>();
+
+        #endregion
+
+        #region Helper
 
         public static string GetHttpAsString(string link)
         {
@@ -58,6 +70,21 @@ namespace GetData
             return gpsPointCollection;
         }
 
+        public sealed class StringWriterWithEncoding : StringWriter
+        {
+            private readonly Encoding encoding;
+
+            public StringWriterWithEncoding(Encoding encoding)
+            {
+                this.encoding = encoding;
+            }
+
+            public override Encoding Encoding
+            {
+                get { return encoding; }
+            }
+        }
+
         public static string Object2Xml<T>(T value, string fileName)
         {
             if (value == null)
@@ -67,11 +94,13 @@ namespace GetData
             try
             {
                 var xmlserializer = new XmlSerializer(typeof(T));
-                var stringWriter = new StringWriter();
-                using (var writer = XmlWriter.Create(stringWriter))
+                var stringWriter = new StringWriterWithEncoding(Encoding.UTF8);
+                var xmlWriterSetting = new XmlWriterSettings();
+                xmlWriterSetting.Encoding = Encoding.UTF8;
+                using (var writer = XmlWriter.Create(stringWriter, xmlWriterSetting))
                 {
                     xmlserializer.Serialize(writer, value);
-                    File.WriteAllText(@"E:\Data\Work\04 - Vietnam Bus Info\GetData\Data\" + fileName + ".xml",stringWriter.ToString());
+                    File.WriteAllText(@"C:\Users\Tuan Tran\Desktop\VietnamBusInfo\Data\" + fileName + ".xml", stringWriter.ToString());
                     return stringWriter.ToString();
                 }
             }
@@ -81,10 +110,40 @@ namespace GetData
             }
         }
 
+        public static T Xml2Object<T>(string fileName)
+        {
+            XmlSerializer srl = new XmlSerializer(typeof (T));
+            using (
+                XmlReader reader =
+                    XmlReader.Create(@"C:\Users\Tuan Tran\Desktop\VietnamBusInfo\Data\" + fileName))
+            {
+                var obj = srl.Deserialize(reader);
+                return (T) obj;
+            }
+        }
+
+        #endregion
+
         public static void Main(string[] args)
         {
             //For unicode output
             Console.OutputEncoding = System.Text.Encoding.Unicode;
+
+            #region Load Old Data
+
+            _stationTotal = Xml2Object<ObservableCollection<StationTotal>>("StationList.xml");
+            _busRoute = Xml2Object<ObservableCollection<BusRoute>>("FullBusRoute.xml");
+            _busStationCollection = Xml2Object<ObservableCollection<BusStationCollection>>("StationInfo.xml");
+            _busContent = Xml2Object<ObservableCollection<BusContent>>("StationDetail.xml");
+
+            newBusNameList = Xml2Object<BusNameList>("BusNameList.xml");
+            codedBusNameList = Xml2Object<CodedBusNameList>("CodedBusNameList.xml");
+            generalStationList = Xml2Object<GeneralStationList>("GeneralStationList.xml");
+
+
+            goto UpdateData;
+
+            #endregion
 
             #region Get List of buses
 
@@ -116,6 +175,8 @@ namespace GetData
                 Console.WriteLine(newBusName.name);
             }
 
+            //Object2Xml(newBusNameList, "BusNameList");
+
             #endregion
 
             #region Get Buses text data
@@ -144,7 +205,11 @@ namespace GetData
                 Console.WriteLine(newBusTextData.timeInfo);
 
                 Console.WriteLine(busName.name + " - Bus Text Data added!");
+
+                
             }
+
+            Object2Xml(newBusNameList, "BusNameList");
 
             #endregion
 
@@ -210,7 +275,7 @@ namespace GetData
                 foreach (ROW row in rootRouteGoStation.TABLE[0].ROW)
                 {
                     RouteStation newRouteStation = new RouteStation();
-                    newRouteStation.no = Convert.ToInt32(row.COL[5].DATA);
+                    newRouteStation.no = Convert.ToInt32(row.COL[0].DATA);
                     newRouteStation.stationId = Convert.ToInt32(row.COL[1].DATA);
                     if (row.COL[2].DATA != "")
                     {
@@ -254,7 +319,7 @@ namespace GetData
                 foreach (ROW row in rootRouteBackStation.TABLE[0].ROW)
                 {
                     RouteStation newRouteStation = new RouteStation();
-                    newRouteStation.no = Convert.ToInt32(row.COL[5].DATA);
+                    newRouteStation.no = Convert.ToInt32(row.COL[0].DATA);
                     newRouteStation.stationId = Convert.ToInt32(row.COL[1].DATA);
                     if (row.COL[2].DATA != "")
                     {
@@ -379,9 +444,56 @@ namespace GetData
 
             #endregion
 
-            Object2Xml(newBusNameList, "BusNameList");
+            //Write to file
             Object2Xml(codedBusNameList, "CodedBusNameList");
             Object2Xml(generalStationList, "GeneralStationList");
+
+            UpdateData:
+            //Update old data to new one, using old structure
+            //
+
+            //Update StationDetail
+            foreach (BusName bus in newBusNameList.busNameCollection)
+            {
+                bool isOldData = false;
+                foreach (BusContent content in _busContent)
+                {
+                    if (bus.number == content.id)
+                    {
+                        content.id = bus.number;
+                        content.id = bus.number;
+                        content.name = bus.name;
+                        content.go = bus.busTextData.go;
+                        content.back = bus.busTextData.back;
+                        content.detail = bus.busTextData.timeInfo;
+                        isOldData = true;
+                        break;
+                    }
+                }
+
+                if (!isOldData)
+                {
+                    BusContent content = new BusContent();
+                    content.id = bus.number;
+                    content.id = bus.number;
+                    content.name = bus.name;
+                    content.go = bus.busTextData.go;
+                    content.back = bus.busTextData.back;
+                    content.detail = bus.busTextData.timeInfo;
+                    _busContent.Add(content);
+                }
+            }
+
+            //Write Data
+            Object2Xml(_busContent, "StationDetail");
+
+            //Update StationInfo
+            foreach (BusCodedName bus in codedBusNameList.codedBusNameCollection)
+            {
+                bool isOldData = false;
+                foreach (BusContent content in _busContent)
+                {
+            }
         }
     }
 }
