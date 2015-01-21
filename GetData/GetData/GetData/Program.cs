@@ -747,7 +747,7 @@ namespace GetData
                 foreach (ThroughStationBus throughStationBus in station.throughStationBusCollection)
                 {
                     Bus newBus = new Bus();
-                    newBus.busNumber = throughStationBus.number;
+                    newBus.busNumber = throughStationBus.name.Split(']')[0].TrimStart('[');
                     newBus.name = throughStationBus.name;
                     newBus.busDirection = new ObservableCollection<Direction>();
                     if (throughStationBus.direction == DirectionType.Go)
@@ -755,12 +755,14 @@ namespace GetData
                         Direction newD = new Direction();
                         newD.direction = 0.ToString();
                         newBus.busDirection.Add(newD);
+                        Console.WriteLine("Go Direction added: " + newBus.busNumber);
                     }
                     if (throughStationBus.direction == DirectionType.Back)
                     {
                         Direction newD = new Direction();
                         newD.direction = 1.ToString();
                         newBus.busDirection.Add(newD);
+                        Console.WriteLine("Back Direction added: " + newBus.busNumber);
                     }
                     if (throughStationBus.direction == DirectionType.Both)
                     {
@@ -771,12 +773,16 @@ namespace GetData
                         Direction newD2 = new Direction();
                         newD2.direction = 1.ToString();
                         newBus.busDirection.Add(newD2);
+
+                        Console.WriteLine("Both Direction added: " + newBus.busNumber);
                     }
 
                     newStation.busList.Add(newBus);
+                    Console.WriteLine("New bus added: " + newBus.busNumber);
                 }
 
                 _stationTotal.Add(newStation);
+                Console.WriteLine("Station added: " + newStation.stationId);
             }
 
             //Write Data
