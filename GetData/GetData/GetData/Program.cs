@@ -130,6 +130,7 @@ namespace GetData
             //For unicode output
             Console.OutputEncoding = System.Text.Encoding.Unicode;
 
+            goto GetNewData;
             #region Load Old Data
 
             _stationTotal = Xml2Object<ObservableCollection<StationTotal>>("StationList.xml");
@@ -145,6 +146,12 @@ namespace GetData
             //goto UpdateData;
 
             #endregion
+
+            GetNewData:
+            _stationTotal = Xml2Object<ObservableCollection<StationTotal>>("StationList.xml");
+            _busRoute = Xml2Object<ObservableCollection<BusRoute>>("FullBusRoute.xml");
+            _busStationCollection = Xml2Object<ObservableCollection<BusStationCollection>>("StationInfo.xml");
+            _busContent = Xml2Object<ObservableCollection<BusContent>>("StationDetail.xml");
 
             #region Get List of buses
 
