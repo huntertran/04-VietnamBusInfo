@@ -1,0 +1,4 @@
+MainPackage=E:\Store Project\Windows Store\04 - Vietnam Bus Info\Windows8.1\VietnamBusInfo\VietnamBusInfo\bin\ARM\Debug\VietnamBusInfo_1.1.0.0_Bundle\VietnamBusInfo_1.1.0.0_ARM_Debug.appx
+SymbolPackage=E:\Store Project\Windows Store\04 - Vietnam Bus Info\Windows8.1\VietnamBusInfo\VietnamBusInfo\AppPackages\VietnamBusInfo_1.1.0.0_Debug_Test\VietnamBusInfo_1.1.0.0_ARM_Debug.appxsym
+ResourcePack=E:\Store Project\Windows Store\04 - Vietnam Bus Info\Windows8.1\VietnamBusInfo\VietnamBusInfo\bin\ARM\Debug\VietnamBusInfo_1.1.0.0_Bundle\VietnamBusInfo_1.1.0.0_scale-140.appx
+ResourcePack=E:\Store Project\Windows Store\04 - Vietnam Bus Info\Windows8.1\VietnamBusInfo\VietnamBusInfo\bin\ARM\Debug\VietnamBusInfo_1.1.0.0_Bundle\VietnamBusInfo_1.1.0.0_scale-180.appx

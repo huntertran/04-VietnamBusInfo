@@ -1,0 +1,2 @@
+MainPackage=E:\Store Project\Windows Store\04 - Vietnam Bus Info\Windows8.1\VietnamBusInfo\VietnamBusInfo\bin\x64\Debug\VietnamBusInfo_1.1.0.0_Bundle\VietnamBusInfo_1.1.0.0_x64_Debug.appx
+SymbolPackage=E:\Store Project\Windows Store\04 - Vietnam Bus Info\Windows8.1\VietnamBusInfo\VietnamBusInfo\AppPackages\VietnamBusInfo_1.1.0.0_Debug_Test\VietnamBusInfo_1.1.0.0_x64_Debug.appxsym
