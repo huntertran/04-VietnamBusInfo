@@ -116,7 +116,7 @@ namespace GetData
             XmlSerializer srl = new XmlSerializer(typeof (T));
             using (
                 XmlReader reader =
-                    XmlReader.Create(@"C:\Users\Tuan Tran\Desktop\VietnamBusInfo\Data\" + fileName))
+                    XmlReader.Create(@"E:\Store Project\Universal\45 - HDV\Data\\" + fileName))
             {
                 var obj = srl.Deserialize(reader);
                 return (T) obj;
