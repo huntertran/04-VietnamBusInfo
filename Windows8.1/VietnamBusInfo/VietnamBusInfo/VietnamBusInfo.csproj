@@ -113,11 +113,11 @@
     <SDKReference Include="Bing.Maps.Xaml, Version=1.313.0825.0">
       <Name>Bing Maps for C#, C++, or Visual Basic</Name>
     </SDKReference>
+    <SDKReference Include="Microsoft.AdMediatorWindows81, Version=1.0">
+      <Name>Ad Mediator SDK for Windows 8.1 XAML</Name>
+    </SDKReference>
     <SDKReference Include="Microsoft.VCLibs, version=12.0">
       <Name>Microsoft Visual C++ 2013 Runtime Package for Windows</Name>
-    </SDKReference>
-    <SDKReference Include="MSAdvertisingXaml, Version=8.1">
-      <Name>Microsoft Advertising SDK for Windows 8.1 %28Xaml%29</Name>
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
