@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VnBusInfoW10", "VnBusInfoW10\VnBusInfoW10.csproj", "{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Debug|ARM.Build.0 = Debug|ARM
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Debug|ARM.Deploy.0 = Debug|ARM
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Debug|x64.ActiveCfg = Debug|x64
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Debug|x64.Build.0 = Debug|x64
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Debug|x64.Deploy.0 = Debug|x64
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Debug|x86.ActiveCfg = Debug|x86
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Debug|x86.Build.0 = Debug|x86
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Debug|x86.Deploy.0 = Debug|x86
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Release|ARM.ActiveCfg = Release|ARM
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Release|ARM.Build.0 = Release|ARM
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Release|ARM.Deploy.0 = Release|ARM
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Release|x64.ActiveCfg = Release|x64
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Release|x64.Build.0 = Release|x64
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Release|x64.Deploy.0 = Release|x64
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Release|x86.ActiveCfg = Release|x86
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Release|x86.Build.0 = Release|x86
+		{A3B6DF06-DF64-4041-BAC8-9C5532D41D36}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://cuoilennaocacban.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VnBusInfoW10\\VnBusInfoW10.csproj
+		SccProjectName1 = VnBusInfoW10
+		SccLocalPath1 = VnBusInfoW10
+	EndGlobalSection
+EndGlobal
