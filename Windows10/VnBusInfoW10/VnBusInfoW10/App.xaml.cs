@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 namespace VnBusInfoW10
@@ -20,7 +10,7 @@ namespace VnBusInfoW10
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
-    sealed partial class App : Application
+    sealed partial class App
     {
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -31,8 +21,8 @@ namespace VnBusInfoW10
             Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(
                 Microsoft.ApplicationInsights.WindowsCollectors.Metadata |
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
-            this.InitializeComponent();
-            this.Suspending += OnSuspending;
+            InitializeComponent();
+            Suspending += OnSuspending;
         }
 
         /// <summary>
@@ -46,7 +36,7 @@ namespace VnBusInfoW10
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                this.DebugSettings.EnableFrameRateCounter = true;
+                DebugSettings.EnableFrameRateCounter = false;
             }
 #endif
 
@@ -60,6 +50,7 @@ namespace VnBusInfoW10
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
+                rootFrame.Navigated += RootFrame_Navigated;
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
@@ -79,6 +70,38 @@ namespace VnBusInfoW10
             }
             // Ensure the current window is active
             Window.Current.Activate();
+        }
+
+        private void RootFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+            // track a page view
+            GoogleAnalytics.EasyTracker.GetTracker().SendView(e.SourcePageType.FullName);
+
+            /*
+            
+
+// track a custom event
+GoogleAnalytics.EasyTracker.GetTracker().SendEvent("test", "userclick", null, 0);
+
+// manually track an exception
+GoogleAnalytics.EasyTracker.GetTracker().SendException("oops, something went wrong", false);
+
+// track a transaction (in app purchase)
+double cost = 1.99;
+long costInMicrons = (long)(cost * 1000000);
+var transaction = new GoogleAnalytics.Transaction("01234", costInMicrons);
+var item = new GoogleAnalytics.TransactionItem("myproduct", "My Product", costInMicrons, 1);
+transaction.Items.Add(item);
+GoogleAnalytics.EasyTracker.GetTracker().SendTransaction(transaction);
+
+// track a social networking interaction
+GoogleAnalytics.EasyTracker.GetTracker().SendSocial("facebook", "share", "http://googleanalyticssdk.codeplex.com");
+
+// track a timing (how long it takes your app to run a specific task)
+GoogleAnalytics.EasyTracker.GetTracker().SendTiming(DateTime.Now.Subtract(startTime), "Startup", "MainPage", "Label");
+
+
+    */
         }
 
         /// <summary>
