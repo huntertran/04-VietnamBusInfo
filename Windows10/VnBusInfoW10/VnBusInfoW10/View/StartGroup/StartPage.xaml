@@ -4,6 +4,8 @@
       xmlns:converters="using:VnBusInfoW10.Utilities.Converters"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      DataContext="{Binding Source={StaticResource Locator},
+                            Path=StartVm}"
       mc:Ignorable="d">
 
     <Page.Resources>
@@ -55,8 +57,8 @@
                 </Grid.ColumnDefinitions>
 
                 <Grid Grid.Column="0"
-                      Width="40"
-                      Height="40">
+                      Width="48"
+                      Height="48">
                     <Path Margin="12"
                           Data="{Binding Icon}"
                           Stretch="Uniform">
@@ -69,7 +71,7 @@
                 <Grid Grid.Column="1">
                     <TextBlock Margin="6,0,0,0"
                                VerticalAlignment="Center"
-                               FontSize="12"
+                               FontSize="18"
                                Text="{Binding Name}">
                         <TextBlock.Foreground>
                             <SolidColorBrush Color="{StaticResource LightTerra}" />
@@ -95,7 +97,7 @@
 
         <Grid x:Name="TitleGrid"
               Grid.Row="0"
-              Height="44">
+              Height="48">
 
             <Grid.Background>
                 <SolidColorBrush Color="{StaticResource Abiso}" />
@@ -121,11 +123,10 @@
 
             <TextBlock x:Name="TitleTextBlock"
                        Grid.Column="1"
-                       Margin="24,0,0,0"
+                       Margin="12,0,0,0"
                        VerticalAlignment="Center"
                        FontSize="24"
-                       FontWeight="Bold"
-                       Foreground="{StaticResource AbisoBrush}"
+                       Foreground="{StaticResource LightTerraBrush}"
                        Padding="0,0,0,4"
                        Text="{Binding Content,
                                       Converter={StaticResource PageToNameConverter},
@@ -135,7 +136,7 @@
 
         <SplitView x:Name="MainSplitView"
                    Grid.Row="1"
-                   CompactPaneLength="55"
+                   CompactPaneLength="48"
                    DisplayMode="CompactOverlay"
                    IsPaneOpen="False"
                    PaneBackground="{StaticResource AbisoBrush}">
@@ -151,11 +152,55 @@
                     </Grid.RowDefinitions>
 
                     <StackPanel Grid.Row="0">
+                        <Button x:Name="HamburgerButton"
+                                Width="48"
+                                Height="48"
+                                Background="{StaticResource AbisoBrush}"
+                                Content="&#xE700;"
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="30"
+                                Foreground="{StaticResource LightTerraBrush}"
+                                Click="HamburgerButton_OnClick">
+                            <Button.Resources>
+                                <Style x:Key="ButtonStyle1" TargetType="Button">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
+                                                    <VisualStateManager.VisualStateGroups>
+                                                        <VisualStateGroup x:Name="CommonStates">
+                                                            <VisualState x:Name="Normal" />
+                                                            <VisualState x:Name="PointerOver" />
+                                                            <VisualState x:Name="Pressed" />
+                                                            <VisualState x:Name="Disabled" />
+                                                        </VisualStateGroup>
+                                                    </VisualStateManager.VisualStateGroups>
+                                                    <ContentPresenter x:Name="ContentPresenter"
+                                                                      HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                                      VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                                      AutomationProperties.AccessibilityView="Raw"
+                                                                      BorderBrush="{TemplateBinding BorderBrush}"
+                                                                      BorderThickness="{TemplateBinding BorderThickness}"
+                                                                      Content="{TemplateBinding Content}"
+                                                                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                                      ContentTransitions="{TemplateBinding ContentTransitions}"
+                                                                      Padding="{TemplateBinding Padding}" />
+                                                </Grid>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+
+                            </Button.Resources>
+                            <Button.Style>
+                                <StaticResource ResourceKey="ButtonStyle1" />
+                            </Button.Style>
+                        </Button>
                         <ListView x:Name="FunctionsListView"
                                   VerticalAlignment="Center"
                                   ItemContainerStyle="{StaticResource ListViewItemStyle1}"
                                   ItemTemplate="{StaticResource MenuListItemDataTemplate}"
-                                  ItemsSource="{Binding MenuListItemCollection}"
+                                  ItemsSource="{Binding FunctionList}"
                                   SelectionMode="Single" />
                     </StackPanel>
 
@@ -165,7 +210,7 @@
                                   VerticalAlignment="Center"
                                   ItemContainerStyle="{StaticResource ListViewItemStyle1}"
                                   ItemTemplate="{StaticResource MenuListItemDataTemplate}"
-                                  ItemsSource="{Binding BottomMenuListItemCollection}"
+                                  ItemsSource="{Binding BottomFunctionList}"
                                   SelectionMode="Single" />
                     </StackPanel>
                 </Grid>
