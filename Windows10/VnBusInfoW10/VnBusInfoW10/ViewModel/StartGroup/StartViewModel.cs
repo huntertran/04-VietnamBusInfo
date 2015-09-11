@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media;
-using GalaSoft.MvvmLight.Command;
 using VnBusInfoW10.Annotations;
 using VnBusInfoW10.Model;
 using VnBusInfoW10.View.MapGroup;
+using VnBusInfoW10.View.SettingGroup;
 
 namespace VnBusInfoW10.ViewModel.StartGroup
 {
@@ -109,6 +103,11 @@ namespace VnBusInfoW10.ViewModel.StartGroup
                 case MenuFunc.Map:
                 {
                     frame.Navigate(typeof (MapPage));
+                    break;
+                }
+                case MenuFunc.Settings:
+                {
+                    frame.Navigate(typeof (SettingPage));
                     break;
                 }
                 default:

@@ -110,16 +110,30 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\BusTextInfo.cs" />
+    <Compile Include="Model\BusTotal.cs" />
     <Compile Include="Model\MenuListItem.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Utilities\Converters\PageToNameConverter.cs" />
+    <Compile Include="Utilities\NetwordMethod.cs" />
+    <Compile Include="Utilities\StorageHelper.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\MapGroup\MapViewModel.cs" />
+    <Compile Include="ViewModel\SettingGroup\SettingViewModel.cs" />
+    <Compile Include="ViewModel\SettingGroup\UpdateDatabaseViewModel.cs" />
+    <Compile Include="ViewModel\StaticData.cs" />
+    <Compile Include="View\SettingGroup\UpdateDatabasePage.xaml.cs">
+      <DependentUpon>UpdateDatabasePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\StartGroup\StartViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="View\MapGroup\MapPage.xaml.cs">
       <DependentUpon>MapPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SettingGroup\SettingPage.xaml.cs">
+      <DependentUpon>SettingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\StartGroup\ExtendedSplashScreen.xaml.cs">
       <DependentUpon>ExtendedSplashScreen.xaml</DependentUpon>
@@ -183,7 +197,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\SettingGroup\UpdateDatabasePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MapGroup\MapPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SettingGroup\SettingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

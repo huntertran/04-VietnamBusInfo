@@ -45,43 +45,6 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
-        <DataTemplate x:Key="MenuListItemDataTemplate">
-            <Grid Tag="{Binding}">
-                <Grid.Background>
-                    <Brush>Transparent</Brush>
-                </Grid.Background>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-                <Grid Grid.Column="0"
-                      Width="48"
-                      Height="48">
-                    <Path Margin="12"
-                          Data="{Binding Icon}"
-                          Stretch="Uniform">
-                        <Path.Fill>
-                            <SolidColorBrush Color="{StaticResource LightTerra}" />
-                        </Path.Fill>
-                    </Path>
-                </Grid>
-
-                <Grid Grid.Column="1">
-                    <TextBlock Margin="6,0,0,0"
-                               VerticalAlignment="Center"
-                               FontSize="18"
-                               Text="{Binding Name}">
-                        <TextBlock.Foreground>
-                            <SolidColorBrush Color="{StaticResource LightTerra}" />
-                        </TextBlock.Foreground>
-                    </TextBlock>
-                </Grid>
-
-            </Grid>
-        </DataTemplate>
-
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

@@ -21,7 +21,8 @@ namespace VnBusInfoW10.View.StartGroup
 
         private void StartPage_Loaded(object sender, RoutedEventArgs e)
         {
-            FunctionsListView.SelectedIndex = 0;
+            //FunctionsListView.SelectedIndex = 0;
+            BottomListView.SelectedIndex = 0;
         }
 
         private void HamburgerButton_OnClick(object sender, RoutedEventArgs e)

@@ -12,8 +12,11 @@
   See http://www.galasoft.ch/mvvm
 */
 
+using Windows.Devices.Bluetooth.Advertisement;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
+using VnBusInfoW10.ViewModel.MapGroup;
+using VnBusInfoW10.ViewModel.SettingGroup;
 using VnBusInfoW10.ViewModel.StartGroup;
 
 namespace VnBusInfoW10.ViewModel
@@ -44,10 +47,15 @@ namespace VnBusInfoW10.ViewModel
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<StartViewModel>();
+            SimpleIoc.Default.Register<SettingViewModel>();
+            SimpleIoc.Default.Register<UpdateDatabaseViewModel>();
         }
 
         public MainViewModel Main => ServiceLocator.Current.GetInstance<MainViewModel>();
         public StartViewModel StartVm => ServiceLocator.Current.GetInstance<StartViewModel>();
+        public SettingViewModel SettingVm => ServiceLocator.Current.GetInstance<SettingViewModel>();
+        public UpdateDatabaseViewModel UpdateInfoVm => ServiceLocator.Current.GetInstance<UpdateDatabaseViewModel>();
+        public MapViewModel MapVm => StaticData.MapVm;
 
         public static void Cleanup()
         {

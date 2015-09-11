@@ -9,7 +9,9 @@ namespace VnBusInfoW10.Model
         Map,
         Search,
         Alarm,
-        Settings
+        Settings,
+        MapSource,
+        UpdateDatabase
     };
 
     public class MenuListItem : INotifyPropertyChanged

@@ -1,0 +1,30 @@
+﻿<Page x:Class="VnBusInfoW10.View.SettingGroup.SettingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:VnBusInfoW10.View.SettingGroup"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      DataContext="{Binding Source={StaticResource Locator},
+                            Path=SettingVm}"
+      mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource Abiso}" Opacity="0.8" />
+            </Grid.Background>
+            <ListView x:Name="SettingsListView"
+                      ItemTemplate="{StaticResource MenuListItemDataTemplate}"
+                      ItemsSource="{Binding FunctionList}"
+                      SelectionChanged="SettingsListView_OnSelectionChanged" />
+        </Grid>
+
+        <Frame x:Name="MainFrame" Grid.Column="1" />
+
+    </Grid>
+</Page>
