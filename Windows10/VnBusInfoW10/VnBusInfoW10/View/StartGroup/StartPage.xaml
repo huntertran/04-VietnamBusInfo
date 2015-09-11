@@ -201,6 +201,7 @@
                                   ItemContainerStyle="{StaticResource ListViewItemStyle1}"
                                   ItemTemplate="{StaticResource MenuListItemDataTemplate}"
                                   ItemsSource="{Binding FunctionList}"
+                                  SelectionChanged="FunctionsListView_OnSelectionChanged"
                                   SelectionMode="Single" />
                     </StackPanel>
 
@@ -211,6 +212,7 @@
                                   ItemContainerStyle="{StaticResource ListViewItemStyle1}"
                                   ItemTemplate="{StaticResource MenuListItemDataTemplate}"
                                   ItemsSource="{Binding BottomFunctionList}"
+                                  SelectionChanged="BottomFunctionsListView_OnSelectionChanged"
                                   SelectionMode="Single" />
                     </StackPanel>
                 </Grid>
