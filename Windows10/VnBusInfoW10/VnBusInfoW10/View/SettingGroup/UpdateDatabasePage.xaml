@@ -15,6 +15,12 @@
             <TextBlock Margin="8"
                        Foreground="{StaticResource AbisoBrush}"
                        Text="{Binding TextNotification}" />
+            <TextBlock Margin="8"
+                       Foreground="{StaticResource AbisoBrush}"
+                       Text="{Binding NotiCount}" />
+            <TextBlock Margin="8"
+                       Foreground="{StaticResource AbisoBrush}"
+                       Text="{Binding RunTime}" />
             <Button x:Name="UpdateButton"
                     Margin="8"
                     Content="Update"

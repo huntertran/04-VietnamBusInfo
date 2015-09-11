@@ -1,5 +1,4 @@
-﻿using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Input;
+﻿using Windows.UI.Xaml.Input;
 using VnBusInfoW10.ViewModel.SettingGroup;
 
 namespace VnBusInfoW10.View.SettingGroup
@@ -7,12 +6,12 @@ namespace VnBusInfoW10.View.SettingGroup
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class UpdateDatabasePage : Page
+    public sealed partial class UpdateDatabasePage
     {
         private UpdateDatabaseViewModel _vm;
         public UpdateDatabasePage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
             _vm = DataContext as UpdateDatabaseViewModel;
         }
 

@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.Core;
+using Windows.UI.Core;
 using HtmlAgilityPack;
 using VnBusInfoW10.Annotations;
 using VnBusInfoW10.Model;
@@ -14,11 +17,14 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
 {
     public class UpdateDatabaseViewModel : INotifyPropertyChanged
     {
+        Stopwatch sw = new Stopwatch();
 
         private string _textNotification;
 
         private double _updateProgress;
         private int _notiCount;
+
+        private string _runTime;
 
         public string TextNotification
         {
@@ -53,10 +59,21 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
             }
         }
 
+        public string RunTime
+        {
+            get { return _runTime; }
+            set
+            {
+                if (value == _runTime) return;
+                _runTime = value;
+                OnPropertyChanged();
+            }
+        }
+
         public async Task GetData()
         {
             NotiCount = 0;
-            await GetBusInfo();
+            await Task.Run(() => GetBusInfo());
         }
 
         private async Task GetBusInfo()
@@ -100,7 +117,14 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
                 b.TextInfo.RouteName = r.TrimStart(' ','-');
                 StaticData.MapVm.AllBus.Add(b);
 
-                Notify("New bus info added: " + b.TextInfo.RouteNumber + " " + b.TextInfo.RouteName);
+                await CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(
+                CoreDispatcherPriority.Normal,
+                () =>
+                {
+                    Notify("New bus info added: " + b.TextInfo.RouteNumber + " " + b.TextInfo.RouteName);
+                });
+
+                
             }
         }
 
@@ -108,6 +132,19 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
         {
             NotiCount++;
             TextNotification = s;
+        }
+
+        private void Start()
+        {
+            sw = Stopwatch.StartNew();
+        }
+
+        private void Stop()
+        {
+            sw.Stop();
+
+            var elapsedMs = sw.ElapsedMilliseconds;
+            RunTime = elapsedMs.ToString();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
