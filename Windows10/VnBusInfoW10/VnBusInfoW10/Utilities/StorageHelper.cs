@@ -14,7 +14,7 @@ namespace VnBusInfoW10.Utilities
             var xmlWriterSettings = new XmlWriterSettings { Indent = true };
 
             StorageFolder localFolder = ApplicationData.Current.LocalFolder;
-            StorageFolder d = await localFolder.CreateFolderAsync("data");
+            StorageFolder d = await localFolder.CreateFolderAsync("data", CreationCollisionOption.OpenIfExists);
             StorageFile file = await d.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
             using (Stream x = await file.OpenStreamForWriteAsync())
             {

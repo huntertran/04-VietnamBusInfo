@@ -8,7 +8,7 @@ namespace VnBusInfoW10.View.SettingGroup
     /// </summary>
     public sealed partial class UpdateDatabasePage
     {
-        private UpdateDatabaseViewModel _vm;
+        private readonly UpdateDatabaseViewModel _vm;
         public UpdateDatabasePage()
         {
             InitializeComponent();
