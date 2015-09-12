@@ -115,6 +115,7 @@
     <Compile Include="Model\BusTotal.cs" />
     <Compile Include="Model\MenuListItem.cs" />
     <Compile Include="Model\RawBusStation.cs" />
+    <Compile Include="Model\StationTotal.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Converters\BoolToVisibilityConverter.cs" />

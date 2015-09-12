@@ -75,9 +75,10 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
         public async Task GetData()
         {
             NotiCount = 0;
-            await Task.Run(() => GetBusInfo());
-            await Task.Run(() => GetStation());
-            await Task.Run(() => GetRoute());
+            //await Task.Run(() => GetBusInfo());
+            //await Task.Run(() => GetStation());
+            //await Task.Run(() => GetRoute());
+            //await Task.Run(() => ConvertToJson());
         }
 
         private async Task GetBusInfo()
@@ -340,6 +341,21 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
             }
 
             await StorageHelper.Object2Xml(StaticData.MapVm.AllBus, "data.xml");
+        }
+
+        private async Task ConvertToJson()
+        {
+            //Load all data
+            if (StaticData.MapVm.AllBus == null)
+            {
+                StaticData.MapVm.AllBus = await StorageHelper.Xml2Object<ObservableCollection<BusTotal>>("data.xml");
+            }
+
+            //Save to Json
+            await StorageHelper.Object2Json(StaticData.MapVm.AllBus, "data.json");
+
+            //Try read
+            StaticData.MapVm.AllBus = await StorageHelper.Json2Object<ObservableCollection<BusTotal>>("data.json");
         }
 
         private async void Notify(string s, bool isReset = false)
