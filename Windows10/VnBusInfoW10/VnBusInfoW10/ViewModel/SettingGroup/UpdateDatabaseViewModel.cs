@@ -7,6 +7,7 @@ using System.Net;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Core;
+using Windows.Devices.Geolocation;
 using Windows.UI.Core;
 using HtmlAgilityPack;
 using Newtonsoft.Json.Linq;
@@ -74,8 +75,9 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
         public async Task GetData()
         {
             NotiCount = 0;
-            //await Task.Run(() => GetBusInfo());
-            //await Task.Run(() => GetStation());
+            await Task.Run(() => GetBusInfo());
+            await Task.Run(() => GetStation());
+            await Task.Run(() => GetRoute());
         }
 
         private async Task GetBusInfo()
@@ -270,7 +272,75 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
             await StorageHelper.Object2Xml(StaticData.MapVm.AllBus, "data.xml");
         }
 
-        
+        private async Task GetRoute()
+        {
+            //Load all data
+            if (StaticData.MapVm.AllBus == null)
+            {
+                StaticData.MapVm.AllBus = await StorageHelper.Xml2Object<ObservableCollection<BusTotal>>("data.xml");
+            }
+
+            foreach (BusTotal busTotal in StaticData.MapVm.AllBus)
+            {
+                //Go Direction
+                busTotal.GoRoute = new ObservableCollection<BasicGeoposition>();
+
+                string html =
+                    await
+                        NetwordMethod.GetHttpAsString(
+                            "http://mapbus.ebms.vn/ajax.aspx?action=GetFullRoute&isgo=true&rid=" + busTotal.RouteId);
+
+                if (!string.IsNullOrEmpty(html))
+                {
+                    html = html.Trim();
+                    string[] goRoute = html.Split(' ');
+                    foreach (string s in goRoute)
+                    {
+                        if (string.IsNullOrEmpty(s) || string.IsNullOrWhiteSpace(s))
+                        {
+                            continue;
+                        }
+                        BasicGeoposition b = new BasicGeoposition
+                        {
+                            Latitude = Convert.ToDouble(s.Split(',')[0]),
+                            Longitude = Convert.ToDouble(s.Split(',')[1])
+                        };
+                        busTotal.GoRoute.Add(b);
+                    }
+                }
+
+                //Back Direction
+                busTotal.BackRoute = new ObservableCollection<BasicGeoposition>();
+
+                html =
+                    await
+                        NetwordMethod.GetHttpAsString(
+                            "http://mapbus.ebms.vn/ajax.aspx?action=GetFullRoute&isgo=false&rid=" + busTotal.RouteId);
+
+                if (!string.IsNullOrEmpty(html))
+                {
+                    html = html.Trim();
+                    string[] backRoute = html.Split(' ');
+                    foreach (string s in backRoute)
+                    {
+                        if (string.IsNullOrEmpty(s) || string.IsNullOrWhiteSpace(s))
+                        {
+                            continue;
+                        }
+                        BasicGeoposition b = new BasicGeoposition
+                        {
+                            Latitude = Convert.ToDouble(s.Split(',')[0]),
+                            Longitude = Convert.ToDouble(s.Split(',')[1])
+                        };
+                        busTotal.BackRoute.Add(b);
+                    }
+                }
+
+                Notify("New route added: " + busTotal.TextInfo.RouteNumber);
+            }
+
+            await StorageHelper.Object2Xml(StaticData.MapVm.AllBus, "data.xml");
+        }
 
         private async void Notify(string s, bool isReset = false)
         {

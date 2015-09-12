@@ -13,8 +13,8 @@ namespace VnBusInfoW10.Model
         private BusTextInfo _textInfo;
         private ObservableCollection<BusStation> _goStationList;
         private ObservableCollection<BusStation> _backStationList;
-        private ObservableCollection<Geocoordinate> _goRoute;
-        private ObservableCollection<Geocoordinate> _backRoute;  
+        private ObservableCollection<BasicGeoposition> _goRoute;
+        private ObservableCollection<BasicGeoposition> _backRoute;  
 
         public int Id
         {
@@ -71,7 +71,7 @@ namespace VnBusInfoW10.Model
             }
         }
 
-        public ObservableCollection<Geocoordinate> GoRoute
+        public ObservableCollection<BasicGeoposition> GoRoute
         {
             get { return _goRoute; }
             set
@@ -82,7 +82,7 @@ namespace VnBusInfoW10.Model
             }
         }
 
-        public ObservableCollection<Geocoordinate> BackRoute
+        public ObservableCollection<BasicGeoposition> BackRoute
         {
             get { return _backRoute; }
             set
