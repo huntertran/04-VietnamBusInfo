@@ -14,6 +14,7 @@ using Newtonsoft.Json.Linq;
 using VnBusInfoW10.Annotations;
 using VnBusInfoW10.Model;
 using VnBusInfoW10.Utilities;
+// ReSharper disable UnusedMember.Local
 
 namespace VnBusInfoW10.ViewModel.SettingGroup
 {
@@ -75,9 +76,9 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
         public async Task GetData()
         {
             NotiCount = 0;
-            //await Task.Run(() => GetBusInfo());
-            //await Task.Run(() => GetStation());
-            //await Task.Run(() => GetRoute());
+            await Task.Run(() => GetBusInfo());
+            await Task.Run(() => GetStation());
+            await Task.Run(() => GetRoute());
             //await Task.Run(() => ConvertToJson());
         }
 
@@ -100,10 +101,11 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
             for (int index = 1; index < nodes.Count; index++)
             {
                 HtmlNode htmlNode = nodes[index];
-                BusTotal b = new BusTotal();
-                b.Id = index;
-                b.TextInfo = new BusTextInfo();
-                b.TextInfo.RouteNumber = htmlNode.Attributes["value"].Value;
+                BusTotal b = new BusTotal
+                {
+                    Id = index,
+                    TextInfo = new BusTextInfo {RouteNumber = htmlNode.Attributes["value"].Value}
+                };
 
                 string[] temp = WebUtility.HtmlDecode(htmlNode.NextSibling.InnerText).Split('-');
                 string r = "";
@@ -146,7 +148,7 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
             }
 
             Notify("Save data");
-            await StorageHelper.Object2Xml(StaticData.MapVm.AllBus, "data.xml");
+            await StorageHelper.Object2Json(StaticData.MapVm.AllBus, "data.json");
         }
 
         private async Task GetStation()
@@ -154,7 +156,7 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
             //Load all data
             if (StaticData.MapVm.AllBus == null)
             {
-                StaticData.MapVm.AllBus = await StorageHelper.Xml2Object<ObservableCollection<BusTotal>>("data.xml");
+                StaticData.MapVm.AllBus = await StorageHelper.Json2Object<ObservableCollection<BusTotal>>("data.json");
             }
 
             //Get bus id
@@ -206,8 +208,20 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
 
                 foreach (ROW row in r.TABLE[0].ROW)
                 {
-                    BusStation b = new BusStation();
-                    b.StationId = Convert.ToInt32(row.COL[1].DATA);
+                    BusStation b = new BusStation
+                    {
+                        StationId = Convert.ToInt32(row.COL[1].DATA),
+                        MiniRoute = row.COL[3].DATA,
+                        U1 = row.COL[4].DATA,
+                        No = Convert.ToInt32(row.COL[5].DATA),
+                        U2 = row.COL[6].DATA,
+                        Name = row.COL[7].DATA,
+                        Lon = row.COL[8].DATA,
+                        Lat = row.COL[9].DATA,
+                        Address = row.COL[12].DATA,
+                        CodeName = row.COL[13].DATA
+                    };
+
                     try
                     {
                         b.NextStationId = Convert.ToInt32(row.COL[2].DATA);
@@ -216,15 +230,6 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
                     {
                         // ignored
                     }
-                    b.MiniRoute = row.COL[3].DATA;
-                    b.U1 = row.COL[4].DATA;
-                    b.No = Convert.ToInt32(row.COL[5].DATA);
-                    b.U2 = row.COL[6].DATA;
-                    b.Name = row.COL[7].DATA;
-                    b.Lon = row.COL[8].DATA;
-                    b.Lat = row.COL[9].DATA;
-                    b.Address = row.COL[12].DATA;
-                    b.CodeName = row.COL[13].DATA;
 
                     busTotal.GoStationList.Add(b);
                     Notify("New station added: Go: " + b.Name);
@@ -243,8 +248,20 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
 
                 foreach (ROW row in r.TABLE[0].ROW)
                 {
-                    BusStation b = new BusStation();
-                    b.StationId = Convert.ToInt32(row.COL[1].DATA);
+                    BusStation b = new BusStation
+                    {
+                        StationId = Convert.ToInt32(row.COL[1].DATA),
+                        MiniRoute = row.COL[3].DATA,
+                        U1 = row.COL[4].DATA,
+                        No = Convert.ToInt32(row.COL[5].DATA),
+                        U2 = row.COL[6].DATA,
+                        Name = row.COL[7].DATA,
+                        Lon = row.COL[8].DATA,
+                        Lat = row.COL[9].DATA,
+                        Address = row.COL[12].DATA,
+                        CodeName = row.COL[13].DATA
+                    };
+                    
                     try
                     {
                         b.NextStationId = Convert.ToInt32(row.COL[2].DATA);
@@ -253,15 +270,6 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
                     {
                         // ignored
                     }
-                    b.MiniRoute = row.COL[3].DATA;
-                    b.U1 = row.COL[4].DATA;
-                    b.No = Convert.ToInt32(row.COL[5].DATA);
-                    b.U2 = row.COL[6].DATA;
-                    b.Name = row.COL[7].DATA;
-                    b.Lon = row.COL[8].DATA;
-                    b.Lat = row.COL[9].DATA;
-                    b.Address = row.COL[12].DATA;
-                    b.CodeName = row.COL[13].DATA;
 
                     busTotal.BackStationList.Add(b);
                     Notify("New station added: Back: " + b.Name);
@@ -270,7 +278,7 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
                 Notify("BUS: " + busTotal.TextInfo.RouteNumber + " COMPLETED: ALL STATION ADDED");
             }
 
-            await StorageHelper.Object2Xml(StaticData.MapVm.AllBus, "data.xml");
+            await StorageHelper.Object2Json(StaticData.MapVm.AllBus, "data.json");
         }
 
         private async Task GetRoute()
@@ -278,7 +286,7 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
             //Load all data
             if (StaticData.MapVm.AllBus == null)
             {
-                StaticData.MapVm.AllBus = await StorageHelper.Xml2Object<ObservableCollection<BusTotal>>("data.xml");
+                StaticData.MapVm.AllBus = await StorageHelper.Json2Object<ObservableCollection<BusTotal>>("data.json");
             }
 
             foreach (BusTotal busTotal in StaticData.MapVm.AllBus)
@@ -340,7 +348,7 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
                 Notify("New route added: " + busTotal.TextInfo.RouteNumber);
             }
 
-            await StorageHelper.Object2Xml(StaticData.MapVm.AllBus, "data.xml");
+            await StorageHelper.Object2Json(StaticData.MapVm.AllBus, "data.json");
         }
 
         private async Task ConvertToJson()
@@ -348,7 +356,7 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
             //Load all data
             if (StaticData.MapVm.AllBus == null)
             {
-                StaticData.MapVm.AllBus = await StorageHelper.Xml2Object<ObservableCollection<BusTotal>>("data.xml");
+                StaticData.MapVm.AllBus = await StorageHelper.Json2Object<ObservableCollection<BusTotal>>("data.json");
             }
 
             //Save to Json
