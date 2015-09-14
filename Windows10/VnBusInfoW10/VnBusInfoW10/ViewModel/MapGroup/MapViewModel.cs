@@ -10,6 +10,7 @@ namespace VnBusInfoW10.ViewModel.MapGroup
     {
 
         private ObservableCollection<BusTotal> _allBus;
+        private ObservableCollection<StationTotal> _allStation; 
 
         public ObservableCollection<BusTotal> AllBus
         {
@@ -18,6 +19,17 @@ namespace VnBusInfoW10.ViewModel.MapGroup
             {
                 if (Equals(value, _allBus)) return;
                 _allBus = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ObservableCollection<StationTotal> AllStation
+        {
+            get { return _allStation; }
+            set
+            {
+                if (Equals(value, _allStation)) return;
+                _allStation = value;
                 OnPropertyChanged();
             }
         }

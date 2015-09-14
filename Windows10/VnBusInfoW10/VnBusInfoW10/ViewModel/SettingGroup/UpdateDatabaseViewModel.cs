@@ -76,10 +76,11 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
         public async Task GetData()
         {
             NotiCount = 0;
-            await Task.Run(() => GetBusInfo());
-            await Task.Run(() => GetStation());
-            await Task.Run(() => GetRoute());
+            //await Task.Run(() => GetBusInfo());
+            //await Task.Run(() => GetStation());
+            //await Task.Run(() => GetRoute());
             //await Task.Run(() => ConvertToJson());
+            await Task.Run(() => CalculateStationTotal());
         }
 
         private async Task GetBusInfo()
@@ -364,6 +365,132 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
 
             //Try read
             StaticData.MapVm.AllBus = await StorageHelper.Json2Object<ObservableCollection<BusTotal>>("data.json");
+        }
+
+        private async Task CalculateStationTotal()
+        {
+            //Load all data
+            if (StaticData.MapVm.AllBus == null)
+            {
+                StaticData.MapVm.AllBus = await StorageHelper.Json2Object<ObservableCollection<BusTotal>>("data.json");
+            }
+
+            StaticData.MapVm.AllStation = new ObservableCollection<StationTotal>();
+            foreach (BusTotal busTotal in StaticData.MapVm.AllBus)
+            {
+                if (busTotal.GoStationList != null)
+                {
+                    //Go direction
+                    foreach (BusStation busStation in busTotal.GoStationList)
+                    {
+                        StationTotal s = null;
+                        if (StaticData.MapVm.AllStation.Any(d => d.StationId == busStation.StationId))
+                        {
+                            s = StaticData.MapVm.AllStation.First(d => d.StationId == busStation.StationId);
+                        }
+                        if (s == null)
+                        {
+                            //Station is not added
+                            StationTotal newStationTotal = new StationTotal(busStation)
+                            {
+                                BusAtStationList = new ObservableCollection<BusAtStation>()
+                            };
+
+                            BusAtStation b = new BusAtStation
+                            {
+                                Id = busTotal.Id,
+                                BusDirection = Direction.Go
+                            };
+                            newStationTotal.BusAtStationList.Add(b);
+
+                            Notify("GO|" + busTotal.Id + "|" + busStation.StationId + "|NEW STATION|NEW BUS");
+
+                            StaticData.MapVm.AllStation.Add(newStationTotal);
+                        }
+                        else
+                        {
+                            BusAtStation busAtStation = null;
+                            if (s.BusAtStationList.Any(d => d.Id == busTotal.Id))
+                            {
+                                busAtStation = s.BusAtStationList.First(d => d.Id == busTotal.Id);
+                            }
+                            if (busAtStation == null)
+                            {
+                                BusAtStation b = new BusAtStation
+                                {
+                                    Id = busTotal.Id,
+                                    BusDirection = Direction.Go
+                                };
+                                s.BusAtStationList.Add(b);
+                                Notify("GO|" + busTotal.Id + "|" + busStation.StationId + "|OLD STATION|NEW BUS");
+                            }
+                            else
+                            {
+                                busAtStation.BusDirection = Direction.Both;
+                                Notify("GO|" + busTotal.Id + "|" + busStation.StationId + "|OLD STATION|OLD BUS");
+                            }
+                            StaticData.MapVm.AllStation.Add(s);
+                        }
+                    }
+                }
+
+                if (busTotal.BackStationList != null)
+                {
+                    //Back direction
+                    foreach (BusStation busStation in busTotal.BackStationList)
+                    {
+                        StationTotal s = null;
+                        if (StaticData.MapVm.AllStation.Any(d => d.StationId == busStation.StationId))
+                        {
+                            s = StaticData.MapVm.AllStation.First(d => d.StationId == busStation.StationId);
+                        }
+                        if (s == null)
+                        {
+                            //Station is not added
+                            StationTotal newStationTotal = new StationTotal(busStation)
+                            {
+                                BusAtStationList = new ObservableCollection<BusAtStation>()
+                            };
+
+                            BusAtStation b = new BusAtStation
+                            {
+                                Id = busTotal.Id,
+                                BusDirection = Direction.Back
+                            };
+
+                            newStationTotal.BusAtStationList.Add(b);
+                            Notify("BA|" + busTotal.Id + "|" + busStation.StationId + "|NEW STATION|NEW BUS");
+                            StaticData.MapVm.AllStation.Add(newStationTotal);
+                        }
+                        else
+                        {
+                            BusAtStation busAtStation = null;
+                            if (s.BusAtStationList.Any(d => d.Id == busTotal.Id))
+                            {
+                                busAtStation = s.BusAtStationList.First(d => d.Id == busTotal.Id);
+                            }
+                            if (busAtStation == null)
+                            {
+                                BusAtStation b = new BusAtStation
+                                {
+                                    Id = busTotal.Id,
+                                    BusDirection = Direction.Back
+                                };
+                                s.BusAtStationList.Add(b);
+                                Notify("BA|" + busTotal.Id + "|" + busStation.StationId + "|OLD STATION|NEW BUS");
+                            }
+                            else
+                            {
+                                busAtStation.BusDirection = Direction.Both;
+                                Notify("BA|" + busTotal.Id + "|" + busStation.StationId + "|OLD STATION|OLD BUS");
+                            }
+                            StaticData.MapVm.AllStation.Add(s);
+                        }
+                    }
+                }
+            }
+
+            await StorageHelper.Object2Json(StaticData.MapVm.AllStation, "allstation.json");
         }
 
         private async void Notify(string s, bool isReset = false)
