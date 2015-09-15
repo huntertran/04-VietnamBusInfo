@@ -101,6 +101,9 @@
     <None Include="analytics.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Data\data.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -120,12 +123,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Utilities\Converters\PageToNameConverter.cs" />
+    <Compile Include="Utilities\EncryptionService.cs" />
     <Compile Include="Utilities\NetwordMethod.cs" />
     <Compile Include="Utilities\StorageHelper.cs" />
+    <Compile Include="Utilities\ZipHelper.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\MapGroup\MapViewModel.cs" />
     <Compile Include="ViewModel\SettingGroup\SettingViewModel.cs" />
     <Compile Include="ViewModel\SettingGroup\UpdateDatabaseViewModel.cs" />
+    <Compile Include="ViewModel\StartGroup\ExtendedSplashViewModel.cs" />
     <Compile Include="ViewModel\StaticData.cs" />
     <Compile Include="View\SettingGroup\UpdateDatabasePage.xaml.cs">
       <DependentUpon>UpdateDatabasePage.xaml</DependentUpon>

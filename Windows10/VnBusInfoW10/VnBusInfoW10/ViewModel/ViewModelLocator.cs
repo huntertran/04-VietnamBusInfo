@@ -46,12 +46,17 @@ namespace VnBusInfoW10.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<ExtendedSplashViewModel>();
             SimpleIoc.Default.Register<StartViewModel>();
             SimpleIoc.Default.Register<SettingViewModel>();
             SimpleIoc.Default.Register<UpdateDatabaseViewModel>();
         }
 
         public MainViewModel Main => ServiceLocator.Current.GetInstance<MainViewModel>();
+
+        public ExtendedSplashViewModel ExtendedSplashVm => 
+            ServiceLocator.Current.GetInstance<ExtendedSplashViewModel>();
+
         public StartViewModel StartVm => ServiceLocator.Current.GetInstance<StartViewModel>();
         public SettingViewModel SettingVm => ServiceLocator.Current.GetInstance<SettingViewModel>();
         public UpdateDatabaseViewModel UpdateInfoVm => ServiceLocator.Current.GetInstance<UpdateDatabaseViewModel>();

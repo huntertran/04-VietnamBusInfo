@@ -4,6 +4,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="using:VnBusInfoW10.View.StartGroup"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      DataContext="{Binding Source={StaticResource Locator},
+                            Path=ExtendedSplashVm}"
       mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -12,6 +14,9 @@
             <TextBlock HorizontalAlignment="Center"
                        FontSize="48"
                        Text="Vietnam Bus Info" />
+            <TextBlock HorizontalAlignment="Center"
+                       FontSize="48"
+                       Text="{Binding Status}" />
             <ProgressRing Width="50"
                           Height="50"
                           Margin="12"

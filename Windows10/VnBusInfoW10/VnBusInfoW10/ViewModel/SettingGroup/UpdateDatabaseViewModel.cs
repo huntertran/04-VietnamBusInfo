@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Core;
 using Windows.Devices.Geolocation;
+using Windows.Storage;
 using Windows.UI.Core;
 using HtmlAgilityPack;
 using Newtonsoft.Json.Linq;
@@ -79,8 +80,16 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
             //await Task.Run(() => GetBusInfo());
             //await Task.Run(() => GetStation());
             //await Task.Run(() => GetRoute());
-            //await Task.Run(() => ConvertToJson());
-            await Task.Run(() => CalculateStationTotal());
+            //await Task.Run(() => CalculateStationTotal());
+            //await Task.Run(() => ExtractDownloadedFile());
+
+        }
+        private async Task ExtractDownloadedFile()
+        {
+            StorageFolder data = await ApplicationData.Current.LocalFolder.GetFolderAsync("data");
+            StorageFile dataZip = await data.GetFileAsync("data.zip");
+
+            var test = ZipHelper.UnZipFileAsync(dataZip, data);
         }
 
         private async Task GetBusInfo()
@@ -367,12 +376,12 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
             StaticData.MapVm.AllBus = await StorageHelper.Json2Object<ObservableCollection<BusTotal>>("data.json");
         }
 
-        private async Task CalculateStationTotal()
+        public async Task CalculateStationTotal()
         {
             //Load all data
             if (StaticData.MapVm.AllBus == null)
             {
-                StaticData.MapVm.AllBus = await StorageHelper.Json2Object<ObservableCollection<BusTotal>>("data.json");
+                StaticData.MapVm.AllBus = await StorageHelper.Json2Object<ObservableCollection<BusTotal>>("data.dat");
             }
 
             StaticData.MapVm.AllStation = new ObservableCollection<StationTotal>();
@@ -490,7 +499,7 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
                 }
             }
 
-            await StorageHelper.Object2Json(StaticData.MapVm.AllStation, "allstation.json");
+            await StorageHelper.Object2Json(StaticData.MapVm.AllStation, "allstation.dat");
         }
 
         private async void Notify(string s, bool isReset = false)
