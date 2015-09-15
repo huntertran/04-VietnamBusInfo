@@ -57,6 +57,12 @@
             </Grid>
         </DataTemplate>
 
+        <Style TargetType="ListViewItem">
+            <Setter Property="Padding" Value="12,0,12,0" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+
         <DataTemplate x:Key="BackgroundTemplate">
             <Grid>
                 <Path VerticalAlignment="Bottom"
@@ -66,6 +72,9 @@
                       Stretch="Uniform" />
             </Grid>
         </DataTemplate>
+
+
+
     </Application.Resources>
 
 </Application>

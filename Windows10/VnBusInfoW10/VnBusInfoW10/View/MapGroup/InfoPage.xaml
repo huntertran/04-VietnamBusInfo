@@ -1,0 +1,118 @@
+﻿<Page x:Class="VnBusInfoW10.View.MapGroup.InfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:VnBusInfoW10.View.MapGroup"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      RequestedTheme="Dark"
+      d:DataContext="{Binding Source={StaticResource Locator},
+                              Path=MapVm}"
+      mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:Key="BusDataTemplate">
+            <Grid d:DataContext="{Binding AllBus[0]}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="2"
+                        Width="40"
+                        Height="40"
+                        Margin="-20,0,0,0"
+                        Background="{StaticResource LightTerraBrush}"
+                        CornerRadius="10" />
+
+                <Grid Grid.Column="1"
+                      Margin="-20,0,0,0"
+                      Padding="28,0,0,0">
+                    <Grid.Background>
+                        <SolidColorBrush Color="{StaticResource LightTerra}" />
+                    </Grid.Background>
+                    <TextBlock VerticalAlignment="Center"
+                               Foreground="{StaticResource AbisoBrush}"
+                               Text="{Binding TextInfo.RouteName}"
+                               TextTrimming="WordEllipsis" />
+                </Grid>
+
+                <Border Grid.Column="0"
+                        Width="40"
+                        Height="40"
+                        Background="{StaticResource TerraBrush}"
+                        CornerRadius="10">
+                    <TextBlock HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Foreground="{StaticResource AbisoBrush}"
+                               Text="{Binding TextInfo.RouteNumber}" />
+                </Border>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="StationDataTemplate">
+            <Grid d:DataContext="{Binding AllBus[0].GoStationList[0]}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="1"
+                        Margin="-40,0,0,0"
+                        CornerRadius="10"
+                        Padding="48,0,20,0">
+                    <Border.Background>
+                        <SolidColorBrush Color="{StaticResource LightTerra}" />
+                    </Border.Background>
+                    <StackPanel Padding="0,8,0,0">
+                        <TextBlock VerticalAlignment="Center"
+                                   Foreground="{StaticResource AbisoBrush}"
+                                   Text="{Binding Name}"
+                                   TextTrimming="WordEllipsis" />
+                        <TextBlock VerticalAlignment="Center"
+                                   Foreground="{StaticResource AbisoBrush}"
+                                   Text="{Binding Address}"
+                                   TextTrimming="WordEllipsis" />
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="0"
+                        Width="40"
+                        Height="40"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Background="{StaticResource TerraBrush}"
+                        CornerRadius="10">
+                    <TextBlock HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Foreground="{StaticResource AbisoBrush}"
+                               Text="{Binding No}" />
+                </Border>
+
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Opacity="0.8" Color="{ThemeResource SystemAltLowColor}" />
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <ListView x:Name="BusListView"
+                  Grid.Column="0"
+                  Width="300"
+                  ItemTemplate="{StaticResource BusDataTemplate}"
+                  ItemsSource="{Binding AllBus}" />
+
+        <ListView x:Name="StationListView"
+                  Grid.Column="1"
+                  Width="300"
+                  DataContext="{Binding SelectedItem.GoStationList,
+                                        ElementName=BusListView}"
+                  ItemTemplate="{StaticResource StationDataTemplate}" />
+
+    </Grid>
+</Page>

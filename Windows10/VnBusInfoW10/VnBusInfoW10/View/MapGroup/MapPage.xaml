@@ -5,6 +5,7 @@
       xmlns:local="using:VnBusInfoW10.View.MapGroup"
       xmlns:maps="using:Windows.UI.Xaml.Controls.Maps"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      DataContext="{Binding Source={StaticResource Locator}, Path=MapVm}"
       mc:Ignorable="d">
 
     <Grid>
@@ -12,5 +13,6 @@
                          TiltInteractionMode="Auto"
                          MapServiceToken="NIyMzlICqqiGKssPnPH2~_MyvaVfzloby9BegWr-KNA~AuGI2IzSZs5n0pNEo9BJ6kINcirSRXptNjsEQktnaJ9O_WePIT4LA51RMk8ctzjn"
                          ZoomInteractionMode="Auto" />
+        <Frame x:Name="SecondFrame" HorizontalAlignment="Left"/>
     </Grid>
 </Page>

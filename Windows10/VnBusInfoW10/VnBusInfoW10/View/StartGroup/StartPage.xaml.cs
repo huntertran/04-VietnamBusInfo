@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using Windows.ApplicationModel.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using VnBusInfoW10.Model;
@@ -21,6 +22,13 @@ namespace VnBusInfoW10.View.StartGroup
 
         private void StartPage_Loaded(object sender, RoutedEventArgs e)
         {
+
+            CoreApplicationViewTitleBar coreTitleBar = CoreApplication.GetCurrentView().TitleBar;
+            coreTitleBar.ExtendViewIntoTitleBar = true;
+
+            //TitleBar.Height = coreTitleBar.Height;
+            Window.Current.SetTitleBar(TitleGrid);
+
             FunctionsListView.SelectedIndex = 0;
             //BottomListView.SelectedIndex = 0;
         }

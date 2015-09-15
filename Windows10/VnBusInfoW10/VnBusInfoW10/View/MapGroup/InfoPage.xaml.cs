@@ -20,17 +20,11 @@ namespace VnBusInfoW10.View.MapGroup
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MapPage : Page
+    public sealed partial class InfoPage : Page
     {
-        public MapPage()
+        public InfoPage()
         {
             this.InitializeComponent();
-            Loaded += MapPage_Loaded;
-        }
-
-        private void MapPage_Loaded(object sender, RoutedEventArgs e)
-        {
-            SecondFrame.Navigate(typeof (InfoPage));
         }
     }
 }
