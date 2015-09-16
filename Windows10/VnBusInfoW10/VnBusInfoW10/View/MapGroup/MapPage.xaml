@@ -13,6 +13,7 @@
                          TiltInteractionMode="Auto"
                          MapServiceToken="NIyMzlICqqiGKssPnPH2~_MyvaVfzloby9BegWr-KNA~AuGI2IzSZs5n0pNEo9BJ6kINcirSRXptNjsEQktnaJ9O_WePIT4LA51RMk8ctzjn"
                          ZoomInteractionMode="Auto" />
-        <Frame x:Name="SecondFrame" HorizontalAlignment="Left"/>
+        <Frame x:Name="SecondFrame" HorizontalAlignment="Left"
+               x:FieldModifier="public"/>
     </Grid>
 </Page>

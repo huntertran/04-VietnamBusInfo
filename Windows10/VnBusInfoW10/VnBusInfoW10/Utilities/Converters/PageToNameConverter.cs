@@ -1,5 +1,6 @@
 ﻿using System;
 using Windows.UI.Xaml.Data;
+using VnBusInfoW10.View.SettingGroup;
 using VnBusInfoW10.View.StartGroup;
 
 namespace VnBusInfoW10.Utilities.Converters
@@ -13,6 +14,10 @@ namespace VnBusInfoW10.Utilities.Converters
             if (value is StartPage)
             {
                 return defaultName;
+            }
+            if (value is UpdateDatabasePage)
+            {
+                return "Update Database";
             }
             
             return defaultName;

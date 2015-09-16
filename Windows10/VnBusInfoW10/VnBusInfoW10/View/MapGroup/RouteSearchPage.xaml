@@ -1,0 +1,51 @@
+﻿<Page x:Class="VnBusInfoW10.View.MapGroup.RouteSearchPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      DataContext="{Binding Source={StaticResource Locator},
+                            Path=RouteSearchVm}"
+      d:DesignWidth="400"
+      mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:Key="PlaceDataTemplate">
+            <Grid d:DataContext="{Binding StartLocationResults.results[0]}">
+                <TextBlock Text="{Binding formatted_address}" TextWrapping="Wrap" />
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Width="400">
+        <Grid.Background>
+            <SolidColorBrush Opacity="0.8" Color="{ThemeResource SystemAltHighColor}" />
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <AutoSuggestBox x:Name="StartLocationAutoSuggestBox"
+                                ItemTemplate="{StaticResource PlaceDataTemplate}"
+                                ItemsSource="{Binding StartLocationResults.results}"
+                                PlaceholderText="Start Location"
+                                QueryIcon="Target"
+                                TextChanged="StartLocationAutoSuggestBox_OnTextChanged" />
+                <AutoSuggestBox PlaceholderText="End Location" QueryIcon="Target" />
+            </StackPanel>
+            <AppBarButton Grid.Column="1"
+                          HorizontalAlignment="Stretch"
+                          VerticalAlignment="Stretch"
+                          Background="{StaticResource LightTerraBrush}"
+                          Icon="Go"
+                          Label="Search" />
+        </Grid>
+
+    </Grid>
+</Page>

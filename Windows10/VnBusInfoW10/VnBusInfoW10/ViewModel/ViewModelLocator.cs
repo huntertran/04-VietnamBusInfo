@@ -50,6 +50,7 @@ namespace VnBusInfoW10.ViewModel
             SimpleIoc.Default.Register<StartViewModel>();
             SimpleIoc.Default.Register<SettingViewModel>();
             SimpleIoc.Default.Register<UpdateDatabaseViewModel>();
+            SimpleIoc.Default.Register<RouteSearchViewModel>();
         }
 
         public MainViewModel Main => ServiceLocator.Current.GetInstance<MainViewModel>();
@@ -61,6 +62,7 @@ namespace VnBusInfoW10.ViewModel
         public SettingViewModel SettingVm => ServiceLocator.Current.GetInstance<SettingViewModel>();
         public UpdateDatabaseViewModel UpdateInfoVm => ServiceLocator.Current.GetInstance<UpdateDatabaseViewModel>();
         public MapViewModel MapVm => StaticData.MapVm;
+        public RouteSearchViewModel RouteSearchVm => ServiceLocator.Current.GetInstance<RouteSearchViewModel>();
 
         public static void Cleanup()
         {

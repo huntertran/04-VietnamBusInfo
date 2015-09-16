@@ -116,6 +116,7 @@
     <Compile Include="Model\BusStation.cs" />
     <Compile Include="Model\BusTextInfo.cs" />
     <Compile Include="Model\BusTotal.cs" />
+    <Compile Include="Model\GoogleMapApi\GeocodingResult.cs" />
     <Compile Include="Model\MenuListItem.cs" />
     <Compile Include="Model\RawBusStation.cs" />
     <Compile Include="Model\StationTotal.cs" />
@@ -124,18 +125,23 @@
     <Compile Include="Utilities\Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Utilities\Converters\PageToNameConverter.cs" />
     <Compile Include="Utilities\EncryptionService.cs" />
+    <Compile Include="Utilities\GoogleMapApi.cs" />
     <Compile Include="Utilities\NetwordMethod.cs" />
     <Compile Include="Utilities\StorageHelper.cs" />
     <Compile Include="Utilities\ZipHelper.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\MapGroup\InfoViewModel.cs" />
     <Compile Include="ViewModel\MapGroup\MapViewModel.cs" />
+    <Compile Include="ViewModel\MapGroup\RouteSearchViewModel.cs" />
     <Compile Include="ViewModel\SettingGroup\SettingViewModel.cs" />
     <Compile Include="ViewModel\SettingGroup\UpdateDatabaseViewModel.cs" />
     <Compile Include="ViewModel\StartGroup\ExtendedSplashViewModel.cs" />
     <Compile Include="ViewModel\StaticData.cs" />
     <Compile Include="View\MapGroup\InfoPage.xaml.cs">
       <DependentUpon>InfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MapGroup\RouteSearchPage.xaml.cs">
+      <DependentUpon>RouteSearchPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\SettingGroup\UpdateDatabasePage.xaml.cs">
       <DependentUpon>UpdateDatabasePage.xaml</DependentUpon>
@@ -211,6 +217,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\MapGroup\InfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MapGroup\RouteSearchPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

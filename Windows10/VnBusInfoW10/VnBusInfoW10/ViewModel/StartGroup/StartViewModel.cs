@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Windows.UI.Xaml.Controls;
 using VnBusInfoW10.Annotations;
@@ -108,6 +109,22 @@ namespace VnBusInfoW10.ViewModel.StartGroup
                 case MenuFunc.Settings:
                 {
                     frame.Navigate(typeof (SettingPage));
+                    break;
+                }
+                case MenuFunc.Search:
+                {
+                    MapPage page = frame.Content as MapPage;
+                    if (page != null)
+                    {
+                        //Navigate inside MapPage
+                        page.SecondFrame.Navigate(typeof (RouteSearchPage));
+                    }
+                    else
+                    {
+                        frame.Navigate(typeof (MapPage));
+                        Debug.Assert(frame.Content != null, "frame.Content != null");
+                        ((MapPage) frame.Content).SecondFrame.Navigate(typeof (RouteSearchPage));
+                    }
                     break;
                 }
                 default:
