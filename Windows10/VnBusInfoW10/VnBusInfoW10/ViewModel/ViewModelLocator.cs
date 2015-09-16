@@ -69,4 +69,10 @@ namespace VnBusInfoW10.ViewModel
             // TODO Clear the ViewModels
         }
     }
+
+    public enum MessengerToken
+    {
+        BusIndexChanged,
+        StationIndexChanged
+    }
 }

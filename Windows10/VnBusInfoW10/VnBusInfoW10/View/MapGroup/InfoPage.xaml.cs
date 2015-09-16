@@ -1,17 +1,22 @@
 ﻿using Windows.UI.Xaml.Controls;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using GalaSoft.MvvmLight.Messaging;
+using VnBusInfoW10.ViewModel;
 
 namespace VnBusInfoW10.View.MapGroup
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class InfoPage : Page
+    public sealed partial class InfoPage
     {
         public InfoPage()
         {
             this.InitializeComponent();
+        }
+
+        private void BusListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Messenger.Default.Send(BusListView.SelectedIndex, MessengerToken.BusIndexChanged);
         }
     }
 }

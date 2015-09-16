@@ -106,7 +106,7 @@
                   Grid.Column="0"
                   Width="250"
                   ItemTemplate="{StaticResource BusDataTemplate}"
-                  ItemsSource="{Binding AllBus}" />
+                  ItemsSource="{Binding AllBus}" SelectionChanged="BusListView_SelectionChanged" />
 
         <Grid Grid.Column="1" Visibility="{Binding SelectedIndex, Converter={StaticResource IndexToVisibilityConverter}, ElementName=BusListView}">
             <Grid.RowDefinitions>
