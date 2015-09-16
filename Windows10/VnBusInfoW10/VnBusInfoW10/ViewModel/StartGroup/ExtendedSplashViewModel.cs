@@ -46,7 +46,7 @@ namespace VnBusInfoW10.ViewModel.StartGroup
 
         public async Task Initialize()
         {
-            Notify("Initializing for the first use...");
+            Notify("Getting data ready...");
             try
             {
                 StaticData.MapVm.AllBus = await StorageHelper.Json2Object<ObservableCollection<BusTotal>>("data.dat");
@@ -57,6 +57,7 @@ namespace VnBusInfoW10.ViewModel.StartGroup
             }
             if (StaticData.MapVm.AllBus == null)
             {
+                Notify("Initializing for the first use...");
                 //Copy data to local storage
                 StorageFile file =
                     await StorageFile.GetFileFromApplicationUriAsync(new Uri(@"ms-appx:///Data/data.dat"));

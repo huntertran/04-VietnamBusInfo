@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Threading.Tasks;
 using Windows.Storage;
 using Windows.Storage.Streams;
@@ -60,7 +59,7 @@ namespace VnBusInfoW10.Utilities
 
 
                 StorageFile file = await folder.GetFileAsync(fileName);
-                string json = "";
+                string json;
 
                 using (IRandomAccessStreamWithContentType stream = await file.OpenReadAsync())
                 {
