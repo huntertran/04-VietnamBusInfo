@@ -43,7 +43,7 @@
             <maps:MapItemsControl x:Name="StationPushPinList">
                 <maps:MapItemsControl.ItemTemplate>
                     <DataTemplate d:DataTemplate="{Binding AllBus[0].GoStationList[0]}">
-                        <Grid>
+                        <Grid maps:MapControl.Location="{Binding Location}">
                             <Border Width="22"
                                     Margin="0,0,-11,0"
                                     HorizontalAlignment="Right"

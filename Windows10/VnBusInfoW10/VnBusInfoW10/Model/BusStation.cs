@@ -1,5 +1,7 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Windows.Devices.Geolocation;
 using VnBusInfoW10.Annotations;
 
 namespace VnBusInfoW10.Model
@@ -103,6 +105,7 @@ namespace VnBusInfoW10.Model
                 if (value == _lon) return;
                 _lon = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(Location));
             }
         }
 
@@ -114,6 +117,7 @@ namespace VnBusInfoW10.Model
                 if (value == _lat) return;
                 _lat = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(Location));
             }
         }
 
@@ -136,6 +140,21 @@ namespace VnBusInfoW10.Model
                 if (value == _codeName) return;
                 _codeName = value;
                 OnPropertyChanged();
+            }
+        }
+
+        public Geopoint Location
+        {
+            get
+            {
+                BasicGeoposition b = new BasicGeoposition
+                {
+                    Latitude = Convert.ToDouble(Lat),
+                    Longitude = Convert.ToDouble(Lon)
+                };
+
+                Geopoint g = new Geopoint(b);
+                return g;
             }
         }
 

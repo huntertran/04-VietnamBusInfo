@@ -72,6 +72,7 @@ namespace VnBusInfoW10.ViewModel
 
     public enum MessengerToken
     {
+        StationDirectionChanged,
         BusIndexChanged,
         StationIndexChanged
     }

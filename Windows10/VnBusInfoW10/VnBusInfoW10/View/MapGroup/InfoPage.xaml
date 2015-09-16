@@ -106,7 +106,8 @@
                   Grid.Column="0"
                   Width="250"
                   ItemTemplate="{StaticResource BusDataTemplate}"
-                  ItemsSource="{Binding AllBus}" SelectionChanged="BusListView_SelectionChanged" />
+                  ItemsSource="{Binding AllBus}"
+                  SelectionChanged="BusListView_SelectionChanged" />
 
         <Grid Grid.Column="1" Visibility="{Binding SelectedIndex, Converter={StaticResource IndexToVisibilityConverter}, ElementName=BusListView}">
             <Grid.RowDefinitions>
@@ -119,7 +120,8 @@
                               HorizontalAlignment="Center"
                               Header="Direction"
                               OffContent="go"
-                              OnContent="back" />
+                              OnContent="back"
+                              Toggled="DirectionSwitch_Toggled" />
             </Grid>
 
             <ListView x:Name="GoStationListView"
@@ -128,6 +130,7 @@
                       ItemTemplate="{StaticResource StationDataTemplate}"
                       ItemsSource="{Binding SelectedItem.GoStationList,
                                             ElementName=BusListView}"
+                      SelectionChanged="StationListView_SelectionChanged"
                       Visibility="{Binding IsOn,
                                            ConverterParameter=r,
                                            Converter={StaticResource BoolToVisibilityConverter},

@@ -18,5 +18,15 @@ namespace VnBusInfoW10.View.MapGroup
         {
             Messenger.Default.Send(BusListView.SelectedIndex, MessengerToken.BusIndexChanged);
         }
+
+        private void DirectionSwitch_Toggled(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            Messenger.Default.Send(((ToggleSwitch)sender).IsOn, MessengerToken.StationDirectionChanged);
+        }
+
+        private void StationListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
