@@ -22,37 +22,98 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <StackPanel>
-                <AutoSuggestBox x:Name="StartLocationAutoSuggestBox"
-                                ItemTemplate="{StaticResource PlaceDataTemplate}"
-                                ItemsSource="{Binding StartLocationResults.results}"
-                                PlaceholderText="Enter address to search"
-                                QueryIcon="Target"
-                                SuggestionChosen="StartLocationAutoSuggestBox_SuggestionChosen"
-                                TextChanged="StartLocationAutoSuggestBox_OnTextChanged" />
-                <AutoSuggestBox x:Name="EndlocationAutoSuggestBox"
-                                ItemTemplate="{StaticResource PlaceDataTemplate}"
-                                ItemsSource="{Binding EndLocationResults.results}"
-                                PlaceholderText="Enter address to search"
-                                QueryIcon="Target"
-                                SuggestionChosen="EndLocationAutoSuggestBox_SuggestionChosen"
-                                TextChanged="EndLocationAutoSuggestBox_OnTextChanged" />
-            </StackPanel>
-            <AppBarButton Grid.Column="1"
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0"
+                    Grid.Column="0"
+                    Width="24"
+                    Height="24"
+                    Margin="8"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Background="Green"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    CornerRadius="30">
+                <TextBlock Margin="0,0,0,2"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Foreground="White"
+                           Text="A" />
+            </Border>
+            <AutoSuggestBox x:Name="StartLocationAutoSuggestBox"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            ItemTemplate="{StaticResource PlaceDataTemplate}"
+                            ItemsSource="{Binding StartLocationResults.results}"
+                            PlaceholderText="Enter address to search"
+                            QueryIcon="Target"
+                            QuerySubmitted="StartLocationAutoSuggestBox_QuerySubmitted"
+                            SuggestionChosen="StartLocationAutoSuggestBox_SuggestionChosen"
+                            TextChanged="StartLocationAutoSuggestBox_OnTextChanged" />
+
+            <Border Grid.Row="1"
+                    Grid.Column="0"
+                    Width="24"
+                    Height="24"
+                    Margin="8"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Background="DarkRed"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    CornerRadius="30">
+                <TextBlock Margin="0,0,0,2"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Foreground="White"
+                           Text="B" />
+            </Border>
+            <AutoSuggestBox x:Name="EndlocationAutoSuggestBox"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            ItemTemplate="{StaticResource PlaceDataTemplate}"
+                            ItemsSource="{Binding EndLocationResults.results}"
+                            PlaceholderText="Enter address to search"
+                            QueryIcon="Target"
+                            QuerySubmitted="EndLocationAutoSuggestBox_QuerySubmitted"
+                            SuggestionChosen="EndLocationAutoSuggestBox_SuggestionChosen"
+                            TextChanged="EndLocationAutoSuggestBox_OnTextChanged" />
+            <AppBarButton Grid.Row="0"
+                          Grid.RowSpan="2"
+                          Grid.Column="2"
+                          Margin="4"
                           HorizontalAlignment="Stretch"
                           VerticalAlignment="Stretch"
                           Background="{StaticResource LightTerraBrush}"
                           Icon="Go"
                           Label="Search" />
         </Grid>
+
+        <StackPanel x:Name="StatusStackPanel"
+                    Grid.Row="1"
+                    Padding="8,0,4,0">
+            <ProgressBar x:Name="StatusProgressBar"
+                         IsIndeterminate="{Binding IsIndetemine}"
+                         Visibility="{Binding ProgressVisibility, FallbackValue=Collapsed}"
+                         Value="{Binding Progress}" />
+            <TextBlock x:Name="StatusTextBlock" Text="{Binding StatusText}" />
+        </StackPanel>
 
     </Grid>
 </Page>
