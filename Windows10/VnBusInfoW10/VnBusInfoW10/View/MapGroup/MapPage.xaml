@@ -39,6 +39,7 @@
         <maps:MapControl MapServiceToken="NIyMzlICqqiGKssPnPH2~_MyvaVfzloby9BegWr-KNA~AuGI2IzSZs5n0pNEo9BJ6kINcirSRXptNjsEQktnaJ9O_WePIT4LA51RMk8ctzjn"
                          RotateInteractionMode="Auto"
                          TiltInteractionMode="Auto"
+                         x:Name="MainMap"
                          ZoomInteractionMode="Auto">
             <maps:MapItemsControl x:Name="StationPushPinList">
                 <maps:MapItemsControl.ItemTemplate>
@@ -47,14 +48,14 @@
                             <Border Width="22"
                                     Margin="0,0,-11,0"
                                     HorizontalAlignment="Right"
+                                    Background="{StaticResource LightTerraBrush}"
                                     BorderBrush="{StaticResource AccquaBrush}"
                                     BorderThickness="1"
-                                    Background="{StaticResource LightTerraBrush}"
                                     CornerRadius="30" />
                             <Border Margin="11,0,0,0"
+                                    Background="{StaticResource LightTerraBrush}"
                                     BorderBrush="{StaticResource AccquaBrush}"
                                     BorderThickness="0,1"
-                                    Background="{StaticResource LightTerraBrush}"
                                     Padding="12,0,0,0">
                                 <TextBlock Text="{Binding Name}" />
                             </Border>
@@ -74,6 +75,7 @@
                 </maps:MapItemsControl.ItemTemplate>
             </maps:MapItemsControl>
         </maps:MapControl>
+
         <Frame x:Name="SecondFrame"
                HorizontalAlignment="Left"
                x:FieldModifier="public" />

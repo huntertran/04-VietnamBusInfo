@@ -1,7 +1,10 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Windows.ApplicationModel.Core;
 using Windows.Devices.Geolocation;
+using Windows.UI.Core;
 using VnBusInfoW10.Annotations;
 
 namespace VnBusInfoW10.Model
@@ -96,9 +99,14 @@ namespace VnBusInfoW10.Model
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        protected async virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            await CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(
+                CoreDispatcherPriority.Normal,
+                () =>
+                {
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+                });
         }
     }
 }

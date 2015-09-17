@@ -321,8 +321,8 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
                         }
                         BasicGeoposition b = new BasicGeoposition
                         {
-                            Latitude = Convert.ToDouble(s.Split(',')[0]),
-                            Longitude = Convert.ToDouble(s.Split(',')[1])
+                            Latitude = Convert.ToDouble(s.Split(',')[1]),
+                            Longitude = Convert.ToDouble(s.Split(',')[0])
                         };
                         busTotal.GoRoute.Add(b);
                     }
@@ -348,8 +348,8 @@ namespace VnBusInfoW10.ViewModel.SettingGroup
                         }
                         BasicGeoposition b = new BasicGeoposition
                         {
-                            Latitude = Convert.ToDouble(s.Split(',')[0]),
-                            Longitude = Convert.ToDouble(s.Split(',')[1])
+                            Latitude = Convert.ToDouble(s.Split(',')[1]),
+                            Longitude = Convert.ToDouble(s.Split(',')[0])
                         };
                         busTotal.BackRoute.Add(b);
                     }

@@ -1,4 +1,8 @@
-﻿using Windows.UI.Xaml;
+﻿using Windows.Devices.Geolocation;
+using Windows.UI;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls.Maps;
+using Windows.UI.Xaml.Media;
 using GalaSoft.MvvmLight.Messaging;
 using VnBusInfoW10.ViewModel;
 using VnBusInfoW10.ViewModel.MapGroup;
@@ -27,12 +31,36 @@ namespace VnBusInfoW10.View.MapGroup
         private void ChangeBusIndex(int newIndex)
         {
             _busIndex = newIndex;
+            DisplayOnMap();
         }
 
         private void ChangeDirection(bool isGo)
         {
             _direction = isGo;
-            StationPushPinList.ItemsSource = _direction ? _vm.AllBus[_busIndex].GoStationList : _vm.AllBus[_busIndex].BackStationList;
+            DisplayOnMap();
+        }
+
+        private void DisplayOnMap()
+        {
+            StationPushPinList.ItemsSource = _direction
+                ? _vm.AllBus[_busIndex].GoStationList
+                : _vm.AllBus[_busIndex].BackStationList;
+
+            var g = _direction
+                ? new Geopath(_vm.AllBus[_busIndex].GoRoute)
+                : new Geopath(_vm.AllBus[_busIndex].BackRoute);
+
+            //g = new Geopath(_vm.AllBus[_busIndex].GoRoute);
+
+            MapPolyline routeDetailList = new MapPolyline
+            {
+                Path = g,
+                StrokeThickness = 5,
+                StrokeColor = Colors.Coral,
+                ZIndex = 1
+            };
+            MainMap.Center = new Geopoint(g.Positions[0]);
+            MainMap.MapElements.Add(routeDetailList);
         }
 
         private void MapPage_Loaded(object sender, RoutedEventArgs e)
