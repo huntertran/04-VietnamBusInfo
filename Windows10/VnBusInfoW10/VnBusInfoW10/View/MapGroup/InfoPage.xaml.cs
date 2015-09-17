@@ -11,7 +11,7 @@ namespace VnBusInfoW10.View.MapGroup
     {
         public InfoPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
         }
 
         private void BusListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -26,7 +26,7 @@ namespace VnBusInfoW10.View.MapGroup
 
         private void StationListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            Messenger.Default.Send(((ListView) sender).SelectedIndex, MessengerToken.StationIndexChanged);
         }
     }
 }
