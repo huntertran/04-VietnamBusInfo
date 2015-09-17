@@ -8,9 +8,8 @@ namespace VnBusInfoW10.ViewModel.MapGroup
 {
     public class MapViewModel : INotifyPropertyChanged
     {
-
         private ObservableCollection<BusTotal> _allBus;
-        private ObservableCollection<StationTotal> _allStation; 
+        private ObservableCollection<StationTotal> _allStation;
 
         public ObservableCollection<BusTotal> AllBus
         {

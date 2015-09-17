@@ -34,10 +34,17 @@
                 <AutoSuggestBox x:Name="StartLocationAutoSuggestBox"
                                 ItemTemplate="{StaticResource PlaceDataTemplate}"
                                 ItemsSource="{Binding StartLocationResults.results}"
-                                PlaceholderText="Start Location"
+                                PlaceholderText="Enter address to search"
                                 QueryIcon="Target"
+                                SuggestionChosen="StartLocationAutoSuggestBox_SuggestionChosen"
                                 TextChanged="StartLocationAutoSuggestBox_OnTextChanged" />
-                <AutoSuggestBox PlaceholderText="End Location" QueryIcon="Target" />
+                <AutoSuggestBox x:Name="EndlocationAutoSuggestBox"
+                                ItemTemplate="{StaticResource PlaceDataTemplate}"
+                                ItemsSource="{Binding EndLocationResults.results}"
+                                PlaceholderText="Enter address to search"
+                                QueryIcon="Target"
+                                SuggestionChosen="EndLocationAutoSuggestBox_SuggestionChosen"
+                                TextChanged="EndLocationAutoSuggestBox_OnTextChanged" />
             </StackPanel>
             <AppBarButton Grid.Column="1"
                           HorizontalAlignment="Stretch"

@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Diagnostics;
+using Windows.Devices.Geolocation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using VnBusInfoW10.Model.GoogleMapApi;
 using VnBusInfoW10.ViewModel.MapGroup;
 
 namespace VnBusInfoW10.View.MapGroup
@@ -10,10 +13,14 @@ namespace VnBusInfoW10.View.MapGroup
     /// </summary>
     public sealed partial class RouteSearchPage
     {
-        private RouteSearchViewModel _vm;
-        private DispatcherTimer _timer = new DispatcherTimer();
-        private bool _isStartLocation = false;
-        public RouteSearchPage()
+        private readonly RouteSearchViewModel _vm;
+        private readonly DispatcherTimer _timer = new DispatcherTimer();
+        private bool _isStartLocation;
+
+        private BasicGeoposition _startPoint;
+        private BasicGeoposition _endPoint;
+
+        public RouteSearchPage(RouteSearchViewModel vm)
         {
             InitializeComponent();
             _vm = DataContext as RouteSearchViewModel;
@@ -33,9 +40,15 @@ namespace VnBusInfoW10.View.MapGroup
                 await _vm.SearchStartLocation(StartLocationAutoSuggestBox.Text);
                 _timer.Stop();
             }
+            else
+            {
+                await _vm.SearchEndLocation(EndlocationAutoSuggestBox.Text);
+                _timer.Stop();
+            }
         }
 
-        private void StartLocationAutoSuggestBox_OnTextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        private void StartLocationAutoSuggestBox_OnTextChanged(AutoSuggestBox sender,
+            AutoSuggestBoxTextChangedEventArgs args)
         {
             if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
             {
@@ -43,6 +56,41 @@ namespace VnBusInfoW10.View.MapGroup
                 _isStartLocation = true;
                 _timer.Start();
             }
+        }
+
+        private void StartLocationAutoSuggestBox_SuggestionChosen(AutoSuggestBox sender,
+            AutoSuggestBoxSuggestionChosenEventArgs args)
+        {
+            Result r = args.SelectedItem as Result;
+            Debug.Assert(r != null, "r != null");
+            _startPoint = new BasicGeoposition
+            {
+                Latitude = r.geometry.location.lat,
+                Longitude = r.geometry.location.lng
+            };
+        }
+
+        private void EndLocationAutoSuggestBox_OnTextChanged(AutoSuggestBox sender,
+            AutoSuggestBoxTextChangedEventArgs args)
+        {
+            if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+            {
+                _timer.Stop();
+                _isStartLocation = false;
+                _timer.Start();
+            }
+        }
+
+        private void EndLocationAutoSuggestBox_SuggestionChosen(AutoSuggestBox sender,
+            AutoSuggestBoxSuggestionChosenEventArgs args)
+        {
+            Result r = args.SelectedItem as Result;
+            Debug.Assert(r != null, "r != null");
+            _endPoint = new BasicGeoposition
+            {
+                Latitude = r.geometry.location.lat,
+                Longitude = r.geometry.location.lng
+            };
         }
     }
 }

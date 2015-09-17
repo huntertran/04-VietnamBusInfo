@@ -28,5 +28,10 @@ namespace VnBusInfoW10.View.MapGroup
         {
             Messenger.Default.Send(((ListView) sender).SelectedIndex, MessengerToken.StationIndexChanged);
         }
+
+        private void BusFilterBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        {
+
+        }
     }
 }

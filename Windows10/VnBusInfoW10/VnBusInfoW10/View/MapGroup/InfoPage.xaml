@@ -102,12 +102,21 @@
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <ListView x:Name="BusListView"
-                  Grid.Column="0"
-                  Width="250"
-                  ItemTemplate="{StaticResource BusDataTemplate}"
-                  ItemsSource="{Binding AllBus}"
-                  SelectionChanged="BusListView_SelectionChanged" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--<AutoSuggestBox x:Name="BusFilterBox" QueryIcon="Zoom" TextChanged="BusFilterBox_TextChanged"/>-->
+
+            <ListView x:Name="BusListView"
+                      Grid.Row="1"
+                      Width="250"
+                      ItemTemplate="{StaticResource BusDataTemplate}"
+                      ItemsSource="{Binding AllBus}"
+                      SelectionChanged="BusListView_SelectionChanged" />
+        </Grid>
 
         <Grid Grid.Column="1" Visibility="{Binding SelectedIndex, Converter={StaticResource IndexToVisibilityConverter}, ElementName=BusListView}">
             <Grid.RowDefinitions>
