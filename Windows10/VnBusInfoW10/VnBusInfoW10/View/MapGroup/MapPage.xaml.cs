@@ -50,16 +50,31 @@ namespace VnBusInfoW10.View.MapGroup
                 ? new Geopath(_vm.AllBus[_busIndex].GoRoute)
                 : new Geopath(_vm.AllBus[_busIndex].BackRoute);
 
-            //g = new Geopath(_vm.AllBus[_busIndex].GoRoute);
-
-            MapPolyline routeDetailList = new MapPolyline
+            var routeDetailList = new MapPolyline
             {
                 Path = g,
                 StrokeThickness = 5,
                 StrokeColor = Colors.Coral,
                 ZIndex = 1
             };
+
             MainMap.Center = new Geopoint(g.Positions[0]);
+            MainMap.ZoomLevel = 12;
+
+            int index = -1;
+            for (int i = 0; i < MainMap.MapElements.Count; i++)
+            {
+                if (MainMap.MapElements[i] is MapPolyline)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index != -1)
+            {
+                MainMap.MapElements.RemoveAt(index);
+            }
             MainMap.MapElements.Add(routeDetailList);
         }
 
