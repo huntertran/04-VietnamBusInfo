@@ -117,6 +117,11 @@ namespace VnBusInfoW10.ViewModel.MapGroup
             }
         }
 
+        public RouteSearchViewModel()
+        {
+            ProgressVisibility = Visibility.Collapsed;
+        }
+
         private async Task<GeoCodingResults> SearchLocation(string address)
         {
             return await GoogleMapApi.GetGeoPosition(address);
